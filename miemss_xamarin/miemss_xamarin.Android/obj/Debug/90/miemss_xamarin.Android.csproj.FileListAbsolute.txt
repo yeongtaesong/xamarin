@@ -965,3 +965,6 @@ C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin.Android\obj\Deb
 C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin.Android\obj\Debug\90\res\drawable\splashscreen.png
+C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin.Android\obj\Debug\90\android\src\crc645838c67d4b0dbe7b\SplashActivity.java
+C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin.Android\obj\Debug\90\res\splash_screen.xml
