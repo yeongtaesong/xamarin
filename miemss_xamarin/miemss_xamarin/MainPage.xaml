@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="MIEMSS_Navigator"
+             x:Class="miemss_xamarin.MainPage">
+
+    <ContentPage.Content>
+
+        <Grid  RowSpacing=" 35" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="90"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions >
+            <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Vertical" Padding=" 10, 15, 0, 0">
+                <Image Source="EMS.png"  
+                   Grid.Row="0"  
+                   Grid.Column="0"  
+                   BackgroundColor="white"
+                   WidthRequest="60" HeightRequest="60" >
+                <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+                </Image>
+                <Label Text="EMS Protocols" HorizontalTextAlignment="Center" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" Padding=" 10, 15, 0, 0">
+                <Image Source="Hospital.png"  
+                       Grid.Row="0"  
+                       Grid.Column="1" 
+                       BackgroundColor="White" 
+                       WidthRequest="60" HeightRequest="60" 
+                 >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Directories" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            
+            <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+                <Image Source="Chart.png"  
+                   Grid.Row="1"  
+                   Grid.Column="0"  
+                   BackgroundColor="White" 
+                   WidthRequest="60" HeightRequest="60" 
+                 >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                </Image.GestureRecognizers>
+            </Image>
+                <Label Text="CBRNE Resources" HorizontalTextAlignment="Center" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+
+                <Image Source="Tool.png"  
+                   Grid.Row="1"  
+                   Grid.Column="1"  
+                   BackgroundColor="White" 
+                   WidthRequest="60" HeightRequest="60" 
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+                </Image.GestureRecognizers>
+            </Image>
+                <Label Text="Tools" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Vertical">
+
+            <Image Source="medicine.png"  
+                   Grid.Row="2"  
+                   Grid.Column="0"  
+                   BackgroundColor="White"  
+                   WidthRequest="60" HeightRequest="60" 
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+                </Image.GestureRecognizers>
+            </Image>
+                <Label Text="Drugs" HorizontalTextAlignment="Center" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Vertical">
+                <Image Source="location.png"  
+                   Grid.Row="2"  
+                   Grid.Column="1"  
+                   BackgroundColor="White"  
+                   WidthRequest="60" HeightRequest="60" 
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
+                </Image.GestureRecognizers>
+            </Image>
+                <Label Text="Locations" HorizontalTextAlignment="Center" />
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

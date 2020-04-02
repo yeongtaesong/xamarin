@@ -1,0 +1,50 @@
+{
+  "images": [
+    {
+      "appearances": [],
+      "idiom": "iphone"
+    },
+    {
+      "appearances": [],
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "Chart.png"
+    },
+    {
+      "appearances": [],
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [],
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [],
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [],
+      "scale": "3x",
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [],
+      "scale": "1x",
+      "idiom": "iphone",
+      "filename": "Chart2.png"
+    },
+    {
+      "appearances": [],
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "Chart1.png"
+    }
+  ],
+  "properties": {},
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

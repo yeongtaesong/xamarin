@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0y/TuFnO19P3Q9oZhw+MegBtgKBby0hK8gfYY7VEBXZB+oIP0i2TLuJcOIwzO3r8ajzITQGiLGI7H7WRLG/iXw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.iOS\\miemss_xamarin.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anali\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.4.0.991265\\xamarin.forms.4.4.0.991265.nupkg.sha512"
+  ],
+  "logs": []
+}
