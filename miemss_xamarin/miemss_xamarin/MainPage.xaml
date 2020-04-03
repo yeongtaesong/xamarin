@@ -114,7 +114,7 @@
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Label Text="Calendar" HorizontalTextAlignment="Center" />
+                <Label Text="Calendar of Events" HorizontalTextAlignment="Center" />
             </StackLayout>
 
 

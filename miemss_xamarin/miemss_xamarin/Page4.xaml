@@ -9,8 +9,9 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Tools- Dosage Calculator"
-                VerticalOptions="CenterAndExpand" 
+              VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+     
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

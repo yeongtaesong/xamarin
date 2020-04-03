@@ -15,6 +15,7 @@ namespace miemss_xamarin
         public Page3()
         {
             InitializeComponent();
+            WebView.Source = "https://www.miemss.org/home/infectious-diseases";
         }
     }
 }
