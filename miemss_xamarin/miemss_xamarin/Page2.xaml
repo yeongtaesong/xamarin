@@ -4,10 +4,11 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             Title="Hospital Directory"
              x:Class="miemss_xamarin.Page2">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Hospital Directory"
+            <Label Text="Hospital Directory - Coming Soon"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

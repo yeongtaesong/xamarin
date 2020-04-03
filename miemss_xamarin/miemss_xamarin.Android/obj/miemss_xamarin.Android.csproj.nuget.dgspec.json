@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.Android\\miemss_xamarin.Android.csproj": {}
+    "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin.Android\\miemss_xamarin.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.Android\\miemss_xamarin.Android.csproj": {
+    "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin.Android\\miemss_xamarin.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.Android\\miemss_xamarin.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin.Android\\miemss_xamarin.Android.csproj",
         "projectName": "miemss_xamarin.Android",
-        "projectPath": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.Android\\miemss_xamarin.Android.csproj",
-        "packagesPath": "C:\\Users\\anali\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.Android\\obj\\",
+        "projectPath": "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin.Android\\miemss_xamarin.Android.csproj",
+        "packagesPath": "C:\\Users\\Jinie Pak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\anali\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jinie Pak\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj": {
-                "projectPath": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj"
+              "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj": {
+                "projectPath": "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj"
               }
             }
           }
@@ -54,20 +54,20 @@
         }
       }
     },
-    "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj": {
+    "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj",
+        "projectUniqueName": "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj",
         "projectName": "miemss_xamarin",
-        "projectPath": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj",
-        "packagesPath": "C:\\Users\\anali\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin\\obj\\",
+        "projectPath": "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj",
+        "packagesPath": "C:\\Users\\Jinie Pak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\anali\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jinie Pak\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -117,7 +117,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

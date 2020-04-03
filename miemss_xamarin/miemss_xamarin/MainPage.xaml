@@ -100,7 +100,7 @@
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
                 </Image.GestureRecognizers>
             </Image>
-                <Label Text="Locations" HorizontalTextAlignment="Center" />
+                <Label Text="Regions" HorizontalTextAlignment="Center" />
             </StackLayout>
 
             <StackLayout Grid.Row="3" Grid.Column="0" Orientation="Vertical">

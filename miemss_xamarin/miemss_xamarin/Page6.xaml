@@ -4,10 +4,11 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             Title="Regions"
              x:Class="miemss_xamarin.Page6">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="EMS Regions"
+            <Label Text="MD Regions"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
