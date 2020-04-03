@@ -1,0 +1,66 @@
+{
+  "images": [
+    {
+      "appearances": [],
+      "scale": "1x",
+      "idiom": "universal"
+    },
+    {
+      "appearances": [],
+      "scale": "2x",
+      "idiom": "universal"
+    },
+    {
+      "appearances": [],
+      "scale": "3x",
+      "idiom": "universal",
+      "filename": "splashscreen.png"
+    },
+    {
+      "appearances": [],
+      "idiom": "iphone"
+    },
+    {
+      "appearances": [],
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [],
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [],
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [],
+      "scale": "3x",
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [],
+      "scale": "1x",
+      "idiom": "iphone",
+      "filename": "miemss2.jpg"
+    },
+    {
+      "appearances": [],
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "miemss1.jpg"
+    },
+    {
+      "appearances": [],
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "miemss.jpg"
+    }
+  ],
+  "properties": {},
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}
