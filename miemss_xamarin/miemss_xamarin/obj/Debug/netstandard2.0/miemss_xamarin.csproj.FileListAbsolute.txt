@@ -38,3 +38,4 @@ C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netst
 C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\miemss_xamarin.dll
 C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\ref\miemss_xamarin.dll
 C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\miemss_xamarin.pdb
+C:\Users\anali\repo\miemss_xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\CalendarPage.xaml.g.cs
