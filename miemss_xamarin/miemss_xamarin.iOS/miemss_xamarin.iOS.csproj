@@ -210,6 +210,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\page1.html" />
+    <BundleResource Include="Resources\HTML\page1.html" />
   </ItemGroup>
 </Project>

@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              Title="MIEMSS_Navigator"
-             x:Class="miemss_xamarin.MainPage">
+             x:Class="miemss_xamarin.MainPage"
+             BackgroundColor="white">
 
     <ContentPage.Content>
 
