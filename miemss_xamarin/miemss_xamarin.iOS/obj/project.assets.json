@@ -1018,24 +1018,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jinie Pak\\.nuget\\packages\\": {},
+    "C:\\Users\\anali\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin.iOS\\miemss_xamarin.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.iOS\\miemss_xamarin.iOS.csproj",
       "projectName": "miemss_xamarin.iOS",
-      "projectPath": "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin.iOS\\miemss_xamarin.iOS.csproj",
-      "packagesPath": "C:\\Users\\Jinie Pak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin.iOS\\obj\\",
+      "projectPath": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.iOS\\miemss_xamarin.iOS.csproj",
+      "packagesPath": "C:\\Users\\anali\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jinie Pak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\anali\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1049,8 +1049,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj": {
-              "projectPath": "C:\\Users\\Jinie Pak\\Documents\\GitHub\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj"
+            "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj": {
+              "projectPath": "C:\\Users\\anali\\repo\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj"
             }
           }
         }

@@ -48,4 +48,10 @@
   <ItemGroup>
     <Folder Include="controller\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

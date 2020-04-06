@@ -7,11 +7,12 @@
              Title="EMS Protocols"
              x:Class="miemss_xamarin.Page1">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="EMS Protocols"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="#505050" 
+             VerticalOptions="FillAndExpand"  
+             HorizontalOptions="FillAndExpand">
+            <WebView x:Name="WebView" VerticalOptions="FillAndExpand" />
         </StackLayout>
+
     </ContentPage.Content>
     
 </ContentPage>

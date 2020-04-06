@@ -66,6 +66,7 @@
     <AppExtensionDebugBundleId />
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BaseUrl_iOS.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -207,5 +208,8 @@
       <Project>{73F2CA90-646D-45E3-AF27-239A4721E5CD}</Project>
       <Name>miemss_xamarin</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\page1.html" />
   </ItemGroup>
 </Project>
