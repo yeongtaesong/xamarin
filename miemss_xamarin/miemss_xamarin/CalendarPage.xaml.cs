@@ -15,6 +15,7 @@ namespace miemss_xamarin
         public CalendarPage()
         {
             InitializeComponent();
+            // link to website - can use direct weblink
             WebView.Source = "https://www.miemss.org/home/events-calendar";
         
         }

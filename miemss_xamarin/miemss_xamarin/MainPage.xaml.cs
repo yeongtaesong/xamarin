@@ -45,6 +45,7 @@ namespace miemss_xamarin
             await Navigation.PushAsync(new Page6());
         }
 
+        //Button for Calendar 
         private async void TapGestureRecognizer_Tapped_6(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CalendarPage());
