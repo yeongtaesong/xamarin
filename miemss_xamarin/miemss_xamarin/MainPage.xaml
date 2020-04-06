@@ -105,7 +105,7 @@
             </StackLayout>
 
             <StackLayout Grid.Row="3" Grid.Column="0" Orientation="Vertical">
-                <Image Source="location.png"  
+                <Image Source="calendar.png"  
                    Grid.Row="2"  
                    Grid.Column="1"  
                    BackgroundColor="White"  
