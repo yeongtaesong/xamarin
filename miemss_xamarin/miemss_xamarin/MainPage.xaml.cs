@@ -25,10 +25,10 @@ namespace miemss_xamarin
         {
             await Navigation.PushAsync(new Page2());
         }
-
+        //CBRNE Resources
         private async void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Page3());
+            await Navigation.PushAsync(new ResourcePage());
         }
 
         private async void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace miemss_xamarin
 
         private async void TapGestureRecognizer_Tapped_5(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Page6());
+            await Navigation.PushAsync(new RegionPage());
         }
 
         //Button for Calendar 

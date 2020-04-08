@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <!--TODO: create custom XAML layout to improve modularity. Page has too much information.-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Resources"
+             x:Class="miemss_xamarin.ResourcePage"
+             BackgroundColor="white">
+    <ContentPage.Content>
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10,0,0,0">
+                            <Image Source="arrow.png" WidthRequest="25" HeightRequest="25" />
+                            <Label Text="Dispatch/Responder Action" FontSize="Medium" Padding="10,11,0,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10,0,0,0">
+                            <Image Source="arrow.png" WidthRequest="25" HeightRequest="25" />
+                            <Label Text="Standard Precautions" FontSize="Medium" Padding="10,11,0,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10,0,0,0">
+                            <Image Source="arrow.png" WidthRequest="25" HeightRequest="25" />
+                            <Label Text="Contact Precautions" FontSize="Medium" Padding="10,11,0,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10,0,0,0">
+                            <Image Source="arrow.png" WidthRequest="25" HeightRequest="25" />
+                            <Label Text="Airborne Precautions" FontSize="Medium" Padding="10,11,0,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10,0,0,0">
+                            <Image Source="arrow.png" WidthRequest="25" HeightRequest="25" />
+                            <Label Text="Speciality Respeiratory Precautions" FontSize="Medium" Padding="10,11,0,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10,0,0,0">
+                            <Image Source="arrow.png" WidthRequest="25" HeightRequest="25" />
+                            <Label Text="EVD-VHF Precautions" FontSize="Medium" Padding="10,11,0,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10,0,0,0">
+                            <Image Source="arrow.png" WidthRequest="25" HeightRequest="25" />
+                            <Label Text="Resources/Special Considerations" FontSize="Medium" Padding="10,11,0,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+    </ContentPage.Content>
+</ContentPage>

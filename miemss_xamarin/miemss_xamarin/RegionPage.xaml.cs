@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace miemss_xamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page6 : ContentPage
+    public partial class RegionPage : ContentPage
     {
-        public Page6()
+        public RegionPage()
         {
             InitializeComponent();
         }
