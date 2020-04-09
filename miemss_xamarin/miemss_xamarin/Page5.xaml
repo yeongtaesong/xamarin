@@ -8,9 +8,27 @@
              x:Class="miemss_xamarin.Page5">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Drugs"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="listView" ItemsSource="{Binding Drugs}" HasUnevenRows="true" ItemTapped="OnListViewItemTapped" ItemSelected="OnListViewItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                   
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                   
+                                </Grid.ColumnDefinitions>
+                            
+                                <Label Grid.Column="1" Text="{Binding Name}" StyleClass="mainPageTitle" />
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Detail}" StyleClass="mainPageSubtitle" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -8,9 +8,7 @@
              x:Class="miemss_xamarin.Page2">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Hospital Directory - Coming Soon"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <WebView x:Name="WebView" VerticalOptions="FillAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
