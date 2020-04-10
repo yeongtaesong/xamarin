@@ -32,7 +32,7 @@ namespace miemss_xamarin
         {
            //See IBaseUrl.cs for information on using IBaseUrl interface
             string path = DependencyService.Get<IBaseUrl>().Get();
-            string url = Path.Combine(path, "HTML/playbook.html");
+            string url = Path.Combine(path, "HTML/protocols.html");
             WebView.Source = url;
         }
 

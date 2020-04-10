@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Dynamic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,37 +16,17 @@ namespace miemss_xamarin
     {
         public ResourcePage()
         {
-            bool isVisibleBinding = new IsVisible().getBool();
+          
             InitializeComponent();
+            initBrowser();
+        }
+        public void initBrowser()
+        {
+            //See IBaseUrl.cs for information on using IBaseUrl interface
+            string path = DependencyService.Get<IBaseUrl>().Get();
+            string url = Path.Combine(path, "HTML/playbook.html");
+            WebView.Source = url;
         }
     }
 
-    class IsVisible
-    {
-        private bool _isVisible;
-
-        public IsVisible()
-        {
-            _isVisible = true;
-        }
-
-        public void setBool()
-        {
-            if (_isVisible)
-            {
-                _isVisible = false;
-            } else
-            {
-                _isVisible = true;
-            }
-        }
-
-        public bool getBool()
-        {
-            return _isVisible;
-        }
-       
-
-
-    }
 }

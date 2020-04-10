@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<softchalkdata>
+  <version>7.01.17</version>
+  <type>lesson</type>
+  <!-- type values: lesson, course -->
+  <packaging>none</packaging>
+  <!-- packaging values: none, zip, scorm 1.2, scorm 2004, common cartridge, scorecenter -->
+</softchalkdata>
