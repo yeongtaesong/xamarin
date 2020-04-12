@@ -23,9 +23,13 @@ namespace miemss_xamarin.Models
                 {
                     _expanded = value;
                     OnPropertyChanged("Expanded");
+                    OnPropertyChanged("StateIcon");
                 }
             }
         }
+
+        public string StateIcon
+        { get; set;}
 
         public ResourceGroup(string heading)
         {

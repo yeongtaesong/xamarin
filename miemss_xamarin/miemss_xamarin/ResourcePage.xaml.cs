@@ -44,6 +44,7 @@ namespace miemss_xamarin
             {
                 //assigns only the heading to the ResourceGroup - will only display heading on page initialization
                 ResourceGroup newGroup = new ResourceGroup(resource.Heading);
+                newGroup.StateIcon = "expand.png";
 
                 //if button is pressed, expanded = true and sections will be added
                 if (resource.Expanded)
@@ -52,6 +53,7 @@ namespace miemss_xamarin
                     {
                         newGroup.Add(section);
                     }
+                    newGroup.StateIcon = "collapse.png";
                 }
                 _expandedGroups.Add(newGroup);
             }
