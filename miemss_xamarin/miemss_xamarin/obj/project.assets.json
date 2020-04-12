@@ -575,11 +575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anali\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj",
+      "projectUniqueName": "C:\\Users\\anali\\repo\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj",
       "projectName": "miemss_xamarin",
-      "projectPath": "C:\\Users\\anali\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj",
+      "projectPath": "C:\\Users\\anali\\repo\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj",
       "packagesPath": "C:\\Users\\anali\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anali\\xamarin\\miemss_xamarin\\miemss_xamarin\\obj\\",
+      "outputPath": "C:\\Users\\anali\\repo\\xamarin\\miemss_xamarin\\miemss_xamarin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NLE5rIyDxuGvHp99npSdwX4lPdLaVjEUcMq1JyDgqFCykdx41KziMItPUsH2ewrQ+MyUqpbf8Lcpm8zXdfbW1Q==",
+  "dgSpecHash": "n5TT92joGNIbaB8DnUn/cZIYwFWq7C8Y0+fP9+yKKyNdFArgzEWxeN6NwjcE8OBXNq69dfFPfcwEpc0B02bFTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\anali\\xamarin\\miemss_xamarin\\miemss_xamarin.Android\\miemss_xamarin.Android.csproj",
+  "projectFilePath": "C:\\Users\\anali\\repo\\xamarin\\miemss_xamarin\\miemss_xamarin.Android\\miemss_xamarin.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anali\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",

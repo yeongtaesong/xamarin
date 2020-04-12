@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--To edit List of Resources, go to ResourceGroup.cs-->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -7,8 +8,32 @@
              Title="CBRNE Resources"
              x:Class="miemss_xamarin.ResourcePage">
     <ContentPage.Content>
-        <StackLayout>
-            <WebView x:Name="WebView" VerticalOptions="FillAndExpand" />
-        </StackLayout>
+
+        <ListView x:Name="ResourceView"
+                  IsGroupingEnabled="true">
+            <!-- Section Cell-->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding Name}" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <!--Heading Cell-->
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" WidthRequest="50">
+                            <Button Image="expand.png" 
+                                    Clicked="HeaderTapped"
+                                    BackgroundColor="Transparent"
+                                    CommandParameter="{Binding .}"/>
+                            <Label Text="{Binding Heading}" FontSize="Medium"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
+
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

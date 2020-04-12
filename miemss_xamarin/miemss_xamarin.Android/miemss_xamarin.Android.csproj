@@ -134,7 +134,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\arrow.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\expand.png" />
+  </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\HTML\healthcare\ada-access.gif" />
   </ItemGroup>
@@ -434,6 +436,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\HTML\protocols.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\collapse.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tB0CYKhZqEN9awql/PL6L1vkYk4cMz4F/3ncxE7H8a72YEpPlggJD+MlUafj+J3ycvhfFhzLQLouvUP1mSnC5A==",
+  "dgSpecHash": "wfLE284p+ZN/r4F3oYyliEw9so+ralmnBf4EwdwJwlR09oaY9N+C8dhF6DXBzHCRr1gFwMcPa65T3/mhtgRLTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\anali\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj",
+  "projectFilePath": "C:\\Users\\anali\\repo\\xamarin\\miemss_xamarin\\miemss_xamarin\\miemss_xamarin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anali\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\anali\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
