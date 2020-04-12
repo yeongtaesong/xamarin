@@ -8,21 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("miemss_xamarin.ProtocolsPage.xaml", "ProtocolsPage.xaml", typeof(global::miemss_xamarin.Page1))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("miemss_xamarin.ProtocolsPage.xaml", "ProtocolsPage.xaml", typeof(global::miemss_xamarin.ProtocolsPage))]
 
 namespace miemss_xamarin {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("ProtocolsPage.xaml")]
-    public partial class Page1 : global::Xamarin.Forms.ContentPage {
+    public partial class ProtocolsPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.WebView WebView;
+        private global::Xamarin.Forms.ListView ProtocolsView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page1));
-            WebView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.WebView>(this, "WebView");
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ProtocolsPage));
+            ProtocolsView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "ProtocolsView");
         }
     }
 }

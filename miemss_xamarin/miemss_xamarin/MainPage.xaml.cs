@@ -18,7 +18,7 @@ namespace miemss_xamarin
         }
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Page1());
+            await Navigation.PushAsync(new ProtocolsPage());
         }
 
         private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)

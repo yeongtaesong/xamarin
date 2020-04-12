@@ -92,7 +92,6 @@ C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2
 C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\CalendarPage.xaml.g.cs
 C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\DrugDetailPage.xaml.g.cs
 C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\Page1.xaml.g.cs
 C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\Page2.xaml.g.cs
 C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\Page4.xaml.g.cs
 C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\Page5.xaml.g.cs
@@ -106,3 +105,4 @@ C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2
 C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\miemss_xamarin.dll
 C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\ref\miemss_xamarin.dll
 C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\miemss_xamarin.pdb
+C:\Users\anali\repo\xamarin\miemss_xamarin\miemss_xamarin\obj\Debug\netstandard2.0\ProtocolsPage.xaml.g.cs
