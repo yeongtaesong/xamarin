@@ -8,7 +8,23 @@
              x:Class="miemss_xamarin.Page2">
     <ContentPage.Content>
         <StackLayout>
-            <WebView x:Name="WebView" VerticalOptions="FillAndExpand" />
-        </StackLayout>
+        <ListView x:Name="listView" ItemsSource="{Binding HospitalContacts}" HasUnevenRows="true" ItemTapped="OnListViewItemTapped" ItemSelected="OnListViewItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Grid.Row="0" Text="{Binding Name}" StyleClass="mainPageTitle" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+              </ListView.ItemTemplate>
+         </ListView>
+      </StackLayout>
     </ContentPage.Content>
 </ContentPage>
