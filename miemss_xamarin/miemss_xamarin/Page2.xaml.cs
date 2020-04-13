@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Essentials;
+﻿
 using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration.WindowsSpecific;
 using Xamarin.Forms.Xaml;
+using miemss_xamarin.Models;
+using ListView = Xamarin.Forms.ListView;
 
 namespace miemss_xamarin
 {
@@ -18,18 +14,24 @@ namespace miemss_xamarin
         {
             InitializeComponent();
 
-            //go to initBrowser() function to change html file name
-            initBrowser();
+            BindingContext = new HospitalContactViewModel();
 
         }
 
-        //Set webview reference to local html file
-        public void initBrowser()
+        void OnListViewItemTapped(object sender, ItemTappedEventArgs e)
         {
-            //See IBaseUrl.cs for information on using IBaseUrl interface
-            string path = DependencyService.Get<IBaseUrl>().Get();
-            string url = Path.Combine(path, "HTML/healthcare/index.html");
-            WebView.Source = url;
+            ((ListView)sender).SelectedItem = null;
+        }
+
+        async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var hospitalcontact = ((ListView)sender).SelectedItem as HospitalContact;
+            if (hospitalcontact != null)
+            {
+                var page = new HospitalContactDetailPage();
+                page.BindingContext = hospitalcontact;
+                await Navigation.PushAsync(page);
+            }
         }
     }
 }
