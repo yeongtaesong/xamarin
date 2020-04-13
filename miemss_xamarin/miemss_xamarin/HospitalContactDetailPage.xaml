@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             mc:Ignorable="d"
+             Title="Hospitals"
+             x:Class="miemss_xamarin.HospitalContactDetailPage">
+    <ContentPage.Content>
+        <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
+            <StackLayout Padding="24,48,24,24" >
+                <Frame HasShadow="False"
+                   HorizontalOptions="Center"
+                   Padding="10"
+                   WidthRequest="80"
+                   HeightRequest="80"
+                   CornerRadius="20"
+                   IsClippedToBounds="True">
+                    <Image Source="?.jpeg"/>
+                </Frame>
+                <Label HorizontalOptions="Center"
+                   Text="{Binding Name}" FontSize="Large" HorizontalTextAlignment="Center" Margin="10" />
+                <Grid RowSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <!--Address & Map-->
+                    <StackLayout Grid.Column="0" Grid.Row="0" >
+                        <Label Text="Address:"/>
+                    </StackLayout>
+                    <ImageButton Source="navigate.png" Grid.Column="2" Grid.Row="0" 
+                          BackgroundColor="Transparent" d:BackgroundColor="" />
+                    <Label Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding Address}"/>
+                   
+                    <!--Phone & Call -->
+                    <ImageButton Source="phone.png" Grid.Column="2" Grid.Row="1" VerticalOptions="Center"
+                          BackgroundColor="Transparent" d:BackgroundColor=""/>
+                    <Label Grid.Column="1" Grid.Row="1"                          
+                    VerticalOptions="Center"
+                    Text="{Binding PhoneNum}"/>
+                    <Label Grid.Column="0" Grid.Row="1" Text="Phone:" />
+                    <ImageButton Source="sms.png" Grid.Row="1" Grid.Column="2" VerticalOptions="Center"
+                        BackgroundColor="Transparent" d:BackgroundColor=""/>
+
+                    <!--Website-->
+                    <Label  Grid.Column="0" Grid.Row="2" Text="Website:"/>
+                    <StackLayout Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"  VerticalOptions="Center">
+                        <Label Text="{Binding Website}"  />
+                    </StackLayout>
+                    <!--Type-->
+                    <Label  Grid.Column="0" Grid.Row="3" Text="Type:"/>
+                    <StackLayout Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" VerticalOptions="Center">
+                        <Label Text="{Binding Type}"  />
+                    </StackLayout>
+                    <!--Specialty-->
+                    <Label  Grid.Column="0" Grid.Row="4" Text="Specialty:"/>
+                    <StackLayout Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" VerticalOptions="Center">
+                        <Label Text="{Binding Specialty}"  />
+                    </StackLayout>
+                    <!--Burn-->
+                    <Label  Grid.Column="0" Grid.Row="5" Text="Burn:"/>
+                    <StackLayout Grid.Column="1" Grid.Row="5" VerticalOptions="Center">
+                        <Label Text="{Binding Burn}" />
+                    </StackLayout>
+                    <!--Stroke-->
+                    <Label  Grid.Column="0" Grid.Row="6" Text="Stroke:"/>
+                    <StackLayout Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2" VerticalOptions="Center">
+                        <Label Text="{Binding Stroke}"  />
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </pancake:PancakeView>
+    </ContentPage.Content>
+</ContentPage>
