@@ -18,7 +18,9 @@ namespace miemss_xamarin
         public HospitalContactDetailPage()
         {
             InitializeComponent();
+
         }
 
+       
     }
 }

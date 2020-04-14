@@ -6,21 +6,21 @@
     },
     {
       "appearances": [],
-      "scale": "3x",
-      "idiom": "iphone",
-      "filename": "Tool.png"
-    },
-    {
-      "appearances": [],
       "scale": "1x",
       "idiom": "iphone",
-      "filename": "Tool2.png"
+      "filename": "tool.png"
     },
     {
       "appearances": [],
       "scale": "2x",
       "idiom": "iphone",
-      "filename": "Tool1.png"
+      "filename": "tool1.png"
+    },
+    {
+      "appearances": [],
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "tool2.png"
     }
   ],
   "properties": {},

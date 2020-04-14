@@ -74,43 +74,61 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Assets.xcassets\Chart.imageset\Chart.png">
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Chart.imageset\Chart1.png">
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\Calendar.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Chart.imageset\Chart2.png">
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\Calendar1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Chart.imageset\Contents.json">
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\Calendar2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\EMS.imageset\Contents.json">
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\EMS.imageset\EMS.png">
+    <ImageAsset Include="Assets.xcassets\Directory.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\EMS.imageset\EMS1.png">
+    <ImageAsset Include="Assets.xcassets\Directory.imageset\Directory.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\EMS.imageset\EMS2.png">
+    <ImageAsset Include="Assets.xcassets\Directory.imageset\Directory1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Hospital.imageset\Contents.json">
+    <ImageAsset Include="Assets.xcassets\Directory.imageset\Directory2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Hospital.imageset\Hospital.png">
+    <ImageAsset Include="Assets.xcassets\drug.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Hospital.imageset\Hospital1.png">
+    <ImageAsset Include="Assets.xcassets\drug.imageset\drug.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Hospital.imageset\Hospital2.png">
+    <ImageAsset Include="Assets.xcassets\drug.imageset\drug1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\drug.imageset\drug2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems.imageset\ems.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems.imageset\ems1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems.imageset\ems2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\location.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\location.imageset\location.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\location.imageset\location1.png">
@@ -119,37 +137,31 @@
     <ImageAsset Include="Assets.xcassets\location.imageset\location2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\medicine.imageset\medicine.png">
+    <ImageAsset Include="Assets.xcassets\resource.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\medicine.imageset\medicine1.png">
+    <ImageAsset Include="Assets.xcassets\resource.imageset\resource.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\medicine.imageset\medicine2.png">
+    <ImageAsset Include="Assets.xcassets\resource.imageset\resource1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Tool.imageset\Contents.json">
+    <ImageAsset Include="Assets.xcassets\resource.imageset\resource2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\medicine.imageset\Contents.json">
+    <ImageAsset Include="Assets.xcassets\tool.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\location.imageset\location.png">
+    <ImageAsset Include="Assets.xcassets\tool.imageset\tool.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Tool.imageset\Tool.png">
+    <ImageAsset Include="Assets.xcassets\tool.imageset\tool1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Tool.imageset\Tool1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Tool.imageset\Tool2.png">
+    <ImageAsset Include="Assets.xcassets\tool.imageset\tool2.png">
       <Visible>false</Visible>
     </ImageAsset>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
       <Visible>false</Visible>
     </ImageAsset>

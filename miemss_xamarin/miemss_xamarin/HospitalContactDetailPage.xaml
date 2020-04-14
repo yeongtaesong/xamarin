@@ -9,13 +9,13 @@
              x:Class="miemss_xamarin.HospitalContactDetailPage">
     <ContentPage.Content>
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
-            <StackLayout Padding="24,48,24,24" >
+            <StackLayout Padding="24,24,24,24" >
                 <Frame HasShadow="False"
                    HorizontalOptions="Center"
                    Padding="10"
-                   WidthRequest="80"
-                   HeightRequest="80"
-                   CornerRadius="20"
+                   WidthRequest="50"
+                   HeightRequest="50"
+                   CornerRadius="40"
                    IsClippedToBounds="True">
                     <Image Source="?.jpeg"/>
                 </Frame>
@@ -35,42 +35,37 @@
                     <StackLayout Grid.Column="0" Grid.Row="0" >
                         <Label Text="Address:"/>
                     </StackLayout>
+
                     <ImageButton Source="navigate.png" Grid.Column="2" Grid.Row="0" 
                           BackgroundColor="Transparent" d:BackgroundColor="" />
                     <Label Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding Address}"/>
-                   
+
                     <!--Phone & Call -->
-                    <ImageButton Source="phone.png" Grid.Column="2" Grid.Row="1" VerticalOptions="Center"
-                          BackgroundColor="Transparent" d:BackgroundColor=""/>
-                    <Label Grid.Column="1" Grid.Row="1"                          
-                    VerticalOptions="Center"
-                    Text="{Binding PhoneNum}"/>
-                    <Label Grid.Column="0" Grid.Row="1" Text="Phone:" />
-                    <ImageButton Source="sms.png" Grid.Row="1" Grid.Column="2" VerticalOptions="Center"
-                        BackgroundColor="Transparent" d:BackgroundColor=""/>
+                    <Label Grid.Column="0" Grid.Row="1" VerticalOptions="Center" Text="Phone:" />
+                    <Label Grid.Column="1" Grid.Row="1" VerticalOptions="Center" Text="{Binding PhoneNum}" />
 
                     <!--Website-->
-                    <Label  Grid.Column="0" Grid.Row="2" Text="Website:"/>
+                    <Label  Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Text="Website:"/>
                     <StackLayout Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"  VerticalOptions="Center">
                         <Label Text="{Binding Website}"  />
                     </StackLayout>
                     <!--Type-->
-                    <Label  Grid.Column="0" Grid.Row="3" Text="Type:"/>
+                    <Label  Grid.Column="0" Grid.Row="3" VerticalOptions="Center" Text="Type:"/>
                     <StackLayout Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" VerticalOptions="Center">
                         <Label Text="{Binding Type}"  />
                     </StackLayout>
                     <!--Specialty-->
-                    <Label  Grid.Column="0" Grid.Row="4" Text="Specialty:"/>
+                    <Label  Grid.Column="0" Grid.Row="4" VerticalOptions="Center" Text="Specialty:"/>
                     <StackLayout Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" VerticalOptions="Center">
                         <Label Text="{Binding Specialty}"  />
                     </StackLayout>
                     <!--Burn-->
-                    <Label  Grid.Column="0" Grid.Row="5" Text="Burn:"/>
+                    <Label  Grid.Column="0" Grid.Row="5" VerticalOptions="Center" Text="Burn:"/>
                     <StackLayout Grid.Column="1" Grid.Row="5" VerticalOptions="Center">
                         <Label Text="{Binding Burn}" />
                     </StackLayout>
                     <!--Stroke-->
-                    <Label  Grid.Column="0" Grid.Row="6" Text="Stroke:"/>
+                    <Label  Grid.Column="0" Grid.Row="6" VerticalOptions="Center" Text="Stroke:"/>
                     <StackLayout Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2" VerticalOptions="Center">
                         <Label Text="{Binding Stroke}"  />
                     </StackLayout>

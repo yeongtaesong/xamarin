@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              Title="MIEMSS_Navigator"
              x:Class="miemss_xamarin.MainPage"
-             BackgroundColor="white">
+             BackgroundColor="White">
 
     <ContentPage.Content>
 
@@ -21,10 +21,10 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions >
             <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Vertical" Padding=" 10, 15, 0, 0">
-                <Image Source="EMS.png"  
+                <Image Source="ems.png"  
                    Grid.Row="0"  
                    Grid.Column="0"  
-                   BackgroundColor="white"
+                   BackgroundColor="Transparent"
                    WidthRequest="60" HeightRequest="60" >
                 <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
@@ -34,12 +34,12 @@
             </StackLayout>
 
             <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" Padding=" 10, 15, 0, 0">
-                <Image Source="Hospital.png"  
+                <Image Source="Directory.png"  
                        Grid.Row="0"  
                        Grid.Column="1" 
                        BackgroundColor="White" 
-                       WidthRequest="60" HeightRequest="60" 
-                 >
+                       WidthRequest="60" HeightRequest="60"
+                >
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
                     </Image.GestureRecognizers>
@@ -48,7 +48,7 @@
             </StackLayout>
             
             <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Vertical">
-                <Image Source="Chart.png"  
+                <Image Source="resource.png"  
                    Grid.Row="1"  
                    Grid.Column="0"  
                    BackgroundColor="White" 
@@ -63,7 +63,7 @@
 
             <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Vertical">
 
-                <Image Source="Tool.png"  
+                <Image Source="tool.png"  
                    Grid.Row="1"  
                    Grid.Column="1"  
                    BackgroundColor="White" 
@@ -77,7 +77,7 @@
             </StackLayout>
             <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Vertical">
 
-            <Image Source="medicine.png"  
+            <Image Source="drug.png"  
                    Grid.Row="2"  
                    Grid.Column="0"  
                    BackgroundColor="White"  
@@ -105,7 +105,7 @@
             </StackLayout>
 
             <StackLayout Grid.Row="3" Grid.Column="0" Orientation="Vertical">
-                <Image Source="calendar.png"  
+                <Image Source="Calendar.png"  
                    Grid.Row="2"  
                    Grid.Column="1"  
                    BackgroundColor="White"  
@@ -117,8 +117,6 @@
                 </Image>
                 <Label Text="Calendar of Events" HorizontalTextAlignment="Center" />
             </StackLayout>
-
-
         </Grid>
     </ContentPage.Content>
 

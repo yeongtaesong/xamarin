@@ -8,19 +8,19 @@
       "appearances": [],
       "scale": "1x",
       "idiom": "iphone",
-      "filename": "calendar.png"
+      "filename": "Calendar.png"
     },
     {
       "appearances": [],
       "scale": "2x",
       "idiom": "iphone",
-      "filename": "calendar1.png"
+      "filename": "Calendar1.png"
     },
     {
       "appearances": [],
       "scale": "3x",
       "idiom": "iphone",
-      "filename": "calendar2.png"
+      "filename": "Calendar2.png"
     }
   ],
   "properties": {},
