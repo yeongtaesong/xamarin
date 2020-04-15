@@ -7,5 +7,6 @@ namespace miemss_xamarin.Models
     class Section
     {
         public string Name { get; set; }
+        public string Path { get; set; }
     }
 }

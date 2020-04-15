@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 using System.Text;
 using System.Xml.Schema;
+using Xamarin.Forms;
 
 namespace miemss_xamarin.Models
 {
@@ -29,7 +31,7 @@ namespace miemss_xamarin.Models
         }
 
         public string StateIcon
-        { get; set;}
+        { get; set; }
 
         public ResourceGroup(string heading)
         {
@@ -40,47 +42,53 @@ namespace miemss_xamarin.Models
 
         static ResourceGroup()
         {
+
+            string path = DependencyService.Get<IBaseUrl>().Get();
+            string url = Path.Combine(path, "HTML/playbook/");
+
             List<ResourceGroup> Groups = new List<ResourceGroup>
             {
                 new ResourceGroup("Dispatch/Responder Actions")
                 {
-                    new Section {Name = "General Principles - Call Taking/Dispatch"},
-                    new Section {Name = "General Principles - Response"},
+                    new Section {Name = "General Principles - Call Taking/Dispatch", Path=(url+"EMS_infectious_playbook3.html") },
+                    new Section {Name = "General Principles - Response", Path=(url+"EMS_infectious_playbook4.html")},
+                    new Section {Name = "Dispatch Screening Algorithm", Path=(url+"EMS_infectious_playbook5.html")},
+                    new Section {Name = "General PPE Considerations", Path=(url+"EMS_infectious_playbook7.html")}
                 },
                 new ResourceGroup("Standard Precautions")
                 {
-                    new Section {Name = "Example Diseases"},
-                    new Section {Name = "Goal of Precautions"},
+                    new Section {Name = "Example Diseases", Path="index.html"},
+                    new Section {Name = "Goal of Precautions", Path="index.html"},
                 },
                 new ResourceGroup("Contact Precautions")
                 {
-                    new Section {Name = "Example Diseases"},
-                    new Section {Name = "Goal of Precautions"},
+                    new Section {Name = "Example Diseases", Path="index.html"},
+                    new Section {Name = "Goal of Precautions", Path="index.html"},
                 },
                 new ResourceGroup("Droplet Precautions")
                 {
-                    new Section {Name = "Example Diseases"},
-                    new Section {Name = "Goal of Precautions"},
+                    new Section {Name = "Example Diseases", Path="index.html"},
+                    new Section {Name = "Goal of Precautions", Path="index.html"},
                 },
                 new ResourceGroup("Airborne Precautions")
                 {
-                    new Section {Name = "Example Diseases"},
-                    new Section {Name = "Goal of Precautions"},
+                    new Section {Name = "Example Diseases", Path="index.html"},
+                    new Section {Name = "Goal of Precautions", Path="index.html"},
                 },
                 new ResourceGroup("Special Respiratory Precautions")
                 {
-                    new Section {Name = "Example Diseases"},
-                    new Section {Name = "Goal of Precautions"},
+                    new Section {Name = "Example Diseases", Path="index.html"},
+                    new Section {Name = "Goal of Precautions", Path="index.html"},
                 },
                 new ResourceGroup("EVD/VHF Precautions")
                 {
-                    new Section {Name = "Example Diseases"},
-                    new Section {Name = "Goal of Precautions"},
+                    new Section {Name = "Example Diseases", Path="index.html"},
+                    new Section {Name = "Goal of Precautions", Path="index.html"},
                 },
                 new ResourceGroup("Resources/Special Considerations")
                 {
-                    new Section {Name = "Hand Hygiene"},
-                    new Section {Name = "Pandemic Influenze"},
+                    new Section {Name = "Hand Hygiene", Path="index.html"},
+                    new Section {Name = "Pandemic Influenze", Path="index.html"},
                 },
             };
             All = Groups;

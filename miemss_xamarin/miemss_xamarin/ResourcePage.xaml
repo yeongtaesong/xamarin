@@ -10,12 +10,15 @@
     <ContentPage.Content>
 
         <ListView x:Name="ResourceView"
-                  IsGroupingEnabled="true">
+                  IsGroupingEnabled="true"
+                  ItemTapped="OnListViewItemTapped" 
+                  ItemSelected="OnListViewItemSelected">
             <!-- Section Cell-->
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <Label Text="{Binding Name}" />
+
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>

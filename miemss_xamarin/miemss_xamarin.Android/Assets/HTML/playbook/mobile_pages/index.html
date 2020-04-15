@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="en" dir="ltr">
+<head>
+<!-- This file is created by SoftChalk LessonBuilder -->
+<!-- LessonBuilder Index Page -->
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="SoftChalk LessonBuilder 7.01.17">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script type="text/javascript">
+var mobile = true;
+
+var queryParams = {};
+if (window.location.search && window.location.search.indexOf("?") == 0) {
+	var query = window.location.search.substring(1);
+	var pairs = query.split("&");
+	var i = 0;
+	var length = pairs.length;
+	var key = null;
+	var value = null;
+	var pair = null;
+	for (i = 0; i < length; i++) {
+		pair = pairs[i];
+		if (pair.indexOf("=") != -1) {
+			key = pair.substring(0, pair.indexOf("="));
+			value = pair.substring(pair.indexOf("=") + 1);
+			queryParams[key] = value;
+		}
+		else {
+			queryParams[pair] = "";
+		}
+	}
+}
+
+function loadFullSite(page) {
+	page = page || null;
+	if (page) {
+		window.location.href = "../index.html?mobile=false&page=" + page;
+	}
+	else {
+		window.location.href = "../index.html?mobile=false";
+	}
+}
+
+function showPage (pageToLoad) {
+	window.main.location.href = pageToLoad;
+}
+
+</script>
+
+<script type="text/javascript">var passing_score = 0;</script>
+<script type="text/javascript">var lessonID = "1586745054927";</script>
+<script type="text/javascript">var lessonRevisionNumber = 5;</script>
+<script type="text/javascript">
+<!--
+	var pageToLoad = null;
+	var containerURL = window.location.href;
+	var params = {}, param = null;
+	var urlParams = containerURL.slice(containerURL.indexOf('?') + 1).split('&');
+	for (var i = 0; i < urlParams.length; i++) {
+		param = urlParams[i].split('=');
+		params[param[0]] = param[1];
+		if (param[0] == 'page') {
+			pageToLoad = param[1];
+		}
+	}
+	window.showPage = function(pageToLoad) {
+		window.main.location.href = pageToLoad;
+	}
+//-->
+</script>
+<!-- scorecenter vars -->
+<script type="text/javascript">
+<!--
+window.onload = function() {
+	if (pageToLoad) {
+		if (pageToLoad && pageToLoad != 'EMS_infectious_playbook.html') {
+			window.showPage(pageToLoad);
+		}
+	}
+	//ScormOnload();
+}
+//-->
+</script>
+<!-- endscID -->
+</head>
+
+<frameset id="SCLBIndexPage" cols="100%,0%">
+	<frame name="main" title="Main Content Window" src="EMS_infectious_playbook.html" scrolling="yes">
+	<frame name="hidden" title="Placeholder File" src="EMS_infectious_playbook_dummy.html">
+</frameset>
+</html>

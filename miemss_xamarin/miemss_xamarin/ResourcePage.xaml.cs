@@ -60,17 +60,22 @@ namespace miemss_xamarin
             ResourceView.ItemsSource = _expandedGroups;
         }
 
-        //Initialize Page so that only headers are showing. Use ResourceGroup.All to obtain original list.
-        private List<ResourceGroup> InitializePage(List<ResourceGroup> List)
+        // METHOD WORK IN PROGRESS
+        async void OnListViewItemTapped(object sender, ItemTappedEventArgs e)
         {
-            List<ResourceGroup> InitialList = new List<ResourceGroup>();
-            foreach (ResourceGroup resource in List)
-            {
-                //Only headers are created - no sections will be shown
-                ResourceGroup temp = new ResourceGroup(resource.Heading);
-                InitialList.Add(temp);
-            }
-            return InitialList;
+
+            var item = (Section)e.Item;
+
+            var page = new DetailedResourcePage();
+            page.BindingContext = item;
+            await Navigation.PushAsync(page);
+
+        }
+
+        async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+
+
         }
 
     }
