@@ -11,7 +11,6 @@
         <StackLayout BackgroundColor="#505050" 
              VerticalOptions="FillAndExpand"  
              HorizontalOptions="FillAndExpand">
-            <Label Text="{Binding Name}"/>
             <WebView x:Name="WebView" VerticalOptions="FillAndExpand" Source="{Binding Path}"/>
         </StackLayout>
     </ContentPage.Content>
