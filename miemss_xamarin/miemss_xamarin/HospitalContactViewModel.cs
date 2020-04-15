@@ -8,8 +8,9 @@ namespace miemss_xamarin
     public class HospitalContactViewModel
     {
         public IList<HospitalContact> HospitalContacts { get; private set; }
-        public HospitalContactViewModel ()
+        public HospitalContactViewModel()
         {
+            HospitalContactData.LoadDatabase();
             HospitalContacts = HospitalContactData.HospitalContacts;
         }
     }

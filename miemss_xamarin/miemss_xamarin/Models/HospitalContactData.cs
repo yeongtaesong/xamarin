@@ -1,62 +1,61 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 
 namespace miemss_xamarin.Models
 {
     public static class HospitalContactData
     {
+        // Enumeration - The index of the hospital record
+        enum HospitalRecordEnum
+        {
+            Name = 0,
+            Address,
+            PhoneNum,
+            Website,
+            Type,
+            Specialty,
+            Burn,
+            Stroke
+        }
         public static IList<HospitalContact> HospitalContacts { get; private set; }
         static HospitalContactData()
-
         {
             HospitalContacts = new List<HospitalContact>();
+        }
 
-            HospitalContacts.Add(new HospitalContact
-            {
-                Name = "Anne Arundel Medical Center",
-                Address = "2001 Medical Pkwy, Annapolis, MD 21401",
-                PhoneNum = "111-223-1234",
-                Website = "www.jhu.edu",
-                Type = "Level I Trauma Center",
-                Specialty = "Cardiac  ",
-                Burn = "YES",
-                Stroke = "YES"
-            });
-            HospitalContacts.Add(new HospitalContact
-            {
-                Name = "Baltimore Washington Medical Center (UM)",
-                Address = "",
-                PhoneNum = "",
-                Website = "",
-                Type = "Level I Trauma Center",
-                Specialty = "  ",
-                Burn = "YES",
-                Stroke = "YES"
-            });
+        public static void LoadDatabase()
+        {
+            // Read each line of the file in the hospital database into a hospital contact list. 
+            // Each element of the hospital list is one line of the file.
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            const string NAME = "miemss_xamarin.Files.hospital_list1.txt";
 
-            HospitalContacts.Add(new HospitalContact
+            using (Stream stream = assembly.GetManifestResourceStream(NAME))
             {
-                Name = "Carroll Hospital Center",
-                Address = "",
-                PhoneNum = "",
-                Website = "",
-                Type = "LeveI Trauma Center",
-                Specialty = "  ",
-                Burn = "YES",
-                Stroke = "YES"
-            });
-            HospitalContacts.Add(new HospitalContact
-            {
-                Name = "Christiana Care Health System",
-                Address = "",
-                PhoneNum = "",
-                Website = "",
-                Type = "LeveI Trauma Center",
-                Specialty = "  ",
-                Burn = "YES",
-                Stroke = "YES"
-            });
+                using (var f = new StreamReader(stream))
+                {
+                    string line = string.Empty;
+
+                    // Populate the hospital contact list by reading each line from the database
+                    while ((line = f.ReadLine()) != null)
+                    {
+                        var records = line.Split(';');
+                        
+                        HospitalContacts.Add(new HospitalContact
+                        {
+                            Name = records[(int)HospitalRecordEnum.Name],
+                            Address = records[(int)HospitalRecordEnum.Address],
+                            PhoneNum = records[(int)HospitalRecordEnum.PhoneNum],
+                            Website = records[(int)HospitalRecordEnum.Website],
+                            Type = records[(int)HospitalRecordEnum.Type],
+                            Specialty = records[(int)HospitalRecordEnum.Specialty],
+                            Burn = records[(int)HospitalRecordEnum.Burn],
+                            Stroke = records[(int)HospitalRecordEnum.Stroke]
+                        });      
+                    }
+                }
+            }
         }
     }
 }

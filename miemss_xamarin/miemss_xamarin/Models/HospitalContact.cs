@@ -4,7 +4,7 @@ using System.Text;
 
 namespace miemss_xamarin.Models
 {
-   public  class HospitalContact
+    public class HospitalContact
     {
         public string Name { get; set; }
         public string Address { get; set; }
@@ -16,3 +16,4 @@ namespace miemss_xamarin.Models
         public string Stroke { get; set; }
     }
 }
+

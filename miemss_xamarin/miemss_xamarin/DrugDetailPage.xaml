@@ -9,9 +9,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-            <Label Text="{Binding Name}" StyleClass="detailPageTitle" />
-
-            <Label Text="{Binding Details}" />
+                <Label Text="{Binding Name}" StyleClass="detailPageTitle" />
+                <Label Text="{Binding Details}" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

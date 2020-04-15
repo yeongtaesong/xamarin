@@ -26,6 +26,14 @@ public class GLTextureView_LogWriter
 	}
 
 
+	public GLTextureView_LogWriter (java.lang.Object p0)
+	{
+		super (p0);
+		if (getClass () == GLTextureView_LogWriter.class)
+			mono.android.TypeManager.Activate ("SkiaSharp.Views.Android.GLTextureView+LogWriter, SkiaSharp.Views.Android", "Java.Lang.Object, Mono.Android", this, new java.lang.Object[] { p0 });
+	}
+
+
 	public void close ()
 	{
 		n_close ();

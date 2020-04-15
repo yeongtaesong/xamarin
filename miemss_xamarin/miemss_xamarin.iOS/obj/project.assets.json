@@ -15,6 +15,15 @@
           "lib/netstandard2.0/MagicGradients.dll": {}
         }
       },
+      "Microsoft.VisualBasic/10.4.0-preview.18571.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/Microsoft.VisualBasic.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.VisualBasic.dll": {}
+        }
+      },
       "SkiaSharp/1.68.0": {
         "type": "package",
         "compile": {
@@ -219,7 +228,7 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.PancakeView/1.3.7": {
+      "Xamarin.Forms.PancakeView/1.4.1-beta": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "3.6.0.220655"
@@ -236,9 +245,10 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MagicGradients": "1.0.0",
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991265",
-          "Xamarin.Forms.PancakeView": "1.3.7"
+          "Microsoft.VisualBasic": "10.4.0-preview.18571.3",
+          "Xamarin.Essentials": "1.5.2",
+          "Xamarin.Forms": "4.6.0.616-pre4",
+          "Xamarin.Forms.PancakeView": "1.4.1-beta"
         },
         "compile": {
           "bin/placeholder/miemss_xamarin.dll": {}
@@ -260,6 +270,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/MagicGradients.dll": {}
+        }
+      },
+      "Microsoft.VisualBasic/10.4.0-preview.18571.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/Microsoft.VisualBasic.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.VisualBasic.dll": {}
         }
       },
       "SkiaSharp/1.68.0": {
@@ -444,7 +463,7 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.PancakeView/1.3.7": {
+      "Xamarin.Forms.PancakeView/1.4.1-beta": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "3.6.0.220655"
@@ -461,9 +480,10 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MagicGradients": "1.0.0",
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991265",
-          "Xamarin.Forms.PancakeView": "1.3.7"
+          "Microsoft.VisualBasic": "10.4.0-preview.18571.3",
+          "Xamarin.Essentials": "1.5.2",
+          "Xamarin.Forms": "4.6.0.616-pre4",
+          "Xamarin.Forms.PancakeView": "1.4.1-beta"
         },
         "compile": {
           "bin/placeholder/miemss_xamarin.dll": {}
@@ -485,6 +505,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/MagicGradients.dll": {}
+        }
+      },
+      "Microsoft.VisualBasic/10.4.0-preview.18571.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/Microsoft.VisualBasic.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.VisualBasic.dll": {}
         }
       },
       "SkiaSharp/1.68.0": {
@@ -672,7 +701,7 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.PancakeView/1.3.7": {
+      "Xamarin.Forms.PancakeView/1.4.1-beta": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "3.6.0.220655"
@@ -689,9 +718,10 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MagicGradients": "1.0.0",
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991265",
-          "Xamarin.Forms.PancakeView": "1.3.7"
+          "Microsoft.VisualBasic": "10.4.0-preview.18571.3",
+          "Xamarin.Essentials": "1.5.2",
+          "Xamarin.Forms": "4.6.0.616-pre4",
+          "Xamarin.Forms.PancakeView": "1.4.1-beta"
         },
         "compile": {
           "bin/placeholder/miemss_xamarin.dll": {}
@@ -713,6 +743,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/MagicGradients.dll": {}
+        }
+      },
+      "Microsoft.VisualBasic/10.4.0-preview.18571.3": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/Microsoft.VisualBasic.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.VisualBasic.dll": {}
         }
       },
       "SkiaSharp/1.68.0": {
@@ -900,7 +939,7 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.PancakeView/1.3.7": {
+      "Xamarin.Forms.PancakeView/1.4.1-beta": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "3.6.0.220655"
@@ -917,9 +956,10 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "MagicGradients": "1.0.0",
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991265",
-          "Xamarin.Forms.PancakeView": "1.3.7"
+          "Microsoft.VisualBasic": "10.4.0-preview.18571.3",
+          "Xamarin.Essentials": "1.5.2",
+          "Xamarin.Forms": "4.6.0.616-pre4",
+          "Xamarin.Forms.PancakeView": "1.4.1-beta"
         },
         "compile": {
           "bin/placeholder/miemss_xamarin.dll": {}
@@ -942,6 +982,60 @@
         "lib/netstandard2.0/MagicGradients.dll",
         "magicgradients.1.0.0.nupkg.sha512",
         "magicgradients.nuspec"
+      ]
+    },
+    "Microsoft.VisualBasic/10.4.0-preview.18571.3": {
+      "sha512": "9o+ngDFh/65nEtLaMJ4I7nsMFqTYStbMzdp0gX0ytOFs77WrCNMoEEt72fRHvDbcPXmFD/+UF6LOPqEdcU//0Q==",
+      "type": "package",
+      "path": "microsoft.visualbasic/10.4.0-preview.18571.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.VisualBasic.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.VisualBasic.dll",
+        "lib/netstandard2.0/Microsoft.VisualBasic.dll",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "microsoft.visualbasic.10.4.0-preview.18571.3.nupkg.sha512",
+        "microsoft.visualbasic.nuspec",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.VisualBasic.dll",
+        "ref/netcore50/Microsoft.VisualBasic.xml",
+        "ref/netcore50/de/Microsoft.VisualBasic.xml",
+        "ref/netcore50/es/Microsoft.VisualBasic.xml",
+        "ref/netcore50/fr/Microsoft.VisualBasic.xml",
+        "ref/netcore50/it/Microsoft.VisualBasic.xml",
+        "ref/netcore50/ja/Microsoft.VisualBasic.xml",
+        "ref/netcore50/ko/Microsoft.VisualBasic.xml",
+        "ref/netcore50/ru/Microsoft.VisualBasic.xml",
+        "ref/netcore50/zh-hans/Microsoft.VisualBasic.xml",
+        "ref/netcore50/zh-hant/Microsoft.VisualBasic.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/Microsoft.VisualBasic.dll",
+        "ref/netstandard1.1/Microsoft.VisualBasic.xml",
+        "ref/netstandard1.1/de/Microsoft.VisualBasic.xml",
+        "ref/netstandard1.1/es/Microsoft.VisualBasic.xml",
+        "ref/netstandard1.1/fr/Microsoft.VisualBasic.xml",
+        "ref/netstandard1.1/it/Microsoft.VisualBasic.xml",
+        "ref/netstandard1.1/ja/Microsoft.VisualBasic.xml",
+        "ref/netstandard1.1/ko/Microsoft.VisualBasic.xml",
+        "ref/netstandard1.1/ru/Microsoft.VisualBasic.xml",
+        "ref/netstandard1.1/zh-hans/Microsoft.VisualBasic.xml",
+        "ref/netstandard1.1/zh-hant/Microsoft.VisualBasic.xml",
+        "ref/netstandard2.0/Microsoft.VisualBasic.dll",
+        "ref/netstandard2.0/Microsoft.VisualBasic.xml",
+        "ref/portable-net45+win8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "SkiaSharp/1.68.0": {
@@ -1400,21 +1494,22 @@
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.PancakeView/1.3.7": {
-      "sha512": "b6g3lVHV764yU4BRPzb1bvHT4G9xSQAXIPGtWQvryzLgU2qoqvnboiL5caJfLLFYXPtDy5ptoRD/TzC5i3VF3w==",
+    "Xamarin.Forms.PancakeView/1.4.1-beta": {
+      "sha512": "hYScWnZd58u+MR7kK9ONfH02R9TljqphyMgg3L/Zpc0hygoTrkoVSc8wDqgWaMT2KiTWgHQo/otDCKsnLQa2Ag==",
       "type": "package",
-      "path": "xamarin.forms.pancakeview/1.3.7",
+      "path": "xamarin.forms.pancakeview/1.4.1-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/monoandroid81/Xamarin.Forms.PancakeView.dll",
         "lib/monoandroid90/Xamarin.Forms.PancakeView.dll",
+        "lib/net461/Xamarin.Forms.PancakeView.dll",
         "lib/netstandard1.0/Xamarin.Forms.PancakeView.dll",
         "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll",
         "lib/uap10.0.16299/Xamarin.Forms.PancakeView.dll",
         "lib/uap10.0.16299/Xamarin.Forms.PancakeView.pri",
         "lib/xamarinios10/Xamarin.Forms.PancakeView.dll",
-        "xamarin.forms.pancakeview.1.3.7.nupkg.sha512",
+        "xamarin.forms.pancakeview.1.4.1-beta.nupkg.sha512",
         "xamarin.forms.pancakeview.nuspec"
       ]
     },
@@ -1426,6 +1521,7 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "Microsoft.VisualBasic >= 10.4.0-preview.18571.3",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.4.0.991265",
       "miemss_xamarin >= 1.0.0"
@@ -1473,6 +1569,10 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Microsoft.VisualBasic": {
+            "target": "Package",
+            "version": "[10.4.0-preview.18571.3, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.3.1, )"
@@ -1495,5 +1595,33 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Essentials from 1.5.2 to 1.3.1. Reference the package directly from the project to select a different version. \r\n miemss_xamarin.iOS -> miemss_xamarin -> Xamarin.Essentials (>= 1.5.2) \r\n miemss_xamarin.iOS -> Xamarin.Essentials (>= 1.3.1)",
+      "libraryId": "Xamarin.Essentials",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 4.6.0.616-pre4 to 4.4.0.991265. Reference the package directly from the project to select a different version. \r\n miemss_xamarin.iOS -> miemss_xamarin -> Xamarin.Forms (>= 4.6.0.616-pre4) \r\n miemss_xamarin.iOS -> Xamarin.Forms (>= 4.4.0.991265)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }
