@@ -117,3 +117,9 @@ C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.iOS\ob
 C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\miemss_xamarin.iOS.pdb.DebugSymbolsProjectOutputGroupOutput.stamp
 C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Entitlements.plist.NoneOutput.stamp
 C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Info.plist.NoneOutput.stamp
+C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.iOS\bin\iPhoneSimulator\Debug\Microsoft.VisualBasic.dll
+C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.iOS\obj\iPhoneSimulator\Debug\miemss_xamarin.iOS.csprojAssemblyReference.cache
+C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.iOS\obj\iPhoneSimulator\Debug\CopyFilesToMac\Microsoft.VisualBasic.dll.ReferenceCopyLocalPaths.stamp
+C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.iOS\obj\iPhoneSimulator\Debug\hostpital.png.ResolveUTIs.stamp
+C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.iOS\obj\iPhoneSimulator\Debug\hostpital1.png.ResolveUTIs.stamp
+C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.iOS\obj\iPhoneSimulator\Debug\hostpital2.png.ResolveUTIs.stamp

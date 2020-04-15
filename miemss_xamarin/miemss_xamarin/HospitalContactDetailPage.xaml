@@ -17,7 +17,7 @@
                    HeightRequest="50"
                    CornerRadius="40"
                    IsClippedToBounds="True">
-                    <Image Source="?.jpeg"/>
+                    <Image Source="hospital.png"/>
                 </Frame>
                 <Label HorizontalOptions="Center"
                    Text="{Binding Name}" FontSize="Large" HorizontalTextAlignment="Center" Margin="10" />
@@ -50,22 +50,22 @@
                         <Label Text="{Binding Website}"  />
                     </StackLayout>
                     <!--Type-->
-                    <Label  Grid.Column="0" Grid.Row="3" VerticalOptions="Center" Text="Type:"/>
+                    <Label  Grid.Column="0" Grid.Row="3" VerticalOptions="Center" Text="ServiceType:"/>
                     <StackLayout Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" VerticalOptions="Center">
                         <Label Text="{Binding Type}"  />
                     </StackLayout>
-                    <!--Specialty-->
+                    <!--Specialty1-->
                     <Label  Grid.Column="0" Grid.Row="4" VerticalOptions="Center" Text="Specialty:"/>
                     <StackLayout Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" VerticalOptions="Center">
                         <Label Text="{Binding Specialty}"  />
                     </StackLayout>
-                    <!--Burn-->
-                    <Label  Grid.Column="0" Grid.Row="5" VerticalOptions="Center" Text="Burn:"/>
+                    <!--Specialty2-->
+                    <Label  Grid.Column="0" Grid.Row="5" VerticalOptions="Center" Text="  "/>
                     <StackLayout Grid.Column="1" Grid.Row="5" VerticalOptions="Center">
                         <Label Text="{Binding Burn}" />
                     </StackLayout>
-                    <!--Stroke-->
-                    <Label  Grid.Column="0" Grid.Row="6" VerticalOptions="Center" Text="Stroke:"/>
+                    <!--Stpecialty3-->
+                    <Label  Grid.Column="0" Grid.Row="6" VerticalOptions="Center" Text="   "/>
                     <StackLayout Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2" VerticalOptions="Center">
                         <Label Text="{Binding Stroke}"  />
                     </StackLayout>

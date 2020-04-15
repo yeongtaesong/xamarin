@@ -511,3 +511,4 @@ C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.Androi
 C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Jinie Pak\Documents\GitHub\xamarin\miemss_xamarin\miemss_xamarin.Android\obj\Debug\90\res\drawable\hostpital.png

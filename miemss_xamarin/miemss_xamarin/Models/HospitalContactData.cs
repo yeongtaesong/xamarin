@@ -51,8 +51,9 @@ namespace miemss_xamarin.Models
                             Type = records[(int)HospitalRecordEnum.Type],
                             Specialty = records[(int)HospitalRecordEnum.Specialty],
                             Burn = records[(int)HospitalRecordEnum.Burn],
-                            Stroke = records[(int)HospitalRecordEnum.Stroke]
-                        });      
+                            Stroke = records[(int)HospitalRecordEnum.Stroke]                            
+                        });
+
                     }
                 }
             }
