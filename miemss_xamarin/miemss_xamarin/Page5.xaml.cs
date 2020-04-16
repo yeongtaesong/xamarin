@@ -19,8 +19,14 @@ namespace miemss_xamarin
         public Page5()
         {
             InitializeComponent();
-            BindingContext = new DrugsPageViewModel();
+           
 
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            listView.ItemsSource = await App.Database.GetItemsAsync();
         }
 
         //Set listview 

@@ -65,7 +65,6 @@ namespace miemss_xamarin.Models
                 Details = "coming soon"
             });
 
-
         }
 
     }

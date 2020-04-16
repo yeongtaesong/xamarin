@@ -11,7 +11,7 @@ namespace miemss_xamarin
 
         public DrugsPageViewModel()
         {
-            Drugs = DrugData.Drugs;
+            
         }
     }
 }
