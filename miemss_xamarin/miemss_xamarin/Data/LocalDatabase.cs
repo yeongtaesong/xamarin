@@ -49,11 +49,12 @@ namespace miemss_xamarin.Data
             return Database.Table<Drug>().ToListAsync();
         }
 
-        public Task<Drug> GetItemAsync(int id)
+        public Task<List<Drug>> GetItemAsync(string query)
         {
-            return Database.Table<Drug>().Where(i => i.ID == id).FirstOrDefaultAsync();
+            string searchNoSpaces = query.Replace(" ", "%");
+            return Database.QueryAsync<Drug>("select * from Drug where Name LIKE ?", searchNoSpaces + "%");
         }
-
+        
         public Task<int> SaveItemAsync(Drug drug)
         {
             if (drug.ID != 0)
@@ -71,6 +72,7 @@ namespace miemss_xamarin.Data
             return Database.DeleteAsync(drug);
         }
 
+        //Items added from DrugData
         public void AddItems()
 
         {
@@ -84,7 +86,6 @@ namespace miemss_xamarin.Data
             {
                 SaveItemAsync(drug);
             }
-
 
         }
     }

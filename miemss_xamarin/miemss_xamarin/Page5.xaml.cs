@@ -11,6 +11,8 @@ using Xamarin.Forms.Xaml;
 using miemss_xamarin.Models;
 using ListView = Xamarin.Forms.ListView;
 
+/*In order to edit items from list of Drugs, go to DrugData*/
+
 namespace miemss_xamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -33,6 +35,13 @@ namespace miemss_xamarin
         void OnListViewItemTapped(object sender, ItemTappedEventArgs e)
         {
             ((ListView)sender).SelectedItem = null;
+        }
+
+        async void OnTextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+            listView.ItemsSource = await App.Database.GetItemAsync(e.NewTextValue);
+
         }
 
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)

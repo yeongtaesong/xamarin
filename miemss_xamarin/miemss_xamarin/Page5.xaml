@@ -8,22 +8,26 @@
              x:Class="miemss_xamarin.Page5">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="listView" ItemsSource="{Binding Drugs}" HasUnevenRows="true" ItemTapped="OnListViewItemTapped" ItemSelected="OnListViewItemSelected">
+            <SearchBar x:Name="searchBar"
+                       Placeholder="search drugs..."
+                       TextChanged="OnTextChanged"/>
+            <ListView x:Name="listView"
+                  HorizontalOptions="Fill"
+                  VerticalOptions="CenterAndExpand"
+                      ItemsSource="{Binding SearchResults}"
+                      ItemTapped="OnListViewItemTapped" 
+                      ItemSelected="OnListViewItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <Grid Padding="5">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                   
+                                    <RowDefinition Height="auto" />
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto" />
-                                   
+                                    <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
-                            
-                                <Label Grid.Column="1" Text="{Binding Name}" StyleClass="mainPageTitle" />
-                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Detail}" StyleClass="mainPageSubtitle" />
+                                <Label Grid.Column="0" Grid.Row="0" Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
