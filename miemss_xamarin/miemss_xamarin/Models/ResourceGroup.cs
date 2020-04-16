@@ -57,38 +57,38 @@ namespace miemss_xamarin.Models
                 },
                 new ResourceGroup("Standard Precautions")
                 {
-                    new Section {Name = "Example Diseases", Path="index.html"},
-                    new Section {Name = "Goal of Precautions", Path="index.html"},
+                    new Section {Name = "Example Diseases", Path=(url+"index.html")},
+                    new Section {Name = "Goal of Precautions", Path=(url+"index.html")},
                 },
                 new ResourceGroup("Contact Precautions")
                 {
-                    new Section {Name = "Example Diseases", Path="index.html"},
-                    new Section {Name = "Goal of Precautions", Path="index.html"},
+                    new Section {Name = "Example Diseases", Path=(url+"index.html")},
+                    new Section {Name = "Goal of Precautions", Path=(url+"index.html")},
                 },
                 new ResourceGroup("Droplet Precautions")
                 {
-                    new Section {Name = "Example Diseases", Path="index.html"},
-                    new Section {Name = "Goal of Precautions", Path="index.html"},
+                    new Section {Name = "Example Diseases", Path=(url+"index.html")},
+                    new Section {Name = "Goal of Precautions", Path=(url+"index.html")},
                 },
                 new ResourceGroup("Airborne Precautions")
                 {
-                    new Section {Name = "Example Diseases", Path="index.html"},
-                    new Section {Name = "Goal of Precautions", Path="index.html"},
+                    new Section {Name = "Example Diseases", Path=(url+"index.html")},
+                    new Section {Name = "Goal of Precautions", Path=(url+"index.html")},
                 },
                 new ResourceGroup("Special Respiratory Precautions")
                 {
-                    new Section {Name = "Example Diseases", Path="index.html"},
-                    new Section {Name = "Goal of Precautions", Path="index.html"},
+                    new Section {Name = "Example Diseases", Path=(url+"index.html")},
+                    new Section {Name = "Goal of Precautions", Path=(url+"index.html")},
                 },
                 new ResourceGroup("EVD/VHF Precautions")
                 {
-                    new Section {Name = "Example Diseases", Path="index.html"},
-                    new Section {Name = "Goal of Precautions", Path="index.html"},
+                    new Section {Name = "Example Diseases", Path=(url+"index.html")},
+                    new Section {Name = "Goal of Precautions", Path=(url+"index.html")},
                 },
                 new ResourceGroup("Resources/Special Considerations")
                 {
-                    new Section {Name = "Hand Hygiene", Path="index.html"},
-                    new Section {Name = "Pandemic Influenze", Path="index.html"},
+                    new Section {Name = "Hand Hygiene", Path=(url+"index.html")},
+                    new Section {Name = "Pandemic Influenze", Path=(url+"index.html")},
                 },
             };
             All = Groups;
