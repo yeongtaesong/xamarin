@@ -21,55 +21,35 @@
                 </Frame>
                 <Label HorizontalOptions="Center"
                    Text="{Binding Name}" FontSize="Large" HorizontalTextAlignment="Center" Margin="10" />
-                <Grid RowSpacing="10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <!--Address & Map-->
-                    <StackLayout Grid.Column="0" Grid.Row="0" >
-                        <Label Text="Address:"/>
-                    </StackLayout>
-
-                    <ImageButton Source="navigate.png" Grid.Column="2" Grid.Row="0" 
-                          BackgroundColor="Transparent" d:BackgroundColor="" />
-                    <Label Grid.Column="1" Grid.ColumnSpan="2" Text="{Binding Address}"/>
-
-                    <!--Phone & Call -->
-                    <Label Grid.Column="0" Grid.Row="1" VerticalOptions="Center" Text="Phone:" />
-                    <Label Grid.Column="1" Grid.Row="1" VerticalOptions="Center" Text="{Binding PhoneNum}" />
-
-                    <!--Website-->
-                    <Label  Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Text="Website:"/>
-                    <StackLayout Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"  VerticalOptions="Center">
-                        <Label Text="{Binding Website}"  />
-                    </StackLayout>
+                <StackLayout>
+                <!--Address & Map-->
+                <Label  TextColor="Blue" FontSize="Small"  Text="Address:"/>
+                   <Label  FontSize="Medium" TextDecorations="Underline" Text="{Binding Address}">
+                   <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnAddressTapGestureRecognizerTapped" />
+                    </Label.GestureRecognizers>
+                </Label> 
+                <!--Phone & Call -->
+                <Label   VerticalOptions="Center"  FontSize="Small" TextColor="Blue" Text="Phone:" />
+                    <Label   VerticalOptions="Center"  FontSize="Medium" TextColor="DarkRed" TextDecorations="Underline" Text="{Binding PhoneNum}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnPhoneTapGestureRecognizerTapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+                <!--Website-->
+                <Label     VerticalOptions="Center"  FontSize="Small" TextColor="Blue" Text="Website:"/>
+                <Label     VerticalOptions="CenterAndExpand" FontSize="Medium" TextDecorations="Underline" Text="{Binding Website}"  >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnWebTapGestureRecognizerTapped" />
+                    </Label.GestureRecognizers>
+                    </Label>
                     <!--Type-->
-                    <Label  Grid.Column="0" Grid.Row="3" VerticalOptions="Center" Text="ServiceType:"/>
-                    <StackLayout Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" VerticalOptions="Center">
-                        <Label Text="{Binding Type}"  />
-                    </StackLayout>
-                    <!--Specialty1-->
-                    <Label  Grid.Column="0" Grid.Row="4" VerticalOptions="Center" Text="Specialty:"/>
-                    <StackLayout Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" VerticalOptions="Center">
-                        <Label Text="{Binding Specialty}"  />
-                    </StackLayout>
-                    <!--Specialty2-->
-                    <Label  Grid.Column="0" Grid.Row="5" VerticalOptions="Center" Text="  "/>
-                    <StackLayout Grid.Column="1" Grid.Row="5" VerticalOptions="Center">
-                        <Label Text="{Binding Burn}" />
-                    </StackLayout>
-                    <!--Stpecialty3-->
-                    <Label  Grid.Column="0" Grid.Row="6" VerticalOptions="Center" Text="   "/>
-                    <StackLayout Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2" VerticalOptions="Center">
-                        <Label Text="{Binding Stroke}"  />
-                    </StackLayout>
-                </Grid>
+                <Label    VerticalOptions="Center" TextColor="Blue"   FontSize="Small" Text="Service:"/>
+                <Label  FontSize="Medium"   Text="{Binding Type}"  />
+                <Label  FontSize="Medium" Text="{Binding Specialty}"  />
+                <Label   FontSize="Medium" Text="{Binding Burn}" />
+                <Label     FontSize="Medium" Text="{Binding Stroke}"  />
+                </StackLayout>
             </StackLayout>
         </pancake:PancakeView>
     </ContentPage.Content>
