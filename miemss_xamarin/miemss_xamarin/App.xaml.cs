@@ -23,6 +23,7 @@ namespace miemss_xamarin
 
         public App()
         {
+            Database.AddItems();
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());

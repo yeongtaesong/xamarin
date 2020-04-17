@@ -25,7 +25,7 @@ namespace miemss_xamarin.Data
         {
 
             InitializeAsync().SafeFireAndForget(false);
-            AddItems();
+
 
 
         }
