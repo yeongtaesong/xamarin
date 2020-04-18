@@ -14,55 +14,66 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Acetaminophen",
-                Details = "coming soon"
+                Details = "coming soon",
+                Dosage = 0.02
             });
 
             Drugs.Add(new Drug
             {
-                Name = "Activated Charcoal (Without Sorbitol) ",
-                Details = "coming soon"
+                Name = "Activated Charcoal (Without Sorbitol)",
+                Details = "coming soon",
+                Dosage = 0.04
             });
 
             Drugs.Add(new Drug
             {
                 Name = "Aspirin",
-                Details = "coming soon"
+                Details = "coming soon",
+                Dosage = 0.25
             });
 
             Drugs.Add(new Drug
             {
-                Name = "Epinephri	",
-                Details = "coming soon"
+                Name = "Epinephri",
+                Details = "coming soon",
+                Dosage = 0.5
             });
 
             Drugs.Add(new Drug
             {
                 Name = "Epinephrine Auto-Injector",
-                Details = "coming soon"
+                Details = "coming soon",
+                Dosage = 0.94
+                
             });
 
             Drugs.Add(new Drug
             {
                 Name = "Naloxone",
-                Details = "coming soon"
+                Details = "coming soon",
+                Dosage = 0.45
+                
             });
 
             Drugs.Add(new Drug
             {
-                Name = "Nitroglycerin ",
-                Details = "coming soon"
+                Name = "Nitroglycerin",
+                Details = "coming soon",
+                Dosage = 0.78
             });
 
             Drugs.Add(new Drug
             {
-                Name = "Oral Glucose ",
-                Details = "coming soon"
+                Name = "Oral Glucose",
+                Details = "coming soon",
+                Dosage = 0.55
             });
 
             Drugs.Add(new Drug
             {
-                Name = "Oxygen 	 ",
-                Details = "coming soon"
+                Name = "Oxygen",
+                Details = "coming soon",
+                Dosage = 0.33
             });
 
         }
