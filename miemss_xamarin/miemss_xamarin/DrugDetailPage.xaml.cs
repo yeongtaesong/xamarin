@@ -1,4 +1,5 @@
-﻿using System;
+﻿using miemss_xamarin.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,14 @@ namespace miemss_xamarin
         public DrugDetailPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            string entry = Entry.Text;
+
+
+            DisplayAlert("Message", entry, "hi!");
         }
     }
 }
