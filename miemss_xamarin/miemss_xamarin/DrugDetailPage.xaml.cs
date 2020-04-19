@@ -20,10 +20,17 @@ namespace miemss_xamarin
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-            string entry = Entry.Text;
 
+            //calculate dosage by multiplying "dosage" by body weight. Need to ask for exact calculation for dosage.
+            double input = Convert.ToDouble(Entry.Text);
+            double dosage = ((Drug)this.BindingContext).Dosage;
 
-            DisplayAlert("Message", entry, "hi!");
+            double calculation = input * dosage;
+
+                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString();
+            
+
+            
         }
     }
 }
