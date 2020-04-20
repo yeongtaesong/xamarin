@@ -30,7 +30,7 @@ namespace miemss_xamarin
         //CBRNE Resources
         private async void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PDFView());
+            await Navigation.PushAsync(new ResourcePage());
         }
 
         private async void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
