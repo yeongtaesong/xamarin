@@ -10,7 +10,9 @@ namespace miemss_xamarin.Models
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-      public string Name { get; set; }
-      public string Details { get; set; }
+        public string Name { get; set; }
+        public string Details { get; set; }
+        public double Dosage { get; set; }
+
     }
 }
