@@ -49,7 +49,7 @@ namespace miemss_xamarin.Models
 
             Drugs.Add(new Drug
             {
-                Name = "Nitroglycerin ",
+                Name = "Nitroglycerin",
                 Details = "coming soon"
             });
 
