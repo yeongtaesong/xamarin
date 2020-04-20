@@ -15,11 +15,11 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Label Text="{Binding Name}" />
+                        <Label  Padding="10" TextColor="Blue" Text="{Binding Name}"  />
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
-            <!--Heading Cell-->
+            <!--SubSection Cell-->
             <ListView.GroupHeaderTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -28,7 +28,7 @@
                                     Clicked="HeaderTapped"
                                     BackgroundColor="Transparent"
                                     CommandParameter="{Binding .}"/>
-                            <Label Text="{Binding Heading}" FontSize="Medium"/>
+                            <Label Padding ="8" FontAttributes="Bold"  Text="{Binding Heading}" FontSize="Medium"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
