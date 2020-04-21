@@ -63,37 +63,22 @@ namespace miemss_xamarin
             ProtocolsView.ItemsSource = _expandedGroups;
         }
 
-<<<<<<< Updated upstream
         void OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             ((ListView)sender).SelectedItem = null;
         }
-        async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            var protocol = ((ListView)sender).SelectedItem as Protocol;
-=======
+
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var  protocol = ((ListView)sender).SelectedItem as Protocol;
->>>>>>> Stashed changes
             if (protocol != null)
             {
                 var page = new DetailedProtocolPage();
                 page.BindingContext = protocol;
                 await Navigation.PushAsync(page);
             }
-<<<<<<< Updated upstream
-=======
-        }
-        void OnItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            ((ListView)sender).SelectedItem = null;
->>>>>>> Stashed changes
         }
 
     }
-
-
-
 
 }

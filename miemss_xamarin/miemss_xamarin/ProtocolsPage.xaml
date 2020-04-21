@@ -11,13 +11,8 @@
 
         <ListView x:Name="ProtocolsView"
                   IsGroupingEnabled="true"
-<<<<<<< Updated upstream
                   ItemSelected="OnItemSelected"
                   ItemTapped="OnItemTapped">
-=======
-                  ItemTapped="OnItemTapped" 
-                  ItemSelected="OnItemSelected">
->>>>>>> Stashed changes
             <!-- Section Cell-->
             <ListView.ItemTemplate>
                 <DataTemplate>
