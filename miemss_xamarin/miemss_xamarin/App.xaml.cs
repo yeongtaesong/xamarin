@@ -25,6 +25,7 @@ namespace miemss_xamarin
         {
             Database.AddItems();
             InitializeComponent();
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjQzODcxQDMxMzgyZTMxMmUzMFlDZEhoQjdVc2dCQVphRUkvYk15Q2hXS3VpQkdQMFVMa2kvbmdZZGp2UDQ9");
 
             MainPage = new NavigationPage(new MainPage());
         }
