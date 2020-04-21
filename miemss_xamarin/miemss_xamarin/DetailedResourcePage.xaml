@@ -8,6 +8,6 @@
         <local:PdfViewerViewModel></local:PdfViewerViewModel>
     </ContentPage.BindingContext>
     <Grid x:Name="pdfViewGrid">
-        <syncfusion:SfPdfViewer x:Name="pdfViewerControl"/>
+        <syncfusion:SfPdfViewer x:Name="pdfViewerControl" InputFileStream="{Binding PdfDocumentStream}"/>
     </Grid>
 </ContentPage>

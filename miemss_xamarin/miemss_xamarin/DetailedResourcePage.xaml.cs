@@ -30,7 +30,6 @@ namespace miemss_xamarin
         protected override void OnAppearing()
         {
             base.OnAppearing();
-    
             fileStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("miemss_xamarin.Assets.playbook.pdf");
             //Load the PDF
          pdfViewerControl.LoadDocument(fileStream);
