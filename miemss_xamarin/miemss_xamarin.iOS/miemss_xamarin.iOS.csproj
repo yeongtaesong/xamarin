@@ -25,7 +25,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchArch>x86_64</MtouchArch>
-    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <MtouchSdkVersion>
     </MtouchSdkVersion>
@@ -246,4 +246,9 @@
   <ItemGroup>
     <BundleResource Include="Resources\HTML\page1.html" />
   </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties XamarinHotReloadWrongLinkerErrorInfoBarmiemss_xamariniOSHideInfoBar="True" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

@@ -33,10 +33,10 @@ namespace miemss_xamarin
             await Navigation.PushAsync(new PDFView());
         }
 
-        private async void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Page4());
-        }
+      //  private async void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
+      //  {
+      //      await Navigation.PushAsync(new Page4());
+      //  }
         private async void TapGestureRecognizer_Tapped_4(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Page5());
