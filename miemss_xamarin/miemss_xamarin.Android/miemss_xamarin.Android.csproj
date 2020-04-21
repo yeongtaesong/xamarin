@@ -82,6 +82,7 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\playbook.pdf" />
     <AndroidAsset Include="Assets\test.pdf" />
+    <None Include="MD-Medical-Protocols-2019.pdf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
