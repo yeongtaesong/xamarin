@@ -39,7 +39,7 @@ namespace miemss_xamarin
         public PdfViewerViewModel()
         {
 
-            m_pdfDocumentStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("miemss_xamarin.Assets.playbook.pdf");
+            m_pdfDocumentStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("miemss_xamarin.Assets.MD-Medical-Protocols-2019.pdf");
         }
 
         private void NotifyPropertyChanged(string propertyName)
