@@ -1,17 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+             xmlns:local="clr-namespace:miemss_xamarin"
              x:Class="miemss_xamarin.DetailedResourcePage"
-             x:Name="DetailedResource"
-             BindingContext="{Binding .}">
-    <ContentPage.Content>
-        <StackLayout BackgroundColor="#505050" 
-             VerticalOptions="FillAndExpand"  
-             HorizontalOptions="FillAndExpand">
-            <WebView x:Name="WebView" VerticalOptions="FillAndExpand" Source="{Binding Path}"/>
-        </StackLayout>
-    </ContentPage.Content>
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
+             >
+    <ContentPage.BindingContext>
+        <local:PdfViewerViewModel></local:PdfViewerViewModel>
+    </ContentPage.BindingContext>
+    <Grid x:Name="pdfViewGrid">
+        <syncfusion:SfPdfViewer x:Name="pdfViewerControl" InputFileStream="{Binding PdfDocumentStream}"/>
+    </Grid>
 </ContentPage>

@@ -1,11 +1,12 @@
 ﻿using miemss_xamarin.Models;
+using Syncfusion.Pdf.Interactive;
+using Syncfusion.Pdf.Parsing;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Dynamic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -16,71 +17,40 @@ namespace miemss_xamarin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ResourcePage : ContentPage
     {
-        private List<ResourceGroup> _allGroups;
-        private List<ResourceGroup> _expandedGroups;
+        Stream fileStream;
         public ResourcePage()
         {
             InitializeComponent();
-            _allGroups = ResourceGroup.All;
-            UpdateListContent();
 
+            initBrowser();
 
 
         }
 
-        private void HeaderTapped(object sender, EventArgs e)
+        protected override void OnAppearing()
         {
-            int selectedIndex = _expandedGroups.IndexOf(
-                ((ResourceGroup)((Button)sender).CommandParameter));
-            _allGroups[selectedIndex].Expanded = !_allGroups[selectedIndex].Expanded;
-            UpdateListContent();
+            base.OnAppearing();
+            fileStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("miemss_xamarin.Assets.playbook.pdf");
+            //Load the PDF
+            pdfViewerControl.LoadDocument(fileStream);
+
+
+
+
+
+
         }
 
-        private void UpdateListContent()
+
+        public void initBrowser()
         {
-            _expandedGroups = new List<ResourceGroup>();
+            //See IBaseUrl.cs for information on using IBaseUrl interface
 
-            foreach (ResourceGroup resource in _allGroups)
-            {
-                //assigns only the heading to the ResourceGroup - will only display heading on page initialization
-                ResourceGroup newGroup = new ResourceGroup(resource.Heading);
-                newGroup.StateIcon = "expand.png";
 
-                //if button is pressed, expanded = true and sections will be added
-                if (resource.Expanded)
-                {
-                    foreach (Section section in resource)
-                    {
-                        newGroup.Add(section);
-                    }
-                    newGroup.StateIcon = "collapse.png";
-                }
-                _expandedGroups.Add(newGroup);
-            }
-            ResourceView.ItemsSource = _expandedGroups;
-        }
 
-        // METHOD WORK IN PROGRESS
-        async void OnListViewItemTapped(object sender, ItemTappedEventArgs e)
-        {
-
-            var item = (Section)e.Item;
-
-            var page = new DetailedResourcePage();
-            page.BindingContext = item;
-            await Navigation.PushAsync(page);
+            string path = DependencyService.Get<IBaseUrl>().Get();
+            string url = Path.Combine(path, "HTML/MDMedicalProtocols2019.html");
 
         }
-
-        async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-
-
-        }
-
     }
-
-
-
-
 }
