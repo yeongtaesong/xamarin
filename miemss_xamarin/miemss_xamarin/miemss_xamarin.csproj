@@ -17,70 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Appendices-A.pdf" />
-    <None Remove="Assets\Appendices-B.pdf" />
-    <None Remove="Assets\Appendices-C.pdf" />
-    <None Remove="Assets\Appendices-D.pdf" />
-    <None Remove="Assets\Appendices-E.electrical therapy.pdf" />
-    <None Remove="Assets\Appendices-E.interfacility.pdf" />
-    <None Remove="Assets\Appendices-E.other procedures.pdf" />
-    <None Remove="Assets\Appendices-E.pdf" />
-    <None Remove="Assets\Appendices-E.pilot program.pdf" />
-    <None Remove="Assets\general Info-healthcare code.pdf" />
-    <None Remove="Assets\general Info-important no.pdf" />
-    <None Remove="Assets\general Info-inability to.pdf" />
-    <None Remove="Assets\general Info-MD trauma.pdf" />
-    <None Remove="Assets\general Info-physician order~.pdf" />
-    <None Remove="Assets\general Info-proposed protocol~.pdf" />
-    <None Remove="Assets\general Info-protocol key.pdf" />
-    <None Remove="Assets\general Info-provision.pdf" />
-    <None Remove="Assets\general Info-quality review.pdf" />
-    <None Remove="Assets\general_patient_care.pdf" />
-    <None Remove="Assets\Interfacility.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-A.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-B.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-C.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-D.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-E.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-F.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-G.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-H.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-I.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-J.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-K.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-L.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-M.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-N.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-O.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-P.pdf" />
-    <None Remove="Assets\Jurisdictional Optional Program-Q.pdf" />
-    <None Remove="Assets\MD-Medical-Protocols-2019.pdf" />
-    <None Remove="Assets\playbook.pdf" />
-    <None Remove="Assets\Research Protocol.pdf" />
-    <None Remove="Assets\Treatment Protocol-UU.pdf" />
-    <None Remove="Assets\Treatment Protocols-A.pdf" />
-    <None Remove="Assets\Treatment Protocols-AA.pdf" />
-    <None Remove="Assets\Treatment Protocols-BB.pdf" />
-    <None Remove="Assets\Treatment Protocols-B~C.pdf" />
-    <None Remove="Assets\Treatment Protocols-CC~EE.pdf" />
-    <None Remove="Assets\Treatment Protocols-D.pdf" />
-    <None Remove="Assets\Treatment Protocols-E.pdf" />
-    <None Remove="Assets\Treatment Protocols-FF~LL.pdf" />
-    <None Remove="Assets\Treatment Protocols-F~S.pdf" />
-    <None Remove="Assets\Treatment Protocols-MM.pdf" />
-    <None Remove="Assets\Treatment Protocols-NN~RR.pdf" />
-    <None Remove="Assets\Treatment Protocols-SS~TT.pdf" />
-    <None Remove="Assets\Treatment Protocols-T~Z.pdf" />
-    <None Remove="Assets\Treatment Protocols-UU2.pdf" />
-    <None Remove="Assets\Treatment Protocols-VV~CCC.pdf" />
-    <None Remove="Assets\Treatment Protocols.pdf" />
-    <None Remove="Assets\Weapons of Mass Destruction Supplement.pdf" />
-    <None Remove="Files\hospital_list1.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="Assets\Appendices-A.pdf" />
-<<<<<<< Updated upstream
     <EmbeddedResource Include="Assets\Appendices-B.pdf" />
     <EmbeddedResource Include="Assets\Appendices-C.pdf" />
     <EmbeddedResource Include="Assets\Appendices-D.pdf" />
@@ -137,8 +74,6 @@
     <EmbeddedResource Include="Assets\Treatment Protocols-VV~CCC.pdf" />
     <EmbeddedResource Include="Assets\Treatment Protocols.pdf" />
     <EmbeddedResource Include="Assets\Weapons of Mass Destruction Supplement.pdf" />
-=======
->>>>>>> Stashed changes
     <EmbeddedResource Include="Files\hospital_list1.txt" />
   </ItemGroup>
 
