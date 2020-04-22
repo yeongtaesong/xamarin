@@ -25,7 +25,7 @@ namespace miemss_xamarin
 
         private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new HospitalPage());
+            await Navigation.PushAsync(new Page2());
         }
         //CBRNE Resources
         private async void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace miemss_xamarin
       //  }
         private async void TapGestureRecognizer_Tapped_4(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DrugPage());
+            await Navigation.PushAsync(new Page5());
         }
 
         private async void TapGestureRecognizer_Tapped_5(object sender, EventArgs e)

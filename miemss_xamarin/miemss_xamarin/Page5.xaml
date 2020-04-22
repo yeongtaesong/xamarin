@@ -4,11 +4,19 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Hospital Directory"
-             x:Class="miemss_xamarin.HospitalPage">
+             Title="Drugs"
+             x:Class="miemss_xamarin.Page5">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="listView" ItemsSource="{Binding HospitalContacts}" HasUnevenRows="true" ItemTapped="OnListViewItemTapped" ItemSelected="OnListViewItemSelected">
+            <SearchBar x:Name="searchBar"
+                       Placeholder="search drugs..."
+                       TextChanged="OnTextChanged"/>
+            <ListView x:Name="listView"
+                  HorizontalOptions="Fill"
+                  VerticalOptions="CenterAndExpand"
+                      ItemsSource="{Binding SearchResults}"
+                      ItemTapped="OnListViewItemTapped" 
+                      ItemSelected="OnListViewItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

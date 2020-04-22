@@ -16,9 +16,9 @@ using ListView = Xamarin.Forms.ListView;
 namespace miemss_xamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DrugPage : ContentPage
+    public partial class Page5 : ContentPage
     {
-        public DrugPage()
+        public Page5()
         {
             InitializeComponent();
            

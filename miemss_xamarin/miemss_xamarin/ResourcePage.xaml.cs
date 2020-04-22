@@ -21,14 +21,36 @@ namespace miemss_xamarin
         public ResourcePage()
         {
             InitializeComponent();
+            listView.ItemsSource = ResourceData.Resources;
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            fileStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("miemss_xamarin.Assets.playbook.pdf");
-            //Load the PDF
-            pdfViewerControl.LoadDocument(fileStream);
+
+        }
+
+        void OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            /// DO NOTHING
+        }
+
+       async void OnSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var resource = ((ListView)sender).SelectedItem as Resource;
+
+            if(resource.IsWebView)
+            {
+                var page = new WebViewPage();
+                page.BindingContext = resource;
+                await Navigation.PushAsync(page);
+            } else
+            {
+                var page = new PDFView();
+                page.BindingContext = resource;
+                await Navigation.PushAsync(page);
+
+            }
         }
 
     }

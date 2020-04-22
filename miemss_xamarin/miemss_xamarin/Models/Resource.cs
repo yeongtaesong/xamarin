@@ -4,9 +4,10 @@ using System.Text;
 
 namespace miemss_xamarin.Models
 {
-    class Section
+    public class Resource
     {
         public string Name { get; set; }
         public string Path { get; set; }
+        public bool IsWebView { get; set; }
     }
 }
