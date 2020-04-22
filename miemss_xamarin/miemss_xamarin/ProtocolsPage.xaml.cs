@@ -24,9 +24,6 @@ namespace miemss_xamarin
             InitializeComponent();
             _allGroups = ProtocolGroup.All;
             UpdateListContent();
-          
-
-
 
         }
 
