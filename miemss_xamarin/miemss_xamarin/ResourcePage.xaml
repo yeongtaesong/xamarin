@@ -11,7 +11,9 @@
             <ListView x:Name="listView"
                   HorizontalOptions="CenterAndExpand"
                   VerticalOptions="CenterAndExpand"
-                  HasUnevenRows="True">
+                  HasUnevenRows="True"
+                      ItemSelected="OnSelected"
+                      ItemTapped="OnItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Height="50">

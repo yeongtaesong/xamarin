@@ -16,19 +16,23 @@ namespace miemss_xamarin.Models
             Resources.Add(new Resource
             {
                 Name = "CBRNE Resources",
-                Path = "path"
+                Path = "miemss_xamarin.Assets.playbook.pdf",
+                IsWebView = false
+               
             });
 
             Resources.Add(new Resource
             {
-                Name = "Resource 2",
-                Path = "path"
+                Name = "Public Health Emergency ASPR Playbooks",
+                Path = "https://www.phe.gov/Preparedness/planning/playbooks/Pages/default.aspx",
+                IsWebView = true
             });
 
             Resources.Add(new Resource
             {
-                Name = "Resource 3",
-                Path = "path"
+                Name = "High Consequence Infectious Disease",
+                Path = "https://asprtracie.hhs.gov/technical-resources/resource/7123/high-consequence-infectious-disease-hcid-toolbox-for-frontline-health-care-facilities",
+                IsWebView = true
             });
         }
 
