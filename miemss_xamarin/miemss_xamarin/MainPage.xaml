@@ -58,7 +58,7 @@
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
                 </Image.GestureRecognizers>
             </Image>
-                <Label Text="CBRNE Resources" HorizontalTextAlignment="Center" />
+                <Label Text="EMS Resources" HorizontalTextAlignment="Center" />
             </StackLayout>
 <!--
             <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Vertical">

@@ -7,9 +7,9 @@ using ListView = Xamarin.Forms.ListView;
 namespace miemss_xamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page2 : ContentPage
+    public partial class HospitalPage : ContentPage
     {
-        public Page2()
+        public HospitalPage()
         {
             InitializeComponent();
 

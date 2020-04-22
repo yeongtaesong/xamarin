@@ -4,6 +4,7 @@
              x:Class="miemss_xamarin.DetailedProtocolPage"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              BindingContext="{Binding .}"
+             Title="Protocols"
              x:Name="myContentView">
     <ContentPage.BindingContext>
         <local:PdfViewerViewModel></local:PdfViewerViewModel>

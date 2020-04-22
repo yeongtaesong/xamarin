@@ -4,6 +4,7 @@
              x:Class="miemss_xamarin.PDFView"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Name="MyPDFView"
+             Title="EMS Resources"
              BindingContext="{Binding .}">
     <ContentPage.BindingContext>
         <local:PdfViewerViewModel></local:PdfViewerViewModel>

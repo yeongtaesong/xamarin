@@ -107,7 +107,7 @@
     <EmbeddedResource Update="Page1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Page2.xaml">
+    <EmbeddedResource Update="HospitalPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="PDFView.xaml">
@@ -119,7 +119,7 @@
     <EmbeddedResource Update="Page4.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Page5.xaml">
+    <EmbeddedResource Update="DrugPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="RegionPage.xaml">
@@ -154,6 +154,12 @@
     </Compile>
     <Compile Update="Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="HospitalPage.xaml.cs">
+      <DependentUpon>HospitalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="DrugPage.xaml.cs">
+      <DependentUpon>DrugPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="RegionPage.xaml.cs">
       <DependentUpon>RegionPage.xaml</DependentUpon>
