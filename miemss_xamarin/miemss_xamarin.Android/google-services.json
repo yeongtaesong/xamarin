@@ -8,6 +8,42 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:57032433781:android:b05d0f55ecd36e3eda583c",
+        "android_client_info": {
+          "package_name": "com.towson.xamarinfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57032433781-5qdhhsmguc5ctgtq222i53qq10e9h9fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2Li-tlasxp2qlPNneG3fsbOZT8bnEldE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57032433781-5qdhhsmguc5ctgtq222i53qq10e9h9fh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "57032433781-vhefau0kmf2igglcmh2ca93nnuiba1qk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.xamarin.miemss-xamarin"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:57032433781:android:bde371cc4977f585da583c",
         "android_client_info": {
           "package_name": "com.viasoftech.miemss_xamarin"
@@ -32,10 +68,10 @@
               "client_type": 3
             },
             {
-              "client_id": "57032433781-b6uoabkok4q8v2i7ece9um5oe94i8pv3.apps.googleusercontent.com",
+              "client_id": "57032433781-vhefau0kmf2igglcmh2ca93nnuiba1qk.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.xamarin.WorkingWithNavigation-iOS"
+                "bundle_id": "com.xamarin.miemss-xamarin"
               }
             }
           ]
@@ -68,10 +104,10 @@
               "client_type": 3
             },
             {
-              "client_id": "57032433781-b6uoabkok4q8v2i7ece9um5oe94i8pv3.apps.googleusercontent.com",
+              "client_id": "57032433781-vhefau0kmf2igglcmh2ca93nnuiba1qk.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.xamarin.WorkingWithNavigation-iOS"
+                "bundle_id": "com.xamarin.miemss-xamarin"
               }
             }
           ]
