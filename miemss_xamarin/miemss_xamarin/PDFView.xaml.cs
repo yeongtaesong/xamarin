@@ -1,5 +1,4 @@
-﻿using miemss_xamarin.Models;
-using Syncfusion.SfPdfViewer.XForms;
+﻿using Syncfusion.SfPdfViewer.XForms;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,11 +23,6 @@ namespace miemss_xamarin
 
         protected override void OnAppearing()
         {
-            base.OnAppearing();
-            var resource = ((Resource)this.BindingContext);
-            fileStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream(resource.Path);
-            //Load the PDF
-            pdfViewerControl.LoadDocument(fileStream);
 
         }
 

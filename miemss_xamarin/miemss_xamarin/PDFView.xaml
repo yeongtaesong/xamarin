@@ -3,8 +3,7 @@
              xmlns:local="clr-namespace:miemss_xamarin"
              x:Class="miemss_xamarin.PDFView"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
-             x:Name="MyPDFView"
-             BindingContext="{Binding .}">
+             >
     <ContentPage.BindingContext>
         <local:PdfViewerViewModel></local:PdfViewerViewModel>
     </ContentPage.BindingContext>
