@@ -6,8 +6,10 @@
              mc:Ignorable="d"
              x:Class="miemss_xamarin.WebViewPage">
     <ContentPage.Content>
-        <StackLayout>
-            <WebView x:Name="WebView" VerticalOptions="FillAndExpand" Source="{Binding Path}"/>
+        <StackLayout BackgroundColor="#505050" 
+             VerticalOptions="FillAndExpand"  
+             HorizontalOptions="FillAndExpand">
+            <WebView x:Name="WebView" VerticalOptions="FillAndExpand" Source="{Binding Path}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

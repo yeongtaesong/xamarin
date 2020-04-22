@@ -30,7 +30,7 @@ namespace miemss_xamarin.Models
 
             Resources.Add(new Resource
             {
-                Name = "High Consequence Infectious Disease",
+                Name = "High Consequence Infectious Disease Toolbox",
                 Path = "https://asprtracie.hhs.gov/technical-resources/resource/7123/high-consequence-infectious-disease-hcid-toolbox-for-frontline-health-care-facilities",
                 IsWebView = true
             });
