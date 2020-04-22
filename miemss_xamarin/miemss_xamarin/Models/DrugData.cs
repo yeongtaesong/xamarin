@@ -34,7 +34,7 @@ namespace miemss_xamarin.Models
 
             Drugs.Add(new Drug
             {
-                Name = "Epinephri",
+                Name = "Epinephrine(1:1,000)",
                 Details = "Moderate to severe allergic reaction with respiratory distress or mild allergic reaction with history of life-threatening allergic reaction.",
                 Dosage = 0.5
             });

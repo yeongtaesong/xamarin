@@ -120,7 +120,7 @@ namespace miemss_xamarin.Models
                 },
                 new ProtocolGroup("VII. Weapons of Mass Destruction Supplement")
                 {
-                   new Protocol {Name = " vWeapons of Mass Destruction Supplement", Path="miemss_xamarin.Assets.Weapons of Mass Destruction Supplement.pdf"},
+                   new Protocol {Name = " Weapons of Mass Destruction Supplement", Path="miemss_xamarin.Assets.Weapons of Mass Destruction Supplement.pdf"},
                 },
             };
             All = Groups;
