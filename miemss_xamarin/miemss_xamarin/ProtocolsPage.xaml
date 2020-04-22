@@ -12,25 +12,26 @@
         <ListView x:Name="ProtocolsView"
                   IsGroupingEnabled="true"
                   ItemSelected="OnItemSelected"
-                  ItemTapped="OnItemTapped">
+                  ItemTapped="OnItemTapped"
+                  HasUnevenRows="true">
             <!-- Section Cell-->
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Label  Padding="10" TextColor="Blue" Text="{Binding Name}"  />
+                        <Label Padding="10,15,10,15" TextColor="Blue" Text="{Binding Name}"  />
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
             <!--SubSection Cell-->
             <ListView.GroupHeaderTemplate>
                 <DataTemplate>
-                    <ViewCell>
+                    <ViewCell Height="55">
                         <StackLayout Orientation="Horizontal" WidthRequest="50">
                             <Button Image="{Binding StateIcon}" 
                                     Clicked="HeaderTapped"
                                     BackgroundColor="Transparent"
                                     CommandParameter="{Binding .}"/>
-                            <Label Padding ="8" FontAttributes="Bold"  Text="{Binding Heading}" FontSize="Medium"/>
+                            <Label Padding ="5,5,5,5" FontAttributes="Bold"  Text="{Binding Heading}" FontSize="Medium"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
