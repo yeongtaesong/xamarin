@@ -10,7 +10,7 @@
 
     <ContentPage.Content>
 
-        <Grid  RowSpacing=" 35" >
+        <Grid  RowSpacing=" 35" Margin="25">
             <Grid.RowDefinitions>
                 <RowDefinition Height="90"/>
                 <RowDefinition Height="90"/>
@@ -60,7 +60,7 @@
             </Image>
                 <Label Text="CBRNE Resources" HorizontalTextAlignment="Center" />
             </StackLayout>
-
+<!--
             <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Vertical">
 
                 <Image Source="tool.png"  
@@ -74,7 +74,8 @@
                 </Image.GestureRecognizers>
             </Image>
                 <Label Text="Tools" HorizontalTextAlignment="Center" />
-            </StackLayout>
+            </StackLayout>   -->
+            
             <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Vertical">
 
             <Image Source="drug.png"  
@@ -104,7 +105,7 @@
                 <Label Text="Regions" HorizontalTextAlignment="Center" />
             </StackLayout>
 
-            <StackLayout Grid.Row="3" Grid.Column="0" Orientation="Vertical">
+            <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Vertical">
                 <Image Source="Calendar.png"  
                    Grid.Row="2"  
                    Grid.Column="1"  

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using miemss_xamarin.Models;
 
 namespace miemss_xamarin
 {
@@ -24,10 +25,9 @@ namespace miemss_xamarin
             _allGroups = ProtocolGroup.All;
             UpdateListContent();
 
-
-
         }
 
+        //If header is tapped, list is expanded - finds index value of ResourceGroup
         private void HeaderTapped(object sender, EventArgs e)
         {
             int selectedIndex = _expandedGroups.IndexOf(
@@ -60,22 +60,22 @@ namespace miemss_xamarin
             ProtocolsView.ItemsSource = _expandedGroups;
         }
 
-        //Initialize Page so that only headers are showing. Use ResourceGroup.All to obtain original list.
-        private List<ProtocolGroup> InitializePage(List<ProtocolGroup> List)
+        void OnItemTapped(object sender, ItemTappedEventArgs e)
         {
-            List<ProtocolGroup> InitialList = new List<ProtocolGroup>();
-            foreach (ProtocolGroup protocols in List)
+            ((ListView)sender).SelectedItem = null;
+        }
+
+        async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var  protocol = ((ListView)sender).SelectedItem as Protocol;
+            if (protocol != null)
             {
-                //Only headers are created - no sections will be shown
-                ProtocolGroup temp = new ProtocolGroup(protocols.Heading);
-                InitialList.Add(temp);
+                var page = new DetailedProtocolPage();
+                page.BindingContext = protocol;
+                await Navigation.PushAsync(page);
             }
-            return InitialList;
         }
 
     }
-
-
-
 
 }

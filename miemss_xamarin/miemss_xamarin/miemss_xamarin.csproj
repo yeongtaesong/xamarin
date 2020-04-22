@@ -17,11 +17,63 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Assets\playbook.pdf" />
-    <None Remove="Files\hospital_list1.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <EmbeddedResource Include="Assets\Appendices-A.pdf" />
+    <EmbeddedResource Include="Assets\Appendices-B.pdf" />
+    <EmbeddedResource Include="Assets\Appendices-C.pdf" />
+    <EmbeddedResource Include="Assets\Appendices-D.pdf" />
+    <EmbeddedResource Include="Assets\Appendices-E.electrical therapy.pdf" />
+    <EmbeddedResource Include="Assets\Appendices-E.interfacility.pdf" />
+    <EmbeddedResource Include="Assets\Appendices-E.other procedures.pdf" />
+    <EmbeddedResource Include="Assets\Appendices-E.pdf" />
+    <EmbeddedResource Include="Assets\Appendices-E.pilot program.pdf" />
+    <EmbeddedResource Include="Assets\general Info-healthcare code.pdf" />
+    <EmbeddedResource Include="Assets\general Info-important no.pdf" />
+    <EmbeddedResource Include="Assets\general Info-inability to.pdf" />
+    <EmbeddedResource Include="Assets\general Info-MD trauma.pdf" />
+    <EmbeddedResource Include="Assets\general Info-physician order~.pdf" />
+    <EmbeddedResource Include="Assets\general Info-proposed protocol~.pdf" />
+    <EmbeddedResource Include="Assets\general Info-protocol key.pdf" />
+    <EmbeddedResource Include="Assets\general Info-provision.pdf" />
+    <EmbeddedResource Include="Assets\general Info-quality review.pdf" />
+    <EmbeddedResource Include="Assets\general_patient_care.pdf" />
+    <EmbeddedResource Include="Assets\Interfacility.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-A.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-B.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-C.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-D.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-E.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-F.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-G.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-H.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-I.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-J.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-K.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-L.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-M.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-N.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-O.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-P.pdf" />
+    <EmbeddedResource Include="Assets\Jurisdictional Optional Program-Q.pdf" />
+    <EmbeddedResource Include="Assets\MD-Medical-Protocols-2019.pdf" />
+    <EmbeddedResource Include="Assets\Research Protocol.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocol-UU.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-A.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-AA.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-BB.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-B~C.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-CC~EE.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-D.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-E.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-FF~LL.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-F~S.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-MM.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-NN~RR.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-SS~TT.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-T~Z.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-UU2.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols-VV~CCC.pdf" />
+    <EmbeddedResource Include="Assets\Treatment Protocols.pdf" />
+    <EmbeddedResource Include="Assets\Weapons of Mass Destruction Supplement.pdf" />
     <EmbeddedResource Include="Files\hospital_list1.txt" />
   </ItemGroup>
 
@@ -38,6 +90,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="CalendarPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DetailedProtocolPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DetailedResourcePage.xaml">

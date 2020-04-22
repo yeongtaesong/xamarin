@@ -21,10 +21,6 @@ namespace miemss_xamarin
         public ResourcePage()
         {
             InitializeComponent();
-
-            initBrowser();
-
-
         }
 
         protected override void OnAppearing()
@@ -33,24 +29,7 @@ namespace miemss_xamarin
             fileStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("miemss_xamarin.Assets.playbook.pdf");
             //Load the PDF
             pdfViewerControl.LoadDocument(fileStream);
-
-
-
-
-
-
         }
 
-
-        public void initBrowser()
-        {
-            //See IBaseUrl.cs for information on using IBaseUrl interface
-
-
-
-            string path = DependencyService.Get<IBaseUrl>().Get();
-            string url = Path.Combine(path, "HTML/MDMedicalProtocols2019.html");
-
-        }
     }
 }
