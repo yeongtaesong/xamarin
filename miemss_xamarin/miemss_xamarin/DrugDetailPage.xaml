@@ -27,7 +27,7 @@
                     <!--Details -->
                     <Label Grid.Column="0" Grid.Row="1" VerticalOptions="Center" Text="Details:" />
                     <Label Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Text="{Binding Details}" />
-                    <Label Grid.Column="0" Grid.Row="3" VerticalOptions="Center" Text="Calculate Dosage:" />
+                    <Label Grid.Column="0" Grid.Row="3" VerticalOptions="Center" Text="Calculate Dosage:" /> 
                     <Entry x:Name="Entry" Grid.Column="0" Grid.Row="4" Placeholder="Enter Weight in lbs" Keyboard="Numeric"/>
                     <Button Grid.Column="0" Grid.Row="5" Text="Calculate" Clicked="Button_OnClicked" BindingContext="{Binding .}"/>
                     <Label x:Name="CalculationLabel" Grid.Column="0" Grid.Row="6"/>
