@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace miemss_xamarin.Droid
 {
-    [Activity(Label = "miemss_xamarin", Icon = "@drawable/logo1", Theme = "@style/MainTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "miemss_xamarin", Icon = "@drawable/MIEMSS_logo", Theme = "@style/MainTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

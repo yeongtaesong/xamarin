@@ -88,7 +88,7 @@
                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
                 </Image.GestureRecognizers>
             </Image>
-                <Label Text="Drugs" HorizontalTextAlignment="Center" />
+                <Label Text="Medications" HorizontalTextAlignment="Center" />
             </StackLayout>
 
             <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Vertical">
