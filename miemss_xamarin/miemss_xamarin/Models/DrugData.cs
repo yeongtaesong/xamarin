@@ -278,7 +278,7 @@ namespace miemss_xamarin.Models
             {
                 Name = "BLS-Ondansetron ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-ONADANSETRON (ZOFRAN).pdf"
+                Path = "miemss_xamarin.Assets.BLS-ONDANSETRON.pdf"
             });
             Drugs.Add(new Drug
             {

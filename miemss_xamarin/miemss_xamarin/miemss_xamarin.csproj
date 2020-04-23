@@ -57,7 +57,7 @@
     <None Remove="Assets\BLS-NALOXONE.pdf" />
     <None Remove="Assets\BLS-NITROGLYCERIN PASTE.pdf" />
     <None Remove="Assets\BLS-NITROGLYCERIN.pdf" />
-    <None Remove="Assets\BLS-ONDANSETRON %28ZOFRAN%29.pdf" />
+    <None Remove="Assets\BLS-ONDANSETRON.pdf" />
     <None Remove="Assets\BLS-ORAL GLUCOSE.pdf" />
     <None Remove="Assets\BLS-OXYGEN.pdf" />
     <None Remove="Assets\BLS-SODIUM BICARBONATE.pdf" />
@@ -117,7 +117,7 @@
     <EmbeddedResource Include="Assets\BLS-NALOXONE.pdf" />
     <EmbeddedResource Include="Assets\BLS-NITROGLYCERIN PASTE.pdf" />
     <EmbeddedResource Include="Assets\BLS-NITROGLYCERIN.pdf" />
-    <EmbeddedResource Include="Assets\BLS-ONDANSETRON (ZOFRAN).pdf" />
+    <EmbeddedResource Include="Assets\BLS-ONDANSETRON.pdf" />
     <EmbeddedResource Include="Assets\BLS-ORAL GLUCOSE.pdf" />
     <EmbeddedResource Include="Assets\BLS-OXYGEN.pdf" />
     <EmbeddedResource Include="Assets\BLS-SODIUM BICARBONATE.pdf" />
