@@ -1,0 +1,15 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:miemss_xamarin"
+             x:Class="miemss_xamarin.PDFDrugPage"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
+             x:Name="MyPDFView"
+             Title="EMS Resources"
+             BindingContext="{Binding .}">
+    <ContentPage.BindingContext>
+        <local:PdfViewerViewModel></local:PdfViewerViewModel>
+    </ContentPage.BindingContext>
+    <Grid x:Name="pdfViewGrid">
+        <syncfusion:SfPdfViewer x:Name="pdfViewerControl"/>
+    </Grid>
+</ContentPage>

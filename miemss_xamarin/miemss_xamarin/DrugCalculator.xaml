@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="miemss_xamarin.DrugCalculator">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" >
+            <Label Text="Weight-Based Divided Dose Calculator" FontSize="Medium"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Dosage" FontSize="Small" Padding="10"/>
+                <Entry x:Name="Dosage" Grid.Column="0" Grid.Row="4" Placeholder="mg/kg" Keyboard="Numeric" WidthRequest="80"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Weight" FontSize="Small" Padding="10"/>
+                <Entry x:Name="Weight" Grid.Column="0" Grid.Row="4" Placeholder="kg" Keyboard="Numeric" WidthRequest="80"/>
+            </StackLayout>
+            <Button Text="Calculate Dosage" WidthRequest="200" HorizontalOptions="Start" Clicked="Button_OnClicked"/>
+            <Label x:Name="CalculationLabel"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
