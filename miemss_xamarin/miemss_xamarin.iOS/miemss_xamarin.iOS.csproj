@@ -111,6 +111,15 @@
     <ImageAsset Include="Assets.xcassets\Calendar.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\collapse.imageset\collapse.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\collapse.imageset\collapse1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\collapse.imageset\collapse2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Directory.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -147,6 +156,15 @@
     <ImageAsset Include="Assets.xcassets\ems.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\hospital.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -174,7 +192,10 @@
     <ImageAsset Include="Assets.xcassets\ic_notification.imageset\ic_notification2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Images.imageset\Contents.json">
+    <ImageAsset Include="Assets.xcassets\collapse.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Images1.imageset\Contents.json">
