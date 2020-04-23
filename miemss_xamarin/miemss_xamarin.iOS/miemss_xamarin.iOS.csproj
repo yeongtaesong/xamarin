@@ -29,6 +29,8 @@
     <MtouchDebug>true</MtouchDebug>
     <MtouchSdkVersion>
     </MtouchSdkVersion>
+    <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>

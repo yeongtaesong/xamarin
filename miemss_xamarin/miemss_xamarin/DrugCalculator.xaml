@@ -4,11 +4,11 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Medications Dose Calculator"
+             Title="Medication Dosage Calculator"
              x:Class="miemss_xamarin.DrugCalculator">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" >
-            <Label Padding ="10" Text="Weight-Based Divided Dose Calculator" FontSize="Medium"/>
+            <Label Padding ="10" Text="Weight-Based Divided Dosage Calculator" FontSize="Medium"/>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Dosage" FontSize="Small" Padding="10"/>
                 <Entry x:Name="Dosage" Grid.Column="0" Grid.Row="4" Placeholder="mg/kg" Keyboard="Numeric" WidthRequest="80"/>
