@@ -38,6 +38,7 @@ namespace miemss_xamarin.Data
                 {
                     await Database.CreateTablesAsync(CreateFlags.None, typeof(Drug)).ConfigureAwait(false);
                     initialized = true;
+                    AddItems();
                 }
             }
 
