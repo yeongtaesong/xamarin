@@ -111,13 +111,31 @@
     <ImageAsset Include="Assets.xcassets\Calendar.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\collapse.imageset\collapse.png">
+    <ImageAsset Include="Assets.xcassets\collapse.imageset\collapse-arrow.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\collapse.imageset\collapse1.png">
+    <ImageAsset Include="Assets.xcassets\collapse.imageset\collapse-arrow1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\collapse.imageset\collapse2.png">
+    <ImageAsset Include="Assets.xcassets\collapse.imageset\collapse-arrow2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\collapse2.imageset\collapse.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\collapse2.imageset\collapse1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\collapse2.imageset\collapse2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\collapse1.imageset\collapse.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\collapse1.imageset\collapse1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\collapse1.imageset\collapse2.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Directory.imageset\Contents.json">
@@ -156,13 +174,31 @@
     <ImageAsset Include="Assets.xcassets\ems.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand.imageset\expand.png">
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand.imageset\expand1.png">
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand.imageset\expand2.png">
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand2.imageset\expand.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand2.imageset\expand1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand2.imageset\expand2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand1.imageset\expand.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand1.imageset\expand1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand1.imageset\expand2.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\hospital.imageset\Contents.json">
@@ -192,13 +228,22 @@
     <ImageAsset Include="Assets.xcassets\ic_notification.imageset\ic_notification2.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\collapse1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\collapse2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand2.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\collapse.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\expand.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Images1.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\MIEMSS_logo.imageset\Contents.json">

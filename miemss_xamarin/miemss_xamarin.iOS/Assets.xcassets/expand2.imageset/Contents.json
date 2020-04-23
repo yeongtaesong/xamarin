@@ -4,19 +4,19 @@
       "appearances": [],
       "scale": "1x",
       "idiom": "iphone",
-      "filename": "collapse-arrow.png"
+      "filename": "expand.png"
     },
     {
       "appearances": [],
       "scale": "2x",
       "idiom": "iphone",
-      "filename": "collapse-arrow1.png"
+      "filename": "expand1.png"
     },
     {
       "appearances": [],
       "scale": "3x",
       "idiom": "iphone",
-      "filename": "collapse-arrow2.png"
+      "filename": "expand2.png"
     }
   ],
   "properties": {},
