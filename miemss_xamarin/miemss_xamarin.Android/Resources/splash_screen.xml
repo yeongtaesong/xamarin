@@ -1,12 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-  <item>
-    <color android:color="@color/splash_background"/>
-  </item>
-  <item>
-    <bitmap
-        android:src="@drawable/splashscreen"
-        android:tileMode="disabled"
-        android:gravity="center"/>
-  </item>
-</layer-list>
+﻿<?xml version="1.0" encoding="utf-8"?> <layer-list xmlns:android="http://schemas.android.com/apk/res/android"> 
+  <item android:drawable="@color/white" /> 
+  <item> <bitmap xmlns:android="http://schemas.android.com/apk/res/android" 
+                 android:gravity="bottom|center_horizontal" 
+                 android:scaleGravity="" android:src="@drawable/splashscreen" 
+                 android:tileMode="disabled" /> 
+</item> </layer-list>

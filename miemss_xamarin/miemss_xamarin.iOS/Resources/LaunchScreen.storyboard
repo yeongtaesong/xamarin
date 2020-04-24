@@ -17,10 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23" image="splash_screen" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
-                                <rect key="frame" x="109" y="254" width="180" height="203"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23" image="splashscreen" highlighted="YES">
+                                <rect key="frame" x="59" y="175" width="211" height="267"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                <accessibility key="accessibilityConfiguration" label="MIEMSS-EMS"/>
                             </imageView>
                         </subviews>
                         <constraints>
@@ -36,6 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash_screen" width="259.6667" height="182"/>
+        <image name="splashscreen" width="125" height="125"/>
     </resources>
 </document>

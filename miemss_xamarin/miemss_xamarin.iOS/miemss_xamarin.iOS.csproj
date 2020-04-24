@@ -70,7 +70,8 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignProvision>
+    </CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
@@ -259,6 +260,9 @@
     <ImageAsset Include="Assets.xcassets\bullet.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\MIEMSS_logo.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -293,6 +297,15 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\resource.imageset\resource2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\Infectious-Diseases-Logo-Blue-Final.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\Infectious-Diseases-Logo-Blue-Final1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\Infectious-Diseases-Logo-Blue-Final2.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\tool.imageset\Contents.json">
