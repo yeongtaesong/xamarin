@@ -27,8 +27,6 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
-    <MtouchSdkVersion>
-    </MtouchSdkVersion>
     <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
   </PropertyGroup>
@@ -110,18 +108,6 @@
     <ImageAsset Include="Assets.xcassets\bullet.imageset\bullet2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Calendar.imageset\Calendar.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Calendar.imageset\Calendar1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Calendar.imageset\Calendar2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Calendar.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\collapse.imageset\collapse-arrow.png">
       <Visible>false</Visible>
     </ImageAsset>
@@ -171,18 +157,6 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\drug.imageset\drug2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow.png">
@@ -360,6 +334,38 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Calendar1.imageset\Calendar.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Calendar1.imageset\Calendar1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Calendar1.imageset\Calendar2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Calendar1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar.png" />
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar-1.png" />
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar-2.png" />
+    <ImageAsset Include="Assets.xcassets\ems.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ems.imageset\EMS.png" />
+    <ImageAsset Include="Assets.xcassets\ems.imageset\EMS-1.png" />
+    <ImageAsset Include="Assets.xcassets\ems.imageset\EMS-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -379,12 +385,18 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\miemss_xamarin\miemss_xamarin.csproj">
-      <Project>{73F2CA90-646D-45E3-AF27-239A4721E5CD}</Project>
+      <Project>{154C0B4F-4C4E-471E-9C9A-33382656F42A}</Project>
       <Name>miemss_xamarin</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\HTML\page1.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\Calendar1.imageset\" />
+    <Folder Include="Assets.xcassets\ems1.imageset\" />
+    <Folder Include="Assets.xcassets\Calendar.imageset\" />
+    <Folder Include="Assets.xcassets\ems.imageset\" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
