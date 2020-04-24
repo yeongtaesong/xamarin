@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>57032433781-vhefau0kmf2igglcmh2ca93nnuiba1qk.apps.googleusercontent.com</string>
+	<string>57032433781-m843lkgg72kp5dbah439ckj0ta5ijq7m.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.57032433781-vhefau0kmf2igglcmh2ca93nnuiba1qk</string>
+	<string>com.googleusercontent.apps.57032433781-m843lkgg72kp5dbah439ckj0ta5ijq7m</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDaG-Onn7qrx70xiCa2USNv05MzMMz3nOs</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,24 +13,12 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.xamarin.miemss-xamarin</string>
+	<string>com.viasoftech.miemss1</string>
 	<key>PROJECT_ID</key>
 	<string>miemss-ebb9e</string>
 	<key>STORAGE_BUCKET</key>
 	<string>miemss-ebb9e.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
-	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
-	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
-	<key>IS_GCM_ENABLED</key>
-	<true></true>
-	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
-	<key>GOOGLE_APP_ID</key>
-	<string>1:57032433781:ios:89aa8246946b9495da583c</string>
-	<key>DATABASE_URL</key>
-	<string>https://miemss-ebb9e.firebaseio.com</string>
+	<false/>
 </dict>
 </plist>

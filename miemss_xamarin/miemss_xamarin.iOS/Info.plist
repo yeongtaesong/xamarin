@@ -29,8 +29,6 @@
 	<string>1.0</string>
 	<key>CFBundleName</key>
 	<string>miemss_xamarin</string>
-	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 </dict>
