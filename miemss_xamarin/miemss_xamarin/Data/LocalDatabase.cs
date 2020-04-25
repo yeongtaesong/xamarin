@@ -77,10 +77,6 @@ namespace miemss_xamarin.Data
         public void AddItems()
 
         {
-            //Currently very inefficient, but prevents item from being duplicated. Find more efficient method?
-            Database.DropTableAsync<Drug>().Wait();
-            Database.CreateTableAsync<Drug>().Wait();
-
             Drugs = DrugData.Drugs;
 
             foreach(Drug drug in Drugs)
