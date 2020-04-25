@@ -346,18 +346,6 @@
     <ImageAsset Include="Assets.xcassets\Calendar1.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems1.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Calendar.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar.png" />
     <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar-1.png" />
@@ -397,6 +385,7 @@
     <Folder Include="Assets.xcassets\ems1.imageset\" />
     <Folder Include="Assets.xcassets\Calendar.imageset\" />
     <Folder Include="Assets.xcassets\ems.imageset\" />
+    <Folder Include="Assets.xcassets\ems .imageset\" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
