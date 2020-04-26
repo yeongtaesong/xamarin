@@ -117,24 +117,6 @@
     <ImageAsset Include="Assets.xcassets\collapse.imageset\collapse-arrow2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\collapse2.imageset\collapse.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\collapse2.imageset\collapse1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\collapse2.imageset\collapse2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\collapse1.imageset\collapse.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\collapse1.imageset\collapse1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\collapse1.imageset\collapse2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Directory.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -168,24 +150,6 @@
     <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand2.imageset\expand.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand2.imageset\expand1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand2.imageset\expand2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand1.imageset\expand.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand1.imageset\expand1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand1.imageset\expand2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\hospital.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -211,18 +175,6 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\ic_notification.imageset\ic_notification2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\collapse1.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand1.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\collapse2.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand2.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\collapse.imageset\Contents.json">
@@ -346,14 +298,30 @@
     <ImageAsset Include="Assets.xcassets\Calendar1.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Calendar.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar.png" />
-    <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar-1.png" />
-    <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar-2.png" />
-    <ImageAsset Include="Assets.xcassets\ems.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\ems.imageset\EMS.png" />
-    <ImageAsset Include="Assets.xcassets\ems.imageset\EMS-1.png" />
-    <ImageAsset Include="Assets.xcassets\ems.imageset\EMS-2.png" />
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems.imageset\EMS.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems.imageset\EMS-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems.imageset\EMS-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -383,9 +351,6 @@
   <ItemGroup>
     <Folder Include="Assets.xcassets\Calendar1.imageset\" />
     <Folder Include="Assets.xcassets\ems1.imageset\" />
-    <Folder Include="Assets.xcassets\Calendar.imageset\" />
-    <Folder Include="Assets.xcassets\ems.imageset\" />
-    <Folder Include="Assets.xcassets\ems .imageset\" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
