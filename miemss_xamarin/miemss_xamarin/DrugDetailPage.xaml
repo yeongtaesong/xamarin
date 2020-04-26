@@ -9,21 +9,36 @@
     <ContentPage.Content>
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
             <StackLayout Padding="24,24,24,24" >
-
-                    <!--Details -->
-                    <Label Text="Details:" FontSize="Medium" />
+                <!--Details -->
+                <Label Text="{Binding Name}" FontSize="Large"/>
+                <Label Text="Details:" FontSize="Medium" />
                     <Label Text="{Binding Details}" />
                 <StackLayout Orientation="Vertical" >
+                    <!--DRUG CALCULATOR-->
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Dosage" FontSize="Small" Padding="10"/>
-                        <Entry x:Name="Dosage" Grid.Column="0" Grid.Row="4" Placeholder="mg/kg" Keyboard="Numeric" WidthRequest="80"/>
+                        <Label Text="Dosage" FontSize="Medium" Padding="10" WidthRequest="150"/>
+                        <Entry x:Name="Dosage" Placeholder="mg/kg" Keyboard="Numeric" WidthRequest="150"/>
+                        <Picker x:Name="Dosage Picker" Title="Select Unit" SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand" >
+                            <Picker.Items>
+                                <x:String>kg</x:String>
+                                <x:String>lb</x:String>
+                            </Picker.Items>
+                        </Picker>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Weight" FontSize="Small" Padding="10"/>
-                        <Entry x:Name="Weight" Grid.Column="0" Grid.Row="4" Placeholder="kg" Keyboard="Numeric" WidthRequest="80"/>
+                        <Label Text="Weight" FontSize="Medium" Padding="10" WidthRequest="150"/>
+                        <Entry x:Name="Weight"  Placeholder="kg" Keyboard="Numeric" WidthRequest="150"/>
+                        <Picker x:Name="UnitPicker" Title="Select Unit" SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand" >
+                            <Picker.Items>
+                                <x:String>kg</x:String>
+                                <x:String>lb</x:String>
+                            </Picker.Items>
+                        </Picker>
+
                     </StackLayout>
                     <Button Text="Calculate Dosage" WidthRequest="200" HorizontalOptions="Start" Clicked="Button_OnClicked"/>
                     <Label x:Name="CalculationLabel"/>
+>
                 </StackLayout>
 
             </StackLayout>
