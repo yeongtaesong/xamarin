@@ -24,7 +24,7 @@
                 <Image Source="ems.png"  
                    Grid.Row="0"  
                    Grid.Column="0"  
-                   BackgroundColor="Transparent"
+                   BackgroundColor="White"
                    WidthRequest="60" HeightRequest="60" >
                 <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
