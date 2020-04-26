@@ -9,32 +9,26 @@
     <ContentPage.Content>
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
             <StackLayout Padding="24,24,24,24" >
-                <Label HorizontalOptions="Center"
-                   Text="{Binding Name}" FontSize="Large" HorizontalTextAlignment="Center" Margin="10" />
-                <Grid RowSpacing="10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        
-                    </Grid.RowDefinitions>
-          
+
                     <!--Details -->
-                    <Label Grid.Column="0" Grid.Row="1" VerticalOptions="Center" Text="Details:" />
-                    <Label Grid.Column="0" Grid.Row="2" VerticalOptions="Center" Text="{Binding Details}" />
-                    <Label Grid.Column="0" Grid.Row="3" VerticalOptions="Center" Text="Calculate Dosage:" /> 
-                    <Entry x:Name="Entry" Grid.Column="0" Grid.Row="4" Placeholder="Enter Weight in lbs" Keyboard="Numeric"/>
-                    <Button Grid.Column="0" Grid.Row="5" Text="Calculate" Clicked="Button_OnClicked" BindingContext="{Binding .}"/>
-                    <Label x:Name="CalculationLabel" Grid.Column="0" Grid.Row="6"/>
+                    <Label Text="Details:" FontSize="Medium" />
+                    <Label Text="{Binding Details}" />
+                <StackLayout Orientation="Vertical" >
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Dosage" FontSize="Small" Padding="10"/>
+                        <Entry x:Name="Dosage" Grid.Column="0" Grid.Row="4" Placeholder="mg/kg" Keyboard="Numeric" WidthRequest="80"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Weight" FontSize="Small" Padding="10"/>
+                        <Entry x:Name="Weight" Grid.Column="0" Grid.Row="4" Placeholder="kg" Keyboard="Numeric" WidthRequest="80"/>
+                    </StackLayout>
+                    <Button Text="Calculate Dosage" WidthRequest="200" HorizontalOptions="Start" Clicked="Button_OnClicked"/>
+                    <Label x:Name="CalculationLabel"/>
+                </StackLayout>
 
-
-                </Grid>
             </StackLayout>
+
+
         </pancake:PancakeView>
     </ContentPage.Content>
 </ContentPage>

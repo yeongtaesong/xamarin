@@ -49,7 +49,7 @@ namespace miemss_xamarin
             var drug = ((ListView)sender).SelectedItem as Drug;
             if (drug != null)
             {
-                var page = new PDFDrugPage();
+                var page = new DrugDetailPage();
                 page.BindingContext = drug;
                 await Navigation.PushAsync(page);
             }
