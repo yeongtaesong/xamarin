@@ -12,13 +12,15 @@
                 <!--Details -->
                 <Label Text="{Binding Name}" FontSize="Large"/>
                 <Label Text="Details:" FontSize="Medium" />
-                    <Label Text="{Binding Details}" />
+                <Label Text="{Binding Details}" />
+                <Button Text="Show Dosage Calculator" WidthRequest="200" HorizontalOptions="Start" Clicked="Calculator_OnClicked"/>
+
+                <!--DRUG CALCULATOR-->
                 <StackLayout Orientation="Vertical" >
-                    <!--DRUG CALCULATOR-->
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Dosage" FontSize="Medium" Padding="10" WidthRequest="150"/>
                         <Entry x:Name="Dosage" Placeholder="mg/kg" Keyboard="Numeric" WidthRequest="150"/>
-                        <Picker x:Name="Dosage Picker" Title="Select Unit" SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand" >
+                        <Picker x:Name="Dosage Picker" Title="Select Unit" SelectedIndex="{Binding DosageUnit}" HorizontalOptions="FillAndExpand" >
                             <Picker.Items>
                                 <x:String>kg</x:String>
                                 <x:String>lb</x:String>
@@ -28,7 +30,7 @@
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Weight" FontSize="Medium" Padding="10" WidthRequest="150"/>
                         <Entry x:Name="Weight"  Placeholder="kg" Keyboard="Numeric" WidthRequest="150"/>
-                        <Picker x:Name="UnitPicker" Title="Select Unit" SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand" >
+                        <Picker x:Name="UnitPicker" Title="Select Unit" SelectedIndex="{Binding WeightUnit}" HorizontalOptions="FillAndExpand" >
                             <Picker.Items>
                                 <x:String>kg</x:String>
                                 <x:String>lb</x:String>

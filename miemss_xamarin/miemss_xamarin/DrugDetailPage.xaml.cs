@@ -24,5 +24,11 @@ namespace miemss_xamarin
 
             
         }
+        private void Calculator_OnClicked(object sender, EventArgs e)
+        {
+
+
+
+        }
     }
 }
