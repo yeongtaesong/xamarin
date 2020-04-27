@@ -6,17 +6,15 @@
              mc:Ignorable="d"
              Title="Drugs"
              x:Class="miemss_xamarin.DrugDetailPage"
-             BindingContext="{Binding .}"
-             x:Name="DrugDetails">
+             BindingContext="{Binding .}">
     <ContentPage.Content>
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
             <StackLayout Padding="24,24,24,24" >
                 <!--Details -->
                 <Label Text="{Binding Name}" FontSize="Large"/>
-                <Button Text="Tap For More Information" BackgroundColor="Transparent" HorizontalOptions="Start" Clicked="Information_OnClicked"/>
                 <Label Text="Details:" FontSize="Medium" />
                 <Label Text="{Binding Details}" />
-                <Button Text="Show Dosage Calculator" WidthRequest="250" HorizontalOptions="Start" Clicked="Calculator_OnClicked" IsVisible="False"/>
+                <Button Text="Show Dosage Calculator" WidthRequest="250" HorizontalOptions="Start" Clicked="Calculator_OnClicked"/>
 
                 <!--DRUG CALCULATOR-->
                 <StackLayout Orientation="Vertical" IsVisible="{Binding IsCalculatorVisible}">

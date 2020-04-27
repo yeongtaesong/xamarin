@@ -11,7 +11,7 @@
             <SearchBar x:Name="searchBar"
                        Placeholder="search drugs..."
                        TextChanged="OnTextChanged"/>
-            <Button Text="Go To Dosage Calculator" Clicked="Button_OnClicked" IsVisible="False"/>
+            <Button Text="Go To Dosage Calculator" Clicked="Button_OnClicked"/>
             <ListView x:Name="listView"
                   HorizontalOptions="Fill"
                   VerticalOptions="CenterAndExpand"
