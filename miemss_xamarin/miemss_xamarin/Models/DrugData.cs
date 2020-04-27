@@ -13,292 +13,332 @@ namespace miemss_xamarin.Models
 
             Drugs.Add(new Drug
             {
-                Name = "ALS-Acetaminophen",
+                Name = "Acetaminophen",
                 Details = "Patients ages 2 years and above judged to be in mild to moderate discom-fort (e.g., 2–5 on FACES scale).",
-                Path = "miemss_xamarin.Assets.ALS-ACETAMINOPHEN.pdf"
+                Path = "miemss_xamarin.Assets.ALS-ACETAMINOPHEN.pdf",
+                Category = "ALS"
 
             });
 
             Drugs.Add(new Drug
             {
-                Name = "ALS-Activated Charcoal (Without Sorbitol)",
+                Name = "Activated Charcoal (Without Sorbitol)",
                 Details = "Poisoning by mouth",
-                Path = "miemss_xamarin.Assets.ALS-ACTIVATED CHARCOAL.pdf"
+                Path = "miemss_xamarin.Assets.ALS-ACTIVATED CHARCOAL.pdf",
+                Category = "ALS"
 
             });
 
             Drugs.Add(new Drug
             {
-                Name = "ALS-Aspirin",
+                Name = "Aspirin",
                 Details = "Chest pain when acute myocardial infarction is suspected.",
-                Path = "miemss_xamarin.Assets.ALS-ASPIRIN.pdf"
+                Path = "miemss_xamarin.Assets.ALS-ASPIRIN.pdf",
+                Category = "ALS"
 
             });
 
             Drugs.Add(new Drug
             {
-                Name = "ALS-Epinephrine(1:1,000)",
+                Name = "Epinephrine(1:1,000)",
                 Details = "Moderate to severe allergic reaction with respiratory distress or mild allergic reaction with history of life-threatening allergic reaction.",
-                Path = "miemss_xamarin.Assets.ALS-EPINEPHRINE.pdf"
+                Path = "miemss_xamarin.Assets.ALS-EPINEPHRINE.pdf",
+                Category = "ALS"
 
             });
 
             Drugs.Add(new Drug
             {
-                Name = "ALS-Epinephrine Auto-Injector",
+                Name = "Epinephrine Auto-Injector",
                 Details = "Moderate to severe allergic reaction with respiratory distress or mild allergic reaction with history of life-threatening allergic reaction.",
-                Path = "miemss_xamarin.Assets.ALS-EPINEPHRINE AUTO-INJECTOR.pdf"
+                Path = "miemss_xamarin.Assets.ALS-EPINEPHRINE AUTO-INJECTOR.pdf",
+                Category = "ALS"
 
 
             });
 
             Drugs.Add(new Drug
             {
-                Name = "ALS-Naloxone",
+                Name = "Naloxone",
                 Details = "Reverses all effects due to opioid (morphine-like) agents. This drug will reverse the respiratory depression and all central and peripheral nervous system effects.",
-                Path = "miemss_xamarin.Assets.ALS-NALOXONE (NARCAN).pdf"
+                Path = "miemss_xamarin.Assets.ALS-NALOXONE (NARCAN).pdf",
+                Category = "ALS"
 
 
             });
 
             Drugs.Add(new Drug
             {
-                Name = "ALS-Nitroglycerin",
+                Name = "Nitroglycerin",
                 Details = " Patient must have own prescribed sublingual nitroglycerin. Chest pain.",
-                Path = "miemss_xamarin.Assets.ALS-NITROGLYCERIN.pdf"
+                Path = "miemss_xamarin.Assets.ALS-NITROGLYCERIN.pdf",
+                Category = "ALS"
 
             });
 
             Drugs.Add(new Drug
             {
-                Name = "ALS-Oral Glucose",
+                Name = "Oral Glucose",
                 Details = "Altered mental status with known diabetic history. Unconscious for an unknown reason.",
-                Path = "miemss_xamarin.Assets.ALS-ORAL GLUCOSE.pdf"
+                Path = "miemss_xamarin.Assets.ALS-ORAL GLUCOSE.pdf",
+                Category = "ALS"
 
 
             });
 
             Drugs.Add(new Drug
             {
-                Name = "ALS-Oxygen",
+                Name = "Oxygen",
                 Details = "Increases oxygen content of the blood. Improves tissue oxygenation. Decreases energy expended for respiratiohn.",
-                Path = "miemss_xamarin.Assets.ALS-OXYGEN.pdf"
+                Path = "miemss_xamarin.Assets.ALS-OXYGEN.pdf",
+                Category = "ALS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Acetaminophen",
+                Name = "Acetaminophen",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-ACETAMINOPHEN.pdf"
+                Path = "miemss_xamarin.Assets.BLS-ACETAMINOPHEN.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Activated Charcoal (Without Sorbitol) ",
+                Name = "Activated Charcoal (Without Sorbitol) ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-ACTIVATED CHARCOAL.pdf"
+                Path = "miemss_xamarin.Assets.BLS-ACTIVATED CHARCOAL.pdf",
+                Category = "BLS"
 
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Adenosine ",
+                Name = "Adenosine ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-ADENOSINE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-ADENOSINE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Albuterol ",
+                Name = "Albuterol ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-ALBUTEROLSULFATE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-ALBUTEROLSULFATE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Amiodarone",
+                Name = "Amiodarone",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-AMIODARONE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-AMIODARONE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Aspirin",
+                Name = "Aspirin",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-ASPIRIN.pdf"
+                Path = "miemss_xamarin.Assets.BLS-ASPIRIN.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Atropine Sulfate",
+                Name = "Atropine Sulfate",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-ATROPINESULFATE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-ATROPINESULFATE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Atrovent",
+                Name = "Atrovent",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-ATROVENT.pdf"
+                Path = "miemss_xamarin.Assets.BLS-ATROVENT.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Calcium Chloride",
+                Name = "Calcium Chloride",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-CALCIUM CHLORIDE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-CALCIUM CHLORIDE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Dexamethasone ",
+                Name = "Dexamethasone ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-DEXAMETHASONE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-DEXAMETHASONE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Dextrose ",
+                Name = "Dextrose ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-DEXTROSE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-DEXTROSE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Diazepam",
+                Name = "Diazepam",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-DIAZEPAM.pdf"
+                Path = "miemss_xamarin.Assets.BLS-DIAZEPAM.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Diphenhydramine Hydrochloride ",
+                Name = "Diphenhydramine Hydrochloride ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-DIPHENHYDRAMINE HYDROCHLORIDE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-DIPHENHYDRAMINE HYDROCHLORIDE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Dopamine Hydrochloride",
+                Name = "Dopamine Hydrochloride",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-DOPAMINE HYDROCHLORIDE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-DOPAMINE HYDROCHLORIDE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Epinephrine ",
+                Name = "Epinephrine ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-EPINEPHRINE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-EPINEPHRINE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Fentanyl ",
+                Name = "Fentanyl ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-FENTANYL.pdf"
+                Path = "miemss_xamarin.Assets.BLS-FENTANYL.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS- Glucagon ",
+                Name = "Glucagon ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-GLUCAGON.pdf"
+                Path = "miemss_xamarin.Assets.BLS-GLUCAGON.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Haloperidol (Haldol) ",
+                Name = "Haloperidol (Haldol) ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-HALOPERIDOL (HALDOL).pdf"
+                Path = "miemss_xamarin.Assets.BLS-HALOPERIDOL (HALDOL).pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Ketamine",
+                Name = "Ketamine",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-KETAMINE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-KETAMINE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Lactated Ringer's ",
+                Name = "Lactated Ringer's ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-LACTATED RINGER’S.pdf"
+                Path = "miemss_xamarin.Assets.BLS-LACTATED RINGER’S.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Lidocaine ",
+                Name = "Lidocaine ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-LIDOCAINE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-LIDOCAINE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Magnesium Sulfate ",
+                Name = "Magnesium Sulfate ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-MAGNESIUM SULFATE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-MAGNESIUM SULFATE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Midazolam ",
+                Name = "Midazolam ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-MIDAZOLAM.pdf"
+                Path = "miemss_xamarin.Assets.BLS-MIDAZOLAM.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Morphine Sulfate ",
+                Name = "Morphine Sulfate ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-MORPHINE SULFATE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-MORPHINE SULFATE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Naloxone ",
+                Name = "Naloxone ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-NALOXONE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-NALOXONE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Nitroglycerin ",
+                Name = "Nitroglycerin ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-NITROGLYCERIN.pdf"
+                Path = "miemss_xamarin.Assets.BLS-NITROGLYCERIN.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Nitroglycerin Paste ",
+                Name = "Nitroglycerin Paste ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-NITROGLYCERIN PASTE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-NITROGLYCERIN PASTE.pdf",
+                Category = "BLS"
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Ondansetron ",
+                Name = "Ondansetron ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-ONDANSETRON.pdf"
+                Path = "miemss_xamarin.Assets.BLS-ONDANSETRON.pdf",
+                Category = "BLS"
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS- Oxygen ",
+                Name = "Oxygen ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-OXYGEN.pdf"
+                Path = "miemss_xamarin.Assets.BLS-OXYGEN.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Sodium Bicarbonate ",
+                Name = "Sodium Bicarbonate ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-SODIUM BICARBONATE.pdf"
+                Path = "miemss_xamarin.Assets.BLS-SODIUM BICARBONATE.pdf",
+                Category = "BLS"
 
             });
             Drugs.Add(new Drug
             {
-                Name = "BLS-Verapamil  ",
+                Name = "Verapamil  ",
                 Details = "",
-                Path = "miemss_xamarin.Assets.BLS-VERAPAMIL.pdf"
+                Path = "miemss_xamarin.Assets.BLS-VERAPAMIL.pdf",
+                Category = "BLS"
 
             });
 
