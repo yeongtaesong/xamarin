@@ -20,9 +20,8 @@ namespace miemss_xamarin
     {
         public DrugPage()
         {
+            this.BindingContext = new DrugsPageViewModel();
             InitializeComponent();
-           
-
         }
 
         protected override async void OnAppearing()
