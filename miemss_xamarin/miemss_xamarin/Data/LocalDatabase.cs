@@ -1,5 +1,4 @@
-﻿using Microsoft.CodeAnalysis.VisualBasic.Syntax;
-using miemss_xamarin.Models;
+﻿using miemss_xamarin.Models;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -24,10 +23,14 @@ namespace miemss_xamarin.Data
 
         public LocalDatabase()
         {
+
             InitializeAsync().SafeFireAndForget(false);
+
+
+
         }
 
-       public async Task InitializeAsync()
+        async Task InitializeAsync()
         {
             if (!initialized)
             {
@@ -35,17 +38,12 @@ namespace miemss_xamarin.Data
                 {
                     await Database.CreateTablesAsync(CreateFlags.None, typeof(Drug)).ConfigureAwait(false);
                     initialized = true;
+                    AddItems();
                 }
             }
 
-
         }
 
-        public async Task<int> GetDrugCount()
-        {
-           int count = await Database.Table<Drug>().CountAsync();
-            return count;
-        }
         //...
         public Task<List<Drug>> GetItemsAsync()
         {

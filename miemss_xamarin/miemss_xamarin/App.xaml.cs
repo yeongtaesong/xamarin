@@ -1,5 +1,4 @@
 ﻿using miemss_xamarin.Data;
-using miemss_xamarin.Models;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -24,21 +23,14 @@ namespace miemss_xamarin
 
         public App()
         {
-
-
             InitializeComponent();
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjQzODcxQDMxMzgyZTMxMmUzMFlDZEhoQjdVc2dCQVphRUkvYk15Q2hXS3VpQkdQMFVMa2kvbmdZZGp2UDQ9");
 
             MainPage = new NavigationPage(new MainPage());
         }
 
-        protected override async void OnStart()
+        protected override void OnStart()
         {
-            int count = await Database.GetDrugCount();
-            if (count == 0)
-            {
-                Database.AddItems();
-            }
         }
 
         protected override void OnSleep()
@@ -47,11 +39,6 @@ namespace miemss_xamarin
 
         protected override void OnResume()
         {
-        }
-
-        async void CreateDatabaseItem()
-        {
-
         }
     }
 }

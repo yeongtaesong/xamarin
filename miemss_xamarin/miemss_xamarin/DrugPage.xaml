@@ -15,8 +15,9 @@
             <ListView x:Name="listView"
                   HorizontalOptions="Fill"
                   VerticalOptions="CenterAndExpand"
-                  ItemTapped="OnListViewItemTapped" 
-                  ItemSelected="OnListViewItemSelected">
+                      ItemsSource="{Binding SearchResults}"
+                      ItemTapped="OnListViewItemTapped" 
+                      ItemSelected="OnListViewItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -29,11 +30,7 @@
                                     <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
                                 <Image Source ="bullet.png" Grid.Column="0" Grid.Row="0"/>
-                                <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="0">
-                                    <Label FontSize="Medium" Text="{Binding Category}" TextColor="LightGray"/>
-                                    <Label  Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
-                                </StackLayout>
-
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
