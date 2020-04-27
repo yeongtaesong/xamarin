@@ -29,8 +29,8 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignKey>Apple Development: Emil Sawires (HN9X7JQU34)</CodesignKey>
-    <CodesignProvision>MIEMSS Provision Profile Development With Push Not</CodesignProvision>
+    <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -534,13 +534,10 @@
     <BundleResource Include="GoogleService-Info.plist" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets.xcassets\Calendar1.imageset\" />
-    <Folder Include="Assets.xcassets\ems1.imageset\" />
     <Folder Include="Assets.xcassets\Calendar.imageset\" />
+    <Folder Include="Assets.xcassets\Calendar1.imageset\" />
     <Folder Include="Assets.xcassets\ems.imageset\" />
-    <Folder Include="Assets.xcassets\ems.imageset\" />
-    <Folder Include="Assets.xcassets\ems.imageset\" />
-    <Folder Include="Assets.xcassets\ems.imageset\" />
+    <Folder Include="Assets.xcassets\ems1.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />
