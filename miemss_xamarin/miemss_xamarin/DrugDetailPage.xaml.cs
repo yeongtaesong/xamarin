@@ -29,13 +29,13 @@ namespace miemss_xamarin
             {
                 double calculation = dosage * (weight * 0.45359237);
                 calculation = Math.Round(calculation, 3);
-                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString();
+                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + "mg";
 
             } else if (unit == "kg")
             {
                 double calculation = dosage * weight;
                 calculation = Math.Round(calculation, 3);
-                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString();
+                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + "mg";
             }
             else
             {

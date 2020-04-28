@@ -34,11 +34,6 @@ namespace miemss_xamarin
 
         protected override async void OnStart()
         {
-            int count = await Database.GetDrugCount();
-            if (count == 0)
-            {
-                Database.AddItems();
-            }
         }
 
         protected override void OnSleep()
@@ -49,9 +44,5 @@ namespace miemss_xamarin
         {
         }
 
-        async void CreateDatabaseItem()
-        {
-
-        }
     }
 }
