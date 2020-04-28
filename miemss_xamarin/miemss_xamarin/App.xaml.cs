@@ -42,10 +42,5 @@ namespace miemss_xamarin
         protected override void OnResume()
         {
         }
-
-        async void CreateDatabaseItem()
-        {
-
-        }
     }
 }
