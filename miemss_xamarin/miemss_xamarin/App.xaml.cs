@@ -1,5 +1,4 @@
 ﻿using miemss_xamarin.Data;
-using miemss_xamarin.Models;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

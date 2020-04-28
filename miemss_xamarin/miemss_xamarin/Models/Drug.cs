@@ -13,6 +13,6 @@ namespace miemss_xamarin.Models
         public string Name { get; set; }
         public string Details { get; set; }
         public string Path { get; set; }
-        public string Category { get; set; }
+
     }
 }

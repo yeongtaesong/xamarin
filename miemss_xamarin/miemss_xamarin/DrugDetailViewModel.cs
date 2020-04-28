@@ -28,7 +28,5 @@ namespace miemss_xamarin
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-
     }
 }

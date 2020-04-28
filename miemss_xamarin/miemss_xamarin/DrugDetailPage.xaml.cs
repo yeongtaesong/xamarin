@@ -17,51 +17,41 @@ namespace miemss_xamarin
         {
             InitializeComponent();
         }
-        //Button for dosage calculation
+
         private void Button_OnClicked(object sender, EventArgs e)
         {
-
-            double dosage = Convert.ToDouble(Dosage.Text);
-            double weight = Convert.ToDouble(Weight.Text);
-
             string unit = (string)CalculateButton.BindingContext;
            if (unit == "lb")
             {
+                double dosage = Convert.ToDouble(Dosage.Text);
+                double weight = Convert.ToDouble(Weight.Text);
+
                 double calculation = dosage * (weight * 0.45359237);
-                calculation = Math.Round(calculation, 3);
+               calculation = Math.Round(calculation, 3);
+
                 CalculationLabel.Text = "Calculated dosage: " + calculation.ToString();
 
             } else if (unit == "kg")
             {
+                double dosage = Convert.ToDouble(Dosage.Text);
+                double weight = Convert.ToDouble(Weight.Text);
+
                 double calculation = dosage * weight;
-                calculation = Math.Round(calculation, 3);
+
                 CalculationLabel.Text = "Calculated dosage: " + calculation.ToString();
             }
             else
             {
                 DisplayAlert("Message", "Please select a unit.", "ok");
             }
-        }
 
-        //Button to show/hide calculator
-       async private void Calculator_OnClicked(object sender, EventArgs e)
+
+        }
+        private void Calculator_OnClicked(object sender, EventArgs e)
         {
 
 
 
-        }
-
-        //Button to navigate to Drug PDF information
-        async private void Information_OnClicked(object sender, EventArgs e)
-        {
-            var drug = (Drug)DrugDetails.BindingContext;
-
-            if (drug != null)
-            {
-                var page = new PDFDrugPage();
-                page.BindingContext = drug;
-                await Navigation.PushAsync(page);
-            }
         }
     }
 }
