@@ -7,7 +7,19 @@ namespace miemss_xamarin
 {
     public class DrugsPageViewModel
     {
-        public IList<Drug> Drugs { get; private set; }
+
+        public string _DrugDisplayTitle;
+        public string DrugDisplayTitle
+        {
+            get
+            {
+                return _DrugDisplayTitle;
+            }
+            set
+            {
+
+            }
+        }
 
         public DrugsPageViewModel()
         {

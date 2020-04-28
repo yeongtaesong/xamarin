@@ -11,13 +11,12 @@
             <SearchBar x:Name="searchBar"
                        Placeholder="search drugs..."
                        TextChanged="OnTextChanged"/>
-            <Button Text="Go To Dosage Calculator" Clicked="Button_OnClicked"/>
+            <Button Text="Go To Dosage Calculator" Clicked="Button_OnClicked" IsVisible="False"/>
             <ListView x:Name="listView"
                   HorizontalOptions="Fill"
                   VerticalOptions="CenterAndExpand"
-                      ItemsSource="{Binding SearchResults}"
-                      ItemTapped="OnListViewItemTapped" 
-                      ItemSelected="OnListViewItemSelected">
+                  ItemTapped="OnListViewItemTapped" 
+                  ItemSelected="OnListViewItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -30,7 +29,11 @@
                                     <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
                                 <Image Source ="bullet.png" Grid.Column="0" Grid.Row="0"/>
-                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
+                                <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="0">
+                                    <Label FontSize="Medium" Text="{Binding Category}" TextColor="LightGray"/>
+                                    <Label  Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
+                                </StackLayout>
+
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

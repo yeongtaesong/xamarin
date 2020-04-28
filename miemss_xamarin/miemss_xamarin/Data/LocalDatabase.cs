@@ -23,14 +23,10 @@ namespace miemss_xamarin.Data
 
         public LocalDatabase()
         {
-
             InitializeAsync().SafeFireAndForget(false);
-
-
-
         }
 
-        async Task InitializeAsync()
+       public async Task InitializeAsync()
         {
             if (!initialized)
             {
@@ -38,7 +34,6 @@ namespace miemss_xamarin.Data
                 {
                     await Database.CreateTablesAsync(CreateFlags.None, typeof(Drug)).ConfigureAwait(false);
                     initialized = true;
-                    AddItems();
                 }
             }
 
@@ -53,6 +48,11 @@ namespace miemss_xamarin.Data
             }
         }
 
+        public async Task<int> GetDrugCount()
+        {
+           int count = await Database.Table<Drug>().CountAsync();
+            return count;
+        }
         //...
         public Task<List<Drug>> GetItemsAsync()
         {
