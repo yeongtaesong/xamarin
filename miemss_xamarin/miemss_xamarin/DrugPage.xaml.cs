@@ -20,6 +20,7 @@ namespace miemss_xamarin
     {
         public DrugPage()
         {
+
             this.BindingContext = new DrugsPageViewModel();
             InitializeComponent();
         }

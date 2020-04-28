@@ -38,7 +38,15 @@ namespace miemss_xamarin.Data
                 }
             }
 
+        }
 
+       public async void InitializeDatabase()
+        {
+            int count = await App.Database.GetDrugCount();
+            if (count == 0)
+            {
+                App.Database.AddItems();
+            }
         }
 
         public async Task<int> GetDrugCount()

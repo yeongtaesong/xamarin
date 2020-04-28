@@ -24,21 +24,16 @@ namespace miemss_xamarin
 
         public App()
         {
-
-
+            
             InitializeComponent();
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjQzODcxQDMxMzgyZTMxMmUzMFlDZEhoQjdVc2dCQVphRUkvYk15Q2hXS3VpQkdQMFVMa2kvbmdZZGp2UDQ9");
 
             MainPage = new NavigationPage(new MainPage());
         }
 
-        protected override async void OnStart()
+        protected override void OnStart()
         {
-            int count = await Database.GetDrugCount();
-            if (count == 0)
-            {
-                Database.AddItems();
-            }
+            Database.InitializeDatabase();
         }
 
         protected override void OnSleep()
