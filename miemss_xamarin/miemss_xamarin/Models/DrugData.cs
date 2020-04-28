@@ -89,7 +89,7 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Oxygen",
-                Details = "Increases oxygen content of the blood. Improves tissue oxygenation. Decreases energy expended for respiration.",
+                Details = "Increases oxygen content of the blood. Improves tissue oxygenation. Decreases energy expended for respiratiohn.",
                 Path = "miemss_xamarin.Assets.ALS-OXYGEN.pdf",
                 Category = "ALS"
 
@@ -305,22 +305,22 @@ namespace miemss_xamarin.Models
             });
             Drugs.Add(new Drug
             {
-                Name = "Nitroglycerin Paste",
+                Name = "Nitroglycerin Paste ",
                 Details = "",
                 Path = "miemss_xamarin.Assets.BLS-NITROGLYCERIN PASTE.pdf",
                 Category = "BLS"
             });
             Drugs.Add(new Drug
             {
-                Name = "Ondansetron",
-                Details = "A selective blocking agent of the serotonin 5-HT3 receptor type.",
+                Name = "Ondansetron ",
+                Details = "",
                 Path = "miemss_xamarin.Assets.BLS-ONDANSETRON.pdf",
                 Category = "BLS"
             });
             Drugs.Add(new Drug
             {
                 Name = "Oxygen ",
-                Details = "Increases oxygen content of the blood. Improves tissue oxygenation. Decreases energy expended for respirations",
+                Details = "",
                 Path = "miemss_xamarin.Assets.BLS-OXYGEN.pdf",
                 Category = "BLS"
 
@@ -328,7 +328,7 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Sodium Bicarbonate ",
-                Details = "Sodium bicarbonate corrects acidosis.",
+                Details = "",
                 Path = "miemss_xamarin.Assets.BLS-SODIUM BICARBONATE.pdf",
                 Category = "BLS"
 
@@ -336,7 +336,7 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Verapamil  ",
-                Details = "Calcium channel blocker.",
+                Details = "",
                 Path = "miemss_xamarin.Assets.BLS-VERAPAMIL.pdf",
                 Category = "BLS"
 
