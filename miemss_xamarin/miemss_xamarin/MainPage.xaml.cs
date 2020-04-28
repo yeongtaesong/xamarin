@@ -17,6 +17,12 @@ namespace miemss_xamarin
             InitializeComponent();
         }
 
+        protected override void OnAppearing()
+        {
+            App.Database.InitializeDatabase();
+            base.OnAppearing();
+        }
+
         //Protocol Page
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {

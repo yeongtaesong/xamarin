@@ -26,7 +26,6 @@ namespace miemss_xamarin
 
         protected override async void OnAppearing()
         {
-            App.Database.InitializeDatabase();
             base.OnAppearing();
             listView.ItemsSource = await App.Database.GetItemsAsync();
         }
