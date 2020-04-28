@@ -16,7 +16,8 @@
                   HorizontalOptions="Fill"
                   VerticalOptions="CenterAndExpand"
                   ItemTapped="OnListViewItemTapped" 
-                  ItemSelected="OnListViewItemSelected">
+                  ItemSelected="OnListViewItemSelected"
+                      HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -27,13 +28,11 @@
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="15"/>
                                     <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
                                 <Image Source ="bullet.png" Grid.Column="0" Grid.Row="0"/>
-                                <StackLayout Orientation="Horizontal" Grid.Column="1" Grid.Row="0">
-                                    <Label FontSize="Medium" Text="{Binding Category}" TextColor="LightGray"/>
-                                    <Label  Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
-                                </StackLayout>
-
+                                <Label Grid.Column="1" Grid.Row="0" FontSize="Medium" Text="{Binding Category}" TextColor="LightGray"/>
+                                <Label  Grid.Column="2" Grid.Row="0" Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

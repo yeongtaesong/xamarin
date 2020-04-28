@@ -16,7 +16,7 @@
                       ItemTapped="OnItemTapped">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell Height="50">
+                        <ViewCell>
                             <Grid Padding="10">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto" />
