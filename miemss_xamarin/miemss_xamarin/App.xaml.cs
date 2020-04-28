@@ -33,7 +33,6 @@ namespace miemss_xamarin
 
         protected override void OnStart()
         {
-            Database.InitializeDatabase();
         }
 
         protected override void OnSleep()
