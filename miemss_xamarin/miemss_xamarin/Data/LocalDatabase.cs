@@ -30,8 +30,13 @@ namespace miemss_xamarin.Data
         {
             if (!initialized)
             {
+
                 if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(Drug).Name))
                 {
+                    /*SQLite database may still be in the phone, this ensure table is removed and allow for 
+                     * DB to update if changes are made on DrugData.cs*/
+                    Database.DropTableAsync<Drug>().Wait();
+
                     await Database.CreateTablesAsync(CreateFlags.None, typeof(Drug)).ConfigureAwait(false);
                     initialized = true;
                 }
