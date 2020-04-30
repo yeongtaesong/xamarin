@@ -4,14 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Tools"
-             x:Class="miemss_xamarin.Page4">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Tools- Dosage Calculator"
-              VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-     
+             Title="CHATS"
+             x:Class="miemss_xamarin.ChatsPage">
+        <ContentPage.Content>
+        <StackLayout BackgroundColor="#505050" 
+             VerticalOptions="FillAndExpand"  
+             HorizontalOptions="FillAndExpand">
+            <WebView x:Name="WebView" VerticalOptions="FillAndExpand" />
         </StackLayout>
-    </ContentPage.Content>
+        </ContentPage.Content>
 </ContentPage>

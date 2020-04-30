@@ -39,24 +39,26 @@ namespace miemss_xamarin
             await Navigation.PushAsync(new ResourcePage());
         }
 
-      //  private async void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
-      //  {
-      //      await Navigation.PushAsync(new Page4());
-      //  }
-        private async void TapGestureRecognizer_Tapped_4(object sender, EventArgs e)
+        //Medications 
+        private async void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new DrugPage());
         }
-
-        private async void TapGestureRecognizer_Tapped_5(object sender, EventArgs e)
+        //Regions
+        private async void TapGestureRecognizer_Tapped_4(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RegionPage());
         }
 
         //Button for Calendar 
-        private async void TapGestureRecognizer_Tapped_6(object sender, EventArgs e)
+        private async void TapGestureRecognizer_Tapped_5(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CalendarPage() );
+        }
+        //CHATS-Alert
+        private async void TapGestureRecognizer_Tapped_6(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ChatsPage());
         }
 
     }

@@ -15,6 +15,13 @@ namespace miemss_xamarin.Models
 
             Resources.Add(new Resource
             {
+                Name = "MIEMSS-Infectious Diseases Program",
+                Path = "http://miemss.org/home/infectious-diseases",
+                IsWebView = true
+            });
+
+            Resources.Add(new Resource
+            {
                 Name = "CBRNE Resources",
                 Path = "miemss_xamarin.Assets.playbook.pdf",
                 IsWebView = false

@@ -118,10 +118,10 @@ namespace miemss_xamarin.Models
                 {
                    new Protocol {Name = " Research Protocols", Path="miemss_xamarin.Assets.Research Protocol.pdf"},
                 },
-                new ProtocolGroup("VII. Weapons of Mass Destruction Supplement")
-                {
-                   new Protocol {Name = " Weapons of Mass Destruction Supplement", Path="miemss_xamarin.Assets.Weapons of Mass Destruction Supplement.pdf"},
-                },
+        //         new ProtocolGroup("VII. Weapons of Mass Destruction Supplement")
+        //        {
+        //           new Protocol {Name = " Weapons of Mass Destruction Supplement", Path="miemss_xamarin.Assets.Weapons of Mass Destruction Supplement.pdf"},
+        //        },
             };
             All = Groups;
         }

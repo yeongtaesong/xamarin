@@ -15,6 +15,7 @@
                 <RowDefinition Height="90"/>
                 <RowDefinition Height="90"/>
                 <RowDefinition Height="90"/>
+                <RowDefinition Height="90"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -46,7 +47,7 @@
                 </Image>
                 <Label Text="Directories" HorizontalTextAlignment="Center" />
             </StackLayout>
-            
+
             <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Vertical">
                 <Image Source="resource.png"  
                    Grid.Row="1"  
@@ -54,28 +55,13 @@
                    BackgroundColor="White" 
                    WidthRequest="60" HeightRequest="60" 
                  >
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
-                </Image.GestureRecognizers>
-            </Image>
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                    </Image.GestureRecognizers>
+                </Image>
                 <Label Text="EMS Resources" HorizontalTextAlignment="Center" />
             </StackLayout>
-<!--
-            <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Vertical">
 
-                <Image Source="tool.png"  
-                   Grid.Row="1"  
-                   Grid.Column="1"  
-                   BackgroundColor="White" 
-                   WidthRequest="60" HeightRequest="60" 
-                   >
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
-                </Image.GestureRecognizers>
-            </Image>
-                <Label Text="Tools" HorizontalTextAlignment="Center" />
-            </StackLayout>   -->
-            
             <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Vertical">
 
             <Image Source="drug.png"  
@@ -85,7 +71,7 @@
                    WidthRequest="60" HeightRequest="60" 
                    >
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
                 </Image.GestureRecognizers>
             </Image>
                 <Label Text="Medications" HorizontalTextAlignment="Center" />
@@ -99,7 +85,7 @@
                    WidthRequest="60" HeightRequest="60" 
                    >
                 <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
                 </Image.GestureRecognizers>
             </Image>
                 <Label Text="Regions" HorizontalTextAlignment="Center" />
@@ -113,11 +99,26 @@
                    WidthRequest="60" HeightRequest="60" 
                    >
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"/>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
                     </Image.GestureRecognizers>
                 </Image>
                 <Label Text="Calendar of Events" HorizontalTextAlignment="Center" />
             </StackLayout>
+           
+            <StackLayout Grid.Row="3" Grid.Column="0" Orientation="Vertical">
+
+                <Image Source="alert.png"  
+                   Grid.Row="1"  
+                   Grid.Column="1"  
+                   BackgroundColor="White" 
+                   WidthRequest="60" HeightRequest="60" 
+                   >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"/>
+                </Image.GestureRecognizers>
+            </Image>
+                <Label Text="CHATS" HorizontalTextAlignment="Center" />
+            </StackLayout>    
         </Grid>
     </ContentPage.Content>
 

@@ -183,7 +183,7 @@
     <PackageReference Include="Syncfusion.Xamarin.SfPdfViewer" Version="18.1.0.46" />
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
-    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.4.1-beta" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.4.2-beta" />
   </ItemGroup>
 
   <ItemGroup>
@@ -220,7 +220,7 @@
     <EmbeddedResource Update="ResourcePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Page4.xaml">
+    <EmbeddedResource Update="ChatsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DrugPage.xaml">
@@ -264,6 +264,9 @@
     </Compile>
     <Compile Update="DrugPage.xaml.cs">
       <DependentUpon>DrugPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ChatsPage.xaml.cs">
+      <DependentUpon>ChatsPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="RegionPage.xaml.cs">
       <DependentUpon>RegionPage.xaml</DependentUpon>
