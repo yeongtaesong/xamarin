@@ -42,7 +42,7 @@ namespace miemss_xamarin
         //Medications 
         private async void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DrugPage());
+            await Navigation.PushAsync(new DrugSelectionPage());
         }
         //Regions
         private async void TapGestureRecognizer_Tapped_4(object sender, EventArgs e)
