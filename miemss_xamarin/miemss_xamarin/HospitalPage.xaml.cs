@@ -20,39 +20,33 @@ namespace miemss_xamarin
             InitializeComponent();
 
             var hospitalContact = new HospitalContactViewModel();
-            //BindingContext = hospitalContact;
-
-
             var hospitalsResults = hospitalContact.HospitalContacts;
             var hospitalsGroupedByRegion = hospitalsResults.GroupBy(HospitalContact => HospitalContact.Region);
 
+            RegionList.Clear();
             foreach (var group in hospitalsGroupedByRegion)
             {
-                System.Console.WriteLine("Hospitals from " + group.Key + ":");
                 RegionList.Add(new RegionGroup(group.Key, group));
-
-                /**
-                foreach (var hospital in group)
-                {
-                    System.Console.WriteLine("* region: " + hospital.Region + " name: " + hospital.Name);
-                } 
-                **/
-            }
-
-            foreach (var hospital in RegionList)
-            {
-                System.Console.WriteLine("* region: " + hospital.RegionName);
             }
 
             BindingContext = this;
+        }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
         }
 
         void OnItemTapped(object sender, ItemTappedEventArgs e)
         {
-            ((ListView)sender).SelectedItem = null;
+            // DO NOTHING
         }
-
+        
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var hospitalcontact = ((ListView)sender).SelectedItem as HospitalContact;

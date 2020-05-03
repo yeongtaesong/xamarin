@@ -9,7 +9,7 @@
     <ContentPage.Content>
         <StackLayout>
             <ListView ItemsSource="{Binding RegionList}" IsGroupingEnabled="True" GroupDisplayBinding="{Binding RegionName}" 
-                      HasUnevenRows="true"  ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
+                      HasUnevenRows="true" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
                 <ListView.GroupHeaderTemplate>
                     <DataTemplate>
                         <ViewCell>

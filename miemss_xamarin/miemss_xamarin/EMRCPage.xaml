@@ -26,8 +26,8 @@
                                 <ColumnDefinition Width="auto"/>
                             </Grid.ColumnDefinitions>
                             <Image Source ="bullet.png" Grid.Column="0" Grid.Row="0"/>
-                            <Label Grid.Column="1" Grid.Row="0" Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
-                            <Label Grid.Column="1" Grid.Row="1" Text="{Binding Phone}" FontSize ="Medium" StyleClass="mainPageTitle" >
+                            <Label Grid.Column="1" Grid.Row="0" Text="{Binding Name}" FontSize ="Medium"   />
+                                <Label Grid.Column="1" Grid.Row="1" Text="{Binding Phone}" FontSize ="Medium" TextColor="Blue" TextDecorations="Underline"  >
                                 <Label.GestureRecognizers>
                                     <TapGestureRecognizer Tapped="OnPhoneTapGestureRecognizerTapped" />
                                 </Label.GestureRecognizers>

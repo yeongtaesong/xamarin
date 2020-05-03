@@ -40,7 +40,10 @@ namespace miemss_xamarin.Models
                 {
                     string line = string.Empty;
 
-                    // Populate the hospital contact list by reading each line from the database
+                    // Clear and Populate the hospital contact list by reading each line 
+                    // from the database
+                    HospitalContacts.Clear();
+
                     while ((line = f.ReadLine()) != null)
                     {
                         var records = line.Split(';'); 
