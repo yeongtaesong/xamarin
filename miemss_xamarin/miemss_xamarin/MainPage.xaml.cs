@@ -61,5 +61,10 @@ namespace miemss_xamarin
             await Navigation.PushAsync(new ChatsPage());
         }
 
+        private async void TapGestureRecognizer_Tapped_7(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EMRCPage());
+        }
+
     }
 }

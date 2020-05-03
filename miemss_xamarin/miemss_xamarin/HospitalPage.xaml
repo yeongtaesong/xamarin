@@ -8,7 +8,16 @@
              x:Class="miemss_xamarin.HospitalPage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="listView" ItemsSource="{Binding HospitalContacts}" HasUnevenRows="true" ItemTapped="OnListViewItemTapped" ItemSelected="OnListViewItemSelected">
+            <ListView ItemsSource="{Binding RegionList}" IsGroupingEnabled="True" GroupDisplayBinding="{Binding RegionName}" 
+                      HasUnevenRows="true"  ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding RegionName}" Margin="5,0,5,0"
+                                   FontSize="Large" TextColor="Blue" FontAttributes="Bold" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -21,7 +30,7 @@
                                     <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
                                 <Image Source ="bullet.png" Grid.Column="0" Grid.Row="0"/>
-                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
+                                <Label Grid.Column="1" Grid.Row="0" Text="{Binding Name}" FontSize ="Medium" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
