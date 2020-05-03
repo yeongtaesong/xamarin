@@ -69,7 +69,20 @@ namespace miemss_xamarin.Data
             string searchNoSpaces = query.Replace(" ", "%");
             return Database.QueryAsync<Drug>("select * from Drug where Name LIKE ?", searchNoSpaces + "%");
         }
-        
+
+        //Get all items from a selected category "ALS" or "BLS"
+        public Task<List<Drug>> GetItemsByCategory(string category)
+        {
+            return Database.QueryAsync<Drug>("select * from Drug where Category = ?", category);
+        }
+
+        //Get single item from a category "ALS" or "BLS"
+        public Task<List<Drug>> GetItemByCategory(string query, string category)
+        {
+            string searchNoSpaces = query.Replace(" ", "%");
+            return Database.QueryAsync<Drug>("select * from Drug where Category = ? AND Name LIKE ?", category, searchNoSpaces + "%");
+        }
+
         public Task<int> SaveItemAsync(Drug drug)
         {
             if (drug.ID != 0)

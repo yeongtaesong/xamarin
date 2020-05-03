@@ -20,14 +20,19 @@ namespace miemss_xamarin
     {
         public DrugPage()
         {
-            this.BindingContext = new DrugsPageViewModel();
+
+
+            
             InitializeComponent();
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            listView.ItemsSource = await App.Database.GetItemsAsync();
+           listView.ItemsSource = ((List<Drug>)this.BindingContext);
+            List<Drug> list = (List<Drug>)this.BindingContext;
+            string category = list[0].Category;
+            DrugContentPage.Title = category + " Drugs";
         }
 
         //Set listview 
@@ -38,8 +43,10 @@ namespace miemss_xamarin
 
         async void OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            
-            listView.ItemsSource = await App.Database.GetItemAsync(e.NewTextValue);
+            List<Drug> list = (List<Drug>)this.BindingContext;
+            string category = list[0].Category;
+
+            listView.ItemsSource = await App.Database.GetItemByCategory(e.NewTextValue, category);
 
         }
 
@@ -55,12 +62,8 @@ namespace miemss_xamarin
         }
        async private void Button_OnClicked(object sender, EventArgs e)
         {
-
             var page = new DrugCalculator();
             await Navigation.PushAsync(page);
-
-
-
         }
     }
 }

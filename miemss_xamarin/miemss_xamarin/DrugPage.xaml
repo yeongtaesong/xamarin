@@ -4,8 +4,9 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Medications"
-             x:Class="miemss_xamarin.DrugPage">
+             x:Name="DrugContentPage"
+             x:Class="miemss_xamarin.DrugPage"
+             BindingContext="{Binding .}">
     <ContentPage.Content>
         <StackLayout>
             <SearchBar x:Name="searchBar"
@@ -31,8 +32,7 @@
                                     <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
                                 <Image Source ="bullet.png" Grid.Column="0" Grid.Row="0"/>
-                                <Label Grid.Column="1" Grid.Row="0" FontSize="Medium" Text="{Binding Category}" TextColor="LightGray"/>
-                                <Label  Grid.Column="2" Grid.Row="0" Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
+                                <Label  Grid.Column="1" Grid.Row="0" Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

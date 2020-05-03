@@ -17,35 +17,20 @@ namespace miemss_xamarin
         public DrugSelectionPage()
         {
             InitializeComponent();
-
-            Items = new ObservableCollection<string>
-            {
-                "Advanced Life Support (ALS)",
-                "Basic Life Support (BLS)"
-            };
-
-
         }
 
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            if (e.Item == null)
-                return;
-
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
-
-            //Deselect Item
-            ((ListView)sender).SelectedItem = null;
+            var page = new DrugPage();
+            page.BindingContext = await App.Database.GetItemsByCategory("ALS");
+            await Navigation.PushAsync(page);
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
-            DisplayAlert("Message", "you clicked me!", "ok");
-        }
-
-        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
-        {
-            DisplayAlert("Message", "you clicked me!", "ok");
+            var page = new DrugPage();
+            page.BindingContext = await App.Database.GetItemsByCategory("BLS");
+            await Navigation.PushAsync(page);
         }
     }
 }
