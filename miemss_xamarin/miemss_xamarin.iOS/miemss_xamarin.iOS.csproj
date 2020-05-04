@@ -271,6 +271,18 @@
     <ImageAsset Include="Assets.xcassets\alert.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\miemss.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\miemss.imageset\miemss.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\miemss.imageset\miemss1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\miemss.imageset\miemss2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\splashscreen.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
