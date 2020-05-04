@@ -118,21 +118,7 @@
                 </Image.GestureRecognizers>
             </Image>
                 <Label Text="CHATS" HorizontalTextAlignment="Center" />
-            </StackLayout>
-            <StackLayout Grid.Row="3" Grid.Column="1" Orientation="Vertical">
-
-                <Image Source="miemss.png"  
-                   Grid.Row="1"  
-                   Grid.Column="1"  
-                   BackgroundColor="White" 
-                   WidthRequest="60" HeightRequest="60" 
-                   >
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_7"/>
-                    </Image.GestureRecognizers>
-                </Image>
-                <Label Text="Important Numbers" HorizontalTextAlignment="Center" />
-            </StackLayout>
+            </StackLayout>    
         </Grid>
     </ContentPage.Content>
 
