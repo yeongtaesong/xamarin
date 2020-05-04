@@ -22,40 +22,33 @@
                 <Label HorizontalOptions="Center"
                    Text="{Binding Name}" FontSize="Large" HorizontalTextAlignment="Center" Margin="10" />
                 <StackLayout>
-
+                <!--Address & Map-->
+                <Label  TextColor="Blue" FontSize="Small"  Text="Address:"/>
+                   <Label  FontSize="Medium" TextDecorations="Underline" Text="{Binding Address}">
+                   <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnAddressTapGestureRecognizerTapped" />
+                    </Label.GestureRecognizers>
+                </Label> 
                 <!--Phone & Call -->
                 <Label   VerticalOptions="Center"  FontSize="Small" TextColor="Blue" Text="Phone:" />
                     <Label   VerticalOptions="Center"  FontSize="Medium" TextColor="DarkRed" TextDecorations="Underline" Text="{Binding PhoneNum}">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnPhoneTapGestureRecognizerTapped" />
-                        </Label.GestureRecognizers>
-                    </Label>
-                    <!--Address & Map-->
-                <Label  TextColor="Blue" FontSize="Small"  Text="Address:"/>
-                   <Label  FontSize="Medium" TextDecorations="Underline" Text="{Binding Address}">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnAddressTapGestureRecognizerTapped" />
-                        </Label.GestureRecognizers>
-                   </Label> 
-                
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnPhoneTapGestureRecognizerTapped" />
+                    </Label.GestureRecognizers>
+                </Label>
                 <!--Website-->
                 <Label     VerticalOptions="Center"  FontSize="Small" TextColor="Blue" Text="Website:"/>
                 <Label     VerticalOptions="CenterAndExpand" FontSize="Medium" TextDecorations="Underline" Text="{Binding Website}"  >
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnWebTapGestureRecognizerTapped" />
-                        </Label.GestureRecognizers>
-                </Label>
-                    
-                <!--Region-->    
-                 <Label  VerticalOptions="Center" TextColor="Blue"   FontSize="Small" Text="Region:"/>
-                 <Label  FontSize="Medium"   Text="{Binding Region}"  />
-
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnWebTapGestureRecognizerTapped" />
+                    </Label.GestureRecognizers>
+                    </Label>
                     <!--Type-->
                 <Label    VerticalOptions="Center" TextColor="Blue"   FontSize="Small" Text="Service:"/>
                 <Label  FontSize="Medium"   Text="{Binding Type}"  />
                 <Label  FontSize="Medium" Text="{Binding Specialty}"  />
-                <Label   FontSize="Medium" Text="{Binding Specialty2}" />
-                <Label     FontSize="Medium" Text="{Binding Specialty3}"  />
+                <Label   FontSize="Medium" Text="{Binding Burn}" />
+                <Label     FontSize="Medium" Text="{Binding Stroke}"  />
                 </StackLayout>
             </StackLayout>
         </pancake:PancakeView>
