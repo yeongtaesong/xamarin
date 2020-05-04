@@ -17,39 +17,8 @@ namespace miemss_xamarin
         {
             InitializeComponent();
         }
-        //Button for dosage calculation
-        private void Button_OnClicked(object sender, EventArgs e)
-        {
-
-            double dosage = Convert.ToDouble(Dosage.Text);
-            double weight = Convert.ToDouble(Weight.Text);
-
-            string unit = (string)CalculateButton.BindingContext;
-           if (unit == "lb")
-            {
-                double calculation = dosage * (weight * 0.45359237);
-                calculation = Math.Round(calculation, 3);
-                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + "mg";
-
-            } else if (unit == "kg")
-            {
-                double calculation = dosage * weight;
-                calculation = Math.Round(calculation, 3);
-                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + "mg";
-            }
-            else
-            {
-                DisplayAlert("Message", "Please select a unit.", "ok");
-            }
-        }
-
-        //Button to show/hide calculator
-       async private void Calculator_OnClicked(object sender, EventArgs e)
-        {
 
 
-
-        }
 
         //Button to navigate to Drug PDF information
         async private void Information_OnClicked(object sender, EventArgs e)
@@ -62,6 +31,20 @@ namespace miemss_xamarin
                 page.BindingContext = drug;
                 await Navigation.PushAsync(page);
             }
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            var page = new DrugCalculator();
+            page.Title = "Adult Dosage";
+            await Navigation.PushAsync(page);
+        }
+
+        private async void Button_Clicked_1(object sender, EventArgs e)
+        {
+            var page = new DrugCalculator();
+            page.Title = "Child Dosage";
+            await Navigation.PushAsync(page);
         }
     }
 }

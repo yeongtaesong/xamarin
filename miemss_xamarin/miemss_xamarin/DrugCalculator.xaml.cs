@@ -16,21 +16,31 @@ namespace miemss_xamarin
         {
             InitializeComponent();
         }
-
-
+        //Button for dosage calculation
         private void Button_OnClicked(object sender, EventArgs e)
         {
 
-            //calculate dosage by multiplying "dosage" by body weight. Need to ask for exact calculation for dosage.
             double dosage = Convert.ToDouble(Dosage.Text);
             double weight = Convert.ToDouble(Weight.Text);
 
-            double calculation = dosage * weight;
+            string unit = (string)CalculateButton.BindingContext;
+            if (unit == "lb")
+            {
+                double calculation = dosage * (weight * 0.45359237);
+                calculation = Math.Round(calculation, 3);
+                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + "mg";
 
-            CalculationLabel.Text = "Calculated dosage: " + calculation.ToString();
-
-
-
+            }
+            else if (unit == "kg")
+            {
+                double calculation = dosage * weight;
+                calculation = Math.Round(calculation, 3);
+                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + "mg";
+            }
+            else
+            {
+                DisplayAlert("Message", "Please select a unit.", "ok");
+            }
         }
     }
 }
