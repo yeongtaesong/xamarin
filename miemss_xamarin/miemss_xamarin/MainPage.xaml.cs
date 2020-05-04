@@ -23,23 +23,16 @@ namespace miemss_xamarin
             base.OnAppearing();
         }
 
-        protected override void OnDisappearing()
-        {
-            base.OnDisappearing();
-        }
-
         //Protocol Page
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ProtocolsPage());
         }
 
-        //Hospital Directories Page
         private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new HospitalPage());
         }
-
         //CBRNE Resources
         private async void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
         {
@@ -51,7 +44,6 @@ namespace miemss_xamarin
         {
             await Navigation.PushAsync(new DrugSelectionPage());
         }
-
         //Regions
         private async void TapGestureRecognizer_Tapped_4(object sender, EventArgs e)
         {
@@ -63,17 +55,10 @@ namespace miemss_xamarin
         {
             await Navigation.PushAsync(new CalendarPage() );
         }
-
         //CHATS-Alert
         private async void TapGestureRecognizer_Tapped_6(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ChatsPage());
-        }
-
-        //Important Numbers Page
-        private async void TapGestureRecognizer_Tapped_7(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new EMRCPage());
         }
 
     }
