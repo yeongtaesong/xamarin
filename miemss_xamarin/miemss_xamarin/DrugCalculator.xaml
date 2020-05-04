@@ -13,12 +13,12 @@
             <!--DRUG CALCULATOR-->
         <StackLayout Orientation="Vertical" IsVisible="{Binding IsCalculatorVisible}">
             <StackLayout Orientation="Horizontal">
-                <Label Text="Dosage" FontSize="Medium" Padding="10" WidthRequest="110"/>
-                <Entry x:Name="Dosage" Placeholder="mg/kg" Keyboard="Numeric" WidthRequest="150"/>
+                <Label Text="Dosage" FontSize="Medium" Padding="10" />
+                <Entry x:Name="Dosage" Placeholder="mg/kg" Keyboard="Numeric" WidthRequest="150" />
             </StackLayout>
             <StackLayout Orientation="Horizontal">
-                <Label Text="Weight" FontSize="Medium" Padding="10" WidthRequest="150"/>
-                <Entry x:Name="Weight"  Placeholder="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}" Keyboard="Numeric" WidthRequest="150"/>
+                <Label Text="Weight" FontSize="Medium" Padding="10" />
+                <Entry x:Name="Weight"  Placeholder="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}" Keyboard="Numeric" WidthRequest="150" />
                 <Picker x:Name="UnitPicker" Title="Select Unit" SelectedIndex="{Binding WeightUnit}" HorizontalOptions="FillAndExpand" >
                     <Picker.Items>
                         <x:String>kg</x:String>
