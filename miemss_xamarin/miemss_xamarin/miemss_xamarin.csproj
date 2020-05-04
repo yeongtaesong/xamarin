@@ -62,6 +62,8 @@
     <None Remove="Assets\BLS-OXYGEN.pdf" />
     <None Remove="Assets\BLS-SODIUM BICARBONATE.pdf" />
     <None Remove="Assets\BLS-VERAPAMIL.pdf" />
+    <None Remove="Files\hospital_lists_updated.csv" />
+    <None Remove="Files\hospital_lists_updated.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -171,6 +173,8 @@
     <EmbeddedResource Include="Assets\Treatment Protocols.pdf" />
     <EmbeddedResource Include="Assets\Weapons of Mass Destruction Supplement.pdf" />
     <EmbeddedResource Include="Files\hospital_list1.txt" />
+    <EmbeddedResource Include="Files\hospital_lists_updated.csv" />
+    <EmbeddedResource Include="Files\hospital_lists_updated.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -203,6 +207,7 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="DrugSelectionPage.xaml">
+    <EmbeddedResource Update="EMRCPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="HospitalContactDetailPage.xaml">
