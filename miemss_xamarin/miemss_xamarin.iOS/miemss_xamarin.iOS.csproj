@@ -407,39 +407,6 @@
     <ImageAsset Include="Assets.xcassets\Calendar.imageset\calendar-2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems%402x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems%403x.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems-1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems%402x-1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems%403x-1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems-2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems%402x-2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems%402x-5.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems%403x-2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon-1.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -503,6 +470,38 @@
     <ImageAsset Include="Assets.xcassets\AppIcon-1.appiconset\1024.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems%402x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems%402x-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems%402x-5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems%403x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems%403x-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems%403x-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems1.imageset\ems-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ems.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ems.imageset\EMS.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -539,8 +538,9 @@
   <ItemGroup>
     <Folder Include="Assets.xcassets\Calendar.imageset\" />
     <Folder Include="Assets.xcassets\Calendar1.imageset\" />
-    <Folder Include="Assets.xcassets\ems.imageset\" />
     <Folder Include="Assets.xcassets\ems1.imageset\" />
+    <Folder Include="Assets.xcassets\ems1.imageset\" />
+    <Folder Include="Assets.xcassets\ems.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />
