@@ -289,7 +289,7 @@ namespace miemss_xamarin.Models
             });
             Drugs.Add(new Drug
             {
-                Name = "Naloxone ",
+                Name = "Naloxone",
                 Details = "Reverses all effects due to opioid (morphine-like) agents. This drug will reverse the respiratory depression and all central and peripheral nervous system effects.",
                 Path = "miemss_xamarin.Assets.BLS-NALOXONE.pdf",
                 Category = "BLS"
