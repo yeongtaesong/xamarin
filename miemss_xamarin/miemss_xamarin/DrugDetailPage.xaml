@@ -14,11 +14,11 @@
                 <!--Details -->
                 <Label Text="{Binding Name}" FontSize="Large"/>
                 <Button Text="Tap For More Information" BackgroundColor="Transparent" HorizontalOptions="Start" Clicked="Information_OnClicked"/>
-                <Label Text="Details:" FontSize="Medium" />
+                <Label Text="Description:" FontSize="Medium" />
                 <Label Text="{Binding Details}" />
                 <StackLayout Orientation="Horizontal">
                     <Button Text="Adult Dosage" Clicked="Button_Clicked"/>
-                    <Button Text="Child Dosage" Clicked="Button_Clicked_1"/>
+                    <Button Text="Pediatric Dosage" Clicked="Button_Clicked_1"/>
                 </StackLayout>
             </StackLayout>
 
