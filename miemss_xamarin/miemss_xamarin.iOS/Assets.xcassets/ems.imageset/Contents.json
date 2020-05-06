@@ -7,20 +7,17 @@
     {
       "appearances": [],
       "scale": "1x",
-      "idiom": "universal",
-      "filename": "ems.png"
+      "idiom": "universal"
     },
     {
       "appearances": [],
       "scale": "2x",
-      "idiom": "universal",
-      "filename": "ems@2x.png"
+      "idiom": "universal"
     },
     {
       "appearances": [],
       "scale": "3x",
-      "idiom": "universal",
-      "filename": "ems@3x.png"
+      "idiom": "universal"
     },
     {
       "appearances": [],
@@ -30,13 +27,7 @@
       "appearances": [],
       "scale": "1x",
       "idiom": "iphone",
-      "filename": "ems-1.png"
-    },
-    {
-      "appearances": [],
-      "scale": "2x",
-      "idiom": "iphone",
-      "filename": "ems@2x-1.png"
+      "filename": "EMS.png"
     },
     {
       "appearances": [],
@@ -46,37 +37,27 @@
     },
     {
       "appearances": [],
-      "scale": "3x",
-      "idiom": "iphone",
-      "filename": "ems@3x-1.png"
-    },
-    {
-      "appearances": [],
       "idiom": "ipad"
     },
     {
       "appearances": [],
       "scale": "1x",
-      "idiom": "ipad",
-      "filename": "ems-2.png"
+      "idiom": "ipad"
     },
     {
       "appearances": [],
       "scale": "2x",
-      "idiom": "ipad",
-      "filename": "ems@2x-2.png"
+      "idiom": "ipad"
     },
     {
       "appearances": [],
       "scale": "2x",
-      "idiom": "car",
-      "filename": "ems@2x-5.png"
+      "idiom": "car"
     },
     {
       "appearances": [],
       "scale": "3x",
-      "idiom": "car",
-      "filename": "ems@3x-2.png"
+      "idiom": "car"
     },
     {
       "appearances": [
@@ -356,33 +337,20 @@
     },
     {
       "appearances": [],
-      "scale": "3x",
-      "idiom": "ipad"
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "ems1.png"
     },
     {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
+      "appearances": [],
       "scale": "3x",
-      "idiom": "ipad"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "light"
-        }
-      ],
-      "scale": "3x",
-      "idiom": "ipad"
+      "idiom": "iphone",
+      "filename": "ems2.png"
     }
   ],
   "properties": {},
   "info": {
     "version": 1,
-    "author": ""
+    "author": "xcode"
   }
 }

@@ -7,17 +7,20 @@
     {
       "appearances": [],
       "scale": "1x",
-      "idiom": "universal"
+      "idiom": "universal",
+      "filename": "ems.png"
     },
     {
       "appearances": [],
       "scale": "2x",
-      "idiom": "universal"
+      "idiom": "universal",
+      "filename": "ems@2x.png"
     },
     {
       "appearances": [],
       "scale": "3x",
-      "idiom": "universal"
+      "idiom": "universal",
+      "filename": "ems@3x.png"
     },
     {
       "appearances": [],
@@ -33,120 +36,47 @@
       "appearances": [],
       "scale": "2x",
       "idiom": "iphone",
-      "subtype": "retina4"
+      "filename": "EMS-1.png"
     },
     {
       "appearances": [],
-      "idiom": "ipad"
-    },
-    {
-      "appearances": [],
-      "scale": "1x",
-      "idiom": "ipad"
-    },
-    {
-      "appearances": [],
-      "scale": "2x",
-      "idiom": "ipad"
-    },
-    {
-      "appearances": [],
-      "scale": "2x",
-      "idiom": "car"
-    },
-    {
-      "appearances": [],
-      "scale": "3x",
-      "idiom": "car"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
-      "idiom": "universal"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
-      "scale": "1x",
-      "idiom": "universal"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
-      "scale": "2x",
-      "idiom": "universal"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
-      "scale": "3x",
-      "idiom": "universal"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
-      "idiom": "iphone"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
-      "scale": "1x",
-      "idiom": "iphone"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
-      "scale": "2x",
-      "idiom": "iphone"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
       "scale": "2x",
       "idiom": "iphone",
       "subtype": "retina4"
     },
     {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
+      "appearances": [],
       "scale": "3x",
-      "idiom": "iphone"
+      "idiom": "iphone",
+      "filename": "EMS-2.png"
+    },
+    {
+      "appearances": [],
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [],
+      "scale": "1x",
+      "idiom": "ipad",
+      "filename": "ems-2.png"
+    },
+    {
+      "appearances": [],
+      "scale": "2x",
+      "idiom": "ipad",
+      "filename": "ems@2x-2.png"
+    },
+    {
+      "appearances": [],
+      "scale": "2x",
+      "idiom": "car",
+      "filename": "ems@2x-5.png"
+    },
+    {
+      "appearances": [],
+      "scale": "3x",
+      "idiom": "car",
+      "filename": "ems@3x-2.png"
     },
     {
       "appearances": [
@@ -155,7 +85,7 @@
           "value": "dark"
         }
       ],
-      "idiom": "ipad"
+      "idiom": "universal"
     },
     {
       "appearances": [
@@ -165,7 +95,7 @@
         }
       ],
       "scale": "1x",
-      "idiom": "ipad"
+      "idiom": "universal"
     },
     {
       "appearances": [
@@ -175,17 +105,7 @@
         }
       ],
       "scale": "2x",
-      "idiom": "ipad"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "dark"
-        }
-      ],
-      "scale": "2x",
-      "idiom": "car"
+      "idiom": "universal"
     },
     {
       "appearances": [
@@ -195,52 +115,13 @@
         }
       ],
       "scale": "3x",
-      "idiom": "car"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "light"
-        }
-      ],
       "idiom": "universal"
     },
     {
       "appearances": [
         {
           "appearance": "luminosity",
-          "value": "light"
-        }
-      ],
-      "scale": "1x",
-      "idiom": "universal"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "light"
-        }
-      ],
-      "scale": "2x",
-      "idiom": "universal"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "light"
-        }
-      ],
-      "scale": "3x",
-      "idiom": "universal"
-    },
-    {
-      "appearances": [
-        {
-          "appearance": "luminosity",
-          "value": "light"
+          "value": "dark"
         }
       ],
       "idiom": "iphone"
@@ -249,7 +130,7 @@
       "appearances": [
         {
           "appearance": "luminosity",
-          "value": "light"
+          "value": "dark"
         }
       ],
       "scale": "1x",
@@ -259,7 +140,7 @@
       "appearances": [
         {
           "appearance": "luminosity",
-          "value": "light"
+          "value": "dark"
         }
       ],
       "scale": "2x",
@@ -269,7 +150,7 @@
       "appearances": [
         {
           "appearance": "luminosity",
-          "value": "light"
+          "value": "dark"
         }
       ],
       "scale": "2x",
@@ -280,6 +161,144 @@
       "appearances": [
         {
           "appearance": "luminosity",
+          "value": "dark"
+        }
+      ],
+      "scale": "3x",
+      "idiom": "iphone"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "dark"
+        }
+      ],
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "dark"
+        }
+      ],
+      "scale": "1x",
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "dark"
+        }
+      ],
+      "scale": "2x",
+      "idiom": "ipad"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "dark"
+        }
+      ],
+      "scale": "2x",
+      "idiom": "car"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "dark"
+        }
+      ],
+      "scale": "3x",
+      "idiom": "car"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "light"
+        }
+      ],
+      "idiom": "universal"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "light"
+        }
+      ],
+      "scale": "1x",
+      "idiom": "universal"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "light"
+        }
+      ],
+      "scale": "2x",
+      "idiom": "universal"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "light"
+        }
+      ],
+      "scale": "3x",
+      "idiom": "universal"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "light"
+        }
+      ],
+      "idiom": "iphone"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "light"
+        }
+      ],
+      "scale": "1x",
+      "idiom": "iphone"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "light"
+        }
+      ],
+      "scale": "2x",
+      "idiom": "iphone"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "light"
+        }
+      ],
+      "scale": "2x",
+      "idiom": "iphone",
+      "subtype": "retina4"
+    },
+    {
+      "appearances": [
+        {
+          "appearance": "luminosity",
           "value": "light"
         }
       ],
@@ -334,18 +353,6 @@
       ],
       "scale": "3x",
       "idiom": "car"
-    },
-    {
-      "appearances": [],
-      "scale": "2x",
-      "idiom": "iphone",
-      "filename": "ems1.png"
-    },
-    {
-      "appearances": [],
-      "scale": "3x",
-      "idiom": "iphone",
-      "filename": "ems2.png"
     }
   ],
   "properties": {},
