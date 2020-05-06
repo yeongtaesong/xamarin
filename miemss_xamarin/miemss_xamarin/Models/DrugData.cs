@@ -14,18 +14,34 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Acetaminophen",
-                Details = "Patients ages 2 years and above judged to be in mild to moderate discom-fort (e.g., 2–5 on FACES scale).",
+                Details = "Patients ages 2 years and above judged to be in mild to moderate discomfort (e.g., 2–5 on FACES scale).",
                 Path = "miemss_xamarin.Assets.ALS-ACETAMINOPHEN.pdf",
-                Category = "ALS"
+                Category = "ALS",
+                PediatricDosageDescription = "2-4 years: Unit dose 160 mg/5 mL. 5-12 years: TWO unit doses of 160 mg/5 ml.",
+                AdultDosageDescription = "13 years and above: FOUR unit doses of 160 mg/5 mL each for a total of 640 mg/20 mL OR in a form of 325 mg pill or tablet 2x for a total of 650 mg with sips of water as tolerated by the patient."
+
+            });
+
+
+            Drugs.Add(new Drug
+            {
+                Name = "Activated Charcoal (Without Sorbitol)",
+                Details = "Poisoning by mouth.",
+                Path = "miemss_xamarin.Assets.ALS-ACTIVATED CHARCOAL.pdf",
+                Category = "ALS",
+                PediatricDosageDescription = "1 gram/kg",
+                AdultDosageDescription = "1 gram/kg"
 
             });
 
             Drugs.Add(new Drug
             {
-                Name = "Activated Charcoal (Without Sorbitol)",
-                Details = "Poisoning by mouth",
-                Path = "miemss_xamarin.Assets.ALS-ACTIVATED CHARCOAL.pdf",
-                Category = "ALS"
+                Name = "Albuterol",
+                Details = "Signs and symptoms of repiratory distress. Bronchospasm/wheezing associated with: asthma, chronic bronchitis, emphysema, allergic reactions (anaphylaxis).",
+                Path = "miemss_xamarin.Assets.ALS-ALBUTEROL.pdf",
+                Category = "ALS",
+                PediatricDosageDescription = "Patient may receive a maximum of 2 doses (4 puffs) over a 30-minute period. Additional doses may be administered with medical consultation.",
+                AdultDosageDescription = "Patient may receive a maximum of 2 doses (4 puffs) over a 30-minute period. Additional doses may be administered with medical consultation."
 
             });
 
@@ -34,25 +50,33 @@ namespace miemss_xamarin.Models
                 Name = "Aspirin",
                 Details = "Chest pain when acute myocardial infarction is suspected.",
                 Path = "miemss_xamarin.Assets.ALS-ASPIRIN.pdf",
-                Category = "ALS"
+                Category = "ALS",
+                PediatricDosageDescription = "Not indicated.",
+                AdultDosageDescription = "324mg or 352 mg chewed."
 
             });
 
             Drugs.Add(new Drug
             {
                 Name = "Epinephrine(1:1,000)",
-                Details = "Moderate to severe allergic reaction with respiratory distress or mild allergic reaction with history of life-threatening allergic reaction.",
+                Details = "Moderate to severe allergic reaction with respiratory distress or mild allergic reaction with history of life-threatening allergic reaction. Pediatric patients with severe asthma.",
                 Path = "miemss_xamarin.Assets.ALS-EPINEPHRINE.pdf",
-                Category = "ALS"
+                Category = "ALS",
+                PediatricDosageDescription = "0.15 mg in 0.15mL IM.",
+                AdultDosageDescription = "0.5 mg in 0.5 mL IM."
 
             });
 
             Drugs.Add(new Drug
             {
                 Name = "Epinephrine Auto-Injector",
-                Details = "Moderate to severe allergic reaction with respiratory distress or mild allergic reaction with history of life-threatening allergic reaction.",
+                Details = "Moderate to severe allergic reaction with respiratory distress" + 
+                " or mild allergic reaction with history of life-threatening allergic reaction." 
+                + "Pediatric patients with severe asthma.",
                 Path = "miemss_xamarin.Assets.ALS-EPINEPHRINE AUTO-INJECTOR.pdf",
-                Category = "ALS"
+                Category = "ALS",
+                PediatricDosageDescription = "Less than 5 years of age: 0.15 mg IM in the lateral thigh via epinephrine auto-injector or manual administration 0.15 in 0.15 mL IM. 5 years and greater: administer 0.3 mg IM in the lateral thigh via epinephrine auto-injector or manual administration 0.5 mg in 0.5 mL IM",
+                AdultDosageDescription = "5 years and greater: administer 0.3 mg IM in the lateral thigh via epinephrine auto-injector or manual administration 0.5 mg in 0.5 mL IM."
 
 
             });
@@ -60,9 +84,13 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Naloxone",
-                Details = "Reverses all effects due to opioid (morphine-like) agents. This drug will reverse the respiratory depression and all central and peripheral nervous system effects.",
+                Details = "To reverse respiratory depression induced by opioid/narcotic agent.",
                 Path = "miemss_xamarin.Assets.ALS-NALOXONE (NARCAN).pdf",
-                Category = "ALS"
+                Category = "ALS",
+                PediatricDosageDescription = "Administer 2mg IN, dividing administration of the dose equally between the nares to a mamximum of 1 mL per nare"
+                + " or administer 4 mg/0.1 mL in one nare. " + "Repeat as necessary to maintain respiratory activity.",
+                AdultDosageDescription = "Administer 2 mg IN, dividing administration of the dose equally betweent the nares to a maximum of 1 mL per nare, "
+                + "OR administer 4mg/0.1 mL IN in one nare. " + "Repeat as necessary to maintain respiratory activity."
 
 
             });
@@ -72,7 +100,10 @@ namespace miemss_xamarin.Models
                 Name = "Nitroglycerin",
                 Details = " Patient must have own prescribed sublingual nitroglycerin. Chest pain.",
                 Path = "miemss_xamarin.Assets.ALS-NITROGLYCERIN.pdf",
-                Category = "ALS"
+                Category = "ALS",
+                PediatricDosageDescription = "(Nitroglycerin contraindicated for children under age 13.)",
+                AdultDosageDescription = "One tablet or one spray sublingually. (a) Repeat in 3 to 5 minutes if chest pain persists. "
+                + "(b) Maximum of three doses (a combination of patient-administered and EMT-administered) of nitroglycerin."
 
             });
 
@@ -81,7 +112,10 @@ namespace miemss_xamarin.Models
                 Name = "Oral Glucose",
                 Details = "Altered mental status with known diabetic history. Unconscious for an unknown reason.",
                 Path = "miemss_xamarin.Assets.ALS-ORAL GLUCOSE.pdf",
-                Category = "ALS"
+                Category = "ALS",
+                PediatricDosageDescription = " Administer 10-15 grams of glucose paste between the gum and cheek; " +
+                "this may be accomplished through several small administrations. Consider single additional dose of glucose paste if not improved after 10 minutes.",
+                AdultDosageDescription = "Administer 10-15 grams of glucose paste between the gum and cheek. Consider esingle additional dose of glucose paste if not improved after 10 minutes."
 
 
             });
@@ -89,9 +123,13 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Oxygen",
-                Details = "Increases oxygen content of the blood. Improves tissue oxygenation. Decreases energy expended for respiratiohn.",
+                Details = "(1) If evidence of hypoxia. (2) Respiratory distress. (3) Cardiopulmonary arrest. (4) Trauma. (5) Suspected CO exposure. (6) Dyspena.",
                 Path = "miemss_xamarin.Assets.ALS-OXYGEN.pdf",
-                Category = "ALS"
+                Category = "ALS",
+                PediatricDosageDescription = "Pediatric: Administer 12–15 lpm via NRB mask or 2-6 lpm via nasal cannula, as needed." +
+                "CO exposure: Administer 100 % oxygen via NRB mask.Maintain SpO2 at 100 % ",
+                AdultDosageDescription = "Administer 12–15 lpm via NRB mask or 2–6 lpm via nasal cannula, as needed. " +
+                "CO exposure: Administer 100 % oxygen via NRB mask.Maintain SpO2 at 100 % "
 
             });
             Drugs.Add(new Drug

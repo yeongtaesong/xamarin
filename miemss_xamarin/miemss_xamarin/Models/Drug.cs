@@ -14,5 +14,7 @@ namespace miemss_xamarin.Models
         public string Details { get; set; }
         public string Path { get; set; }
         public string Category { get; set; }
+        public string AdultDosageDescription { get; set; }
+        public string PediatricDosageDescription { get; set; }
     }
 }
