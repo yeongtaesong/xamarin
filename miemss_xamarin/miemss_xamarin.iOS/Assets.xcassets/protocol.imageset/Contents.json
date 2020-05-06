@@ -1,0 +1,27 @@
+{
+  "images": [
+    {
+      "appearances": [],
+      "scale": "1x",
+      "idiom": "iphone",
+      "filename": "protocol.png"
+    },
+    {
+      "appearances": [],
+      "scale": "2x",
+      "idiom": "iphone",
+      "filename": "protocol1.png"
+    },
+    {
+      "appearances": [],
+      "scale": "3x",
+      "idiom": "iphone",
+      "filename": "protocol2.png"
+    }
+  ],
+  "properties": {},
+  "info": {
+    "version": 1,
+    "author": ""
+  }
+}

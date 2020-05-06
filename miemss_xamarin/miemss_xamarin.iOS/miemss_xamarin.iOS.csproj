@@ -196,12 +196,6 @@
     <ImageAsset Include="Assets.xcassets\drug.imageset\drug2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\ems2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow.png">
       <Visible>false</Visible>
     </ImageAsset>
@@ -280,6 +274,9 @@
     <ImageAsset Include="Assets.xcassets\alert.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\protocol.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\miemss.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -290,6 +287,15 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\miemss.imageset\miemss2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\protocol.imageset\protocol.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\protocol.imageset\protocol1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\protocol.imageset\protocol2.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\splashscreen.imageset\Contents.json">
@@ -507,12 +513,6 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\ems1.imageset\ems-2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\ems.imageset\EMS.png">
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
