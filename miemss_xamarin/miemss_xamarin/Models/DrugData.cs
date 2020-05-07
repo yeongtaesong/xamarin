@@ -137,7 +137,10 @@ namespace miemss_xamarin.Models
                 Name = "Acetaminophen",
                 Details = "Patients ages 2 years and above judged to be in mild to moderate discomfort (e.g., 2-5 on FACES scale).",
                 Path = "miemss_xamarin.Assets.BLS-ACETAMINOPHEN.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "(1) 2-4 years: Unit dose 160 mg/5 mL. (2) 5-12 years: TWO unit doses of 160 mg/5mL each for a total of 320 mg/10 mL.",
+                AdultDosageDescription = "13 years and above: FOUR unit doses of 160 mg/5 mL each for a total of 640 mg/20 mL" +
+                "or in a form of 325 mg pill or tablet x2 for a total of 650 mg with sips of water as tolerated by the patient."
 
             });
             Drugs.Add(new Drug
@@ -145,7 +148,9 @@ namespace miemss_xamarin.Models
                 Name = "Activated Charcoal (Without Sorbitol) ",
                 Details = "Poisoning by mouth.",
                 Path = "miemss_xamarin.Assets.BLS-ACTIVATED CHARCOAL.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "1 gram/kg",
+                AdultDosageDescription = "1 gram/kg"
 
 
             });
@@ -154,7 +159,9 @@ namespace miemss_xamarin.Models
                 Name = "Adenosine ",
                 Details = "Used to treat narrow complex tachycardia, PSVT with WPW. Slows conduction through the AV node. ",
                 Path = "miemss_xamarin.Assets.BLS-ADENOSINE.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "0.1mg/kg rapid IVP/IO; maximum initial dose 6 mg. Second and third doses: 0.2mg/kg rapid IVP/IO; maximum single additional dose 12 mg.",
+                AdultDosageDescription = "6 mg rapid IVP bolus followed by a rapid flush. Give 12 mg if no response within 2 minutes. Give 12 mg more if no response within another 1-2 minutes."
 
             });
             Drugs.Add(new Drug
@@ -162,7 +169,9 @@ namespace miemss_xamarin.Models
                 Name = "Albuterol",
                 Details = "Signs and symptoms of respiratory distress. Bronchospasm/wheezing associated with: asthma, chronic bronchitis, emphysema, allergic reaction.",
                 Path = "miemss_xamarin.Assets.BLS-ALBUTEROLSULFATE.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "Patient may receive a maximum of 2 doses (4 puffs) over a 30-minute period.",
+                AdultDosageDescription = "Patient may receive a maximum of 2 doses (4 puffs) over a 30-minute period."
 
             });
             Drugs.Add(new Drug
@@ -170,7 +179,11 @@ namespace miemss_xamarin.Models
                 Name = "Amiodarone",
                 Details = "Prolongs duration and refractory period of action potential. Slows electrical conduction, electrical impulse generation from sinoatrial node, and conduction through accessory pathways. Also dilates blood vessels.",
                 Path = "miemss_xamarin.Assets.BLS-AMIODARONE.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "Pediatric with pulse: 5 mg/kg IV/IO over 20 minutes (mixed in 50 - 100 mL of approved diluent)." +
+                "pediatric without pulse: 5 mg/kg IV/IO; max single dose 300 mg. May repeat twice to a maximum of 15 mg/kg.",
+                AdultDosageDescription = "Adult with pulse: 150 mg IV/IO over 10 minutes (mixed in 50 - 100 mL of approved diluent). May repeat once." +
+                "Adult without pulse VF/VT/(torsades after magnesium sulfate): 300 mg IV/IO. May repeat one time."
 
             });
             Drugs.Add(new Drug
@@ -178,7 +191,9 @@ namespace miemss_xamarin.Models
                 Name = "Aspirin",
                 Details = "Platelet inhibitor. Anti-inflammatory.",
                 Path = "miemss_xamarin.Assets.BLS-ASPIRIN.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "Not indicated",
+                AdultDosageDescription = "324 mg or 325 mg chewed"
 
             });
             Drugs.Add(new Drug
@@ -186,7 +201,11 @@ namespace miemss_xamarin.Models
                 Name = "Atropine Sulfate",
                 Details = "Parasympatholytic (vagolytic action), Anticholingergic (accelerates the heart rate)",
                 Path = "miemss_xamarin.Assets.BLS-ATROPINESULFATE.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "Bradycardia: Administer 0.02 mg/kg IV/IO; maximum single dose 0.5 mg; ET 0.04-0.06 mg/kg, dilute 5 mL; repeat once." +
+                "Organophosphate poisoning: administer 0.02 mg/kg IVP/IO or IM every 5-10 minutes.",
+                AdultDosageDescription = "Bradycarcdia: Administer 0.5 - 1 mg IVP repeated every 3-5 minutes to a total dose of 0.05 mg/kg." + "Organophosphate poisoning: Administer 2-4 mg IVP or IM every 5-10 minutes."
+                
 
             });
             Drugs.Add(new Drug
@@ -194,7 +213,9 @@ namespace miemss_xamarin.Models
                 Name = "Atrovent",
                 Details = "Anticholinergic (parasympatholytic) bronchodilator, Bronchodilator is site-specific, not systemic. Dries respiratory tact secretions. Most effective in combination with a beata-adrenergic bronchodilator.",
                 Path = "miemss_xamarin.Assets.BLS-ATROVENT.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "Single administration ONLY. In combination with albuterol, nebulized aerosol is connected to 6-8 lpm of oxygen. (a) Less than 1 year of age: contraindicated. (b) Age 1 year but less than 2 years: 250 mcg (1.25 mL) by nebulized aerosol. (c) 500 mcg (2.5 mL) by nebulized aerosol.",
+                AdultDosageDescription = "Single administration ONLY, 500 mcg (2.5 mL) by nebulized aerosol connected to 6-8 lpm of oxygen incombinatin with albuterol 2.5 mg"
 
             });
             Drugs.Add(new Drug
@@ -202,7 +223,10 @@ namespace miemss_xamarin.Models
                 Name = "Calcium Chloride",
                 Details = "Increases cardiact contractile state and ventricular automaticity.",
                 Path = "miemss_xamarin.Assets.BLS-CALCIUM CHLORIDE.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "Administer 20 mg/kg (0.2 mL/kg (0.2 mL/kg) SLOW IVP/IO (50 mg/min) maximum dose 1 gram.",
+                AdultDosageDescription = "Administer 0.5-1 gram SLOW IVP over 10 minutes. Maximum dose1 grma." +
+                "Administer 500 mg SLOW IVP for: hypotension following dltiazem administration. Respiratory depression, decreased reflexes, flaccid paralysis, and apnea following magnesium sulfate administration."
 
             });
             Drugs.Add(new Drug
@@ -210,7 +234,9 @@ namespace miemss_xamarin.Models
                 Name = "Dexamethasone ",
                 Details = "Moderate to severe asthma exacerbation. Croup. Anaphylaxis.",
                 Path = "miemss_xamarin.Assets.BLS-DEXAMETHASONE.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "(a) Asthma: 0.5 mg/kg PO (preferred) or IV to a maximum of 10 mg (b) Croup: 0.5 mg/kg PO/IM/IV to a maximum of 10 mg",
+                AdultDosageDescription = "10 mg IV (preferred, if established) or PO"
 
             });
             Drugs.Add(new Drug
@@ -346,21 +372,28 @@ namespace miemss_xamarin.Models
                 Name = "Nitroglycerin Paste ",
                 Details = "Nitroglycerin paste contains a 2% solution of nitroglycerin in a special absorbent paste.When placed on the skin, nitroglycerin is absorbedinto the systemic circulation.In many cases, it may be preferred over nitroglycerin tablets because of its longer duration of action.",
                 Path = "miemss_xamarin.Assets.BLS-NITROGLYCERIN PASTE.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = " Requires medical consultation from Pediatric Base Station.",
+                AdultDosageDescription = " 1 inch of the NTG paste is applied. Measuring applicators are supplied."
+
             });
             Drugs.Add(new Drug
             {
                 Name = "Ondansetron ",
                 Details = "A selective blocking agent of serotonin 5-HT3 receptor type.",
                 Path = "miemss_xamarin.Assets.BLS-ONDANSETRON.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "28 days to 12 years old: 0.1 mg/kg SLOW IV over 2-5 minutes. Patients who are 13 to 18 years old: 8 mg ODT or 8 mg SLOW IV over 2-5 minutes.",
+                AdultDosageDescription = " 8 mg SLOW IV over 2-5 minutes or 4-8 mg IM or 8 mg orally disintegrating tablet (ODT)"
             });
             Drugs.Add(new Drug
             {
                 Name = "Oxygen ",
-                Details = "Increases oxygen content of the blood. Improves tissue oxygenation.",
+                Details = "If evidence of hypoxia (less than 94% SpO2). Respiratory distress. Cardiopulmonary arrest. Trauma. Suspected CO exposure. Dyspenea.",
                 Path = "miemss_xamarin.Assets.BLS-OXYGEN.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "Administer 12-15 lpm via NRB mask or 2-6 lpm via nasal cannula, as needed. CO exposure: Administer 100% oxygen via NRB mask. Maintain SpO2 at 100%.",
+                AdultDosageDescription = "Administer 12-15 lpm via NRB mask or 2-6 lpm via nasal cannula, as needed. CO exposure: Administer 100% oxygen via NRB mask. Maintain SpO2 at 100%."
 
             });
             Drugs.Add(new Drug
@@ -368,7 +401,9 @@ namespace miemss_xamarin.Models
                 Name = "Sodium Bicarbonate ",
                 Details = "Sodium bicarbonate corrects acidosis.",
                 Path = "miemss_xamarin.Assets.BLS-SODIUM BICARBONATE.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "Administer 1 mEq/kg IVP/IO; for patients less than 1 year of age, must be diluted (1:1) with LR.",
+                AdultDosageDescription = "Administer 1 mEq/kg IVP bolus initially with 0.5 mEq/kg at 10- minute intervals."
 
             });
             Drugs.Add(new Drug
@@ -376,7 +411,9 @@ namespace miemss_xamarin.Models
                 Name = "Verapamil  ",
                 Details = "Calcium channel blocker.",
                 Path = "miemss_xamarin.Assets.BLS-VERAPAMIL.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                PediatricDosageDescription = "Contraindicated for patients less than 18 years of age.",
+                AdultDosageDescription = "2.5 - 10 mg slow IV over 2 minutes; if response is not adequate, repeat in 15 minutes with a dosage of 2.5 - 10 mg slow IV over 2 minutes with medical consultation."
 
             });
 

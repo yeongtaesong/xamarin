@@ -47,7 +47,7 @@ namespace miemss_xamarin
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-            var page = new DrugCalculator();
+            var page = new ChildDosagePage();
             var drug = (Drug)DrugDetails.BindingContext;
             page.Title = "Child Dosage";
             if (drug != null)

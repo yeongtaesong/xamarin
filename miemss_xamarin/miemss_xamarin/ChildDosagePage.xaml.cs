@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace miemss_xamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DrugCalculator : ContentPage
+    public partial class ChildDosagePage : ContentPage
     {
-        public DrugCalculator()
+        public ChildDosagePage()
         {
             InitializeComponent();
             DisplayAlert("Message", this.Title, "ok");

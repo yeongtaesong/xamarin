@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             mc:Ignorable="d"
+             x:Class="miemss_xamarin.ChildDosagePage"
+             x:Name="DrugCalculatorContent">
+
+    <ContentPage.Content>
+        <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
+
+            <!--DRUG CALCULATOR-->
+            <StackLayout Orientation="Vertical" IsVisible="{Binding IsCalculatorVisible}">
+                <Label Text="Test"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Dosage" FontSize="Medium" Padding="10" />
+                    <Entry x:Name="Dosage" Placeholder="mg/kg" Keyboard="Numeric" WidthRequest="150" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Weight" FontSize="Medium" Padding="10" />
+                    <Entry x:Name="Weight"  Placeholder="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}" Keyboard="Numeric" WidthRequest="150" />
+                    <Picker x:Name="UnitPicker" Title="Select Unit" SelectedIndex="{Binding WeightUnit}" HorizontalOptions="FillAndExpand" >
+                        <Picker.Items>
+                            <x:String>kg</x:String>
+                            <x:String>lb</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+                <Button x:Name="CalculateButton" Text="Calculate Dosage" WidthRequest="200" HorizontalOptions="Start" Clicked="Button_OnClicked" BindingContext="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}"/>
+                <Label x:Name="CalculationLabel" Text=""/>
+            </StackLayout>
+        </pancake:PancakeView>
+    </ContentPage.Content>
+</ContentPage>

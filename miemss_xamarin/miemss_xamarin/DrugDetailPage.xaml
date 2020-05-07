@@ -9,7 +9,7 @@
              BindingContext="{Binding .}"
              x:Name="DrugDetails">
     <ContentPage.Content>
-        <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
+        <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent">
             <StackLayout Padding="24,24,24,24" >
                 <!--Details -->
                 <Label Text="{Binding Name}" FontSize="Large"/>
