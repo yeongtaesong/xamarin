@@ -41,7 +41,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>05.08.20</string>
 	<key>CFBundleVersion</key>
-	<string>2.0</string>
+	<string>3.0</string>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<true/>
 	<key>ITSAppUsesNonExemptEncryption</key>

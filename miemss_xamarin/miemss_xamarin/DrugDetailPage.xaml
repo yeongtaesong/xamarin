@@ -38,7 +38,7 @@
                             BackgroundColor="LightGray"
                             BorderWidth="1"
                             CornerRadius="5"
-                            WidthRequest="200"
+                            WidthRequest="170"
                             HeightRequest="45"/>
                 </StackLayout>
             </StackLayout>
