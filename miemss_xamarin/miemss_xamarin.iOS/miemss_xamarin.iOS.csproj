@@ -27,10 +27,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchArch>x86_64</MtouchArch>
-    <MtouchLink>None</MtouchLink>
+    <MtouchLink>SdkOnly</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
-    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignProvision>VS: com.miemss.miemss Development</CodesignProvision>
     <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
     <MtouchFastDev>true</MtouchFastDev>
   </PropertyGroup>
@@ -42,8 +42,8 @@
     <WarningLevel>4</WarningLevel>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
-    <CodesignKey>iPhone Distribution: Viasoftech, Inc (RR3F4B68DG)</CodesignKey>
-    <CodesignProvision>MIEMSS Provision Profile Distribution With Push No</CodesignProvision>
+    <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
+    <CodesignProvision>VS: com.miemss.miemss Development</CodesignProvision>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <OnDemandResourcesInitialInstallTags>
     </OnDemandResourcesInitialInstallTags>
@@ -60,13 +60,13 @@
     <DocumentationFile>
     </DocumentationFile>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>Apple Development: Emil Sawires (HN9X7JQU34)</CodesignKey>
+    <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
-    <CodesignProvision>MIEMSS Provision Profile Development With Push Not</CodesignProvision>
+    <CodesignProvision>VS: com.miemss.miemss Development</CodesignProvision>
     <OnDemandResourcesPrefetchOrder>
     </OnDemandResourcesPrefetchOrder>
     <NoWarn>
@@ -94,7 +94,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchArch>ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>MIEMSS Provision Profile Distribution With Push No</CodesignProvision>
+    <CodesignProvision>VS: com.miemss.miemss Development</CodesignProvision>
     <MtouchVerbosity>
     </MtouchVerbosity>
     <MtouchUseLlvm>
@@ -103,7 +103,8 @@
     </MtouchEnableSGenConc>
     <NoWarn>
     </NoWarn>
-    <CodesignKey>iPhone Distribution: Viasoftech, Inc (RR3F4B68DG)</CodesignKey>
+    <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
+    <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
