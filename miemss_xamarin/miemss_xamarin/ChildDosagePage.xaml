@@ -12,29 +12,35 @@
 
     <ContentPage.Content>
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
-            <StackLayout  Orientation="Vertical" Padding="10">
+            <StackLayout  Orientation="Vertical" Padding="15,15,0,0">
                 <Label  Text="Dosage Description:" FontSize="Large"/>
                 <Label  Text="{Binding AdultDosageDescription}"/>
                 <!--DRUG CALCULATOR-->
                 <StackLayout x:Name="Calculator" Orientation="Vertical" IsVisible="{Binding HasCalculator}">
                     <Label Text="Dosage Calculator" FontSize="Large"/>
-                    <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" >
                         <Label Text="Dosage" FontSize="Medium" Padding="10" />
                         <Entry x:Name="Dosage" Text="{Binding AdultDosage}"  Keyboard="Numeric" WidthRequest="150" />
                         <Label Text="{Binding DoseUnit}" FontSize="Medium" Padding="10"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Weight" FontSize="Medium" Padding="10" />
+                        <Label Text="Weight" FontSize="Medium" Padding="10"  />
                         <Entry x:Name="Weight"  Placeholder="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}" Keyboard="Numeric" WidthRequest="150" />
-                        <Picker x:Name="UnitPicker" Title="Select Unit" SelectedIndex="{Binding WeightUnit}" HorizontalOptions="FillAndExpand" >
+                        <Picker x:Name="UnitPicker" Title="Select Unit" SelectedIndex="{Binding WeightUnit}" WidthRequest="100" >
                             <Picker.Items>
                                 <x:String>kg</x:String>
                                 <x:String>lb</x:String>
                             </Picker.Items>
                         </Picker>
                     </StackLayout>
-                    <Button x:Name="CalculateButton" Text="Calculate Dosage" WidthRequest="200" HorizontalOptions="Start" Clicked="Button_OnClicked" BindingContext="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}"/>
-                    <Label x:Name="CalculationLabel" Text=""/>
+                    <StackLayout Orientation="Horizontal" Padding="80,10,0,0">
+                    <Button x:Name="CalculateButton" Text="Calculate Dosage"
+                            WidthRequest="200" HeightRequest="45" TextColor="Blue"
+                            BorderWidth="1" BackgroundColor="LightGray" CornerRadius="5"
+                            HorizontalOptions="Start" Clicked="Button_OnClicked"
+                            BindingContext="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}"/>
+                    </StackLayout>
+                    <Label x:Name="CalculationLabel" Text="" Padding="80,10,0,0"/>
                 </StackLayout>
             </StackLayout>
         </pancake:PancakeView>
