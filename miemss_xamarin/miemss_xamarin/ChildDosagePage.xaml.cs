@@ -15,7 +15,6 @@ namespace miemss_xamarin
         public ChildDosagePage()
         {
             InitializeComponent();
-            DisplayAlert("Message", this.Title, "ok");
         }
         //Button for dosage calculation
         private void Button_OnClicked(object sender, EventArgs e)

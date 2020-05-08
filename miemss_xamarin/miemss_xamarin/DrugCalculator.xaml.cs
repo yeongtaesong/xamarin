@@ -1,10 +1,12 @@
-﻿using System;
+﻿using miemss_xamarin.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Markup;
 using Xamarin.Forms.Xaml;
 
 namespace miemss_xamarin
@@ -15,7 +17,8 @@ namespace miemss_xamarin
         public DrugCalculator()
         {
             InitializeComponent();
-            DisplayAlert("Message", this.Title, "ok");
+
+            
         }
         //Button for dosage calculation
         private void Button_OnClicked(object sender, EventArgs e)
