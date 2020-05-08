@@ -545,7 +545,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\HTML\page1.html" />
     <BundleResource Include="GoogleService-Info.plist" />
   </ItemGroup>
   <ItemGroup>
