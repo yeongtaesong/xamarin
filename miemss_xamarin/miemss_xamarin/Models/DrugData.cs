@@ -315,7 +315,7 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Diphenhydramine Hydrochloride ",
-                Details = "Antihistamine.",
+                Details = "(1) Allergic reaction (2) Anaphylaxis (3) Dystonic reactions",
                 Path = "miemss_xamarin.Assets.BLS-DIPHENHYDRAMINE HYDROCHLORIDE.pdf",
                 Category = "BLS",
                 AdultDosageDescription = "Administer 25-50 mg SLOW IVP or IM",
@@ -329,7 +329,7 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Dopamine Hydrochloride",
-                Details = "Alpha and beta adrenergic receptor stimulation.",
+                Details = "(1) Cardiogenic shock (2) Septic shock (3) Anaphylactic shock (4) Hypovolemic shock after sufficient volume replacement.",
                 Path = "miemss_xamarin.Assets.BLS-DOPAMINE HYDROCHLORIDE.pdf",
                 Category = "BLS",
                 AdultDosageDescription = "Administer 2-20 mcg/kg/min IV drip titrated to BP of 100 systolic or medical consultation selected BP; initial infusion rate 2-5 mcg/kg/min",
@@ -345,7 +345,11 @@ namespace miemss_xamarin.Models
                 Name = "Epinephrine ",
                 Details = "The administration of ephinephrine causes increases in: Systemic vascular resistance.",
                 Path = "miemss_xamarin.Assets.BLS-EPINEPHRINE.pdf",
-                Category = "BLS"
+                Category = "BLS",
+                AdultDosageDescription = "Mix 1 mg of epinephrine (either 1:1,000 or 1:10,000) in a 1 liter bag of LR IV/IO. Initiate an infusion with a wide open macro drip titrating to a systolic pressure of greater than 90 mmHg. When drip administered, this will be reported as an exceptional call.",
+                PediatricDosageDescription = "Less than 5 years of age: administer 0.15 mg in 0.15 mL IM. 5 years and greater: administer 0.5 mg in 0.5 mL IM.",
+                HasCalculator = false
+
 
             });
             Drugs.Add(new Drug
@@ -387,7 +391,7 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Ketamine",
-                Details = "Hypnotic analgesic.",
+                Details = "(1) The patient reports moderate to severe pain. (2) The patient displaying signs and symptoms of excited delirium syndrome.",
                 Path = "miemss_xamarin.Assets.BLS-KETAMINE.pdf",
                 Category = "BLS",
                 AdultDosageDescription = "Pain Management: Administer 0.2 mg/kg IV/IO over 1-2 minutes. Maximum single dose 20 mg. See more information for further details.",
@@ -541,7 +545,7 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Verapamil  ",
-                Details = "Calcium channel blocker.",
+                Details = "Narrow complex symptomatic atrial fibrillation or atrial flutter.",
                 Path = "miemss_xamarin.Assets.BLS-VERAPAMIL.pdf",
                 Category = "BLS",
                 PediatricDosageDescription = "Contraindicated for patients less than 18 years of age.",
