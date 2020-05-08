@@ -1,24 +1,20 @@
-﻿using miemss_xamarin.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using Xamarin.Forms.Markup;
 using Xamarin.Forms.Xaml;
 
 namespace miemss_xamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DrugCalculator : ContentPage
+    public partial class ChildDosagePage : ContentPage
     {
-        public DrugCalculator()
+        public ChildDosagePage()
         {
             InitializeComponent();
-
-            
         }
         //Button for dosage calculation
         private void Button_OnClicked(object sender, EventArgs e)

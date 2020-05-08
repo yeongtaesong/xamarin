@@ -35,15 +35,24 @@ namespace miemss_xamarin
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
+            var drug = (Drug)DrugDetails.BindingContext;
             var page = new DrugCalculator();
             page.Title = "Adult Dosage";
+            if (drug != null)
+            {
+                page.BindingContext = drug;
+            }
             await Navigation.PushAsync(page);
         }
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-            var page = new DrugCalculator();
-            page.Title = "Child Dosage";
+            var page = new ChildDosagePage();
+            var drug = (Drug)DrugDetails.BindingContext;
+            if (drug != null)
+            {
+                page.BindingContext = drug;
+            }
             await Navigation.PushAsync(page);
         }
     }
