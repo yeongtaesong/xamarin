@@ -12,6 +12,7 @@
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
 
             <StackLayout  Orientation="Vertical" Padding="15,15,0,0">
+                <Label  Text="{Binding Name}" FontSize="Large" TextDecorations="Underline"/>
                 <Label  Text="Dosage Description:" FontSize="Large"/>
                 <Label  Text="{Binding AdultDosageDescription}"/>
                 <!--DRUG CALCULATOR-->

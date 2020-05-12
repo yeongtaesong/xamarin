@@ -49,6 +49,7 @@ namespace miemss_xamarin
         {
             var page = new ChildDosagePage();
             var drug = (Drug)DrugDetails.BindingContext;
+            page.Title ="Pediatric Dosage";
             if (drug != null)
             {
                 page.BindingContext = drug;
