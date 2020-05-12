@@ -338,15 +338,6 @@
     <ImageAsset Include="Assets.xcassets\resource.imageset\resource2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\Infectious-Diseases-Logo-Blue-Final.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\Infectious-Diseases-Logo-Blue-Final1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\Infectious-Diseases-Logo-Blue-Final2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\tool.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -516,6 +507,9 @@
     <ImageAsset Include="Assets.xcassets\ems1.imageset\ems-2.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\splash %283%29.png" />
+    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\splash %283%29-1.png" />
+    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\splash %283%29-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

@@ -39,12 +39,14 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon-1.appiconset</string>
 	<key>CFBundleShortVersionString</key>
-	<string>05.08.20</string>
+	<string>05.12.20</string>
 	<key>CFBundleVersion</key>
-	<string>3.0</string>
+	<string>1.0</string>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<true/>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>

@@ -20,13 +20,13 @@
                     <Label Text="Dosage Calculator" FontSize="Large"/>
                     <StackLayout Orientation="Horizontal" >
                         <Label Text="Dosage" FontSize="Medium" Padding="10" />
-                        <Entry x:Name="Dosage" Text="{Binding AdultDosage}"  Keyboard="Numeric" WidthRequest="150" />
+                        <Entry x:Name="Dosage" Text="{Binding AdultDosage}"  Keyboard="Numeric" WidthRequest="100" />
                         <Label Text="{Binding DoseUnit}" FontSize="Medium" Padding="10"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Weight" FontSize="Medium" Padding="10"  />
-                        <Entry x:Name="Weight" Text=""  Placeholder="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}" Keyboard="Numeric" WidthRequest="150" />
-                        <Picker x:Name="UnitPicker" Title="Select Unit" SelectedIndex="{Binding WeightUnit}" WidthRequest="100" >
+                        <Entry x:Name="Weight" Text=""  Placeholder="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}" Keyboard="Numeric" WidthRequest="100" />
+                        <Picker x:Name="UnitPicker" Title="Unit" SelectedIndex="{Binding WeightUnit}" WidthRequest="100" >
                             <Picker.Items>
                                 <x:String>kg</x:String>
                                 <x:String>lb</x:String>

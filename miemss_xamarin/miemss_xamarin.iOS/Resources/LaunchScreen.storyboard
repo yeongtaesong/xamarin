@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X5k-f2-b5h">
+    <device id="retina5_9" orientation="portrait"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,20 +15,24 @@
                         <viewControllerLayoutGuide type="top" id="Y8P-hJ-Z43"/>
                         <viewControllerLayoutGuide type="bottom" id="9ZL-r4-8FZ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yd7-JS-zBw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <view key="view" contentMode="scaleAspectFit" id="yd7-JS-zBw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23" image="splashscreen" highlighted="YES">
-                                <rect key="frame" x="59" y="175" width="211" height="267"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" image="splashscreen" horizontalHuggingPriority="255">
+                                <rect key="frame" x="84" y="274" width="208" height="307"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="regular"/>
                                 <accessibility key="accessibilityConfiguration" label="MIEMSS-EMS"/>
+                                <constraints>
+                                    <constraint id="1691" firstAttribute="width" secondItem="23" secondAttribute="height" multiplier="124:183"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="23" firstAttribute="centerY" secondItem="yd7-JS-zBw" secondAttribute="centerY" priority="1" id="39"/>
                             <constraint firstItem="23" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX" priority="1" id="41"/>
+                            <constraint id="1692" firstItem="23" firstAttribute="width" secondItem="yd7-JS-zBw" secondAttribute="width"/>
                         </constraints>
                         <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
                     </view>
@@ -37,6 +43,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splashscreen" width="125" height="125"/>
+        <image name="splashscreen" width="170.6667" height="170.6667"/>
     </resources>
 </document>
