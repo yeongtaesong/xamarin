@@ -37,7 +37,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 1,
                 PediatricDosage = 1,
-                DoseUnit = "gram/kg"
+                DoseUnit = "gram/kg",
+                Unit = "gram"
 
             });
 
@@ -172,7 +173,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 1,
                 PediatricDosage = 1,
-                DoseUnit = "gram/kg"
+                DoseUnit = "gram/kg",
+                Unit = "gram"
 
 
             });
@@ -187,7 +189,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 6,
                 PediatricDosage = 0.1,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "gram"
 
             });
             Drugs.Add(new Drug
@@ -214,7 +217,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 PediatricDosage = 5,
                 AdultDosage = 150,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "mg"
 
             });
             Drugs.Add(new Drug
@@ -240,7 +244,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 PediatricDosage = 0.02,
                 AdultDosage = 0.05,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "mg"
                 
 
             });
@@ -267,7 +272,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 PediatricDosage = 20,
                 AdultDosage = 0.5,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "mg"
 
             });
             Drugs.Add(new Drug
@@ -281,7 +287,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 PediatricDosage = 0.5,
                 AdultDosage = 10,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "mg"
 
             });
             Drugs.Add(new Drug
@@ -309,7 +316,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 2.5,
                 PediatricDosage = 0.1,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "mg"
 
             });
             Drugs.Add(new Drug
@@ -323,7 +331,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 25,
                 PediatricDosage = 1,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "mg"
 
             });
             Drugs.Add(new Drug
@@ -337,7 +346,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 2,
                 PediatricDosage = 2,
-                DoseUnit = "mcg/kg"
+                DoseUnit = "mcg/kg",
+                Unit = "mcg"
 
             });
             Drugs.Add(new Drug
@@ -363,7 +373,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 1,
                 PediatricDosage = 1,
-                DoseUnit = "mcg/kg"
+                DoseUnit = "mcg/kg",
+                Unit = "mcg"
 
             });
             Drugs.Add(new Drug
@@ -399,7 +410,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 0.2,
                 PediatricDosage = 0.2,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "mg"
 
             });
             Drugs.Add(new Drug
@@ -413,7 +425,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 20,
                 PediatricDosage = 20,
-                DoseUnit = "mL/kg"
+                DoseUnit = "mL/kg",
+                Unit = "mL"
 
 
             });
@@ -439,7 +452,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 1,
                 PediatricDosage = 50,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "mg"
 
 
             });
@@ -454,7 +468,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 0.1,
                 PediatricDosage = 0.1,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "mg"
 
             });
             Drugs.Add(new Drug
@@ -468,7 +483,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 0.1,
                 PediatricDosage = 0.1,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "mg"
 
             });
             Drugs.Add(new Drug
@@ -482,7 +498,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 0.4,
                 PediatricDosage = 0.1,
-                DoseUnit = "mg/kg"
+                DoseUnit = "mg/kg",
+                Unit = "mg"
 
             });
             Drugs.Add(new Drug
@@ -539,7 +556,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 AdultDosage = 1,
                 PediatricDosage = 1,
-                DoseUnit = "mEq/kg"
+                DoseUnit = "mEq/kg",
+                Unit = "mEq"
 
             });
             Drugs.Add(new Drug

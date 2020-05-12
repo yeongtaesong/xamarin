@@ -24,22 +24,37 @@ namespace miemss_xamarin
         private void Button_OnClicked(object sender, EventArgs e)
         {
 
-            double dosage = Convert.ToDouble(Dosage.Text);
-            double weight = Convert.ToDouble(Weight.Text);
+            if (Dosage.Text == "" || Weight.Text == "")
+            {
+                DisplayAlert("Error", "Please type in a number.", "Ok");
+            } else
+            {
+                double dosage = Convert.ToDouble(Dosage.Text);
+                double weight = Convert.ToDouble(Weight.Text);
 
+                Calculate(dosage, weight);
+               
+            }
+
+
+
+        }
+
+        private void Calculate(double dosage, double weight)
+        {
             string unit = (string)CalculateButton.BindingContext;
             if (unit == "lb")
             {
                 double calculation = dosage * (weight * 0.45359237);
                 calculation = Math.Round(calculation, 3);
-                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + "mg";
+                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + " " + (string)CalculationLabel.BindingContext;
 
             }
             else if (unit == "kg")
             {
                 double calculation = dosage * weight;
                 calculation = Math.Round(calculation, 3);
-                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + "mg";
+                CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + " " + (string)CalculationLabel.BindingContext;
             }
             else
             {

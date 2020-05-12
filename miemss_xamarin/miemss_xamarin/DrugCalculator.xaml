@@ -24,7 +24,7 @@
                     </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Weight" FontSize="Medium" Padding="10" />
-                    <Entry x:Name="Weight"  Placeholder="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}" Keyboard="Numeric" WidthRequest="100" />
+                    <Entry x:Name="Weight"  Text ="" Placeholder="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}" Keyboard="Numeric" WidthRequest="100" />
                     <Picker x:Name="UnitPicker" Title="Unit" SelectedIndex="{Binding WeightUnit}"  WidthRequest="100">
                         <Picker.Items>
                             <x:String>kg</x:String>
@@ -39,7 +39,10 @@
                         HorizontalOptions="Start" Clicked="Button_OnClicked"
                         BindingContext="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}"/>
                     </StackLayout>
-                        <Label x:Name="CalculationLabel" Text="" Padding="80,10,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label BindingContext="{Binding Unit}" x:Name="CalculationLabel" Text="" Padding="80,10,0,0"/>
+                    </StackLayout>
+                        
             </StackLayout>
             </StackLayout>
         </pancake:PancakeView>

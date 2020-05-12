@@ -20,5 +20,6 @@ namespace miemss_xamarin.Models
         public double AdultDosage { get; set; }
         public double PediatricDosage { get; set; }
         public string DoseUnit { get; set; }
+        public string Unit { get; set; }
     }
 }
