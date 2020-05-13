@@ -14,6 +14,8 @@
                   HasUnevenRows="True"
                       ItemSelected="OnSelected"
                       ItemTapped="OnItemTapped">
+                
+                <!--Resource Item-->
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -32,6 +34,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

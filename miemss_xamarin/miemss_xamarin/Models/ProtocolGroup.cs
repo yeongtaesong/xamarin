@@ -5,6 +5,13 @@ using System.ComponentModel;
 using System.Text;
 using System.Xml.Schema;
 
+/*Edit Protocol Page list items here. Items are generated through the 
+ *static method ProtocolGroup(). This model also allow for the creation
+ *of groups and subgroups for the Protcol Page.
+ 
+ *ProtocolGroup is the header and Protocol is the group within the header. These
+ *items are displayed on ProtocolPage.xaml*/
+
 namespace miemss_xamarin.Models
 {
     class ProtocolGroup : List<Protocol>, INotifyPropertyChanged
@@ -40,7 +47,6 @@ namespace miemss_xamarin.Models
 
         static ProtocolGroup()
         {
-          
             List<ProtocolGroup> Groups = new List<ProtocolGroup>
             {
                 new ProtocolGroup("I.General Information")

@@ -3,6 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+/*You may add records to the database here. This will follow the Drug.cs model
+ *and will be stored on the local SQLite database upon starting up app. */
+
 namespace miemss_xamarin.Models
 {
     public static class DrugData
@@ -14,17 +17,21 @@ namespace miemss_xamarin.Models
 
             Drugs.Add(new Drug
             {
-                Name = "Acetaminophen",
+                //Drug name
+                Name = "Acetaminophen", 
+                //Description of drug - based on the indications on the protocol
                 Details = "Patients ages 2 years and above judged to be in mild to moderate discomfort (e.g., 2–5 on FACES scale).",
+                //Path to pdf page on project directory. PDF should always be in Assets folder
                 Path = "miemss_xamarin.Assets.ALS-ACETAMINOPHEN.pdf",
+                //Drug either ALS or BLS
                 Category = "ALS",
+                //Description based on dosage on protocol page
                 PediatricDosageDescription = "2-4 years: Unit dose 160 mg/5 mL. 5-12 years: TWO unit doses of 160 mg/5 ml.",
+                //Description based on dosage on protocol page
                 AdultDosageDescription = "13 years and above: FOUR unit doses of 160 mg/5 mL each for a total of 640 mg/20 mL OR in a form of 325 mg pill or tablet x2 for a total of 650 mg with sips of water as tolerated by the patient.",
+                //If drug requires calculator, boolean will indicate 
                 HasCalculator = false
-
-
             });
-
 
             Drugs.Add(new Drug
             {
@@ -39,7 +46,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 1,
                 DoseUnit = "gram/kg",
                 Unit = "gram"
-
             });
 
             Drugs.Add(new Drug
@@ -51,7 +57,6 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "Patient may receive a maximum of 2 doses (4 puffs) over a 30-minute period. Additional doses may be administered with medical consultation.",
                 AdultDosageDescription = "Patient may receive a maximum of 2 doses (4 puffs) over a 30-minute period. Additional doses may be administered with medical consultation.",
                 HasCalculator = false
-
             });
 
             Drugs.Add(new Drug
@@ -63,7 +68,6 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "Not indicated.",
                 AdultDosageDescription = "324mg or 325 mg chewed.",
                 HasCalculator = false
-
             });
 
             Drugs.Add(new Drug
@@ -76,7 +80,6 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "(1) Patients 5 years of age or greater: 0.5 mg in 0.5 mL IM. " + "Patients less than 5 years of age: 0.15 mg in 0.15 mL IM",
                 AdultDosageDescription = "0.5 mg in 0.5 mL IM.",
                 HasCalculator = false
-
             });
 
             Drugs.Add(new Drug
@@ -91,8 +94,6 @@ namespace miemss_xamarin.Models
                 "5 years and greater: administer 0.3 mg IM in the lateral thigh via epinephrine auto-injector or manual administration 0.5 mg in 0.5 mL IM.",
                 AdultDosageDescription = "5 years and greater: administer 0.3 mg IM in the lateral thigh via epinephrine auto-injector or manual administration 0.5 mg in 0.5 mL IM.",
                 HasCalculator = false
-
-
             });
 
             Drugs.Add(new Drug
@@ -106,8 +107,6 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Administer 2mg IN, dividing administration of the dose equally betweent the nares to a maximum of 1 mL per nare, "
                 + "OR administer 4mg/0.1 mL IN in one nare. " + "Repeat as necessary to maintain respiratory activity.",
                 HasCalculator = false
-
-
             });
 
             Drugs.Add(new Drug
@@ -120,7 +119,6 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "One tablet or one spray sublingually. (a) Repeat in 3 to 5 minutes if chest pain persists. "
                 + "(b) Maximum of three doses (a combination of patient-administered and EMT-administered) of nitroglycerin.",
                 HasCalculator = false
-
             });
 
             Drugs.Add(new Drug
@@ -133,8 +131,6 @@ namespace miemss_xamarin.Models
                 "this may be accomplished through several small administrations. Consider single additional dose of glucose paste if not improved after 10 minutes.",
                 AdultDosageDescription = "Administer 10-15 grams of glucose paste between the gum and cheek. Consider esingle additional dose of glucose paste if not improved after 10 minutes.",
                 HasCalculator = false
-
-
             });
 
             Drugs.Add(new Drug
@@ -148,7 +144,6 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Administer 12–15 lpm via NRB mask or 2–6 lpm via nasal cannula, as needed. " +
                 "CO exposure: Administer 100 % oxygen via NRB mask. Maintain SpO2 at 100 %. ",
                 HasCalculator = false
-
             });
             Drugs.Add(new Drug
             {
@@ -160,7 +155,6 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "13 years and above: FOUR unit doses of 160 mg/5 mL each for a total of 640 mg/20 mL" +
                 "or in a form of 325 mg pill or tablet x2 for a total of 650 mg with sips of water as tolerated by the patient.",
                 HasCalculator = false
-
             });
             Drugs.Add(new Drug
             {
@@ -175,8 +169,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 1,
                 DoseUnit = "gram/kg",
                 Unit = "gram"
-
-
             });
             Drugs.Add(new Drug
             {
@@ -191,7 +183,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
                 Unit = "gram"
-
             });
             Drugs.Add(new Drug
             {
@@ -219,7 +210,6 @@ namespace miemss_xamarin.Models
                 AdultDosage = 150,
                 DoseUnit = "mg/kg",
                 Unit = "mg"
-
             });
             Drugs.Add(new Drug
             {
@@ -230,7 +220,6 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "Not indicated",
                 AdultDosageDescription = "324 mg or 325 mg chewed",
                 HasCalculator = false
-
             });
             Drugs.Add(new Drug
             {
@@ -246,8 +235,6 @@ namespace miemss_xamarin.Models
                 AdultDosage = 0.05,
                 DoseUnit = "mg/kg",
                 Unit = "mg"
-                
-
             });
             Drugs.Add(new Drug
             {
@@ -258,7 +245,6 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "Single administration ONLY. In combination with albuterol, nebulized aerosol is connected to 6-8 lpm of oxygen. (a) Less than 1 year of age: contraindicated. (b) Age 1 year but less than 2 years: 250 mcg (1.25 mL) by nebulized aerosol. (c) 500 mcg (2.5 mL) by nebulized aerosol.",
                 AdultDosageDescription = "Single administration ONLY, 500 mcg (2.5 mL) by nebulized aerosol connected to 6-8 lpm of oxygen incombinatin with albuterol 2.5 mg",
                 HasCalculator = false
-
             });
             Drugs.Add(new Drug
             {
@@ -274,7 +260,6 @@ namespace miemss_xamarin.Models
                 AdultDosage = 0.5,
                 DoseUnit = "mg/kg",
                 Unit = "mg"
-
             });
             Drugs.Add(new Drug
             {
@@ -289,7 +274,6 @@ namespace miemss_xamarin.Models
                 AdultDosage = 10,
                 DoseUnit = "mg/kg",
                 Unit = "mg"
-
             });
             Drugs.Add(new Drug
             {
@@ -301,7 +285,6 @@ namespace miemss_xamarin.Models
                 "(i) the patient has a return ot normal mental status, and (ii) the patient's blood glucose is at least 90 mg/dL. (iii)" +
                 " If, following 250 mL of 10% dextrose or 25 grams of 50^% dextrose, patient has persistently altered mental status and blood glucose less than 90 mg/dL, repeat dosing regimen in (a).",
                 HasCalculator = false
-
             });
             Drugs.Add(new Drug
             {
@@ -318,7 +301,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
                 Unit = "mg"
-
             });
             Drugs.Add(new Drug
             {
@@ -333,7 +315,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 1,
                 DoseUnit = "mg/kg",
                 Unit = "mg"
-
             });
             Drugs.Add(new Drug
             {
@@ -348,7 +329,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 2,
                 DoseUnit = "mcg/kg",
                 Unit = "mcg"
-
             });
             Drugs.Add(new Drug
             {
@@ -359,8 +339,6 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Mix 1 mg of epinephrine (either 1:1,000 or 1:10,000) in a 1 liter bag of LR IV/IO. Initiate an infusion with a wide open macro drip titrating to a systolic pressure of greater than 90 mmHg. When drip administered, this will be reported as an exceptional call.",
                 PediatricDosageDescription = "Less than 5 years of age: administer 0.15 mg in 0.15 mL IM. 5 years and greater: administer 0.5 mg in 0.5 mL IM.",
                 HasCalculator = false
-
-
             });
             Drugs.Add(new Drug
             {
@@ -375,7 +353,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 1,
                 DoseUnit = "mcg/kg",
                 Unit = "mcg"
-
             });
             Drugs.Add(new Drug
             {
@@ -386,7 +363,6 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Administer 1 mg IM/IN (Medical consult for additional dosing to a maximum of 3 mg IM).",
                 PediatricDosageDescription = "(i) 1 mg IM/IN ( 5 years of age up to patient's 18th birthday) (ii) 0.5 mg IM/IN (28 days-4 years of age)",
                 HasCalculator = false
-
             });
             Drugs.Add(new Drug
             {
@@ -397,7 +373,6 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "No description available.",
                 PediatricDosageDescription = "No description available.",
                 HasCalculator = false
-
             });
             Drugs.Add(new Drug
             {
@@ -412,7 +387,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 0.2,
                 DoseUnit = "mg/kg",
                 Unit = "mg"
-
             });
             Drugs.Add(new Drug
             {
@@ -427,8 +401,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 20,
                 DoseUnit = "mL/kg",
                 Unit = "mL"
-
-
             });
             Drugs.Add(new Drug
             {
@@ -439,7 +411,6 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "With an IO infusion: to prevent or treat pain during an IO infusion in patients great than or equal to 13 years of age, administer 20-40 mg (102 mL) of 2% (preservative free) lidocaine IO.",
                 PediatricDosageDescription = "IO infusion in patients less than 13 years ofage: To prevent or treat a pain during an IO infusion for pateints under 13 yeares of age, consult a pediatric base station.",
                 HasCalculator = false
-
             });
             Drugs.Add(new Drug
             {
@@ -454,8 +425,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 50,
                 DoseUnit = "mg/kg",
                 Unit = "mg"
-
-
             });
             Drugs.Add(new Drug
             {
@@ -470,7 +439,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
                 Unit = "mg"
-
             });
             Drugs.Add(new Drug
             {
@@ -485,7 +453,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
                 Unit = "mg"
-
             });
             Drugs.Add(new Drug
             {
@@ -500,7 +467,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
                 Unit = "mg"
-
             });
             Drugs.Add(new Drug
             {
@@ -511,7 +477,6 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "With history of nitroglycerin use: administer nitroglycerin: 0.4 mg SL.",
                 PediatricDosageDescription = "Requires medical consultation from Pediatric Base Station.",
                 HasCalculator = false
-
             });
             Drugs.Add(new Drug
             {
@@ -558,7 +523,6 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 1,
                 DoseUnit = "mEq/kg",
                 Unit = "mEq"
-
             });
             Drugs.Add(new Drug
             {
@@ -569,7 +533,6 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "Contraindicated for patients less than 18 years of age.",
                 AdultDosageDescription = "2.5 - 10 mg slow IV over 2 minutes; if response is not adequate, repeat in 15 minutes with a dosage of 2.5 - 10 mg slow IV over 2 minutes with medical consultation.",
                 HasCalculator = false
-
             });
 
         }

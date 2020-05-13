@@ -13,6 +13,7 @@ namespace miemss_xamarin.Data
 
         public IList<Drug> Drugs { get; private set; }
 
+        //Allows the database to start up without delaying app launch
         static readonly Lazy<SQLiteAsyncConnection> lazyInitializer = new Lazy<SQLiteAsyncConnection>(() =>
         {
             return new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
@@ -30,7 +31,6 @@ namespace miemss_xamarin.Data
         {
             if (!initialized)
             {
-
                 if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(Drug).Name))
                 {
                     /*SQLite database may still be in the phone, this ensure table is removed and allow for 
@@ -41,10 +41,9 @@ namespace miemss_xamarin.Data
                     initialized = true;
                 }
             }
-
-
         }
 
+        //upon initialization, items are added to the database
         public async void InitializeDatabase()
         {
             int count = await App.Database.GetDrugCount();
@@ -53,17 +52,19 @@ namespace miemss_xamarin.Data
                 App.Database.AddItems();
             }
         }
+        //Get number of Drugs in database
         public async Task<int> GetDrugCount()
         {
            int count = await Database.Table<Drug>().CountAsync();
             return count;
         }
-        //...
+        //Returns all items from database 
         public Task<List<Drug>> GetItemsAsync()
         {
             return Database.Table<Drug>().ToListAsync();
         }
 
+        //Return search results from user input
         public Task<List<Drug>> GetItemAsync(string query)
         {
             string searchNoSpaces = query.Replace(" ", "%");
@@ -83,6 +84,7 @@ namespace miemss_xamarin.Data
             return Database.QueryAsync<Drug>("select * from Drug where Category = ? AND Name LIKE ?", category, searchNoSpaces + "%");
         }
 
+        //After query, item should always be saved
         public Task<int> SaveItemAsync(Drug drug)
         {
             if (drug.ID != 0)
@@ -95,6 +97,7 @@ namespace miemss_xamarin.Data
             }
         }
 
+        //Not used in project but useful for future development
         public Task<int> DeleteItemAsync(Drug drug)
         {
             return Database.DeleteAsync(drug);
@@ -102,7 +105,6 @@ namespace miemss_xamarin.Data
 
         //Items added from DrugData
         public void AddItems()
-
         {
             Drugs = DrugData.Drugs;
 
@@ -110,7 +112,6 @@ namespace miemss_xamarin.Data
             {
                 SaveItemAsync(drug);
             }
-
         }
     }
 }

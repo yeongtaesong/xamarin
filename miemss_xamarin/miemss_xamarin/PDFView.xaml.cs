@@ -31,7 +31,5 @@ namespace miemss_xamarin
             pdfViewerControl.LoadDocument(fileStream);
 
         }
-
-
     }
 }

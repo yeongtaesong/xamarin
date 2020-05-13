@@ -3,9 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+/*You can modify the SQLite database here. Each class is a table. Please refer
+ *to SQLite documentation for more information on data types available: 
+ *https://www.sqlite.org/docs.html . You may also refer to the Microsoft documentation
+ *for specific use of the library: 
+ *https://docs.microsoft.com/en-us/xamarin/xamarin-forms/data-cloud/data/databases */
+
 namespace miemss_xamarin.Models
 {
-   
     public class Drug
     {
         [PrimaryKey, AutoIncrement]
