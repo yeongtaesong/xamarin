@@ -22,6 +22,7 @@ namespace miemss_xamarin
             InitializeComponent();
         }
 
+        //Drug list will display items from ALS or BLS list on appearing
         protected override async void OnAppearing()
         {
             base.OnAppearing();
@@ -37,6 +38,7 @@ namespace miemss_xamarin
             ((ListView)sender).SelectedItem = null;
         }
 
+        //As user adds input to search, druglist updates based on text input
         async void OnTextChanged(object sender, TextChangedEventArgs e)
         {
             List<Drug> list = (List<Drug>)this.BindingContext;
@@ -46,6 +48,7 @@ namespace miemss_xamarin
 
         }
 
+        //On item selected, user will be redirected to DrugDetailedPage of item selected
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var drug = ((ListView)sender).SelectedItem as Drug;

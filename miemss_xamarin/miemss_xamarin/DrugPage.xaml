@@ -30,6 +30,7 @@
                                     <ColumnDefinition Width="auto"/>
                                     <ColumnDefinition Width="auto"/>
                                 </Grid.ColumnDefinitions>
+                                <!--Drug Item Display-->
                                 <Image Source ="bullet.png" Grid.Column="0" Grid.Row="0"/>
                                 <Label  Grid.Column="1" Grid.Row="0" Text="{Binding Name}" FontSize ="Medium" StyleClass="mainPageTitle" />
                             </Grid>
