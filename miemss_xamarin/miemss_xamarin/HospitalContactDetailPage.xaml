@@ -50,7 +50,7 @@
                  <Label  VerticalOptions="Center" TextColor="Blue"   FontSize="Small" Text="Region:"/>
                  <Label  FontSize="Medium"   Text="{Binding Region}"  />
 
-                    <!--Type-->
+                <!--Type-->
                 <Label    VerticalOptions="Center" TextColor="Blue"   FontSize="Small" Text="Service:"/>
                 <Label  FontSize="Medium"   Text="{Binding Type}"  />
                 <Label  FontSize="Medium" Text="{Binding Specialty}"  />

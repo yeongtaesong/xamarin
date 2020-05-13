@@ -12,7 +12,6 @@ using miemss_xamarin.Models;
 using ListView = Xamarin.Forms.ListView;
 
 /*In order to edit items from list of Drugs, go to DrugData*/
-
 namespace miemss_xamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -20,9 +19,6 @@ namespace miemss_xamarin
     {
         public DrugPage()
         {
-
-
-            
             InitializeComponent();
         }
 
@@ -59,11 +55,6 @@ namespace miemss_xamarin
                 page.BindingContext = drug;
                 await Navigation.PushAsync(page);
             }
-        }
-       async private void Button_OnClicked(object sender, EventArgs e)
-        {
-            var page = new DrugCalculator();
-            await Navigation.PushAsync(page);
         }
     }
 }

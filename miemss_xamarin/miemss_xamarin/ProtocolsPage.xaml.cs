@@ -24,7 +24,6 @@ namespace miemss_xamarin
             InitializeComponent();
             _allGroups = ProtocolGroup.All;
             UpdateListContent();
-
         }
 
         //If header is tapped, list is expanded - finds index value of ResourceGroup
@@ -74,6 +73,7 @@ namespace miemss_xamarin
             {
                 var page = new DetailedProtocolPage();
                 page.BindingContext = protocol;
+                page.Title = protocol.Name;
                 await Navigation.PushAsync(page);
             }
         }
