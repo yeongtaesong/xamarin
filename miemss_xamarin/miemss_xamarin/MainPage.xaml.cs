@@ -19,6 +19,7 @@ namespace miemss_xamarin
 
         protected override void OnAppearing()
         {
+            //Initialize database when app starts up. 
             App.Database.InitializeDatabase();
             base.OnAppearing();
         }
@@ -29,49 +30,49 @@ namespace miemss_xamarin
         }
 
         //Protocol Page
-        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private async void ProtocolPage_Tapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ProtocolsPage());
         }
 
         //Hospital Directories Page
-        private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
+        private async void HospitalDirectories_Tapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new HospitalPage());
         }
 
-        //CBRNE Resources
-        private async void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
+        //EMS Resources
+        private async void EMSResourcePage_Tapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ResourcePage());
         }
 
         //Medications 
-        private async void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
+        private async void MedicationsPage_Tapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new DrugSelectionPage());
         }
 
         //Regions
-        private async void TapGestureRecognizer_Tapped_4(object sender, EventArgs e)
+        private async void RegionsPage_Tapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new RegionPage());
         }
 
         //Button for Calendar 
-        private async void TapGestureRecognizer_Tapped_5(object sender, EventArgs e)
+        private async void CalendarPage_Tapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CalendarPage() );
         }
 
         //CHATS-Alert
-        private async void TapGestureRecognizer_Tapped_6(object sender, EventArgs e)
+        private async void ChatsPage_Tapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ChatsPage());
         }
 
         //Important Numbers Page
-        private async void TapGestureRecognizer_Tapped_7(object sender, EventArgs e)
+        private async void NumbersPage_Tapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new EMRCPage());
         }

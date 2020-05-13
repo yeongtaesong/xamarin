@@ -7,7 +7,7 @@
              Title="Regions"
              x:Class="miemss_xamarin.RegionPage">
     <ContentPage.Content>
-
+<!--Display view from NotificationLayout.xml-->
         <local:NewView />
     </ContentPage.Content>
 </ContentPage>

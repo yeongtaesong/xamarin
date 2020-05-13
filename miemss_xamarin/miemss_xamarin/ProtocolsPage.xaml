@@ -14,7 +14,8 @@
                   ItemSelected="OnItemSelected"
                   ItemTapped="OnItemTapped"
                   HasUnevenRows="True">
-            <!-- Section Cell-->
+            
+            <!-- Heading Cell-->
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -22,6 +23,7 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
+            
             <!--SubSection Cell-->
             <ListView.GroupHeaderTemplate>
                 <DataTemplate>
@@ -36,7 +38,7 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.GroupHeaderTemplate>
-
+            
         </ListView>
     </ContentPage.Content>
 </ContentPage>

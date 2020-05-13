@@ -5,9 +5,7 @@
              xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              BindingContext="{Binding .}"
              x:Name="myContentView">
-    <ContentPage.BindingContext>
-        <local:PdfViewerViewModel></local:PdfViewerViewModel>
-    </ContentPage.BindingContext>
+    <!--PDF view from syncfusion library-->
     <Grid x:Name="pdfViewGrid">
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl"/>
     </Grid>

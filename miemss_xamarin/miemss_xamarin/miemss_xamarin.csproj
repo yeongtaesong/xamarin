@@ -11,8 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="controller\**" />
     <Compile Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="controller\**" />
     <EmbeddedResource Remove="NewFolder1\**" />
+    <None Remove="controller\**" />
     <None Remove="NewFolder1\**" />
   </ItemGroup>
 
@@ -245,10 +248,6 @@
     <EmbeddedResource Update="WebViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="controller\" />
   </ItemGroup>
 
   <ItemGroup>

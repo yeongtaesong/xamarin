@@ -59,15 +59,17 @@ namespace miemss_xamarin
             }
             ProtocolsView.ItemsSource = _expandedGroups;
         }
-
+        //Does nothing - only OnItemSelected can perform action
         void OnItemTapped(object sender, ItemTappedEventArgs e)
         {
             ((ListView)sender).SelectedItem = null;
         }
-
+        //If item is selected, user is redirected to DetailedProtocolPage
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            //Get item user selected
             var  protocol = ((ListView)sender).SelectedItem as Protocol;
+
             if (protocol != null)
             {
                 var page = new DetailedProtocolPage();
@@ -75,7 +77,5 @@ namespace miemss_xamarin
                 await Navigation.PushAsync(page);
             }
         }
-
     }
-
 }
