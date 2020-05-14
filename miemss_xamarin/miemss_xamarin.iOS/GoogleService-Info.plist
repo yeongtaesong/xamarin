@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>57032433781-bvik2qcn9f36b1kl8qat8mhokbar1qkq.apps.googleusercontent.com</string>
+	<string>772969992335-1b2m56ofiu3m84oiimvm9i5bka5th6mp.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.57032433781-bvik2qcn9f36b1kl8qat8mhokbar1qkq</string>
+	<string>com.googleusercontent.apps.772969992335-1b2m56ofiu3m84oiimvm9i5bka5th6mp</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDaG-Onn7qrx70xiCa2USNv05MzMMz3nOs</string>
+	<string>AIzaSyB_0PvE7bwi_k3qTURFAYmEdVKxgXko7Yc</string>
 	<key>GCM_SENDER_ID</key>
-	<string>57032433781</string>
+	<string>772969992335</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.miemss.miemss</string>
 	<key>PROJECT_ID</key>
-	<string>miemss-ebb9e</string>
+	<string>miemss-245d7</string>
 	<key>STORAGE_BUCKET</key>
-	<string>miemss-ebb9e.appspot.com</string>
+	<string>miemss-245d7.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:57032433781:ios:94b537dd7cea3c31da583c</string>
+	<string>1:772969992335:ios:61493dad9679a8ea9460fa</string>
 	<key>DATABASE_URL</key>
-	<string>https://miemss-ebb9e.firebaseio.com</string>
+	<string>https://miemss-245d7.firebaseio.com</string>
 </dict>
 </plist>

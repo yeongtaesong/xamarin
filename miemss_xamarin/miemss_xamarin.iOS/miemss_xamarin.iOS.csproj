@@ -114,6 +114,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
+    <BundleResource Include="GoogleService-Info.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NewViewRenderer.cs" />
@@ -507,9 +508,15 @@
     <ImageAsset Include="Assets.xcassets\ems1.imageset\ems-2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\splash %283%29.png" />
-    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\splash %283%29-1.png" />
-    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\splash %283%29-2.png" />
+    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\splash %283%29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\splash %283%29-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\splashscreen.imageset\splash %283%29-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -538,9 +545,6 @@
       <Project>{154C0B4F-4C4E-471E-9C9A-33382656F42A}</Project>
       <Name>miemss_xamarin</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="GoogleService-Info.plist" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\Calendar.imageset\" />

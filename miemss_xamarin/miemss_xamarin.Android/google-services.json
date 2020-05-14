@@ -1,113 +1,41 @@
 {
   "project_info": {
-    "project_number": "57032433781",
-    "firebase_url": "https://miemss-ebb9e.firebaseio.com",
-    "project_id": "miemss-ebb9e",
-    "storage_bucket": "miemss-ebb9e.appspot.com"
+    "project_number": "772969992335",
+    "firebase_url": "https://miemss-245d7.firebaseio.com",
+    "project_id": "miemss-245d7",
+    "storage_bucket": "miemss-245d7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:57032433781:android:b05d0f55ecd36e3eda583c",
-        "android_client_info": {
-          "package_name": "com.towson.xamarinfirebase"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "57032433781-5qdhhsmguc5ctgtq222i53qq10e9h9fh.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD2Li-tlasxp2qlPNneG3fsbOZT8bnEldE"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "57032433781-5qdhhsmguc5ctgtq222i53qq10e9h9fh.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "57032433781-vhefau0kmf2igglcmh2ca93nnuiba1qk.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.xamarin.miemss-xamarin"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:57032433781:android:bde371cc4977f585da583c",
+        "mobilesdk_app_id": "1:772969992335:android:f3fa1c537aa7336e9460fa",
         "android_client_info": {
           "package_name": "com.viasoftech.miemss_xamarin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "57032433781-5qdhhsmguc5ctgtq222i53qq10e9h9fh.apps.googleusercontent.com",
+          "client_id": "772969992335-81gt9lc7mlc6o0ut67pa896smakkcvcv.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD2Li-tlasxp2qlPNneG3fsbOZT8bnEldE"
+          "current_key": "AIzaSyA3Nc2tZ012vPLyYsNa-qENjK-0durWPTM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "57032433781-5qdhhsmguc5ctgtq222i53qq10e9h9fh.apps.googleusercontent.com",
+              "client_id": "772969992335-81gt9lc7mlc6o0ut67pa896smakkcvcv.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "57032433781-vhefau0kmf2igglcmh2ca93nnuiba1qk.apps.googleusercontent.com",
+              "client_id": "772969992335-1b2m56ofiu3m84oiimvm9i5bka5th6mp.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.xamarin.miemss-xamarin"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:57032433781:android:a07b7bb1c4f43fcfda583c",
-        "android_client_info": {
-          "package_name": "com.xamarin.WorkingWithNavigation"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "57032433781-5qdhhsmguc5ctgtq222i53qq10e9h9fh.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD2Li-tlasxp2qlPNneG3fsbOZT8bnEldE"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "57032433781-5qdhhsmguc5ctgtq222i53qq10e9h9fh.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "57032433781-vhefau0kmf2igglcmh2ca93nnuiba1qk.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.xamarin.miemss-xamarin"
+                "bundle_id": "com.miemss.miemss"
               }
             }
           ]
