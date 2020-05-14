@@ -16,14 +16,12 @@ namespace miemss_xamarin
     {
         public DrugCalculator()
         {
-            InitializeComponent();
-
-            
+            InitializeComponent();  
         }
         //Button for dosage calculation
         private void Button_OnClicked(object sender, EventArgs e)
         {
-
+            //checks if there is input when button is clicked
             if (Dosage.Text == "" || Weight.Text == "")
             {
                 DisplayAlert("Error", "Please type in a number.", "Ok");
@@ -33,15 +31,13 @@ namespace miemss_xamarin
                 double weight = Convert.ToDouble(Weight.Text);
 
                 Calculate(dosage, weight);
-               
             }
-
-
-
         }
 
+        //Calculate dosage based on kg or lb 
         private void Calculate(double dosage, double weight)
         {
+            //makes calculation based on unit selected. If no unit is selected, error message is displayed
             string unit = (string)CalculateButton.BindingContext;
             if (unit == "lb")
             {
@@ -61,5 +57,6 @@ namespace miemss_xamarin
                 DisplayAlert("Message", "Please select a unit.", "ok");
             }
         }
+        //End calculator function ----
     }
 }

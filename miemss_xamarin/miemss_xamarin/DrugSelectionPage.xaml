@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Drug Page"
+             Title="Medications"
              x:Class="miemss_xamarin.DrugSelectionPage">
     <Grid>
         <Grid.RowDefinitions>
@@ -14,16 +14,18 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        <!--ALS Button-->
         <Label Text="Advanced Life Support (ALS)" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" BackgroundColor="AliceBlue">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer
-                    Tapped="TapGestureRecognizer_Tapped"/>
+                    Tapped="ALSList_Tapped"/>
             </Label.GestureRecognizers>
         </Label>
+        <!--BLS Button-->
         <Label Text="Basic Life Support (BLS)" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" BackgroundColor="AliceBlue">
             <Label.GestureRecognizers>
                 <TapGestureRecognizer
-                    Tapped="TapGestureRecognizer_Tapped_1"/>
+                    Tapped="BLSList_Tapped"/>
             </Label.GestureRecognizers>
         </Label>
     </Grid>

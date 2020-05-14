@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
+/*Use this to modify the items listed on the Resource Page*/
 namespace miemss_xamarin.Models
 {
     public static class ResourceData

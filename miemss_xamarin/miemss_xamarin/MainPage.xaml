@@ -9,7 +9,8 @@
              BackgroundColor="White">
 
     <ContentPage.Content>
-
+        
+        <!--Set row and column spacing-->
         <Grid  RowSpacing=" 35" Margin="25">
             <Grid.RowDefinitions>
                 <RowDefinition Height="90"/>
@@ -21,119 +22,143 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions >
+
+            <!--Protocol Page Button-->
             <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Vertical" Padding=" 10, 15, 0, 0">
+                <!--Image Source-->
                 <Image Source="protocol.png"  
                    Grid.Row="0"  
                    Grid.Column="0"  
                    BackgroundColor="Transparent"
                    WidthRequest="60" HeightRequest="60" >
-                <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
-                </Image.GestureRecognizers>
+                    <!--Item Tapped Function-->
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ProtocolPage_Tapped"/>
+                    </Image.GestureRecognizers>
                 </Image>
                 <Label Text="EMS Protocols" HorizontalTextAlignment="Center" />
             </StackLayout>
+            <!--End Protocol Page Button-->
 
+            <!--Directories Page Button-->
             <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" Padding=" 10, 15, 0, 0">
+                <!--Image Source-->
                 <Image Source="Directory.png"  
                        Grid.Row="0"  
                        Grid.Column="1" 
                        BackgroundColor="White" 
-                       WidthRequest="60" HeightRequest="60"
-                >
+                       WidthRequest="60" HeightRequest="60">
+                    <!--Item Tapped Function-->
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                        <TapGestureRecognizer Tapped="HospitalDirectories_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
                 <Label Text="Directories" HorizontalTextAlignment="Center" />
             </StackLayout>
+            <!--End Directories Page Button-->
 
+            <!--EMS Resources Page Button-->
             <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+                <!--Image Source-->
                 <Image Source="resource.png"  
                    Grid.Row="1"  
                    Grid.Column="0"  
                    BackgroundColor="White" 
-                   WidthRequest="60" HeightRequest="60" 
-                 >
+                   WidthRequest="60" HeightRequest="60">
+                    <!--Item Tapped Function-->
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                        <TapGestureRecognizer Tapped="EMSResourcePage_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
                 <Label Text="EMS Resources" HorizontalTextAlignment="Center" />
             </StackLayout>
-
+            <!--End EMS Resources Page Button-->
+            
+            <!--Medications Button-->
             <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Vertical">
-
-            <Image Source="drug.png"  
+                <!--Image Source-->
+                <Image Source="drug.png"  
                    Grid.Row="2"  
                    Grid.Column="0"  
                    BackgroundColor="White"  
-                   WidthRequest="60" HeightRequest="60" 
-                   >
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
-                </Image.GestureRecognizers>
-            </Image>
+                   WidthRequest="60" HeightRequest="60">
+                    <!--Item Tapped Function-->
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MedicationsPage_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
                 <Label Text="Medications" HorizontalTextAlignment="Center" />
             </StackLayout>
+            <!--End Medications Button-->
 
+            <!--Regions Button-->
             <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Vertical">
+                <!--Image Source-->
                 <Image Source="location.png"  
                    Grid.Row="2"  
                    Grid.Column="1"  
                    BackgroundColor="White"  
-                   WidthRequest="60" HeightRequest="60" 
-                   >
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
-                </Image.GestureRecognizers>
-            </Image>
+                   WidthRequest="60" HeightRequest="60">
+                    <!--Item Tapped Function-->
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="RegionsPage_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
                 <Label Text="Regions" HorizontalTextAlignment="Center" />
             </StackLayout>
+            <!--End Regions Button-->
 
+            <!--Calendar of Events Button-->
             <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Vertical">
+                <!--Image Source-->
                 <Image Source="Calendar.png"  
                    Grid.Row="2"  
                    Grid.Column="1"  
                    BackgroundColor="White"  
-                   WidthRequest="60" HeightRequest="60" 
-                   >
+                   WidthRequest="60" HeightRequest="60">
+                    <!--Item Tapped Function-->
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
+                        <TapGestureRecognizer Tapped="CalendarPage_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
                 <Label Text="Calendar of Events" HorizontalTextAlignment="Center" />
             </StackLayout>
-           
-            <StackLayout Grid.Row="3" Grid.Column="0" Orientation="Vertical">
+            <!--End Calendar of Events Button-->
 
+            <!--CHATS Button-->
+            <StackLayout Grid.Row="3" Grid.Column="0" Orientation="Vertical">
+                <!--Image Source-->
                 <Image Source="alert.png"  
                    Grid.Row="1"  
                    Grid.Column="1"  
                    BackgroundColor="White" 
-                   WidthRequest="60" HeightRequest="60" 
-                   >
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"/>
-                </Image.GestureRecognizers>
-            </Image>
+                   WidthRequest="60" HeightRequest="60">
+                    <!--Item Tapped Function-->
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ChatsPage_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
                 <Label Text="CHATS" HorizontalTextAlignment="Center" />
             </StackLayout>
-            <StackLayout Grid.Row="3" Grid.Column="1" Orientation="Vertical">
+            <!--End CHATS Button-->
 
+            <!--Important Numbers Button-->
+            <StackLayout Grid.Row="3" Grid.Column="1" Orientation="Vertical">
+                <!--Image Source-->
                 <Image Source="miemss.png"  
                    Grid.Row="1"  
                    Grid.Column="1"  
                    BackgroundColor="White" 
-                   WidthRequest="60" HeightRequest="60" 
-                   >
+                   WidthRequest="60" HeightRequest="60">
+                    <!--Item Tapped Function-->
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_7"/>
+                        <TapGestureRecognizer Tapped="NumbersPage_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
                 <Label Text="Important Numbers" HorizontalTextAlignment="Center" />
             </StackLayout>
+            <!--End Important Numbers Button-->
+            
         </Grid>
     </ContentPage.Content>
-
 </ContentPage>

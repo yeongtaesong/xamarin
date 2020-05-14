@@ -17,10 +17,10 @@ namespace miemss_xamarin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ResourcePage : ContentPage
     {
-        Stream fileStream;
         public ResourcePage()
         {
             InitializeComponent();
+            //Get items from Models.ResourceData.cs
             listView.ItemsSource = ResourceData.Resources;
         }
 
@@ -35,23 +35,25 @@ namespace miemss_xamarin
             /// DO NOTHING
         }
 
+        //Send user to appropriate page
        async void OnSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var resource = ((ListView)sender).SelectedItem as Resource;
 
             if(resource.IsWebView)
             {
+                //Redirect to webview page
                 var page = new WebViewPage();
                 page.BindingContext = resource;
                 await Navigation.PushAsync(page);
             } else
             {
+                //Redirect to pdf view page
                 var page = new PDFView();
                 page.BindingContext = resource;
                 await Navigation.PushAsync(page);
 
             }
         }
-
     }
 }

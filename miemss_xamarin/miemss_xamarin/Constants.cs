@@ -25,6 +25,5 @@ namespace miemss_xamarin
                 return Path.Combine(basePath, DatabaseFilename);
             }
         }
-
     }
 }

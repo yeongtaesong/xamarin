@@ -12,7 +12,6 @@ using miemss_xamarin.Models;
 using ListView = Xamarin.Forms.ListView;
 
 /*In order to edit items from list of Drugs, go to DrugData*/
-
 namespace miemss_xamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -20,19 +19,17 @@ namespace miemss_xamarin
     {
         public DrugPage()
         {
-
-
-            
             InitializeComponent();
         }
 
+        //Drug list will display items from ALS or BLS list on appearing
         protected override async void OnAppearing()
         {
             base.OnAppearing();
            listView.ItemsSource = ((List<Drug>)this.BindingContext);
             List<Drug> list = (List<Drug>)this.BindingContext;
             string category = list[0].Category;
-            DrugContentPage.Title = category + " Drugs";
+            DrugContentPage.Title = category + " Medications";
         }
 
         //Set listview 
@@ -41,6 +38,7 @@ namespace miemss_xamarin
             ((ListView)sender).SelectedItem = null;
         }
 
+        //As user adds input to search, druglist updates based on text input
         async void OnTextChanged(object sender, TextChangedEventArgs e)
         {
             List<Drug> list = (List<Drug>)this.BindingContext;
@@ -50,6 +48,7 @@ namespace miemss_xamarin
 
         }
 
+        //On item selected, user will be redirected to DrugDetailedPage of item selected
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var drug = ((ListView)sender).SelectedItem as Drug;
@@ -57,13 +56,9 @@ namespace miemss_xamarin
             {
                 var page = new DrugDetailPage();
                 page.BindingContext = drug;
+                page.Title = drug.Category + " Medication";
                 await Navigation.PushAsync(page);
             }
-        }
-       async private void Button_OnClicked(object sender, EventArgs e)
-        {
-            var page = new DrugCalculator();
-            await Navigation.PushAsync(page);
         }
     }
 }

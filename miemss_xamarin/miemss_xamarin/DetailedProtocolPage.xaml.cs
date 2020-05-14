@@ -21,13 +21,14 @@ namespace miemss_xamarin
             InitializeComponent();
         }
 
+        //When DetailedProtocolPage appears, PDF is displayed with Syncfusion PDF viewer
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            var protocol = ((Protocol)this.BindingContext);
+
+            var protocol = ((Protocol)this.BindingContext); //Get protocol user selected
             fileStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream(protocol.Path);
-            //Load the PDF
-            pdfViewerControl.LoadDocument(fileStream);
+            pdfViewerControl.LoadDocument(fileStream);  //Load the PDF
 
         }
     }

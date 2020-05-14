@@ -4,9 +4,6 @@
              x:Class="miemss_xamarin.DetailedResourcePage"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              >
-    <ContentPage.BindingContext>
-        <local:PdfViewerViewModel></local:PdfViewerViewModel>
-    </ContentPage.BindingContext>
     <Grid x:Name="pdfViewGrid">
         <syncfusion:SfPdfViewer x:Name="pdfViewerControl"/>
     </Grid>
