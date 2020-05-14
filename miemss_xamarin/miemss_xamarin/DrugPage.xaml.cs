@@ -29,7 +29,7 @@ namespace miemss_xamarin
            listView.ItemsSource = ((List<Drug>)this.BindingContext);
             List<Drug> list = (List<Drug>)this.BindingContext;
             string category = list[0].Category;
-            DrugContentPage.Title = category + " Drugs";
+            DrugContentPage.Title = category + " Medications";
         }
 
         //Set listview 
@@ -56,6 +56,7 @@ namespace miemss_xamarin
             {
                 var page = new DrugDetailPage();
                 page.BindingContext = drug;
+                page.Title = drug.Category + " Medication";
                 await Navigation.PushAsync(page);
             }
         }
