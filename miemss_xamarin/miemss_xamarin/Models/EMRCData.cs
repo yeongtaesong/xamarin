@@ -4,6 +4,8 @@ using System.Text;
 
 namespace miemss_xamarin.Models
 {
+    // This file includes a list of importatnt numbers. 
+
     public class EMRCData
     {
         public static IList<EMRC> EMRCs { get; private set; }

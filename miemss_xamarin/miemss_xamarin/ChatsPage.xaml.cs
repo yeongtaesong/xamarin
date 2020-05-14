@@ -14,6 +14,7 @@ namespace miemss_xamarin
     {
         public ChatsPage()
         {
+            // link to website - can use direct weblink
             InitializeComponent();
             WebView.Source = "https://www.miemssalert.com/chats/Default.aspx?hdRegion=3&hdReportRegion=III&hdReport=Hospital%20Summary%20Reportr";
         }

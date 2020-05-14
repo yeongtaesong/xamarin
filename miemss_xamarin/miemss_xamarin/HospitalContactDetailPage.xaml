@@ -8,6 +8,7 @@
              Title="Hospitals"
              x:Class="miemss_xamarin.HospitalContactDetailPage">
     <ContentPage.Content>
+        <!-- Hospital Image-->
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
             <StackLayout Padding="24,24,24,24" >
                 <Frame HasShadow="False"
@@ -19,18 +20,20 @@
                    IsClippedToBounds="True">
                     <Image Source="hospital.png"/>
                 </Frame>
+                <!--Hospital Name-->
                 <Label HorizontalOptions="Center"
                    Text="{Binding Name}" FontSize="Large" HorizontalTextAlignment="Center" Margin="10" />
                 <StackLayout>
 
-                <!--Phone & Call -->
+                <!--Phone & Tap to Call -->
                 <Label  Padding="0,10,0,0" VerticalOptions="Center"  FontSize="Small" FontAttributes ="Bold" Text="Phone:" />
                     <Label   VerticalOptions="Center"  FontSize="Medium" TextColor="Blue" TextDecorations="Underline" Text="{Binding PhoneNum}">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnPhoneTapGestureRecognizerTapped" />
                         </Label.GestureRecognizers>
                     </Label>
-                    <!--Address & Map-->
+
+                <!--Address & Tap to display Map-->
                 <Label  Padding="0,10,0,0" FontSize="Small" FontAttributes ="Bold" Text="Address:"/>
                    <Label  FontSize="Medium" TextColor="Blue" TextDecorations="Underline" Text="{Binding Address}">
                         <Label.GestureRecognizers>
@@ -38,7 +41,7 @@
                         </Label.GestureRecognizers>
                    </Label> 
                 
-                <!--Website-->
+                <!--Website & Tap to display website-->
                 <Label   Padding="0,10,0,0"  FontSize="Small" FontAttributes ="Bold" Text="Website:"/>
                 <Label     VerticalOptions="CenterAndExpand" FontSize="Medium" TextColor="Blue"  TextDecorations="Underline" Text="{Binding Website}"  >
                         <Label.GestureRecognizers>
@@ -50,12 +53,12 @@
                  <Label  Padding="0,10,0,0" FontAttributes ="Bold"  FontSize="Small" Text="Region:"/>
                  <Label  FontSize="Medium"   Text="{Binding Region}"  />
 
-                    <!--Type-->
+                <!--Service Type-->
                 <Label  Padding="0,10,0,0" FontAttributes ="Bold"  FontSize="Small" Text="Service:"/>
                 <Label  FontSize="Medium"   Text="{Binding Type}"  />
                 <Label  FontSize="Medium" Text="{Binding Specialty}"  />
-                <Label   FontSize="Medium" Text="{Binding Specialty2}" />
-                <Label     FontSize="Medium" Text="{Binding Specialty3}"  />
+                <Label  FontSize="Medium" Text="{Binding Specialty2}" />
+                <Label  FontSize="Medium" Text="{Binding Specialty3}"  />
                 </StackLayout>
             </StackLayout>
         </pancake:PancakeView>

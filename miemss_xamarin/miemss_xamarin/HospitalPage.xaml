@@ -8,6 +8,7 @@
              x:Class="miemss_xamarin.HospitalPage">
     <ContentPage.Content>
         <StackLayout>
+            <!--Display Regions with a list of Hospitals and Tap to display a Hospital contact info-->
             <ListView ItemsSource="{Binding RegionList}" IsGroupingEnabled="True" GroupDisplayBinding="{Binding RegionName}" 
                       HasUnevenRows="true" ItemTapped="OnItemTapped" ItemSelected="OnItemSelected">
                 <ListView.GroupHeaderTemplate>
@@ -21,6 +22,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+            <!--Display a list of Hospital Name-->
                             <Grid Padding="5">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="auto" />

@@ -17,11 +17,14 @@ namespace miemss_xamarin
 
         public HospitalPage()
         {
+            //Initialize a list of Hosptals 
             InitializeComponent();
 
             var hospitalContact = new HospitalContactViewModel();
             var hospitalsResults = hospitalContact.HospitalContacts;
             var hospitalsGroupedByRegion = hospitalsResults.GroupBy(HospitalContact => HospitalContact.Region);
+
+            //Group hospitals by Region
 
             RegionList.Clear();
             foreach (var group in hospitalsGroupedByRegion)
@@ -46,12 +49,15 @@ namespace miemss_xamarin
         {
             // DO NOTHING
         }
-        
+
+        // Set the listview of hospitals
+        // On hospital selected, redirect to HospitalContactDetailPage to display detailed HospitalContacts
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var hospitalcontact = ((ListView)sender).SelectedItem as HospitalContact;
             if (hospitalcontact != null)
             {
+                // Redirect to HospitalContactDetailPage
                 var page = new HospitalContactDetailPage();
                 page.BindingContext = hospitalcontact;
                 await Navigation.PushAsync(page);

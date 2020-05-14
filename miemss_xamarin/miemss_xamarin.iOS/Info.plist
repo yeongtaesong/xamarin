@@ -40,13 +40,13 @@
 	<string>Assets.xcassets/AppIcon-1.appiconset</string>
 	<key>CFBundleShortVersionString</key>
 	<string>05.12.20</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<true/>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>CFBundleVersion</key>
+	<string>2.0</string>
 </dict>
 </plist>

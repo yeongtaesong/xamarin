@@ -16,9 +16,11 @@ namespace miemss_xamarin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EMRCPage : ContentPage
     {
+        //Display Important Numbers 
         public EMRCPage()
         {
             InitializeComponent();
+            //Set listview from EMRCData from "Models" folder
             listView.ItemsSource = EMRCData.EMRCs;
         }
         protected override void OnAppearing()
@@ -32,6 +34,7 @@ namespace miemss_xamarin
             /// DO NOTHING
         }
 
+        //Open Phone Dialer to make a call
         async void OnSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var resource = ((ListView)sender).SelectedItem as EMRC;
@@ -48,6 +51,8 @@ namespace miemss_xamarin
                 ProcessException(ex);
             }
         }
+
+        //Capture a phone numbers from the list 
         private async void OnPhoneTapGestureRecognizerTapped(object sender, EventArgs e)
         {
             var Label = (Label)sender;

@@ -5,11 +5,13 @@ using System.Reflection;
 
 namespace miemss_xamarin.Models
 {
+    //Use this file to modify hospital detailed information
     public static class HospitalContactData
     {
         // Enumeration - The index of the hospital record
         enum HospitalRecordEnum
         {
+            //Data elements in HospitalContactDetailPage
             Region = 0,
             Name,
             Address,
@@ -31,6 +33,9 @@ namespace miemss_xamarin.Models
             // Read each line of the file in the hospital database into a hospital contact list. 
             // Each element of the hospital list is one line of the file.
             Assembly assembly = Assembly.GetExecutingAssembly();
+
+            //this is a path where detailed hospital contacts data is located.
+            // to update a file, go to "Files" folder 
             const string NAME = "miemss_xamarin.Files.hospital_lists_updated.txt";
                
             using (Stream stream = assembly.GetManifestResourceStream(NAME))
