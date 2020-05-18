@@ -86,6 +86,9 @@ namespace miemss_xamarin.iOS
 
             // Save new device token
             NSUserDefaults.StandardUserDefaults.SetString(DeviceToken, "PushDeviceToken");
+
+
+
           
         }
 
@@ -95,27 +98,34 @@ namespace miemss_xamarin.iOS
             messaging.ApnsToken = token;
         }
 
-        public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
-        {
-            NSDictionary aps = userInfo.ObjectForKey(new NSString("aps")) as NSDictionary;
+        //public override void DidReceiveRemoteNotification(UIApplication application, NSDictionary userInfo, Action<UIBackgroundFetchResult> completionHandler)
+        //{
+        //    NSDictionary aps = userInfo.ObjectForKey(new NSString("aps")) as NSDictionary;
 
-            string notificationMessage = string.Empty;
-            if (aps.ContainsKey(new NSString("alert")))
-                notificationMessage = (aps[new NSString("alert")] as NSString).ToString();
+        //    string alert = string.Empty;
+        //    if (aps.ContainsKey(new NSString("alert")))
+        //        alert = (aps[new NSString("alert")] as NSString).ToString();
 
-            //show alert
-            if (!string.IsNullOrEmpty(notificationMessage))
-            {
-                //Create Alert
-                var okAlertController = UIAlertController.Create("Notification", notificationMessage, UIAlertControllerStyle.Alert);
+        //    //show alert
+        //    if (!string.IsNullOrEmpty(alert))
+        //    {
+        //        UIAlertView avAlert = new UIAlertView("Notification", alert, null, "OK", null);
+        //        avAlert.Show();
+        //    }
+        //}
 
-                //Add Action
-                okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
 
-                Window.MakeKeyAndVisible();
-                // Present Alert
-                this.Window.RootViewController.PresentViewController(okAlertController, true, null);
-            }
-        }
+
+
+
+
     }
+
+
+
+
+
+    
 }
+
+
