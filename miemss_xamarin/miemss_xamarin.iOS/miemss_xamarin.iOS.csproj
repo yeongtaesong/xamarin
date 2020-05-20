@@ -94,7 +94,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchArch>ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>VS: com.miemss.miemss Development</CodesignProvision>
+    <CodesignProvision>APN: com.miemss.miemss Development</CodesignProvision>
     <MtouchVerbosity>
     </MtouchVerbosity>
     <MtouchUseLlvm>
