@@ -19,10 +19,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" image="splashscreen" horizontalHuggingPriority="255">
-                                <rect key="frame" x="84" y="274" width="208" height="307"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="23" highlighted="YES" image="splashscreen" horizontalHuggingPriority="255" misplaced="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="359" height="812"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="regular"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="regular"/>
                                 <accessibility key="accessibilityConfiguration" label="MIEMSS-EMS"/>
                                 <constraints>
                                     <constraint id="1691" firstAttribute="width" secondItem="23" secondAttribute="height" multiplier="124:183"/>
@@ -33,6 +33,9 @@
                             <constraint firstItem="23" firstAttribute="centerY" secondItem="yd7-JS-zBw" secondAttribute="centerY" priority="1" id="39"/>
                             <constraint firstItem="23" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX" priority="1" id="41"/>
                             <constraint id="1692" firstItem="23" firstAttribute="width" secondItem="yd7-JS-zBw" secondAttribute="width"/>
+                            <constraint id="1905" firstItem="9ZL-r4-8FZ" firstAttribute="top" secondItem="23" secondAttribute="bottom" constant="177"/>
+                            <constraint id="1906" firstItem="23" firstAttribute="top" secondItem="Y8P-hJ-Z43" secondAttribute="bottom" constant="118"/>
+                            <constraint id="2974" firstAttribute="leadingMargin" secondItem="23" secondAttribute="leading" constant="16"/>
                         </constraints>
                         <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
                     </view>
@@ -43,6 +46,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splashscreen" width="170.6667" height="170.6667"/>
+        <image name="splashscreen" width="341.3333" height="341.3333"/>
     </resources>
 </document>

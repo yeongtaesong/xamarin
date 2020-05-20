@@ -30,7 +30,7 @@
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
-    <CodesignProvision>VS: com.miemss.miemss Development</CodesignProvision>
+    <CodesignProvision>APN: com.miemss.miemss Development</CodesignProvision>
     <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
     <MtouchFastDev>true</MtouchFastDev>
   </PropertyGroup>
@@ -66,7 +66,7 @@
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
-    <CodesignProvision>VS: com.miemss.miemss Development</CodesignProvision>
+    <CodesignProvision>APN: com.miemss.miemss Development</CodesignProvision>
     <OnDemandResourcesPrefetchOrder>
     </OnDemandResourcesPrefetchOrder>
     <NoWarn>
