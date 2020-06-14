@@ -7,10 +7,13 @@
              Title="EMS Resources"
              x:Class="miemss_xamarin.WebViewPage">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#505050" 
-             VerticalOptions="FillAndExpand"  
-             HorizontalOptions="FillAndExpand">
-            <WebView x:Name="WebView" VerticalOptions="FillAndExpand" Source="{Binding Path}" />
+        <StackLayout Margin="10">
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="backButton" Text="Back" HorizontalOptions="StartAndExpand" Clicked="backButton_Clicked" />
+                <Button x:Name="forwardButton" Text="Forward" HorizontalOptions="EndAndExpand" Clicked="forwardButton_Clicked" />
+            </StackLayout>
+            <Label x:Name="labelLoading" Text="Loading..." IsVisible="false" />
+            <WebView x:Name="webView" VerticalOptions="FillAndExpand" Source="{Binding Path}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

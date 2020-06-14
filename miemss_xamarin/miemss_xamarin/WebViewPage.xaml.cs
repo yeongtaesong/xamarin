@@ -16,5 +16,34 @@ namespace miemss_xamarin
         {
             InitializeComponent();
         }
+
+        async void backButton_Clicked(object sender, EventArgs e)
+        {
+            if (webView.CanGoBack)
+            {
+                webView.GoBack();
+            }
+            else
+            {
+                await Navigation.PopAsync();
+            }
+        }
+
+        private void forwardButton_Clicked(object sender, EventArgs e)
+        {
+            if (webView.CanGoForward)
+            {
+                webView.GoForward();
+            }
+        }
+        void webviewNavigating(object sender, WebNavigatingEventArgs e)
+        {
+            labelLoading.IsVisible = true;
+        }
+
+        void webviewNavigated(object sender, WebNavigatedEventArgs e)
+        {
+            labelLoading.IsVisible = false;
+        }
     }
 }
