@@ -17,6 +17,13 @@
     <EmbeddedResource Remove="NewFolder1\**" />
     <None Remove="controller\**" />
     <None Remove="NewFolder1\**" />
+    <None Remove="Assets\ALS-DOPAMINE.pdf" />
+    <None Remove="Assets\ALS-HALOPERIDOL.pdf" />
+    <None Remove="Assets\ALS-LACTATED RINGER%27S.pdf" />
+    <None Remove="Assets\ALS-NALOXONE.pdf" />
+    <None Remove="Assets\ALS-IPRATROPIUM.pdf" />
+    <None Remove="Assets\ALS-KETOROLAC.pdf" />
+    <None Remove="Assets\ALS-TERBUTALINE.pdf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -70,6 +77,13 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Assets\BLS-ASPIRIN.pdf" />
+    <EmbeddedResource Include="Assets\ALS-DOPAMINE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-HALOPERIDOL.pdf" />
+    <EmbeddedResource Include="Assets\ALS-LACTATED RINGER%27S.pdf" />
+    <EmbeddedResource Include="Assets\ALS-NALOXONE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-IPRATROPIUM.pdf" />
+    <EmbeddedResource Include="Assets\ALS-KETOROLAC.pdf" />
+    <EmbeddedResource Include="Assets\ALS-TERBUTALINE.pdf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -79,7 +93,6 @@
     <EmbeddedResource Include="Assets\ALS-ASPIRIN.pdf" />
     <EmbeddedResource Include="Assets\ALS-EPINEPHRINE AUTO-INJECTOR.pdf" />
     <EmbeddedResource Include="Assets\ALS-EPINEPHRINE.pdf" />
-    <EmbeddedResource Include="Assets\ALS-NALOXONE (NARCAN).pdf" />
     <EmbeddedResource Include="Assets\ALS-NITROGLYCERIN.pdf" />
     <EmbeddedResource Include="Assets\ALS-ORAL GLUCOSE.pdf" />
     <EmbeddedResource Include="Assets\ALS-OXYGEN.pdf" />
@@ -94,38 +107,34 @@
     <EmbeddedResource Include="Assets\Appendices-E.pilot program.pdf" />
     <EmbeddedResource Include="Assets\BLS-ACETAMINOPHEN.pdf" />
     <EmbeddedResource Include="Assets\BLS-ACTIVATED CHARCOAL.pdf" />
-    <EmbeddedResource Include="Assets\BLS-ADENOSINE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-ADENOSINE.pdf" />
     <EmbeddedResource Include="Assets\BLS-ALBUTEROL.pdf" />
-    <EmbeddedResource Include="Assets\BLS-ALBUTEROLSULFATE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-AMIODARONE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-ATROPINESULFATE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-ATROVENT.pdf" />
-    <EmbeddedResource Include="Assets\BLS-CALCIUM CHLORIDE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-DEXAMETHASONE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-DEXTROSE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-DIAZEPAM.pdf" />
-    <EmbeddedResource Include="Assets\BLS-DILTIAZEM.pdf" />
-    <EmbeddedResource Include="Assets\BLS-DIPHENHYDRAMINE HYDROCHLORIDE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-DOPAMINE HYDROCHLORIDE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-AMIODARONE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-ATROPINESULFATE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-ATROVENT.pdf" />
+    <EmbeddedResource Include="Assets\ALS-CALCIUM CHLORIDE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-DEXAMETHASONE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-DEXTROSE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-DIAZEPAM.pdf" />
+    <EmbeddedResource Include="Assets\ALS-DILTIAZEM.pdf" />
+    <EmbeddedResource Include="Assets\ALS-DIPHENHYDRAMINE HYDROCHLORIDE.pdf" />
     <EmbeddedResource Include="Assets\BLS-EPINEPHRINE AUTO-INJECTOR.pdf" />
     <EmbeddedResource Include="Assets\BLS-EPINEPHRINE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-FENTANYL.pdf" />
-    <EmbeddedResource Include="Assets\BLS-GLUCAGON.pdf" />
-    <EmbeddedResource Include="Assets\BLS-HALOPERIDOL (HALDOL).pdf" />
-    <EmbeddedResource Include="Assets\BLS-KETAMINE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-LACTATED RINGER’S.pdf" />
-    <EmbeddedResource Include="Assets\BLS-LIDOCAINE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-MAGNESIUM SULFATE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-MIDAZOLAM.pdf" />
-    <EmbeddedResource Include="Assets\BLS-MORPHINE SULFATE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-FENTANYL.pdf" />
+    <EmbeddedResource Include="Assets\ALS-GLUCAGON.pdf" />
+    <EmbeddedResource Include="Assets\ALS-KETAMINE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-LIDOCAINE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-MAGNESIUM SULFATE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-MIDAZOLAM.pdf" />
+    <EmbeddedResource Include="Assets\ALS-MORPHINE SULFATE.pdf" />
     <EmbeddedResource Include="Assets\BLS-NALOXONE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-NITROGLYCERIN PASTE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-NITROGLYCERIN PASTE.pdf" />
     <EmbeddedResource Include="Assets\BLS-NITROGLYCERIN.pdf" />
-    <EmbeddedResource Include="Assets\BLS-ONDANSETRON.pdf" />
+    <EmbeddedResource Include="Assets\ALS-ONDANSETRON.pdf" />
     <EmbeddedResource Include="Assets\BLS-ORAL GLUCOSE.pdf" />
     <EmbeddedResource Include="Assets\BLS-OXYGEN.pdf" />
-    <EmbeddedResource Include="Assets\BLS-SODIUM BICARBONATE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-VERAPAMIL.pdf" />
+    <EmbeddedResource Include="Assets\ALS-SODIUM BICARBONATE.pdf" />
+    <EmbeddedResource Include="Assets\ALS-VERAPAMIL.pdf" />
     <EmbeddedResource Include="Assets\general Info-healthcare code.pdf" />
     <EmbeddedResource Include="Assets\general Info-important no.pdf" />
     <EmbeddedResource Include="Assets\general Info-inability to.pdf" />
