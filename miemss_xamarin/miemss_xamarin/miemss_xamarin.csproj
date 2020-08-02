@@ -70,8 +70,6 @@
     <None Remove="Assets\BLS-ONDANSETRON.pdf" />
     <None Remove="Assets\BLS-ORAL GLUCOSE.pdf" />
     <None Remove="Assets\BLS-OXYGEN.pdf" />
-    <None Remove="Assets\BLS-SODIUM BICARBONATE.pdf" />
-    <None Remove="Assets\BLS-VERAPAMIL.pdf" />
     <None Remove="Assets\III_A.pdf" />
     <None Remove="Assets\III_AA_104.pdf" />
     <None Remove="Assets\III_BB~DD.pdf" />
@@ -187,8 +185,6 @@
     <EmbeddedResource Include="Assets\ALS-ONDANSETRON.pdf" />
     <EmbeddedResource Include="Assets\BLS-ORAL GLUCOSE.pdf" />
     <EmbeddedResource Include="Assets\BLS-OXYGEN.pdf" />
-    <EmbeddedResource Include="Assets\BLS-SODIUM BICARBONATE.pdf" />
-    <EmbeddedResource Include="Assets\BLS-VERAPAMIL.pdf" />
     <EmbeddedResource Include="Assets\III_A.pdf" />
     <EmbeddedResource Include="Assets\III_AA_104.pdf" />
     <EmbeddedResource Include="Assets\III_BB~DD.pdf" />
