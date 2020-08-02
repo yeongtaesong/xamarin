@@ -3,8 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-/*You may add records to the database here. This will follow the Drug.cs model
- *and will be stored on the local SQLite database upon starting up app. */
+/*INSTRUCTIONS:
+ * You may add records to the database here. This will follow the Drug.cs model
+ *and will be stored on the local SQLite database upon starting up app. 
+ If you want the text to be on a new line, type "\n" which means newline.*/
 
 namespace miemss_xamarin.Models
 {
@@ -15,7 +17,6 @@ namespace miemss_xamarin.Models
         {
             Drugs = new List<Drug>();
             //BASIC LIFE SUPPORT (BLS)
-            //INSTRUCTIONS: if you want to add a space, add "\n" which means newline.
             Drugs.Add(new Drug
             {
                 //Drug name
@@ -187,8 +188,8 @@ namespace miemss_xamarin.Models
                 Details = "(1) To slow the rate of narrow complex tachycardia\n(2) Is only effective on SVT/PSVT\n(3) No effect on VT, atrial fibrillation, or flutter\n(4) In stable, wide complex tachycardia (possible VT) for pediatric with caution.",
                 Path = "miemss_xamarin.Assets.ALS-ADENOSINE.pdf",
                 Category = "ALS",
-                PediatricDosageDescription = "0.1mg/kg rapid IVP/IO; maximum initial dose 6 mg\nSecond and third doses: 0.2mg/kg rapid IVP/IO; maximum single additional dose 12 mg.",
-                AdultDosageDescription = "6 mg rapid IVP bolus followed by a rapid flush. Give 12 mg if no response within 2 minutes. Give 12 mg more if no response within another 1-2 minutes.",
+                PediatricDosageDescription = "0.1 mg/kg rapid IVP/IO; maximum initial dose 6 mg\n0.2 mg/kg, maximum 12 mg, for 2nd/3rd dose",
+                AdultDosageDescription = "6 mg, 12 mg rapid IVP; 1-2 minute interval between dose",
                 HasCalculator = true,
                 AdultDosage = 6,
                 PediatricDosage = 0.1,
@@ -201,8 +202,8 @@ namespace miemss_xamarin.Models
                 Details = "(1) To reverse bronchospasm (wheezing)/n(2) Hyperkalemia",
                 Path = "miemss_xamarin.Assets.ALS-ALBUTEROL.pdf",
                 Category = "ALS",
-                PediatricDosageDescription = "Patient may receive a maximum of 2 doses (4 puffs) over a 30-minute period.",
-                AdultDosageDescription = "Patient may receive a maximum of 2 doses (4 puffs) over a 30-minute period.",
+                PediatricDosageDescription = "Bronchospasm:\nLess than 2yoa: 1.25 mg by nebulized aerosol connected to 6-8 lpm of oxygen; may repeat one time\n2 yoa or older: 2.5 mg by nebulized aerosol connected to 6-8 lpm of oxygen; may repeat one time\nMCR: Less than 2yoa: 1.25 mg by nebulized aerosol\n2 yoa or older: 2.5 mg by nebulized aerosol",
+                AdultDosageDescription = "Bronchospasm:\n2.5 mg by nebulized aerosol connected to 6-8 lpm of oxygen; may repeat one time\nMCR: Hyperkalemia: 20 mg (if available) by nebulized aerosol connected to 6-8 lpm of oxygen",
                 HasCalculator = false
 
             });
@@ -238,9 +239,8 @@ namespace miemss_xamarin.Models
                 Details = "(1) Symptomatic bradycardia\n(2) Organophosphate poisoning\n(3) Nerve agents",
                 Path = "miemss_xamarin.Assets.ALS-ATROPINESULFATE.pdf",
                 Category = "ALS",
-                PediatricDosageDescription = "Bradycardia: Administer 0.02 mg/kg IV/IO; maximum single dose 0.5 mg; ET 0.04-0.06 mg/kg, dilute 5 mL; repeat once." +
-                "Organophosphate poisoning: administer 0.02 mg/kg IVP/IO or IM every 5-10 minutes.",
-                AdultDosageDescription = "Bradycarcdia: Administer 0.5 - 1 mg IVP repeated every 3-5 minutes to a total dose of 0.05 mg/kg." + "Organophosphate poisoning: Administer 2-4 mg IVP or IM every 5-10 minutes.",
+                PediatricDosageDescription = "Bradycardia: 0.02 mg/kg IV/IO; 0.04-0.06 mg/kg ET, dilute 5 mL\nMCR: Organophosphate poison: 0.02 mg/kg IVP/IO or IMq 5-10 minutes",
+                AdultDosageDescription = "Bradycarcdia:0.5-1 mg IVP q 3-5 minutes; maximum 0.04 mg/kg\n" + "MCR: Organophosphate poisoning: 2-6 mg IVP/IM q 5-10 minutes (depending on severity; see MARK 1 / DuoDote)",
                 HasCalculator = true,
                 PediatricDosage = 0.02,
                 AdultDosage = 0.05,
@@ -253,7 +253,7 @@ namespace miemss_xamarin.Models
                 Details = "Anticholinergic (parasympatholytic) bronchodilator, Bronchodilator is site-specific, not systemic. Dries respiratory tact secretions. Most effective in combination with a beata-adrenergic bronchodilator.",
                 Path = "miemss_xamarin.Assets.ALS-ATROVENT.pdf",
                 Category = "ALS",
-                PediatricDosageDescription = "Single administration ONLY. In combination with albuterol, nebulized aerosol is connected to 6-8 lpm of oxygen. (a) Less than 1 year of age: contraindicated. (b) Age 1 year but less than 2 years: 250 mcg (1.25 mL) by nebulized aerosol. (c) 500 mcg (2.5 mL) by nebulized aerosol.",
+                PediatricDosageDescription = "Less than 1 yoa: contraindicated\n1 to less than 2 yoa: 250 mcg (1.25 mL) by nebulized aerosol\n2 yoa or older: 500 mcg (2.5 mL) by nebulized aerosol",
                 AdultDosageDescription = "Single administration ONLY, 500 mcg (2.5 mL) by nebulized aerosol connected to 6-8 lpm of oxygen incombinatin with albuterol 2.5 mg",
                 HasCalculator = false
             });
@@ -263,9 +263,8 @@ namespace miemss_xamarin.Models
                 Details = "(1) Hyperkalemia\n(2) Hypocalcemia\n(3) To treat adverse effects caused by calcium channel blocker overdose\n(4) Hypotension secondary to diltiazem administration\n(5) Respiratory depression, decreased reflexes, flaccid paralysis, and apnea following magnesium sulfate administration",
                 Path = "miemss_xamarin.Assets.ALS-CALCIUM CHLORIDE.pdf",
                 Category = "ALS",
-                PediatricDosageDescription = "Administer 20 mg/kg (0.2 mL/kg (0.2 mL/kg) SLOW IVP/IO (50 mg/min) maximum dose 1 gram.",
-                AdultDosageDescription = "Administer 0.5-1 gram SLOW IVP over 10 minutes. Maximum dose 1 gram." +
-                "Administer 500 mg SLOW IVP for: hypotension following dltiazem administration. Respiratory depression, decreased reflexes, flaccid paralysis, and apnea following magnesium sulfate administration.",
+                PediatricDosageDescription = "20 mg/kg (0.2 mL/kg) SLOW IVP/IO (50 mg/min); maximum 1 gram",
+                AdultDosageDescription = "0.5-1 gram slow IVP; over 10 minutes; maximum dose 1 gram",
                 HasCalculator = true,
                 PediatricDosage = 20,
                 AdultDosage = 0.5,
@@ -278,7 +277,7 @@ namespace miemss_xamarin.Models
                 Details = "(1)Moderate to severe asthma exacerbation\n(2) Croup\n(3) Anaphylaxis",
                 Path = "miemss_xamarin.Assets.ALS-DEXAMETHASONE.pdf",
                 Category = "ALS",
-                PediatricDosageDescription = "(a) Asthma: 0.5 mg/kg PO (preferred) or IV to a maximum of 10 mg (b) Croup: 0.5 mg/kg PO/IM/IV to a maximum of 10 mg",
+                PediatricDosageDescription = "0.5 mg/kg PO (preferred) or IV to a maximum of 10 mg (IM site may be used for croup)",
                 AdultDosageDescription = "10 mg IV (preferred, if established) or PO",
                 HasCalculator = true,
                 PediatricDosage = 0.5,
@@ -292,10 +291,13 @@ namespace miemss_xamarin.Models
                 Details = "Correction of altered mental status due to low blood sugar (hypoglycemia) seizures and cardiac arrest",
                 Path = "miemss_xamarin.Assets.ALS-DEXTROSE.pdf",
                 Category = "ALS",
-                AdultDosageDescription = "(a) If blood glucose is less than 70 mg/dL, administer 10% dextrose in 50mL (5 grams) boluses, one minute apart, to a maximum of 250 mL or 25 grams of 50% dextrose IVP, until:" +
-                "(i) the patient has a return ot normal mental status, and (ii) the patient's blood glucose is at least 90 mg/dL. (iii)" +
-                " If, following 250 mL of 10% dextrose or 25 grams of 50^% dextrose, patient has persistently altered mental status and blood glucose less than 90 mg/dL, repeat dosing regimen in (a).",
-                HasCalculator = false
+                AdultDosageDescription = "Administer D10 (10% dextrose) in 50 mL (5 grams) IV boluses, one min apart, to a maximum of 250 mL OR administer D50 (50% dextrose)-50 mL (25 grams) IVP",
+                PediatricDosageDescription="Less than 28 days of age: 2 mL/kg of D10W IV/IO\n28 days of age up to 18th birthday: 2-4 mL/kg D10W IV/IO; maximum 25 grams",
+                HasCalculator = true,
+                PediatricDosage=2,
+                AdultDosage=0,
+                DoseUnit="mL/kg",
+                Unit="mL"
             });
             Drugs.Add(new Drug
             {
@@ -303,10 +305,8 @@ namespace miemss_xamarin.Models
                 Details = "(1) Sustained and/or recurrent seizures\n(2) Severe nerve agent exposure",
                 Path = "miemss_xamarin.Assets.ALS-DIAZEPAM.pdf",
                 Category = "ALS",
-                AdultDosageDescription = "Administer 2.5-10mg in 2.5 mg increments SLOW IVP/IM (IM requires all providers to obtain medical consultation.). Maximum total dose 10 mg." +
-                "Severe nerve agent exposure: Administer 10 mg IM.",
-                PediatricDosageDescription = "Administer 0.1 mg/kg in 2.5 mg increments SLOW IVP/IO/IM (IM requires all providers to obtain medical consutation.) Maximum total dose 5 mg. REctal Dose: Administer up to 0.2 mg/kg; maximum total dose 10mg." +
-                " Severe nerve agent exposure: greater than 30kg, Administer 10 mg via auto-injuector or 0.1 mg/kg IM, maximum of 10 mg.",
+                AdultDosageDescription = "Seizures: 2.5 mg-10 mg in 2.5 mg increments SLOW IVP/IM (MCR for IM dosing); maximum total dose of 10 mg\nSevere nerve agent exposure: 10 mg IM",
+                PediatricDosageDescription = "Seizures: 0.1 mg/kg in 2.5 mg increments SLOW IVP/IO/IM  (MCR for IM dosing); maximum total dose of 5 mg. Rectal dose: 0.2 mg/kg; maximum total dose of 10 mg\nSevere nerve agent exposure: Greater than 30 kg/66 lbs: administer 10 mg via auto-injector or 0.1 mg/kg IM; maximum 10 mg",
                 HasCalculator = true,
                 AdultDosage = 2.5,
                 PediatricDosage = 0.1,
@@ -322,7 +322,7 @@ namespace miemss_xamarin.Models
                 Category = "ALS",
                 AdultDosageDescription = "(a) 0.25 mg/kg (maximum dose 20 mg) by IV bolus administered SLOW IV over 2 minutes; if response is not adequate, repeat in 15 minutes with a dosage of 0.35 mg/kg (maximum dose 25 mg) over 2 minutes.\n" +
                 "For patients older than 50 years of age, borderline blood pressure, known renal failure, or CHF, consider initial bolus 5-10 administered IV over 2 minutes.",
-                PediatricDosageDescription = "Contraindicated for patients less than 18 years of age. If needed, consult Pediatric Base Station.",
+                PediatricDosageDescription = "MCR: contraindicated for children less than 18 years of age. If needed, consult Pediatric Base Station.",
                 HasCalculator = true,
                 AdultDosage = 0.25,
                 PediatricDosage = 0,
@@ -349,8 +349,8 @@ namespace miemss_xamarin.Models
                 Details = "(1) Cardiogenic shock\n(2) Septic shock\n(3) Anaphylactic shock\n(4) Hypovolemic shock after sufficient volume replacement.",
                 Path = "miemss_xamarin.Assets.ALS-DOPAMINE.pdf",
                 Category = "ALS",
-                AdultDosageDescription = "Administer 2-20 mcg/kg/min IV drip titrated to BP of 100 systolic or medical consultation selected BP; initial infusion rate 2-5 mcg/kg/min",
-                PediatricDosageDescription = "Administer 2-20 mcg/kg/min IV drip titrated age specific BP or medical consultation selected BP; initial infusion rate is 2 mcg/kg/min",
+                AdultDosageDescription = "MCR:\nAdminister 2-20 mcg/kg/min IV drip titrated to BP of 100 systolic or medical consultation selected BP; initial infusion rate 2-5 mcg/kg/min",
+                PediatricDosageDescription = "MCR:\nAdminister 2-20 mcg/kg/min IV drip titrated age specific BP or medical consultation selected BP; initial infusion rate is 2 mcg/kg/min",
                 HasCalculator = true,
                 AdultDosage = 2,
                 PediatricDosage = 2,
@@ -387,8 +387,8 @@ namespace miemss_xamarin.Models
                 Details = "(1) Patients with altered mental status who are suspected of being hypoglycemic where IV access is not obtainable\n(2) Beta blocker overdose",
                 Path = "miemss_xamarin.Assets.ALS-GLUCAGON.pdf",
                 Category = "ALS",
-                AdultDosageDescription = "Administer 1 mg IM/IN (Medical consult for additional dosing to a maximum of 3 mg IM).",
-                PediatricDosageDescription = "(i) 1 mg IM/IN ( 5 years of age up to patient's 18th birthday) (ii) 0.5 mg IM/IN (28 days-4 years of age)",
+                AdultDosageDescription = "Hypoglycemia: 1 mg IM/IN (MCR for additional doses, up to a maximum of 3 mg)\nMCR: Beta-blocker OD: 1 mg IVP q 5 minutes.",
+                PediatricDosageDescription = "Hypoglycemia:\n28 days of age to 4 yoa: 0.5 mg IM/IN\n5 yoa up to 18th birthday: 1 mg IM/IN; (MCR for additional doses, up to maximum 3 mg)\nMCR: Beta-blocker OD:\n28 days of age to 4 yoa: 0.5 mg IVP q 5 minutes\n5 yoa up to 18th birthday: 1 mg IVP q 5 minutes",
                 HasCalculator = false
             });
             Drugs.Add(new Drug
