@@ -24,6 +24,8 @@
     <None Remove="Assets\ALS-IPRATROPIUM.pdf" />
     <None Remove="Assets\ALS-KETOROLAC.pdf" />
     <None Remove="Assets\ALS-TERBUTALINE.pdf" />
+    <None Remove="Assets\IV_E_procedure.pdf" />
+    <None Remove="Assets\IV_electricalT.pdf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -145,6 +147,8 @@
     <EmbeddedResource Include="Assets\ALS-IPRATROPIUM.pdf" />
     <EmbeddedResource Include="Assets\ALS-KETOROLAC.pdf" />
     <EmbeddedResource Include="Assets\ALS-TERBUTALINE.pdf" />
+    <EmbeddedResource Include="Assets\IV_E_procedure.pdf" />
+    <EmbeddedResource Include="Assets\IV_electricalT.pdf" />
   </ItemGroup>
 
   <ItemGroup>
