@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="MIEMSS_Navigator"
+             Title="MIEMSS EMS Application"
              x:Class="miemss_xamarin.MainPage"
              BackgroundColor="White">
 
@@ -104,7 +104,7 @@
                         <TapGestureRecognizer Tapped="RegionsPage_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Label Text="Regions" HorizontalTextAlignment="Center" />
+                <Label Text="Regional Notifications Setting" HorizontalTextAlignment="Center" />
             </StackLayout>
             <!--End Regions Button-->
 

@@ -113,7 +113,7 @@ namespace miemss_xamarin.Models
                     new Protocol {Name = "Intranasal Naloxone for Commercial Service BLS Providers", Path="miemss_xamarin.Assets.V_J_377-382.pdf"},
                     new Protocol {Name = "MARK I/ Duo Dote Kits (Atropine and 2-PAM Auto-injectors)", Path="miemss_xamarin.Assets.V_K.pdf"},
                     new Protocol {Name = "Maryland Vaccination and Testing Program", Path="miemss_xamarin.Assets.V_L_388-392.pdf"},
-                    new Protocol {Name = "Mecanical CPR", Path="miemss_xamarin.Assets.V_M_394-395.pdf"},
+                    new Protocol {Name = "Mechanical CPR", Path="miemss_xamarin.Assets.V_M_394-395.pdf"},
                     new Protocol {Name = "Mobile Integrated Community Health Program", Path="miemss_xamarin.Assets.V_N_397-401.pdf"},
                     new Protocol {Name = "Naloxone Leave behind protocol", Path="miemss_xamarin.Assets.V_O_403.pdf"},
                     new Protocol {Name = "Pelvic Stabilization Binder Device", Path="miemss_xamarin.Assets.V_P_404-405.pdf"},

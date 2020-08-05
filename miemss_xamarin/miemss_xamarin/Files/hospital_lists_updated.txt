@@ -1,6 +1,6 @@
 ﻿Region I;Garrett Regional Medical Center (WVU);251 N 4th Street, Oakland, MD 21550-1375;(301) 533-4000;https://www.grmc-wvumedicine.org/;MCASA- Pediatric and Adult;N/A;  ; 
-Region I;Western Maryland Regional Medical Center;12500 Willowbrook Rd, Cumberland, MD 21502;(240) 964-7000;https://www.wmhs.com/;Level III Trauma Centers;Cardiac Interventional;Primary Stroke;MCASA- Pediatric and Adult
-Region II;Frederick Memorial Hospital;400 W 7th St, Frederick, MD 21701;(240) 566-3300;https://www.frederickhealth.org/;Perinatal Referral Centers;Cardiac Interventional;Primary Stroke;MCASA- Pediatric and Adult
+Region I;UPMC Western Maryland;12500 Willowbrook Rd, Cumberland, MD 21502;(240) 964-7000;https://www.wmhs.com/;Level III Trauma Centers;Cardiac Interventional;Primary Stroke;MCASA- Pediatric and Adult
+Region II;Frederick Health Hospital;400 W 7th St, Frederick, MD 21701;(240) 566-3300;https://www.frederickhealth.org/;Perinatal Referral Centers;Cardiac Interventional;Primary Stroke;MCASA- Pediatric and Adult
 Region II;Meritus Medical Center;11116 Medical Campus Rd, Hagerstown, MD 21742;(301) 790-8000;http://www.meritushealth.com/;Level III Trauma Centers;Cardiac Interventional;Primary Stroke;
 Region III;Anne Arundel Medical Center;2001 Medical Pkwy, Annapolis, MD 21401;(443) 481-1000;https://www.aahs.org/;Perinatal Referral Centers;Cardiac Interventional;Maryland Ebola/Special Pathogen Assessment Hospitals; 
 Region III;Baltimore Washington Medical Center (UM);301 Hospital Dr, Glen Burnie, MD 21061;(410) 787-4000;https://www.umms.org/bwmc/ ;Cardiac Interventional;MCASA- Pediatric and Adult;  ;  

@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:miemss_xamarin;assembly=miemss_xamarin"
              mc:Ignorable="d"
-             Title="Regions"
+             Title="Regional Notifications Setting"
              x:Class="miemss_xamarin.RegionPage">
     <ContentPage.Content>
         <!--Display view from NotificationLayout.xml-->
