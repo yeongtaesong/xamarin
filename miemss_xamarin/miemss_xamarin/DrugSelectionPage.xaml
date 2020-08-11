@@ -10,24 +10,41 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <!--ALS Button-->
-        <Label Text="Advanced Life Support (ALS)" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" BackgroundColor="AliceBlue">
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer
-                    Tapped="ALSList_Tapped"/>
-            </Label.GestureRecognizers>
-        </Label>
-        <!--BLS Button-->
-        <Label Text="Basic Life Support (BLS)" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" BackgroundColor="AliceBlue">
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer
-                    Tapped="BLSList_Tapped"/>
-            </Label.GestureRecognizers>
-        </Label>
-    </Grid>
+         <StackLayout Spacing="30" Padding=" 10" >
+                    
+                    <Label Text=" Please click the button for drug details and a drug calculator."  Padding = "10" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="AliceBlue" />
+   
+                    <Button Text="Advanced Life Support(ALS)" Clicked="ALSList_Tapped"
+                            TextColor="White"
+                            FontSize="Large"
+                            Grid.Row="1" Grid.Column="0"
+                            VerticalOptions=" Center "
+                            HorizontalOptions=" Center"
+                            BackgroundColor="#3498DB"
+                            BorderWidth="1"
+                            CornerRadius="15"   
+                            WidthRequest="300"
+                            HeightRequest="100" />
+         <!--BLS Button-->                
+                    <Button Text="Basic Life Support(BLS)" Clicked="BLSList_Tapped"
+                            TextColor="White"
+                            FontSize="Large"
+                            Grid.Row="2" Grid.Column="0"
+                            VerticalOptions="Center  "
+                            HorizontalOptions="Center "
+                            BackgroundColor="#3498DB"
+                            BorderWidth="1"
+                            CornerRadius="15"
+                            WidthRequest="300"
+                            HeightRequest="100"/>
+                    
+ </StackLayout>
 
+</Grid>
 </ContentPage>
