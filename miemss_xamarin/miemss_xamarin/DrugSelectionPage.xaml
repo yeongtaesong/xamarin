@@ -15,29 +15,29 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <!--ALS Button-->
+       
          <StackLayout Spacing="30" Padding=" 10" >
                     
                     <Label Text=" Please click the button for drug details and a drug calculator."  Padding = "10" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="AliceBlue" />
-   
-                    <Button Text="Advanced Life Support(ALS)" Clicked="ALSList_Tapped"
+        <!--ALS Button-->
+                    <Button Text="Advanced Life Support(ALS)" Clicked="ALSList_Clicked"
                             TextColor="White"
                             FontSize="Large"
                             Grid.Row="1" Grid.Column="0"
-                            VerticalOptions=" Center "
-                            HorizontalOptions=" Center"
+                            VerticalOptions=" Center"
+                            HorizontalOptions="Center"
                             BackgroundColor="#3498DB"
                             BorderWidth="1"
                             CornerRadius="15"   
                             WidthRequest="300"
                             HeightRequest="100" />
          <!--BLS Button-->                
-                    <Button Text="Basic Life Support(BLS)" Clicked="BLSList_Tapped"
+                    <Button Text="Basic Life Support(BLS)" Clicked="BLSList_Clicked"
                             TextColor="White"
                             FontSize="Large"
                             Grid.Row="2" Grid.Column="0"
-                            VerticalOptions="Center  "
-                            HorizontalOptions="Center "
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
                             BackgroundColor="#3498DB"
                             BorderWidth="1"
                             CornerRadius="15"

@@ -26,6 +26,12 @@
     <None Remove="Assets\ALS-TERBUTALINE.pdf" />
     <None Remove="Assets\IV_E_procedure.pdf" />
     <None Remove="Assets\IV_electricalT.pdf" />
+    <None Remove="Assets\II_generalpatientcare.pdf" />
+    <None Remove="Assets\III_BB_DD.pdf" />
+    <None Remove="Assets\III_F_S.pdf" />
+    <None Remove="Assets\III_MM_RR.pdf" />
+    <None Remove="Assets\III_SS_TT.pdf" />
+    <None Remove="Assets\III_T_Z.pdf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -74,21 +80,15 @@
     <None Remove="Assets\BLS-OXYGEN.pdf" />
     <None Remove="Assets\III_A.pdf" />
     <None Remove="Assets\III_AA_104.pdf" />
-    <None Remove="Assets\III_BB~DD.pdf" />
     <None Remove="Assets\III_B_C.pdf" />
     <None Remove="Assets\III_D_40.pdf" />
     <None Remove="Assets\III_EE~KK.pdf" />
     <None Remove="Assets\III_E_41-42.pdf" />
-    <None Remove="Assets\III_F~S.pdf" />
     <None Remove="Assets\III_LL_128-132.pdf" />
-    <None Remove="Assets\III_MM~RR.pdf" />
-    <None Remove="Assets\III_SS~TT.pdf" />
-    <None Remove="Assets\III_T~Z.pdf" />
     <None Remove="Assets\III_UU_153-155.pdf" />
     <None Remove="Assets\III_VV.pdf" />
     <None Remove="Assets\III_VV2_160.pdf" />
     <None Remove="Assets\III_WW~DDD.pdf" />
-    <None Remove="Assets\II_general_patient_care.pdf" />
     <None Remove="Assets\IV_ALS.pdf" />
     <None Remove="Assets\IV_A_181-187.pdf" />
     <None Remove="Assets\IV_BLS.pdf" />
@@ -149,6 +149,12 @@
     <EmbeddedResource Include="Assets\ALS-TERBUTALINE.pdf" />
     <EmbeddedResource Include="Assets\IV_E_procedure.pdf" />
     <EmbeddedResource Include="Assets\IV_electricalT.pdf" />
+    <EmbeddedResource Include="Assets\II_generalpatientcare.pdf" />
+    <EmbeddedResource Include="Assets\III_BB_DD.pdf" />
+    <EmbeddedResource Include="Assets\III_F_S.pdf" />
+    <EmbeddedResource Include="Assets\III_MM_RR.pdf" />
+    <EmbeddedResource Include="Assets\III_SS_TT.pdf" />
+    <EmbeddedResource Include="Assets\III_T_Z.pdf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -191,21 +197,15 @@
     <EmbeddedResource Include="Assets\BLS-OXYGEN.pdf" />
     <EmbeddedResource Include="Assets\III_A.pdf" />
     <EmbeddedResource Include="Assets\III_AA_104.pdf" />
-    <EmbeddedResource Include="Assets\III_BB~DD.pdf" />
     <EmbeddedResource Include="Assets\III_B_C.pdf" />
     <EmbeddedResource Include="Assets\III_D_40.pdf" />
     <EmbeddedResource Include="Assets\III_EE~KK.pdf" />
     <EmbeddedResource Include="Assets\III_E_41-42.pdf" />
-    <EmbeddedResource Include="Assets\III_F~S.pdf" />
     <EmbeddedResource Include="Assets\III_LL_128-132.pdf" />
-    <EmbeddedResource Include="Assets\III_MM~RR.pdf" />
-    <EmbeddedResource Include="Assets\III_SS~TT.pdf" />
-    <EmbeddedResource Include="Assets\III_T~Z.pdf" />
     <EmbeddedResource Include="Assets\III_UU_153-155.pdf" />
     <EmbeddedResource Include="Assets\III_VV.pdf" />
     <EmbeddedResource Include="Assets\III_VV2_160.pdf" />
     <EmbeddedResource Include="Assets\III_WW~DDD.pdf" />
-    <EmbeddedResource Include="Assets\II_general_patient_care.pdf" />
     <EmbeddedResource Include="Assets\IV_ALS.pdf" />
     <EmbeddedResource Include="Assets\IV_A_181-187.pdf" />
     <EmbeddedResource Include="Assets\IV_BLS.pdf" />

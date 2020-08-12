@@ -32,6 +32,38 @@ namespace miemss_xamarin.Models
 
             EMRCs.Add(new EMRC
             {
+                Name = "MIEMSS Headquarters",
+                Phone = "(800) 762-7157"
+            });
+            EMRCs.Add(new EMRC
+            {
+                Name = "Region I Office",
+                Phone = "(301) 895-5934"
+            });
+            EMRCs.Add(new EMRC
+            {
+                Name = "Region II  Office",
+                Phone = "(301) 791-2366"
+            });
+
+            EMRCs.Add(new EMRC
+            {
+                Name = "Region III Office",
+                Phone = "(410) 706-3996"
+            });
+
+            EMRCs.Add(new EMRC
+            {
+                Name = "Region IV Office",
+                Phone = "(410) 822-1799"
+            });
+            EMRCs.Add(new EMRC
+            {
+                Name = "Region V Office",
+                Phone = "(301) 850-6530"
+            });
+            EMRCs.Add(new EMRC
+            {
                 Name = "Region I EMRC  ",
                 Phone = "(301) 722-0494"
             });
@@ -40,6 +72,7 @@ namespace miemss_xamarin.Models
                 Name = "Region II EMRC",
                 Phone = "(301) 722-0494"
             });
+
             EMRCs.Add(new EMRC
             {
                 Name = "Region III EMRC",
