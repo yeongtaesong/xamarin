@@ -44,6 +44,8 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "MCR: 1 gram/kg orally",
                 AdultDosageDescription = "MCR: 1 gram/kg orally",
                 HasCalculator = true,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 1,
                 PediatricDosage = 1,
                 DoseUnit = "gram/kg",
@@ -58,7 +60,10 @@ namespace miemss_xamarin.Models
                 Category = "BLS",
                 PediatricDosageDescription = "2 doses (4 puffs) over 30 minute period (MCR for additional doses).",
                 AdultDosageDescription = "2 doses (4 puffs) over 30 minute period (MCR for additional doses).",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
+               
             });
 
             Drugs.Add(new Drug
@@ -69,7 +74,9 @@ namespace miemss_xamarin.Models
                 Category = "BLS",
                 PediatricDosageDescription = "Not indicated.",
                 AdultDosageDescription = "324mg or 325 mg chewed.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
 
             Drugs.Add(new Drug
@@ -82,7 +89,9 @@ namespace miemss_xamarin.Models
                 Category = "BLS",
                 PediatricDosageDescription = "Patients less than 5 yoa: 0.15 mg IM auto-injector OR manual 0.15 mg in 0.15 mL IM (1:1,000) (MCR for additional doses)\nPatients 5 yoa or older: 0.3 mg IM auto-injector OR manual 0.5 mg in 0.5 mL IM (1:1,000) (MCR for additional doses)",
                 AdultDosageDescription = "Patients 5 yoa or older: 0.3 mg IM auto-injector OR manual 0.5 mg in 0.5 mL IM (1:1,000) (MCR for additional doses)",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
             Drugs.Add(new Drug
             {
@@ -94,7 +103,9 @@ namespace miemss_xamarin.Models
                 Category = "BLS",
                 PediatricDosageDescription = "Patients 5 yoa or greater: 0.5 mg in 0.5 mL IM\nPatients less than 5 years of age: 0.15 mg in 0.15 mL IM",
                 AdultDosageDescription = "Adult: 0.5 mg in 0.5 mL IM",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
 
             Drugs.Add(new Drug
@@ -106,7 +117,9 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "Less than 28 days: Contraindicated.\n"
                 + "Aged 28 days to adult: 2 mg IN, dividng administration of the dose equally between the nares to a maximum of 1 mL per nare, OR administer 4 mg/0.1 mL IN one nare.\nRepeat as necessary to maintain respiratory activity.",
                 AdultDosageDescription = "2 mg IN, dividing administration of the dose equally between the nares to a maximum of 1 mL per nare OR administer 4 mg/0.1 mL IN in one nare.\nRepeat as necessary to maintain respiratory activity.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
 
             Drugs.Add(new Drug
@@ -117,7 +130,9 @@ namespace miemss_xamarin.Models
                 Category = "BLS",
                 PediatricDosageDescription = "Not indicated for children under 13 yoa",
                 AdultDosageDescription = "1 tablet/spray sublingually; repeat in 3-5 minutes; maximum of 3 doses (patient-administered and EMT-administered)(MCR for additional doses; BP must begreater than 90 systolic and pulse must greater than 60 bpm)",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
 
             Drugs.Add(new Drug
@@ -129,7 +144,9 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = " Administer 10-15 grams of glucose paste between the gum and cheek. " +
                 "Consider single additional dose of glucose paste if not improved after 10 minutes.",
                 AdultDosageDescription = "Administer 10-15 grams of glucose paste between the gum and cheek. Consider esingle additional dose of glucose paste if not improved after 10 minutes.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
 
             //Drugs.Add(new Drug
@@ -153,7 +170,9 @@ namespace miemss_xamarin.Models
                 Category = "BLS",
                 PediatricDosageDescription = "Administer 12–15 lpm via NRB mask or 2-6 lpm via nasal cannula, as needed.",
                 AdultDosageDescription = "Administer 12–15 lpm via NRB mask or 2–6 lpm via nasal cannula, as needed.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
 
             //ALS DRUGS
@@ -164,9 +183,11 @@ namespace miemss_xamarin.Models
                 Path = "miemss_xamarin.Assets.ALS-ACETAMINOPHEN.pdf",
                 Category = "ALS",
                 PediatricDosageDescription = "(1) 2-4 years: Unit dose 160 mg/5 mL.\n(2) 5-12 years: TWO unit doses of 160 mg/5mL each for a total of 320 mg/10 mL.",
-                AdultDosageDescription = "13 years and above: FOUR unit doses of 160 mg/5 mL each for a total of 640 mg/20 mL" +
+                AdultDosageDescription = "13 years and above: FOUR unit doses of 160 mg/5 mL each for a total of 640 mg/20 mL " +
                 "or in a form of 325 mg pill or tablet x2 for a total of 650 mg with sips of water as tolerated by the patient.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
             Drugs.Add(new Drug
             {
@@ -177,6 +198,8 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "1 gram/kg",
                 AdultDosageDescription = "1 gram/kg",
                 HasCalculator = true,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 1,
                 PediatricDosage = 1,
                 DoseUnit = "gram/kg",
@@ -185,12 +208,14 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Adenosine ",
-                Details = "(1) To slow the rate of narrow complex tachycardia\n(2) Is only effective on SVT/PSVT\n(3) No effect on VT, atrial fibrillation, or flutter\n(4) In stable, wide complex tachycardia (possible VT) for pediatric with caution.",
+                Details = "(1) To slow the rate of narrow complex tachycardia\n(2) Is only effective on SVT/PSVT\n(3) No effect on ventricular tachycardia, atrial fibrillation, or flutter\n(4) In stable, wide complex tachycardia (possible ventricular tachycardia) for pediatric with caution.",
                 Path = "miemss_xamarin.Assets.ALS-ADENOSINE.pdf",
                 Category = "ALS",
                 PediatricDosageDescription = "0.1 mg/kg rapid IVP/IO; maximum initial dose 6 mg\n0.2 mg/kg, maximum 12 mg, for 2nd/3rd dose",
                 AdultDosageDescription = "6 mg, 12 mg rapid IVP; 1-2 minute interval between dose",
-                HasCalculator = true,
+                HasCalculator = false,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 6,
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
@@ -199,12 +224,14 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Albuterol",
-                Details = "(1) To reverse bronchospasm (wheezing)/n(2) Hyperkalemia",
+                Details = "(1) To reverse bronchospasm (wheezing)\n(2) Hyperkalemia",
                 Path = "miemss_xamarin.Assets.ALS-ALBUTEROL.pdf",
                 Category = "ALS",
-                PediatricDosageDescription = "Bronchospasm:\nLess than 2yoa: 1.25 mg by nebulized aerosol connected to 6-8 lpm of oxygen; may repeat one time\n2 yoa or older: 2.5 mg by nebulized aerosol connected to 6-8 lpm of oxygen; may repeat one time\nMCR: Less than 2yoa: 1.25 mg by nebulized aerosol\n2 yoa or older: 2.5 mg by nebulized aerosol",
+                PediatricDosageDescription = "Bronchospasm:\nLess than 2 years of age: 1.25 mg by nebulized aerosol connected to 6-8 lpm of oxygen; may repeat one time\n2 years of age or older: 2.5 mg by nebulized aerosol connected to 6-8 lpm of oxygen; may repeat one time\nMCR: Less than 2years of age: 1.25 mg by nebulized aerosol\n2 years of age or older: 2.5 mg by nebulized aerosol",
                 AdultDosageDescription = "Bronchospasm:\n2.5 mg by nebulized aerosol connected to 6-8 lpm of oxygen; may repeat one time\nMCR: Hyperkalemia: 20 mg (if available) by nebulized aerosol connected to 6-8 lpm of oxygen",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
 
             });
             Drugs.Add(new Drug
@@ -213,11 +240,13 @@ namespace miemss_xamarin.Models
                 Details = "(1) Prevent recurrence of ventricular fibrillation/tachycardia after defibrillation\n(2) Ventricular tachycardia (VT)\n(3) Ventricular fibrillation (VF)",
                 Path = "miemss_xamarin.Assets.ALS-AMIODARONE.pdf",
                 Category = "ALS",
-                PediatricDosageDescription = "Pediatric with pulse: 5 mg/kg IV/IO over 20 minutes (mixed in 50 - 100 mL of approved diluent)." +
-                "pediatric without pulse: 5 mg/kg IV/IO; max single dose 300 mg. May repeat twice to a maximum of 15 mg/kg.",
-                AdultDosageDescription = "Adult with pulse: 150 mg IV/IO over 10 minutes (mixed in 50 - 100 mL of approved diluent). May repeat once." +
+                PediatricDosageDescription = "Pediatric with pulse: 5 mg/kg IV/IO over 20 minutes (mixed in 50 - 100 mL of approved diluent).\n" +
+                "Pediatric without pulse: 5 mg/kg IV/IO; max single dose 300 mg. May repeat twice to a maximum of 15 mg/kg.",
+                AdultDosageDescription = "Adult with pulse: 150 mg IV/IO over 10 minutes (mixed in 50 - 100 mL of approved diluent). May repeat once.\n" +
                 "Adult without pulse VF/VT/(torsades after magnesium sulfate): 300 mg IV/IO. May repeat one time.",
                 HasCalculator = true,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = true,
                 PediatricDosage = 5,
                 AdultDosage = 150,
                 DoseUnit = "mg/kg",
@@ -231,7 +260,9 @@ namespace miemss_xamarin.Models
                 Category = "ALS",
                 PediatricDosageDescription = "Not indicated",
                 AdultDosageDescription = "324 mg or 325 mg chewed",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
             Drugs.Add(new Drug
             {
@@ -242,6 +273,8 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "Bradycardia: 0.02 mg/kg IV/IO; 0.04-0.06 mg/kg ET, dilute 5 mL\nMCR: Organophosphate poison: 0.02 mg/kg IVP/IO or IMq 5-10 minutes",
                 AdultDosageDescription = "Bradycarcdia:0.5-1 mg IVP q 3-5 minutes; maximum 0.04 mg/kg\n" + "MCR: Organophosphate poisoning: 2-6 mg IVP/IM q 5-10 minutes (depending on severity; see MARK 1 / DuoDote)",
                 HasCalculator = true,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = true,
                 PediatricDosage = 0.02,
                 AdultDosage = 0.05,
                 DoseUnit = "mg/kg",
@@ -250,12 +283,14 @@ namespace miemss_xamarin.Models
             Drugs.Add(new Drug
             {
                 Name = "Atrovent",
-                Details = "Anticholinergic (parasympatholytic) bronchodilator, Bronchodilator is site-specific, not systemic. Dries respiratory tact secretions. Most effective in combination with a beata-adrenergic bronchodilator.",
+                Details = "Anticholinergic (parasympatholytic) bronchodilator, Bronchodilator is site-specific, not systemic. Dries respiratory tract infections. Most effective in combination with a beata-adrenergic bronchodilator.",
                 Path = "miemss_xamarin.Assets.ALS-ATROVENT.pdf",
                 Category = "ALS",
-                PediatricDosageDescription = "Less than 1 yoa: contraindicated\n1 to less than 2 yoa: 250 mcg (1.25 mL) by nebulized aerosol\n2 yoa or older: 500 mcg (2.5 mL) by nebulized aerosol",
-                AdultDosageDescription = "Single administration ONLY, 500 mcg (2.5 mL) by nebulized aerosol connected to 6-8 lpm of oxygen incombinatin with albuterol 2.5 mg",
-                HasCalculator = false
+                PediatricDosageDescription = "Less than 1 year of age: contraindicated\n1 to less than 2 years of age: 250 mcg (1.25 mL) by nebulized aerosol\n2 years of age or older: 500 mcg (2.5 mL) by nebulized aerosol",
+                AdultDosageDescription = "Single administration ONLY, 500 mcg (2.5 mL) by nebulized aerosol connected to 6-8 lpm of oxygen in combination with albuterol 2.5 mg",
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
             Drugs.Add(new Drug
             {
@@ -266,6 +301,8 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "20 mg/kg (0.2 mL/kg) SLOW IVP/IO (50 mg/min); maximum 1 gram",
                 AdultDosageDescription = "0.5-1 gram slow IVP; over 10 minutes; maximum dose 1 gram",
                 HasCalculator = true,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = true,
                 PediatricDosage = 20,
                 AdultDosage = 0.5,
                 DoseUnit = "mg/kg",
@@ -280,6 +317,8 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "0.5 mg/kg PO (preferred) or IV to a maximum of 10 mg (IM site may be used for croup)",
                 AdultDosageDescription = "10 mg IV (preferred, if established) or PO",
                 HasCalculator = true,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = true,
                 PediatricDosage = 0.5,
                 AdultDosage = 10,
                 DoseUnit = "mg/kg",
@@ -294,7 +333,9 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Administer D10 (10% dextrose) in 50 mL (5 grams) IV boluses, one min apart, to a maximum of 250 mL OR administer D50 (50% dextrose)-50 mL (25 grams) IVP",
                 PediatricDosageDescription="Less than 28 days of age: 2 mL/kg of D10W IV/IO\n28 days of age up to 18th birthday: 2-4 mL/kg D10W IV/IO; maximum 25 grams",
                 HasCalculator = true,
-                PediatricDosage=2,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = true,
+                PediatricDosage =2,
                 AdultDosage=0,
                 DoseUnit="mL/kg",
                 Unit="mL"
@@ -308,6 +349,8 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Seizures: 2.5 mg-10 mg in 2.5 mg increments SLOW IVP/IM (MCR for IM dosing); maximum total dose of 10 mg\nSevere nerve agent exposure: 10 mg IM",
                 PediatricDosageDescription = "Seizures: 0.1 mg/kg in 2.5 mg increments SLOW IVP/IO/IM  (MCR for IM dosing); maximum total dose of 5 mg. Rectal dose: 0.2 mg/kg; maximum total dose of 10 mg\nSevere nerve agent exposure: Greater than 30 kg/66 lbs: administer 10 mg via auto-injector or 0.1 mg/kg IM; maximum 10 mg",
                 HasCalculator = true,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = true,
                 AdultDosage = 2.5,
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
@@ -324,6 +367,8 @@ namespace miemss_xamarin.Models
                 "For patients older than 50 years of age, borderline blood pressure, known renal failure, or CHF, consider initial bolus 5-10 administered IV over 2 minutes.",
                 PediatricDosageDescription = "MCR: contraindicated for children less than 18 years of age. If needed, consult Pediatric Base Station.",
                 HasCalculator = true,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 0.25,
                 PediatricDosage = 0,
                 DoseUnit = "mg/kg",
@@ -338,6 +383,8 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Administer 25-50 mg SLOW IVP or IM",
                 PediatricDosageDescription = "ADminister 1 mg/kg SLOW IV/IO or IM",
                 HasCalculator = true,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = true,
                 AdultDosage = 25,
                 PediatricDosage = 1,
                 DoseUnit = "mg/kg",
@@ -352,6 +399,8 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "MCR:\nAdminister 2-20 mcg/kg/min IV drip titrated to BP of 100 systolic or medical consultation selected BP; initial infusion rate 2-5 mcg/kg/min",
                 PediatricDosageDescription = "MCR:\nAdminister 2-20 mcg/kg/min IV drip titrated age specific BP or medical consultation selected BP; initial infusion rate is 2 mcg/kg/min",
                 HasCalculator = true,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 2,
                 PediatricDosage = 2,
                 DoseUnit = "mcg/kg",
@@ -365,7 +414,9 @@ namespace miemss_xamarin.Models
                 Category = "ALS",
                 AdultDosageDescription = "Mix 1 mg of epinephrine (either 1:1,000 or 1:10,000) in a 1 liter bag of LR IV/IO. Initiate an infusion with a wide open macro drip titrating to a systolic pressure of greater than 90 mmHg. When drip administered, this will be reported as an exceptional call.",
                 PediatricDosageDescription = "Less than 5 years of age: administer 0.15 mg in 0.15 mL IM. 5 years and greater: administer 0.5 mg in 0.5 mL IM.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
             Drugs.Add(new Drug
             {
@@ -376,6 +427,8 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Administer 1 mcg/kg to a maximum initial dose of 200 mcg. Reassess in 5-10 minutes. If pain remains moderate to severe, then administer a second dose of fentanyl 1mcg/kg to a maximum dose of 200 mcg",
                 PediatricDosageDescription = "Administer 1 mcg/kg to a maximum initial dose of 200 mcg. Reassess in 5-10 minutes. IF pain remains moderate to severe, thena dminister a second dose of fentanyl 1 mcg/kg to a maximum dose of 200 mcg.",
                 HasCalculator = true,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 1,
                 PediatricDosage = 1,
                 DoseUnit = "mcg/kg",
@@ -389,7 +442,9 @@ namespace miemss_xamarin.Models
                 Category = "ALS",
                 AdultDosageDescription = "Hypoglycemia: 1 mg IM/IN (MCR for additional doses, up to a maximum of 3 mg)\nMCR: Beta-blocker OD: 1 mg IVP q 5 minutes.",
                 PediatricDosageDescription = "Hypoglycemia:\n28 days of age to 4 yoa: 0.5 mg IM/IN\n5 yoa up to 18th birthday: 1 mg IM/IN; (MCR for additional doses, up to maximum 3 mg)\nMCR: Beta-blocker OD:\n28 days of age to 4 yoa: 0.5 mg IVP q 5 minutes\n5 yoa up to 18th birthday: 1 mg IVP q 5 minutes",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
             Drugs.Add(new Drug
             {
@@ -400,6 +455,8 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "(a) Patients 18-69 years of age:\n5 mg IM or IV\n(b) Patients greater than 69 years of age:\n2.5 mg IV or IV",
                 PediatricDosageDescription = "(a) Child less than 5 years of age:\ncontraindicated\n(b) Child 5-12 years of age:\0.05 mg/kg IM or IV, max of 2.5 mg\n(c) Patients 13 up to 18th birthday\n2.5-5 mg IM or IV",
                 HasCalculator = true,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = true,
                 AdultDosage = 0,
                 PediatricDosage = 0.05,
                 DoseUnit = "mg/kg",
@@ -426,6 +483,8 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Pain Management: Administer 0.2 mg/kg IV/IO over 1-2 minutes. Maximum single dose 20 mg. See more information for further details.",
                 PediatricDosageDescription = "Pain Management: Administer 0.2 mg/kg IV/IO over 102 minutes. Maximum single dose 20 mg. See more information for further details.",
                 HasCalculator = true,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 0.2,
                 PediatricDosage = 0.2,
                 DoseUnit = "mg/kg",
@@ -440,6 +499,8 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Administer single dose of 15 mg IV only. No repeat doses.\nIf IV is unavailable: Administer single dose of 30 mg IM. No repeat doses.",
                 PediatricDosageDescription = "(1) Newly born to 2 years of age: Contraindicated\n(2) Age 2 to patients who have not reached their 18th birthday: Administer 0.5 mg/kg IV only to a maximum total dose of 15 mg. No repeat doses.\nIf IV is unavailable: Administer 1 mg/kg IM to a maximum total dose of 30 mg. No repeat doses.",
                 HasCalculator = true,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = true,
                 AdultDosage = 0,
                 PediatricDosage = 0.5,
                 DoseUnit = "mg/kg",
@@ -457,6 +518,8 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "(a) KVO\n(b) If age-related vital signs and patient's condition indicate hypoperfusion, administer initial fluid bolus of 20 mL/kg LR IV/IO. Fluid boluses for neonates and volume-sensitive children are 10 mL/kg.\n" +
                 "(c) If patient's condition does not improve, administer the second fluid bolus of 20 mL/kg LR/IV/IO.\n(d) Third and subsequent fluid boluses at 20 mL/kg LR IV/IO with medical consultation.",
                 HasCalculator = true,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 20,
                 PediatricDosage = 20,
                 DoseUnit = "mL/kg",
@@ -470,7 +533,9 @@ namespace miemss_xamarin.Models
                 Category = "ALS",
                 AdultDosageDescription = "With an IO infusion: to prevent or treat pain during an IO infusion in patients great than or equal to 13 years of age, administer 20-40 mg (102 mL) of 2% (preservative free) lidocaine IO.",
                 PediatricDosageDescription = "IO infusion in patients less than 13 years ofage: To prevent or treat a pain during an IO infusion for pateints under 13 yeares of age, consult a pediatric base station.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
             Drugs.Add(new Drug
             {
@@ -481,6 +546,8 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Seizure activity associated wtih pregnancy 4 grams IV/IO over 10 minutes (mixed in 50-100 mL of approved diluent)",
                 PediatricDosageDescription = "Seizure activity associated with pregnancy 4 grams IV/IO over 10 minutes (mixed in 50-100 mL of approved diluent).",
                 HasCalculator = true,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 1,
                 PediatricDosage = 50,
                 DoseUnit = "mg/kg",
@@ -495,6 +562,8 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "0.1 mg/kg in 2 mg increments SLOW IVP over 1-2 minutes per increment with maximum single dose 5 mg.",
                 PediatricDosageDescription = "0.1 mg/kg in 2 mg increments. SLOW IVP over 1-2 minutes per increment to a maximum single dose of 5 mg.",
                 HasCalculator = true,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 0.1,
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
@@ -509,6 +578,8 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Administer 0.1 mg/kg to a maximum initial dose of 20 mg.",
                 PediatricDosageDescription = "Administer 0.1 mg/kg to a maximum initial dose of 20 mg",
                 HasCalculator = true,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 0.1,
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
@@ -521,8 +592,10 @@ namespace miemss_xamarin.Models
                 Path = "miemss_xamarin.Assets.ALS-NALOXONE.pdf",
                 Category = "ALS",
                 AdultDosageDescription = "Administer 0.4 - 2 mg IVP/IO (titrated)/IM/IN",
-                PediatricDosageDescription = "aDMINISTER 0.1 MG/KG ivp/io (TITRATED/IM/IN).",
+                PediatricDosageDescription = "Administer 0.1 mg/kg ivp/io (titrated/IM/IN).",
                 HasCalculator = true,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = true,
                 AdultDosage = 0.4,
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
@@ -536,7 +609,9 @@ namespace miemss_xamarin.Models
                 Category = "ALS",
                 AdultDosageDescription = "With history of nitroglycerin use: administer nitroglycerin: 0.4 mg SL.",
                 PediatricDosageDescription = "Requires medical consultation from Pediatric Base Station.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
             Drugs.Add(new Drug
             {
@@ -546,7 +621,9 @@ namespace miemss_xamarin.Models
                 Category = "ALS",
                 PediatricDosageDescription = " Requires medical consultation from Pediatric Base Station.",
                 AdultDosageDescription = " 1 inch of the NTG paste is applied. Measuring applicators are supplied.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
 
             });
             Drugs.Add(new Drug
@@ -557,7 +634,9 @@ namespace miemss_xamarin.Models
                 Category = "ALS",
                 PediatricDosageDescription = "28 days to 12 years old: 0.1 mg/kg SLOW IV over 2-5 minutes. Patients who are 13 to 18 years old: 8 mg ODT or 8 mg SLOW IV over 2-5 minutes.",
                 AdultDosageDescription = " 8 mg SLOW IV over 2-5 minutes or 4-8 mg IM or 8 mg orally disintegrating tablet (ODT)",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
             Drugs.Add(new Drug
             {
@@ -567,7 +646,9 @@ namespace miemss_xamarin.Models
                 Category = "ALS",
                 PediatricDosageDescription = "Administer 12-15 lpm via NRB mask or 2-6 lpm via nasal cannula, as needed. CO exposure: Administer 100% oxygen via NRB mask. Maintain SpO2 at 100%.",
                 AdultDosageDescription = "Administer 12-15 lpm via NRB mask or 2-6 lpm via nasal cannula, as needed. CO exposure: Administer 100% oxygen via NRB mask. Maintain SpO2 at 100%.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
 
             });
             Drugs.Add(new Drug
@@ -579,6 +660,8 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "Administer 1 mEq/kg IVP/IO; for patients less than 1 year of age, must be diluted (1:1) with LR.",
                 AdultDosageDescription = "Administer 1 mEq/kg IVP bolus initially with 0.5 mEq/kg at 10- minute intervals.",
                 HasCalculator = true,
+                HasAdultCalculator = true,
+                HasPediatricCalculator = true,
                 AdultDosage = 1,
                 PediatricDosage = 1,
                 DoseUnit = "mEq/kg",
@@ -592,7 +675,9 @@ namespace miemss_xamarin.Models
                 Category = "ALS",
                 PediatricDosageDescription = "Contraindicated for patients less than 18 years of age.",
                 AdultDosageDescription = "2.5 - 10 mg slow IV over 2 minutes; if response is not adequate, repeat in 15 minutes with a dosage of 2.5 - 10 mg slow IV over 2 minutes with medical consultation.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
             Drugs.Add(new Drug
             {
@@ -602,7 +687,9 @@ namespace miemss_xamarin.Models
                 Category = "ALS",
                 PediatricDosageDescription = "Patients less than 12 years of age: Not indicated.",
                 AdultDosageDescription = "Patients 12 years of age and older:\nAdminister 0.25 mg IM. May repeat one time after 15 minutes if there is not adequate improvement. Maximum total dose 0.5 mg IM.",
-                HasCalculator = false
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false
             });
 
         }

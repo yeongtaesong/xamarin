@@ -12,14 +12,10 @@
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
 
             <StackLayout  Orientation="Vertical" Padding="15,15,0,0">
-                <Label  Text="{Binding Name}" FontSize="Large" TextDecorations="Underline"/>
-                <Label Text="Key Terms:" FontSize="Medium" FontAttributes="Bold"/>
-                <Label Text="MCR = Medical Consultation Required"/>
-                <Label Text="YOA = Years of Age"/>
                 <Label  Text="Dosage Description:" FontSize="Medium" FontAttributes="Bold"/>
                 <Label  Text="{Binding AdultDosageDescription}"/>
                 <!--DRUG CALCULATOR-->
-                <StackLayout x:Name="Calculator" Orientation="Vertical" IsVisible="{Binding HasCalculator}">
+                <StackLayout x:Name="Calculator" Orientation="Vertical" IsVisible="{Binding HasAdultCalculator}">
                 <Label Text="Dosage Calculator" FontSize="Medium" FontAttributes="Bold"/>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Dosage" FontSize="Medium" Padding="10" />

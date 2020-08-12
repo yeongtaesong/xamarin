@@ -22,6 +22,8 @@ namespace miemss_xamarin.Models
         public string AdultDosageDescription { get; set; }
         public string PediatricDosageDescription { get; set; }
         public bool HasCalculator { get; set; }
+        public bool HasAdultCalculator { get; set; }
+        public bool HasPediatricCalculator { get; set; }
         public double AdultDosage { get; set; }
         public double PediatricDosage { get; set; }
         public string DoseUnit { get; set; }
