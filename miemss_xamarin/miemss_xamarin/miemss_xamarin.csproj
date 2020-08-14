@@ -39,6 +39,7 @@
     <None Remove="Assets\III_T_Z.pdf" />
     <None Remove="Assets\III_BB_DD.pdf" />
     <None Remove="Assets\ALS-VERAPAMIL.pdf" />
+    <None Remove="Assets\ALS-SODIUM BICARBONATE.pdf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -163,6 +164,7 @@
     <EmbeddedResource Include="Assets\III_T_Z.pdf" />
     <EmbeddedResource Include="Assets\III_BB_DD.pdf" />
     <EmbeddedResource Include="Assets\ALS-VERAPAMIL.pdf" />
+    <EmbeddedResource Include="Assets\ALS-SODIUM BICARBONATE.pdf" />
   </ItemGroup>
 
   <ItemGroup>

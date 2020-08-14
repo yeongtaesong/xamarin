@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              Title="Medications"
              x:Class="miemss_xamarin.DrugSelectionPage">
+    <!--
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -15,14 +16,16 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-       
+    -->    
          <StackLayout Spacing="30" Padding=" 10" >
                     
-                    <Label Text=" Please click the button for drug details and a drug calculator."  Padding = "10" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="AliceBlue" />
+                    <Label Text=" Please click the button for drug details and a drug calculator."
+                           Padding = "10" Grid.Row="0" Grid.Column="0"
+                           VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="AliceBlue" />
         <!--ALS Button-->
                     <Button Text="Advanced Life Support(ALS)" Clicked="ALSList_Clicked"
                             TextColor="White"
-                            FontSize="Large"
+                            FontSize="Medium"
                             Grid.Row="1" Grid.Column="0"
                             VerticalOptions=" Center"
                             HorizontalOptions="Center"
@@ -34,7 +37,7 @@
          <!--BLS Button-->                
                     <Button Text="Basic Life Support(BLS)" Clicked="BLSList_Clicked"
                             TextColor="White"
-                            FontSize="Large"
+                            FontSize="Medium"
                             Grid.Row="2" Grid.Column="0"
                             VerticalOptions="Center"
                             HorizontalOptions="Center"
@@ -44,7 +47,7 @@
                             WidthRequest="300"
                             HeightRequest="100"/>
                     
- </StackLayout>
+      </StackLayout>
 
-</Grid>
+<!--</Grid> -->
 </ContentPage>

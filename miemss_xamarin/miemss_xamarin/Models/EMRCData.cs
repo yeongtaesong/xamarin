@@ -13,22 +13,6 @@ namespace miemss_xamarin.Models
         {
             EMRCs = new List<EMRC>();
 
-            EMRCs.Add(new EMRC
-            {
-                Name = "Commercial Ambulance Licensing and Regulation Office ",
-                Phone = "(410) 706-8511 "
-            });
-
-            EMRCs.Add(new EMRC
-            {
-                Name = "Critical Incident Stress Management ",
-                Phone = "(800) 648-3001 "
-            });
-            EMRCs.Add(new EMRC
-            {
-                Name = "Office of Licensure and Certification Office ",
-                Phone = "(800) 762-7157 "
-            });
 
             EMRCs.Add(new EMRC
             {
@@ -88,6 +72,23 @@ namespace miemss_xamarin.Models
             {
                 Name = "Region V EMRC",
                 Phone = "(877) 840- 4245"
+            });
+
+            EMRCs.Add(new EMRC
+            {
+                Name = "Commercial Ambulance Licensing and Regulation Office ",
+                Phone = "(410) 706-8511 "
+            });
+
+            EMRCs.Add(new EMRC
+            {
+                Name = "Critical Incident Stress Management ",
+                Phone = "(800) 648-3001 "
+            });
+            EMRCs.Add(new EMRC
+            {
+                Name = "Office of Licensure and Certification Office ",
+                Phone = "(800) 762-7157 "
             });
             EMRCs.Add(new EMRC
             {
