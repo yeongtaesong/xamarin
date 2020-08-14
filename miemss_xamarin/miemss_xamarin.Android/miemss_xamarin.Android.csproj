@@ -115,7 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\miemss_xamarin\miemss_xamarin.csproj">
-      <Project>{154C0B4F-4C4E-471E-9C9A-33382656F42A}</Project>
+      <Project>{A1C39713-C3C7-4989-88A0-276C216F6F05}</Project>
       <Name>miemss_xamarin</Name>
     </ProjectReference>
   </ItemGroup>
