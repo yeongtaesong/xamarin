@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -24,13 +25,21 @@ namespace miemss_xamarin
             //checks if there is input when button is clicked
             if (Dosage.Text == "" || Weight.Text == "")
             {
-                DisplayAlert("Error", "Please type in a number.", "Ok");
+                DisplayAlert("Error", "Field is empty.", "Ok");
+                return;
             } else
             {
+                decimal value;
+
+                if (!Decimal.TryParse(Dosage.Text, out value) || !Decimal.TryParse(Weight.Text, out value ))
+                {
+                    DisplayAlert("Error", "Field should not contain a negative value", "Ok");
+                    return;
+                }
                 double dosage = Convert.ToDouble(Dosage.Text);
                 double weight = Convert.ToDouble(Weight.Text);
-
                 Calculate(dosage, weight);
+
             }
         }
 

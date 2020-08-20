@@ -32,7 +32,7 @@ namespace miemss_xamarin.Models
                 //Description based on dosage on protocol page
                 AdultDosageDescription = "13 years and above: FOUR unit doses of 160 mg/5 mL each for a total of 640 mg/20 mL OR 325 mg pill or tablet x2 for a total of 650 mg",
                 //If drug requires calculator, boolean will indicate 
-                HasCalculator = false
+                HasCalculator = false        
             });
 
             Drugs.Add(new Drug
@@ -401,8 +401,8 @@ namespace miemss_xamarin.Models
                 HasCalculator = true,
                 HasAdultCalculator = true,
                 HasPediatricCalculator = true,
-                AdultDosage = 2,
-                PediatricDosage = 2,
+                AdultDosage = 0,
+                PediatricDosage = 0,
                 DoseUnit = "mcg/kg",
                 Unit = "mcg"
             });

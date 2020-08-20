@@ -372,4 +372,7 @@
       <DependentUpon>ResourcePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
 </Project>

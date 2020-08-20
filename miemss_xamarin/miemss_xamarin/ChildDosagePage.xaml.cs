@@ -9,9 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace miemss_xamarin
 {
+
+    
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ChildDosagePage : ContentPage
     {
+
         public ChildDosagePage()
         {
             InitializeComponent();
@@ -26,6 +29,13 @@ namespace miemss_xamarin
             }
             else
             {
+                decimal value;
+
+                if (!Decimal.TryParse(Dosage.Text, out value) || !Decimal.TryParse(Weight.Text, out value))
+                {
+                    DisplayAlert("Error", "Field should not contain a negative value", "Ok");
+                    return;
+                }
                 double dosage = Convert.ToDouble(Dosage.Text);
                 double weight = Convert.ToDouble(Weight.Text);
 

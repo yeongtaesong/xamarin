@@ -1,4 +1,5 @@
 ﻿using miemss_xamarin.Models;
+using miemss_xamarin.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,7 +41,7 @@ namespace miemss_xamarin
             page.Title = "Adult Dosage";
             if (drug != null)
             {
-                page.BindingContext = drug;
+                page.BindingContext = new DrugCalculatorViewModel(drug);
             }
             await Navigation.PushAsync(page);
         }
@@ -52,7 +53,7 @@ namespace miemss_xamarin
             page.Title ="Pediatric Dosage";
             if (drug != null)
             {
-                page.BindingContext = drug;
+                page.BindingContext = new DrugCalculatorViewModel(drug);
             }
             await Navigation.PushAsync(page);
         }
