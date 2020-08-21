@@ -32,7 +32,11 @@ namespace miemss_xamarin.Models
                 //Description based on dosage on protocol page
                 AdultDosageDescription = "13 years and above: FOUR unit doses of 160 mg/5 mL each for a total of 640 mg/20 mL OR 325 mg pill or tablet x2 for a total of 650 mg",
                 //If drug requires calculator, boolean will indicate 
-                HasCalculator = false        
+                HasCalculator = false,
+                //Check if dosage has a minimum or maximum
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
 
             Drugs.Add(new Drug
@@ -49,7 +53,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 1,
                 PediatricDosage = 1,
                 DoseUnit = "gram/kg",
-                Unit = "gram"
+                Unit = "gram",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
 
             Drugs.Add(new Drug
@@ -62,8 +69,11 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "2 doses (4 puffs) over 30 minute period (MCR for additional doses).",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
-               
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
+
             });
 
             Drugs.Add(new Drug
@@ -76,7 +86,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "324mg or 325 mg chewed.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
 
             Drugs.Add(new Drug
@@ -91,7 +104,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Patients 5 yoa or older: 0.3 mg IM auto-injector OR manual 0.5 mg in 0.5 mL IM (1:1,000) (MCR for additional doses)",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -105,7 +121,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Adult: 0.5 mg in 0.5 mL IM",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
 
             Drugs.Add(new Drug
@@ -119,7 +138,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "2 mg IN, dividing administration of the dose equally between the nares to a maximum of 1 mL per nare OR administer 4 mg/0.1 mL IN in one nare.\nRepeat as necessary to maintain respiratory activity.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
 
             Drugs.Add(new Drug
@@ -132,7 +154,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "1 tablet/spray sublingually; repeat in 3-5 minutes; maximum of 3 doses (patient-administered and EMT-administered)(MCR for additional doses; BP must begreater than 90 systolic and pulse must greater than 60 bpm)",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
 
             Drugs.Add(new Drug
@@ -146,7 +171,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Administer 10-15 grams of glucose paste between the gum and cheek. Consider esingle additional dose of glucose paste if not improved after 10 minutes.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
 
             //Drugs.Add(new Drug
@@ -172,7 +200,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Administer 12–15 lpm via NRB mask or 2–6 lpm via nasal cannula, as needed.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
 
             //ALS DRUGS
@@ -187,7 +218,10 @@ namespace miemss_xamarin.Models
                 "or in a form of 325 mg pill or tablet x2 for a total of 650 mg with sips of water as tolerated by the patient.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -203,7 +237,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 1,
                 PediatricDosage = 1,
                 DoseUnit = "gram/kg",
-                Unit = "gram"
+                Unit = "gram",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -219,7 +256,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 6,
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
-                Unit = "gram"
+                Unit = "gram",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "initial,repeat dose"
             });
             Drugs.Add(new Drug
             {
@@ -231,7 +271,9 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Bronchospasm:\n2.5 mg by nebulized aerosol connected to 6-8 lpm of oxygen; may repeat one time\nMCR: Hyperkalemia: 20 mg (if available) by nebulized aerosol connected to 6-8 lpm of oxygen",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
 
             });
             Drugs.Add(new Drug
@@ -250,8 +292,13 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 5,
                 AdultDosage = 150,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
-            });
+                Unit = "mg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = true,
+                CategoryList = "default",
+                ChildMinDose = 5,
+                ChildMaxDose = 300
+            }); ;
             Drugs.Add(new Drug
             {
                 Name = "Aspirin",
@@ -262,7 +309,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "324 mg or 325 mg chewed",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -278,7 +328,10 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 0.02,
                 AdultDosage = 0.05,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -290,7 +343,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Single administration ONLY, 500 mcg (2.5 mL) by nebulized aerosol connected to 6-8 lpm of oxygen in combination with albuterol 2.5 mg",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -306,7 +362,11 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 20,
                 AdultDosage = 0.5,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = true,
+                ChildMaxDose = 1000,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -322,7 +382,11 @@ namespace miemss_xamarin.Models
                 PediatricDosage = 0.5,
                 AdultDosage = 10,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = true,
+                CategoryList = "default",
+                ChildMaxDose = 10
             });
             Drugs.Add(new Drug
             {
@@ -338,7 +402,11 @@ namespace miemss_xamarin.Models
                 PediatricDosage =2,
                 AdultDosage=0,
                 DoseUnit="mL/kg",
-                Unit="mL"
+                Unit="mL",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = true,
+                CategoryList = "default",
+                ChildMaxDose = 25
             });
             Drugs.Add(new Drug
             {
@@ -354,7 +422,11 @@ namespace miemss_xamarin.Models
                 AdultDosage = 2.5,
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = true,
+                CategoryList = "default",
+                ChildMaxDose = 5
             });
 
             Drugs.Add(new Drug
@@ -372,7 +444,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 0.25,
                 PediatricDosage = 0,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                CategoryList = "initial,default",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
             });
             Drugs.Add(new Drug
             {
@@ -388,7 +463,12 @@ namespace miemss_xamarin.Models
                 AdultDosage = 25,
                 PediatricDosage = 1,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = true,
+                CategoryList = "default",
+                ChildMinDose = 25,
+                ChildMaxDose = 50
             });
             Drugs.Add(new Drug
             {
@@ -404,7 +484,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 0,
                 PediatricDosage = 0,
                 DoseUnit = "mcg/kg",
-                Unit = "mcg"
+                Unit = "mcg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -416,7 +499,10 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "Less than 5 years of age: administer 0.15 mg in 0.15 mL IM. 5 years and greater: administer 0.5 mg in 0.5 mL IM.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -432,7 +518,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 1,
                 PediatricDosage = 1,
                 DoseUnit = "mcg/kg",
-                Unit = "mcg"
+                Unit = "mcg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -444,7 +533,10 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "Hypoglycemia:\n28 days of age to 4 yoa: 0.5 mg IM/IN\n5 yoa up to 18th birthday: 1 mg IM/IN; (MCR for additional doses, up to maximum 3 mg)\nMCR: Beta-blocker OD:\n28 days of age to 4 yoa: 0.5 mg IVP q 5 minutes\n5 yoa up to 18th birthday: 1 mg IVP q 5 minutes",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -460,7 +552,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 0,
                 PediatricDosage = 0.05,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
 
             });
             //Drugs.Add(new Drug
@@ -488,7 +583,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 0.2,
                 PediatricDosage = 0.2,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -504,7 +602,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 0,
                 PediatricDosage = 0.5,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -523,7 +624,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 20,
                 PediatricDosage = 20,
                 DoseUnit = "mL/kg",
-                Unit = "mL"
+                Unit = "mL",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -535,7 +639,10 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "IO infusion in patients less than 13 years ofage: To prevent or treat a pain during an IO infusion for pateints under 13 yeares of age, consult a pediatric base station.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -551,7 +658,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 1,
                 PediatricDosage = 50,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -567,7 +677,12 @@ namespace miemss_xamarin.Models
                 AdultDosage = 0.1,
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = true,
+                HasMinMaxChildDose = true,
+                ChildMaxDose = 5,
+                AdultMaxDose = 5,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -583,7 +698,12 @@ namespace miemss_xamarin.Models
                 AdultDosage = 0.1,
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = true,
+                HasMinMaxChildDose = true,
+                AdultMaxDose = 20,
+                ChildMaxDose = 20,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -599,7 +719,11 @@ namespace miemss_xamarin.Models
                 AdultDosage = 0.4,
                 PediatricDosage = 0.1,
                 DoseUnit = "mg/kg",
-                Unit = "mg"
+                Unit = "mg",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = true,
+                ChildMaxDose = 2,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -611,7 +735,10 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "Requires medical consultation from Pediatric Base Station.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -623,7 +750,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = " 1 inch of the NTG paste is applied. Measuring applicators are supplied.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
 
             });
             Drugs.Add(new Drug
@@ -636,7 +766,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = " 8 mg SLOW IV over 2-5 minutes or 4-8 mg IM or 8 mg orally disintegrating tablet (ODT)",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -648,7 +781,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Administer 12-15 lpm via NRB mask or 2-6 lpm via nasal cannula, as needed. CO exposure: Administer 100% oxygen via NRB mask. Maintain SpO2 at 100%.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
 
             });
             Drugs.Add(new Drug
@@ -665,7 +801,10 @@ namespace miemss_xamarin.Models
                 AdultDosage = 1,
                 PediatricDosage = 1,
                 DoseUnit = "mEq/kg",
-                Unit = "mEq"
+                Unit = "mEq",
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -677,7 +816,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "2.5 - 10 mg slow IV over 2 minutes; if response is not adequate, repeat in 15 minutes with a dosage of 2.5 - 10 mg slow IV over 2 minutes with medical consultation.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
@@ -689,10 +831,10 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = "Patients 12 years of age and older:\nAdminister 0.25 mg IM. May repeat one time after 15 minutes if there is not adequate improvement. Maximum total dose 0.5 mg IM.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false
-
-
-
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
             });
 
         }

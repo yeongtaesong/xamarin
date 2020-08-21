@@ -1,6 +1,8 @@
 ﻿using miemss_xamarin.Models;
+using miemss_xamarin.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -15,9 +17,24 @@ namespace miemss_xamarin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DrugCalculator : ContentPage
     {
-        public DrugCalculator()
+        bool hasMinMaxDose = false;
+        Drug Drug;
+        DrugCalculatorViewModel viewModel = DrugCalculatorViewModel.Shared;
+
+        public DrugCalculator(Drug drug)
         {
-            InitializeComponent();  
+            InitializeComponent();
+            this.Drug = drug;
+            
+            var list = Drug.CategoryList.Split(',');
+            CalculatorPicker.ItemsSource = list;
+
+            if (hasMinMaxDose)
+            {
+                max.Text = "Maximum Dose: " + drug.AdultMaxDose;
+            }
+
+
         }
         //Button for dosage calculation
         private void Button_OnClicked(object sender, EventArgs e)
@@ -34,6 +51,11 @@ namespace miemss_xamarin
                 if (!Decimal.TryParse(Dosage.Text, out value) || !Decimal.TryParse(Weight.Text, out value ))
                 {
                     DisplayAlert("Error", "Field should not contain a negative value", "Ok");
+                    return;
+                }
+
+                if (hasMinMaxDose)
+                {
                     return;
                 }
                 double dosage = Convert.ToDouble(Dosage.Text);

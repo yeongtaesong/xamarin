@@ -1,15 +1,23 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Windows.Input;
 using miemss_xamarin.Models;
 
 namespace miemss_xamarin.ViewModel
 {
-    public class DrugCalculatorViewModel : Drug
+    public class DrugCalculatorViewModel : Drug, INotifyPropertyChanged
     {
         Drug Drug { get; set; }
-
-        private bool _HasMinMaxDose;
+        public static DrugCalculatorViewModel Shared;
+        public ICommand CalculateDosageCommand { get; private set; }
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public DrugCalculatorViewModel(Drug drug)
+        {
+            SetValues(drug);
+        }
+
+        private void SetValues(Drug drug)
         {
             Drug = drug;
             Name = drug.Name;
@@ -25,8 +33,13 @@ namespace miemss_xamarin.ViewModel
             PediatricDosage = drug.PediatricDosage;
             DoseUnit = drug.DoseUnit;
             Unit = drug.Unit;
+            CategoryList = drug.CategoryList;
+            HasMinMaxChildDose = drug.HasMinMaxChildDose;
+            HasMinMaxAdultDose = drug.HasMinMaxAdultDose;
+            AdultMaxDose = drug.AdultMaxDose;
+            ChildMaxDose = drug.ChildMaxDose;
+            AdultMinDose = drug.AdultMinDose;
+            ChildMinDose = drug.ChildMinDose;
         }
-
-        
     }
 }

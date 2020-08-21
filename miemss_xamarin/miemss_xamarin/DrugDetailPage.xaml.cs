@@ -14,12 +14,12 @@ namespace miemss_xamarin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DrugDetailPage : ContentPage
     {
+
+
         public DrugDetailPage()
         {
             InitializeComponent();
         }
-
-
 
         //Button to navigate to Drug PDF information
         async private void Information_OnClicked(object sender, EventArgs e)
@@ -37,23 +37,26 @@ namespace miemss_xamarin
         private async void Button_Clicked(object sender, EventArgs e)
         {
             var drug = (Drug)DrugDetails.BindingContext;
-            var page = new DrugCalculator();
+            var page = new DrugCalculator(drug);
             page.Title = "Adult Dosage";
             if (drug != null)
             {
-                page.BindingContext = new DrugCalculatorViewModel(drug);
+                DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);
+                page.BindingContext = DrugCalculatorViewModel.Shared;
             }
             await Navigation.PushAsync(page);
         }
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-            var page = new ChildDosagePage();
+            
             var drug = (Drug)DrugDetails.BindingContext;
+            var page = new ChildDosagePage(drug);
             page.Title ="Pediatric Dosage";
             if (drug != null)
             {
-                page.BindingContext = new DrugCalculatorViewModel(drug);
+                DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);
+                page.BindingContext = DrugCalculatorViewModel.Shared;
             }
             await Navigation.PushAsync(page);
         }

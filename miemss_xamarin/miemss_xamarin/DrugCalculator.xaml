@@ -14,18 +14,24 @@
             <StackLayout  Orientation="Vertical" Padding="15,15,0,0">
                 <Label  Text="Dosage Description:" FontSize="Medium" FontAttributes="Bold"/>
                 <Label  Text="{Binding AdultDosageDescription}"/>
+                <Label x:Name="max"/>
+                      
                 <!--DRUG CALCULATOR-->
                 <StackLayout x:Name="Calculator" Orientation="Vertical" IsVisible="{Binding HasAdultCalculator}">
                 <Label Text="Dosage Calculator" FontSize="Medium" FontAttributes="Bold"/>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Dosage" FontSize="Medium" Padding="10" />
                     <Entry x:Name="Dosage" Text="{Binding AdultDosage}" Keyboard="Numeric" WidthRequest="100" />
-                        <Label Text="{Binding DoseUnit}" FontSize="Medium" Padding="10"/>
+                    <Label Text="{Binding DoseUnit}" FontSize="Medium" Padding="10"/>
+                    <Picker x:Name="CalculatorPicker" Title="Type" SelectedIndex="{Binding DosageType}"  WidthRequest="100">
+                        <Picker.Items>
+                        </Picker.Items>
+                    </Picker>
                     </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Weight" FontSize="Medium" Padding="10" />
                     <Entry x:Name="Weight"  Text ="" Placeholder="{Binding Source={x:Reference UnitPicker}, Path=SelectedItem}" Keyboard="Numeric" WidthRequest="100" />
-                    <Picker x:Name="UnitPicker" Title="Unit" SelectedIndex="{Binding WeightUnit}"  WidthRequest="100">
+                    <Picker IsVisible="false" x:Name="UnitPicker" Title="Unit" SelectedIndex="{Binding WeightUnit}"  WidthRequest="100">
                         <Picker.Items>
                             <x:String>kg</x:String>
                             <x:String>lb</x:String>

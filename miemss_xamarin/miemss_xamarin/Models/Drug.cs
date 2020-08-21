@@ -29,8 +29,11 @@ namespace miemss_xamarin.Models
         public string DoseUnit { get; set; }
         public string Unit { get; set; }
         public string CategoryList { get; set; }
-        public bool HasMinMaxDose { get; set; }
-        public int MinDose { get; set; }
-        public int MaxDose { get; set; }
+        public bool HasMinMaxAdultDose { get; set; }
+        public bool HasMinMaxChildDose { get; set; }
+        public int AdultMinDose { get; set; }
+        public int AdultMaxDose { get; set; }
+        public int ChildMinDose { get; set; }
+        public int ChildMaxDose { get; set; }
     }
 }

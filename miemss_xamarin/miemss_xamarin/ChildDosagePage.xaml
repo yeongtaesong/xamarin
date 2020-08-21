@@ -15,6 +15,7 @@
                 <Label  Text="{Binding Name}" FontSize="Large" TextDecorations="Underline"/>
                 <Label  Text="Dosage Description:" FontSize="Medium" FontAttributes="Bold"/>
                 <Label  Text="{Binding PediatricDosageDescription}"/>
+                <Label x:Name="max" IsVisible="{Binding HasChildMaxDose}"/>
                 <!--DRUG CALCULATOR-->
                 <StackLayout x:Name="Calculator" Orientation="Vertical" IsVisible="{Binding HasPediatricCalculator}">
                     <Label Text="Dosage Calculator" FontSize="Medium" FontAttributes="Bold"/>
@@ -22,6 +23,10 @@
                         <Label Text="Dosage" FontSize="Medium" Padding="10" />
                         <Entry x:Name="Dosage" Text="{Binding PediatricDosage}"  Keyboard="Numeric" WidthRequest="100" />
                         <Label Text="{Binding DoseUnit}" FontSize="Medium" Padding="10"/>
+                        <Picker IsVisible="false" x:Name="CalculatorPicker" Title="Type" SelectedIndex="{Binding DosageType}"  WidthRequest="100">
+                            <Picker.Items>
+                            </Picker.Items>
+                        </Picker>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Label Text="Weight" FontSize="Medium" Padding="10"  />
