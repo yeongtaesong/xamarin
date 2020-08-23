@@ -457,6 +457,14 @@
     <ImageAsset Include="Assets.xcassets\splashscreen.imageset\splash %283%29-2.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\arrow_right_circle.png" />
+    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\arrow_right_circle-1.png" />
+    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\arrow_right_circle-2.png" />
+    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle.png" />
+    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle-1.png" />
+    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -490,6 +498,8 @@
     <Folder Include="Assets.xcassets\Calendar.imageset\" />
     <Folder Include="Assets.xcassets\Calendar1.imageset\" />
     <Folder Include="Assets.xcassets\ems1.imageset\" />
+    <Folder Include="Assets.xcassets\arrow_right_circle.imageset\" />
+    <Folder Include="Assets.xcassets\arrow_down_circle.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

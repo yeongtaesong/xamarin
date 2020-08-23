@@ -7,8 +7,6 @@ namespace miemss_xamarin.ViewModel
     {
         Drug Drug { get; set; }
 
-        private bool _HasMinMaxDose;
-
         public DrugCalculatorViewModel(Drug drug)
         {
             Drug = drug;
