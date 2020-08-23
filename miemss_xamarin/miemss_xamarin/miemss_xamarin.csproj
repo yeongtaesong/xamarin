@@ -40,6 +40,7 @@
     <None Remove="Assets\III_BB_DD.pdf" />
     <None Remove="Assets\ALS-VERAPAMIL.pdf" />
     <None Remove="Assets\ALS-SODIUM BICARBONATE.pdf" />
+    <None Remove="Assets\III_EE_KK.pdf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -90,7 +91,6 @@
     <None Remove="Assets\III_AA_104.pdf" />
     <None Remove="Assets\III_B_C.pdf" />
     <None Remove="Assets\III_D_40.pdf" />
-    <None Remove="Assets\III_EE~KK.pdf" />
     <None Remove="Assets\III_E_41-42.pdf" />
     <None Remove="Assets\III_LL_128-132.pdf" />
     <None Remove="Assets\III_UU_153-155.pdf" />
@@ -165,6 +165,7 @@
     <EmbeddedResource Include="Assets\III_BB_DD.pdf" />
     <EmbeddedResource Include="Assets\ALS-VERAPAMIL.pdf" />
     <EmbeddedResource Include="Assets\ALS-SODIUM BICARBONATE.pdf" />
+    <EmbeddedResource Include="Assets\III_EE_KK.pdf" />
   </ItemGroup>
 
   <ItemGroup>
@@ -209,7 +210,6 @@
     <EmbeddedResource Include="Assets\III_AA_104.pdf" />
     <EmbeddedResource Include="Assets\III_B_C.pdf" />
     <EmbeddedResource Include="Assets\III_D_40.pdf" />
-    <EmbeddedResource Include="Assets\III_EE~KK.pdf" />
     <EmbeddedResource Include="Assets\III_E_41-42.pdf" />
     <EmbeddedResource Include="Assets\III_LL_128-132.pdf" />
     <EmbeddedResource Include="Assets\III_UU_153-155.pdf" />

@@ -48,7 +48,7 @@ namespace miemss_xamarin
             {
                 //assigns only the heading to the ResourceGroup - will only display heading on page initialization
                 ProtocolGroup newGroup = new ProtocolGroup(protocols.Heading);
-                newGroup.StateIcon = "arrow_right_circle.png";
+                newGroup.StateIcon = "expand.png";
 
                 //if button is pressed, expanded = true and sections will be added
                 if (protocols.Expanded)
@@ -57,7 +57,7 @@ namespace miemss_xamarin
                     {
                         newGroup.Add(protocol);
                     }
-                    newGroup.StateIcon = "arrow_down_circle.png";
+                    newGroup.StateIcon = "collapse.png";
                 }
                 _expandedGroups.Add(newGroup);
             }

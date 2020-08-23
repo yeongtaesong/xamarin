@@ -36,10 +36,10 @@
 				                <RowDefinition Height="*"></RowDefinition>
 		    	            </Grid.RowDefinitions>
 		    	            <Grid.ColumnDefinitions>
-				                <ColumnDefinition Width="80"></ColumnDefinition>
+				                <ColumnDefinition Width="30"></ColumnDefinition>
 				                <ColumnDefinition Width="auto"></ColumnDefinition>
 			                </Grid.ColumnDefinitions>
-                            <Image Grid.Row="0" Grid.Column="0" x:Name="arrowImage" HeightRequest="50" Source="{Binding StateIcon}" Aspect="AspectFit" HorizontalOptions="FillAndExpand"/>
+                            <Image Grid.Row="0" Grid.Column="0" x:Name="arrowImage" HeightRequest="50" Source="{Binding StateIcon}" Aspect="AspectFit" HorizontalOptions="CenterAndExpand"/>
                             <Label Grid.Row="0" Grid.Column="1" FontAttributes="Bold"  Padding="10" HeightRequest="80" Text="{Binding Heading}" FontSize="Medium" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand"/>
       		            </Grid>
                             <StackLayout.GestureRecognizers>

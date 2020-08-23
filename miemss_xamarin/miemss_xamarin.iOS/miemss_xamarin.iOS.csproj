@@ -180,15 +180,6 @@
     <ImageAsset Include="Assets.xcassets\drug.imageset\drug2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\hospital.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -465,6 +456,10 @@
     <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle.png" />
     <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle-1.png" />
     <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle-2.png" />
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow-1.png" />
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow.png" />
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow-2.png" />
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow-3.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
