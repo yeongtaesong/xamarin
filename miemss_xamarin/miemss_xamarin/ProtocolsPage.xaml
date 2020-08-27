@@ -28,17 +28,37 @@
             <ListView.GroupHeaderTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" WidthRequest="50">
-                            <Button Image="{Binding StateIcon}" 
-                                    Clicked="HeaderTapped"
-                                    BackgroundColor="Transparent"
-                                    CommandParameter="{Binding .}"/>
-                            <Label FontAttributes="Bold"  Padding="10" HeightRequest="80" Text="{Binding Heading}" FontSize="Medium" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
-                        </StackLayout>
+                        <StackLayout>
+
+                       
+                        <Grid HorizontalOptions="FillAndExpand">
+	      		            <Grid.RowDefinitions>
+				                <RowDefinition Height="*"></RowDefinition>
+		    	            </Grid.RowDefinitions>
+		    	            <Grid.ColumnDefinitions>
+				                <ColumnDefinition Width="30"></ColumnDefinition>
+				                <ColumnDefinition Width="auto"></ColumnDefinition>
+			                </Grid.ColumnDefinitions>
+                            <Image Grid.Row="0" Grid.Column="0" x:Name="arrowImage" HeightRequest="50" Source="{Binding StateIcon}" Aspect="AspectFit" HorizontalOptions="CenterAndExpand"/>
+                            <Label Grid.Row="0" Grid.Column="1" FontAttributes="Bold"  Padding="10" HeightRequest="80" Text="{Binding Heading}" FontSize="Medium" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand"/>
+      		            </Grid>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="HeaderTapped" CommandParameter="{Binding .}"/>
+                            </StackLayout.GestureRecognizers>
+                             </StackLayout>
+                       
+
+                        
+                        <!--<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BindingContext="{Binding .}" BackgroundColor="AliceBlue">
+                            <Image x:Name="arrowImage"  Source="{Binding StateIcon}" Aspect="AspectFit" HorizontalOptions="FillAndExpand"/>
+                            <Label FontAttributes="Bold"  Padding="10" HeightRequest="80" Text="{Binding Heading}" FontSize="Medium" VerticalOptions="StartAndExpand" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="HeaderTapped" CommandParameter="{Binding .}"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>-->
                     </ViewCell>
                 </DataTemplate>
-            </ListView.GroupHeaderTemplate>
-            
+            </ListView.GroupHeaderTemplate>          
         </ListView>
     </ContentPage.Content>
 </ContentPage>

@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,29 +15,21 @@
                         <viewControllerLayoutGuide type="bottom" id="9ZL-r4-8FZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleAspectFit" id="yd7-JS-zBw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="797"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="23" highlighted="YES" image="splashscreen" horizontalHuggingPriority="255" misplaced="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES">
-                                <rect key="frame" x="0.0" y="0.0" width="359" height="812"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="23" highlighted="YES" image="splashscreen" horizontalHuggingPriority="255" adjustsImageSizeForAccessibilityContentSizeCategory="YES" fixedFrame="YES">
+                                <rect key="frame" x="30" y="249" width="315" height="329"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium" weight="regular"/>
                                 <accessibility key="accessibilityConfiguration" label="MIEMSS-EMS"/>
-                                <constraints>
-                                    <constraint id="1691" firstAttribute="width" secondItem="23" secondAttribute="height" multiplier="124:183"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="23" firstAttribute="centerY" secondItem="yd7-JS-zBw" secondAttribute="centerY" priority="1" id="39"/>
-                            <constraint firstItem="23" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX" priority="1" id="41"/>
-                            <constraint id="1692" firstItem="23" firstAttribute="width" secondItem="yd7-JS-zBw" secondAttribute="width"/>
-                            <constraint id="1905" firstItem="9ZL-r4-8FZ" firstAttribute="top" secondItem="23" secondAttribute="bottom" constant="177"/>
-                            <constraint id="1906" firstItem="23" firstAttribute="top" secondItem="Y8P-hJ-Z43" secondAttribute="bottom" constant="118"/>
-                            <constraint id="2974" firstAttribute="leadingMargin" secondItem="23" secondAttribute="leading" constant="16"/>
-                        </constraints>
                         <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="797"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAI-xm-WK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

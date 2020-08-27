@@ -11,16 +11,21 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using miemss_xamarin.Models;
+using miemss_xamarin.ViewModel;
+using System.Diagnostics;
 
 namespace miemss_xamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProtocolsPage : ContentPage
     {
+        ProtocolViewModel viewModel = new ProtocolViewModel();
         private List<ProtocolGroup> _allGroups;
         private List<ProtocolGroup> _expandedGroups;
+
         public ProtocolsPage()
         {
+            
             InitializeComponent();
             _allGroups = ProtocolGroup.All;
             UpdateListContent();
@@ -29,8 +34,8 @@ namespace miemss_xamarin
         //If header is tapped, list is expanded - finds index value of ResourceGroup
         private void HeaderTapped(object sender, EventArgs e)
         {
-            int selectedIndex = _expandedGroups.IndexOf(
-                ((ProtocolGroup)((Button)sender).CommandParameter));
+            var group = (ProtocolGroup)((StackLayout)sender).BindingContext;
+            int selectedIndex = _expandedGroups.IndexOf(group);
             _allGroups[selectedIndex].Expanded = !_allGroups[selectedIndex].Expanded;
             UpdateListContent();
         }

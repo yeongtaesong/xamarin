@@ -75,7 +75,7 @@ namespace miemss_xamarin.Models
                     new Protocol {Name = "Environmental Emergencies", Path="miemss_xamarin.Assets.III_T_Z.pdf"},
                     new Protocol {Name = "Nausea and Vomiting", Path="miemss_xamarin.Assets.III_AA_104.pdf"},
                     new Protocol {Name = "Obstetrical/Gynecological Emergencies", Path="miemss_xamarin.Assets.III_BB_DD.pdf"},
-                    new Protocol {Name = "Overdose/Poisoning", Path="miemss_xamarin.Assets.III_EE~KK.pdf"},
+                    new Protocol {Name = "Overdose/Poisoning", Path="miemss_xamarin.Assets.III_EE_KK.pdf"},
                     new Protocol {Name = "Pain Management", Path="miemss_xamarin.Assets.III_LL_128-132.pdf"},
                     new Protocol {Name = "Respiratory Distress (New '20)", Path="miemss_xamarin.Assets.III_MM_RR.pdf"},
                     new Protocol {Name = "Sepsis", Path="miemss_xamarin.Assets.III_SS_TT.pdf"},
