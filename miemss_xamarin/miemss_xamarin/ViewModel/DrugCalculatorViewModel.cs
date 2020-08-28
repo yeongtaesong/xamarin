@@ -24,10 +24,10 @@ namespace miemss_xamarin.ViewModel
             Details = drug.Details;
             Path = drug.Path;
             Category = drug.Category;
-            AdultDosageDescription = drug.PediatricDosageDescription;
+            AdultDosageDescription = drug.AdultDosageDescription;
             PediatricDosageDescription = drug.PediatricDosageDescription;
             HasCalculator = drug.HasCalculator;
-            HasAdultCalculator = drug.HasCalculator;
+            HasAdultCalculator = drug.HasAdultCalculator; 
             HasPediatricCalculator = drug.HasPediatricCalculator;
             AdultDosage = drug.AdultDosage;
             PediatricDosage = drug.PediatricDosage;

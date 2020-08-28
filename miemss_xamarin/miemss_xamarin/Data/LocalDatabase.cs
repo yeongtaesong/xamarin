@@ -87,7 +87,7 @@ namespace miemss_xamarin.Data
         //Get all items from a selected category "ALS" or "BLS"
         public Task<List<Drug>> GetItemsByCategory(string category)
         {
-            return Database.QueryAsync<Drug>("select * from Drug where Category = ?", category);
+            return Database.QueryAsync<Drug>("select * from Drug where Category = ? ORDER BY Name", category);
         }
 
         //Get single item from a category "ALS" or "BLS"

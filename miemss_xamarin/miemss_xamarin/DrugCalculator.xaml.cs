@@ -26,9 +26,6 @@ namespace miemss_xamarin
             InitializeComponent();
             this.Drug = drug;
             
-            var list = Drug.CategoryList.Split(',');
-            CalculatorPicker.ItemsSource = list;
-
             if (hasMinMaxDose)
             {
                 max.Text = "Maximum Dose: " + drug.AdultMaxDose;

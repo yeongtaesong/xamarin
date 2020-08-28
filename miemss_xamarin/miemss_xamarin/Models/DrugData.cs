@@ -766,9 +766,13 @@ namespace miemss_xamarin.Models
                 AdultDosageDescription = " 8 mg SLOW IV over 2-5 minutes or 4-8 mg IM or 8 mg orally disintegrating tablet (ODT)",
                 HasCalculator = false,
                 HasAdultCalculator = false,
-                HasPediatricCalculator = false,
+                HasPediatricCalculator = true,
                 HasMinMaxAdultDose = false,
                 HasMinMaxChildDose = false,
+                AdultDosage = 0.1,
+                PediatricDosage = 0.1,
+                DoseUnit = "mg/kg",
+                Unit = "mg",
                 CategoryList = "default"
             });
             Drugs.Add(new Drug
