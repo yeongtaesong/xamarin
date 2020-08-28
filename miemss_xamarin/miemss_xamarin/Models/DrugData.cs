@@ -28,7 +28,7 @@ namespace miemss_xamarin.Models
                 //Drug either ALS or BLS
                 Category = "BLS",
                 //Description based on dosage on protocol page
-                PediatricDosageDescription = "Less than 2 yoa: Not indicated\n2-4 years: Unit dose 160 mg/5 mL\n5-12 years: TWO unit doses of 160 mg/5 ml",
+                PediatricDosageDescription = "Less than 2 years of age: Not indicated\n2-4 years: Unit dose 160 mg/5 mL\n5-12 years: TWO unit doses of 160 mg/5 ml",
                 //Description based on dosage on protocol page
                 AdultDosageDescription = "13 years and above: FOUR unit doses of 160 mg/5 mL each for a total of 640 mg/20 mL OR 325 mg pill or tablet x2 for a total of 650 mg",
                 //If drug requires calculator, boolean will indicate 
@@ -94,30 +94,13 @@ namespace miemss_xamarin.Models
 
             Drugs.Add(new Drug
             {
-                Name = "Epinephrine Auto-Injector",
-                Details = "(1) Moderate to severe allergic reaction with respiratory distress" + 
-                " or mild allergic reaction with history of life-threatening allergic reaction.\n" 
-                + "(2) Pediatric patients with severe asthma.",
-                Path = "miemss_xamarin.Assets.BLS-EPINEPHRINE AUTO-INJECTOR.pdf",
-                Category = "BLS",
-                PediatricDosageDescription = "Patients less than 5 yoa: 0.15 mg IM auto-injector OR manual 0.15 mg in 0.15 mL IM (1:1,000) (MCR for additional doses)\nPatients 5 yoa or older: 0.3 mg IM auto-injector OR manual 0.5 mg in 0.5 mL IM (1:1,000) (MCR for additional doses)",
-                AdultDosageDescription = "Patients 5 yoa or older: 0.3 mg IM auto-injector OR manual 0.5 mg in 0.5 mL IM (1:1,000) (MCR for additional doses)",
-                HasCalculator = false,
-                HasAdultCalculator = false,
-                HasPediatricCalculator = false,
-                HasMinMaxAdultDose = false,
-                HasMinMaxChildDose = false,
-                CategoryList = "default"
-            });
-            Drugs.Add(new Drug
-            {
                 Name = "Epinephrine (1:1,000)",
                 Details = "(1) Moderate to severe allergic reaction with respiratory distress" +
-                        " or mild allergic reaction with history of life-threatening allergic reaction.\n"
-                        + "(2) Pediatric patients with severe asthma.",
+                       " or mild allergic reaction with history of life-threatening allergic reaction.\n"
+                       + "(2) Pediatric patients with severe asthma.",
                 Path = "miemss_xamarin.Assets.BLS-EPINEPHRINE AUTO-INJECTOR.pdf",
                 Category = "BLS",
-                PediatricDosageDescription = "Patients 5 yoa or greater: 0.5 mg in 0.5 mL IM\nPatients less than 5 years of age: 0.15 mg in 0.15 mL IM",
+                PediatricDosageDescription = "Patients 5 years of age or greater: 0.5 mg in 0.5 mL IM\nPatients less than 5 years of age: 0.15 mg in 0.15 mL IM",
                 AdultDosageDescription = "Adult: 0.5 mg in 0.5 mL IM",
                 HasCalculator = false,
                 HasAdultCalculator = false,
@@ -126,6 +109,25 @@ namespace miemss_xamarin.Models
                 HasMinMaxChildDose = false,
                 CategoryList = "default"
             });
+
+            Drugs.Add(new Drug
+            {
+                Name = "Epinephrine Auto-Injector",
+                Details = "(1) Moderate to severe allergic reaction with respiratory distress" + 
+                " or mild allergic reaction with history of life-threatening allergic reaction.\n" 
+                + "(2) Pediatric patients with severe asthma.",
+                Path = "miemss_xamarin.Assets.BLS-EPINEPHRINE AUTO-INJECTOR.pdf",
+                Category = "BLS",
+                PediatricDosageDescription = "Patients less than 5 years of age: 0.15 mg IM auto-injector OR manual 0.15 mg in 0.15 mL IM (1:1,000) (MCR for additional doses)\nPatients 5 years of age or older: 0.3 mg IM auto-injector OR manual 0.5 mg in 0.5 mL IM (1:1,000) (MCR for additional doses)",
+                AdultDosageDescription = "Patients 5 years of age or older: 0.3 mg IM auto-injector OR manual 0.5 mg in 0.5 mL IM (1:1,000) (MCR for additional doses)",
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
+            });
+           
 
             Drugs.Add(new Drug
             {
@@ -150,7 +152,7 @@ namespace miemss_xamarin.Models
                 Details = " Patient must have own prescribed sublingual nitroglycerin. Chest pain.",
                 Path = "miemss_xamarin.Assets.BLS-NITROGLYCERIN.pdf",
                 Category = "BLS",
-                PediatricDosageDescription = "Not indicated for children under 13 yoa",
+                PediatricDosageDescription = "Not indicated for children under 13 years of age",
                 AdultDosageDescription = "1 tablet/spray sublingually; repeat in 3-5 minutes; maximum of 3 doses (patient-administered and EMT-administered)(MCR for additional doses; BP must begreater than 90 systolic and pulse must greater than 60 bpm)",
                 HasCalculator = false,
                 HasAdultCalculator = false,
@@ -333,21 +335,7 @@ namespace miemss_xamarin.Models
                 HasMinMaxChildDose = false,
                 CategoryList = "default"
             });
-            Drugs.Add(new Drug
-            {
-                Name = "Atrovent",
-                Details = "Anticholinergic (parasympatholytic) bronchodilator, Bronchodilator is site-specific, not systemic. Dries respiratory tract infections. Most effective in combination with a beata-adrenergic bronchodilator.",
-                Path = "miemss_xamarin.Assets.ALS-ATROVENT.pdf",
-                Category = "ALS",
-                PediatricDosageDescription = "Less than 1 year of age: contraindicated\n1 to less than 2 years of age: 250 mcg (1.25 mL) by nebulized aerosol\n2 years of age or older: 500 mcg (2.5 mL) by nebulized aerosol",
-                AdultDosageDescription = "Single administration ONLY, 500 mcg (2.5 mL) by nebulized aerosol connected to 6-8 lpm of oxygen in combination with albuterol 2.5 mg",
-                HasCalculator = false,
-                HasAdultCalculator = false,
-                HasPediatricCalculator = false,
-                HasMinMaxAdultDose = false,
-                HasMinMaxChildDose = false,
-                CategoryList = "default"
-            });
+           
             Drugs.Add(new Drug
             {
                 Name = "Calcium Chloride",
@@ -355,7 +343,7 @@ namespace miemss_xamarin.Models
                 Path = "miemss_xamarin.Assets.ALS-CALCIUM CHLORIDE.pdf",
                 Category = "ALS",
                 PediatricDosageDescription = "20 mg/kg (0.2 mL/kg) SLOW IVP/IO (50 mg/min); maximum 1 gram",
-                AdultDosageDescription = "0.5-1 gram slow IVP; over 10 minutes; maximum dose 1 gram",
+                AdultDosageDescription = "0.5-1 gram slow IVP; over 10 minutes; maximum dose 1 gram\n500 mg SLOW IVP for: hypotension following diltiazem administration",
                 HasCalculator = true,
                 HasAdultCalculator = false,
                 HasPediatricCalculator = true,
@@ -530,7 +518,7 @@ namespace miemss_xamarin.Models
                 Path = "miemss_xamarin.Assets.ALS-GLUCAGON.pdf",
                 Category = "ALS",
                 AdultDosageDescription = "Hypoglycemia: 1 mg IM/IN (MCR for additional doses, up to a maximum of 3 mg)\nMCR: Beta-blocker OD: 1 mg IVP q 5 minutes.",
-                PediatricDosageDescription = "Hypoglycemia:\n28 days of age to 4 yoa: 0.5 mg IM/IN\n5 yoa up to 18th birthday: 1 mg IM/IN; (MCR for additional doses, up to maximum 3 mg)\nMCR: Beta-blocker OD:\n28 days of age to 4 yoa: 0.5 mg IVP q 5 minutes\n5 yoa up to 18th birthday: 1 mg IVP q 5 minutes",
+                PediatricDosageDescription = "Hypoglycemia:\n28 days of age to 4 years of age: 0.5 mg IM/IN\n5 years of age up to 18th birthday: 1 mg IM/IN; (MCR for additional doses, up to maximum 3 mg)\nMCR: Beta-blocker OD:\n28 days of age to 4 years of age: 0.5 mg IVP q 5 minutes\n5 years of age up to 18th birthday: 1 mg IVP q 5 minutes",
                 HasCalculator = false,
                 HasAdultCalculator = false,
                 HasPediatricCalculator = false,
@@ -558,9 +546,27 @@ namespace miemss_xamarin.Models
                 CategoryList = "default"
 
             });
+
+            Drugs.Add(new Drug
+            {
+                Name = "Ipra" +
+                "tropium(Atrovent)",
+                Details = "Anticholinergic (parasympatholytic) bronchodilator, Bronchodilator is site-specific, not systemic. Dries respiratory tract infections. Most effective in combination with a beata-adrenergic bronchodilator.",
+                Path = "miemss_xamarin.Assets.ALS-ATROVENT.pdf",
+                Category = "ALS",
+                PediatricDosageDescription = "Less than 1 year of age: contraindicated\n1 to less than 2 years of age: 250 mcg (1.25 mL) by nebulized aerosol\n2 years of age or older: 500 mcg (2.5 mL) by nebulized aerosol",
+                AdultDosageDescription = "Single administration ONLY, 500 mcg (2.5 mL) by nebulized aerosol connected to 6-8 lpm of oxygen in combination with albuterol 2.5 mg",
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
+            });
+
             //Drugs.Add(new Drug
             //{
-            //    Name = "Atrovent",
+            //    Name = "Ipraropium(Atrovent)",
             //    Details = "(1) Allergic reactions/anaphylaxis\n(2) Bronchial asthma\n(3) Reversible bronchospasms associated with chronic bronchitis and emphysema",
             //    Path = "miemss_xamarin.Assets.ALS-ATROVENT.pdf",
             //    Category = "ALS",
@@ -810,21 +816,7 @@ namespace miemss_xamarin.Models
                 HasMinMaxChildDose = false,
                 CategoryList = "default"
             });
-            Drugs.Add(new Drug
-            {
-                Name = "Verapamil  ",
-                Details = "Narrow complex symptomatic atrial fibrillation or atrial flutter.",
-                Path = "miemss_xamarin.Assets.ALS-VERAPAMIL.pdf",
-                Category = "ALS",
-                PediatricDosageDescription = "Contraindicated for patients less than 18 years of age.",
-                AdultDosageDescription = "2.5 - 10 mg slow IV over 2 minutes; if response is not adequate, repeat in 15 minutes with a dosage of 2.5 - 10 mg slow IV over 2 minutes with medical consultation.",
-                HasCalculator = false,
-                HasAdultCalculator = false,
-                HasPediatricCalculator = false,
-                HasMinMaxAdultDose = false,
-                HasMinMaxChildDose = false,
-                CategoryList = "default"
-            });
+
             Drugs.Add(new Drug
             {
                 Name = "Terbutaline ",
@@ -840,6 +832,22 @@ namespace miemss_xamarin.Models
                 HasMinMaxChildDose = false,
                 CategoryList = "default"
             });
+            Drugs.Add(new Drug
+            {
+                Name = "Verapamil  ",
+                Details = "Narrow complex symptomatic atrial fibrillation or atrial flutter.",
+                Path = "miemss_xamarin.Assets.ALS-VERAPAMIL.pdf",
+                Category = "ALS",
+                PediatricDosageDescription = "Contraindicated for patients less than 18 years of age.",
+                AdultDosageDescription = "2.5 - 10 mg slow IV over 2 minutes; if response is not adequate, repeat in 15 minutes with a dosage of 2.5 - 10 mg slow IV over 2 minutes with medical consultation.",
+                HasCalculator = false,
+                HasAdultCalculator = false,
+                HasPediatricCalculator = false,
+                HasMinMaxAdultDose = false,
+                HasMinMaxChildDose = false,
+                CategoryList = "default"
+            });
+      
 
         }
 

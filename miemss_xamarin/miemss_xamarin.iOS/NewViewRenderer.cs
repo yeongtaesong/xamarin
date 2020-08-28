@@ -33,7 +33,7 @@ namespace miemss_xamarin.iOS
         {
             //Add Header
             UILabel lblHeader = new UILabel(new RectangleF(50, 20, 300, 50));
-            lblHeader.Text = "Message Notifications for: ";
+            lblHeader.Text = "Message Notifications For: ";
             this.Add(lblHeader);
 
             //Add Regions
