@@ -274,7 +274,7 @@ namespace miemss_xamarin.Models
                 HasPediatricCalculator = false,
                 HasMinMaxAdultDose = false,
                 HasMinMaxChildDose = false,
-
+                CategoryList = "default"
             });
             Drugs.Add(new Drug
             {
