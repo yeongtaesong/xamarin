@@ -253,7 +253,7 @@ namespace miemss_xamarin.Models
                 PediatricDosageDescription = "0.1 mg/kg rapid IVP/IO; maximum initial dose 6 mg\n0.2 mg/kg, maximum 12 mg, for 2nd/3rd dose",
                 AdultDosageDescription = "6 mg, 12 mg rapid IVP; 1-2 minute interval between dose",
                 HasCalculator = false,
-                HasAdultCalculator = true,
+                HasAdultCalculator = false,
                 HasPediatricCalculator = true,
                 AdultDosage = 6,
                 PediatricDosage = 0.1,
@@ -414,7 +414,8 @@ namespace miemss_xamarin.Models
                 HasMinMaxAdultDose = false,
                 HasMinMaxChildDose = true,
                 CategoryList = "default",
-                ChildMaxDose = 5
+                ChildMaxDose = 5,
+               
             });
 
             Drugs.Add(new Drug
@@ -434,8 +435,9 @@ namespace miemss_xamarin.Models
                 DoseUnit = "mg/kg",
                 Unit = "mg",
                 CategoryList = "initial,default",
-                HasMinMaxAdultDose = false,
+                HasMinMaxAdultDose = true,
                 HasMinMaxChildDose = false,
+                AdultMaxDose =20
             });
             Drugs.Add(new Drug
             {
@@ -483,8 +485,8 @@ namespace miemss_xamarin.Models
                 Details = "(1) Medical cardiac arrest and pediatric traumatic arrest\n(2) Moderate to severe allergic reaction/anaphylaxis\n(3) IV push epinephrine should be reserved for cardiact arrest patients\n(4) Epinephrine infusion(IV/IO) should be reserved for patients in shock refractory to fluid bolus or for patients in anaphylactic shock\n(5) Severe asthma\n(6) Respiratory stridor (suspected croup)",
                 Path = "miemss_xamarin.Assets.ALS-EPINEPHRINE.pdf",
                 Category = "ALS",
-                AdultDosageDescription = "Mix 1 mg of epinephrine (either 1:1,000 or 1:10,000) in a 1 liter bag of LR IV/IO. Initiate an infusion with a wide open macro drip titrating to a systolic pressure of greater than 90 mmHg. When drip administered, this will be reported as an exceptional call.",
-                PediatricDosageDescription = "Less than 5 years of age: administer 0.15 mg in 0.15 mL IM. 5 years and greater: administer 0.5 mg in 0.5 mL IM.",
+                AdultDosageDescription = "Administer 1 mg (1:10,000) IVP/IO every 4 minutes to a maximum of 4 doses for the initial arrest.\nIf arrest recurs following any period ofROSC, administer a maximum of 2 additional doses",
+                PediatricDosageDescription = "Administer 0.01 mg/kg (0.1 mL/kg) of 1:10,000 IVP/IO every 4 minutes to a maximum of 4 doses for the initial arrest.\nIf arrest recurs following any period of ROSC, administer a maximum of 2 additional doses.",
                 HasCalculator = false,
                 HasAdultCalculator = false,
                 HasPediatricCalculator = false,
@@ -549,9 +551,8 @@ namespace miemss_xamarin.Models
 
             Drugs.Add(new Drug
             {
-                Name = "Ipra" +
-                "tropium(Atrovent)",
-                Details = "Anticholinergic (parasympatholytic) bronchodilator, Bronchodilator is site-specific, not systemic. Dries respiratory tract infections. Most effective in combination with a beata-adrenergic bronchodilator.",
+                Name = "Ipratropium(Atrovent)",
+                Details = "Anticholinergic (parasympatholytic) bronchodilator, Bronchodilator is site-specific, not systemic. Dries respiratory tract secretions. Most effective in combination with a beata-adrenergic bronchodilator.",
                 Path = "miemss_xamarin.Assets.ALS-ATROVENT.pdf",
                 Category = "ALS",
                 PediatricDosageDescription = "Less than 1 year of age: contraindicated\n1 to less than 2 years of age: 250 mcg (1.25 mL) by nebulized aerosol\n2 years of age or older: 500 mcg (2.5 mL) by nebulized aerosol",
@@ -686,8 +687,8 @@ namespace miemss_xamarin.Models
                 Unit = "mg",
                 HasMinMaxAdultDose = true,
                 HasMinMaxChildDose = true,
-                ChildMaxDose = 5,
                 AdultMaxDose = 5,
+                ChildMaxDose = 5,
                 CategoryList = "default"
             });
             Drugs.Add(new Drug

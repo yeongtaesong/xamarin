@@ -34,7 +34,7 @@ namespace miemss_xamarin.Models
                 DoseUnit = "mg/kg",
                 Unit = "mg",
                 minDose = 0.02,
-                maxDose = 6
+                maxDose = 12
             });
 
 
