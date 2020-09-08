@@ -65,18 +65,21 @@ namespace miemss_xamarin
         //Calculate dosage based on kg or lb 
         private void Calculate(double dosage, double weight)
         {
+            string text = "";
+            double calculation = 0;
+
             //makes calculation based on unit selected. If no unit is selected, error message is displayed
             string unit = (string)CalculateButton.BindingContext;
             if (unit == "lb")
             {
-                double calculation = dosage * (weight * 0.45359237);
+                calculation = dosage * (weight * 0.45359237);
                 calculation = Math.Round(calculation, 3);
                 CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + " " + (string)CalculationLabel.BindingContext;
 
             }
             else if (unit == "kg")
             {
-                double calculation = dosage * weight;
+                calculation = dosage * weight;
                 calculation = Math.Round(calculation, 3);
                 CalculationLabel.Text = "Calculated dosage: " + calculation.ToString() + " " + (string)CalculationLabel.BindingContext;
             }
@@ -84,6 +87,18 @@ namespace miemss_xamarin
             {
                 DisplayAlert("Message", "Please select a unit.", "ok");
             }
+            if (Drug.HasMinMaxAdultDose)
+            {
+                if (calculation > Drug.AdultMaxDose)
+                {
+                    string alertMessage = "Dosage is too high. Maximum dosage is " + Drug.AdultMaxDose;
+                    DisplayAlert("Message", alertMessage, "ok");
+                    return;
+                }
+
+            }
+            CalculationLabel.Text = text;
+
         }
         //End calculator function ----
     }
