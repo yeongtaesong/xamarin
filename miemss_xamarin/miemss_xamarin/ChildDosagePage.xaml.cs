@@ -82,6 +82,7 @@ namespace miemss_xamarin
             {
                 if (calculation > Drug.ChildMaxDose)
                 {
+                    text = "Calculated dosage: " + "NA" + (string)CalculationLabel.BindingContext;
                     string alertMessage = "Dosage is too high. Maximum dosage is " + Drug.ChildMaxDose;
                     DisplayAlert("Message", alertMessage, "ok");
                     return;

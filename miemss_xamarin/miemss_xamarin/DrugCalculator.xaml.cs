@@ -65,7 +65,7 @@ namespace miemss_xamarin
         //Calculate dosage based on kg or lb 
         private void Calculate(double dosage, double weight)
         {
-            string text = "";
+             
             double calculation = 0;
 
             //makes calculation based on unit selected. If no unit is selected, error message is displayed
@@ -91,13 +91,13 @@ namespace miemss_xamarin
             {
                 if (calculation > Drug.AdultMaxDose)
                 {
+                    CalculationLabel.Text = "Calculated dosage: " + " NA " + (string)CalculationLabel.BindingContext;
                     string alertMessage = "Dosage is too high. Maximum dosage is " + Drug.AdultMaxDose;
                     DisplayAlert("Message", alertMessage, "ok");
                     return;
                 }
 
             }
-            CalculationLabel.Text = text;
 
         }
         //End calculator function ----
