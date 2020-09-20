@@ -33,7 +33,7 @@ namespace miemss_xamarin.iOS
             Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init();
             Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init();
 
-            NSThread.SleepFor(2);
+            NSThread.SleepFor(1);
 
             LoadApplication(new App());
 
