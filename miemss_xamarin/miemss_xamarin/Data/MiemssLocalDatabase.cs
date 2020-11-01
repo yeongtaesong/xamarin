@@ -21,6 +21,7 @@ namespace miemss_xamarin.Data
                 _database = new SQLiteAsyncConnection(dbPath);
 
                 _database.CreateTableAsync<PrimaryDrug>().Wait();
+                _database.CreateTableAsync<ChildDosage>().Wait();
 
             }
             catch (Exception ex)
@@ -32,6 +33,17 @@ namespace miemss_xamarin.Data
         public Task<List<PrimaryDrug>> GetPrimaryDrugs()
         {
             return _database.Table<PrimaryDrug>().ToListAsync();
+        }
+
+
+        public Task<List<ChildDosage>> GetChildDosages()
+        {
+            return _database.Table<ChildDosage>().ToListAsync();
+        }
+
+        public Task<List<ChildDosage>> GetChildDosages(PrimaryDrug drug)
+        {
+            return _database.Table<ChildDosage>().Where(d => d.PrimaryDrugID == drug.ID).ToListAsync();
         }
 
         public Task<List<PrimaryDrug>> GetDrugsByCategory(string category)

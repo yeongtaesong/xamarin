@@ -14,10 +14,10 @@
             <StackLayout  Orientation="Vertical" Padding="15,15,0,0">
                 <Label  Text="{Binding Name}" FontSize="Large" TextDecorations="Underline"/>
                 <Label  Text="Dosage Description:" FontSize="Medium" FontAttributes="Bold"/>
-                <Label  Text="{Binding PediatricDosageDescription}"/>
-                <Label x:Name="max" IsVisible="{Binding HasChildMaxDose}"/>
+                <Label  Text="{Binding DosageDescription}"/>
+                <Label x:Name="max" IsVisible="{Binding HasMaxDose}"/>
                 <!--DRUG CALCULATOR-->
-                <StackLayout x:Name="Calculator" Orientation="Vertical" IsVisible="{Binding HasPediatricCalculator}">
+                <StackLayout x:Name="Calculator" Orientation="Vertical" IsVisible="{Binding HasCalculator}">
                     <Label Text="Dosage Calculator" FontSize="Medium" FontAttributes="Bold"/>
                     <StackLayout Orientation="Horizontal" >
                         <Label Text="Dosage" FontSize="Medium" Padding="10" />

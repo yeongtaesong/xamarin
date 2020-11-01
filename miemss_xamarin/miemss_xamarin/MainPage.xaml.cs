@@ -27,7 +27,7 @@ namespace miemss_xamarin
 
         public async void TestDatabase()
         {
-            Task<List<PrimaryDrug>> task = App.LocalDatabase.GetPrimaryDrugs();
+            Task<List<ChildDosage>> task = App.LocalDatabase.GetChildDosages();
             Debug.WriteLine(task.Result);
         }
 

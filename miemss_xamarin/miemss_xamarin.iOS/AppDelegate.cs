@@ -143,7 +143,7 @@ namespace miemss_xamarin.iOS
 
         private static void CopyDatabaseIfNotExists(string dbPath)
         {
-            if (!File.Exists(dbPath))
+            if (!File.Exists(dbPath)) 
             {
                 var existingDb = NSBundle.MainBundle.PathForResource("miemss", "db");
                 File.Copy(existingDb, dbPath);

@@ -1,4 +1,5 @@
 ﻿using miemss_xamarin.Models;
+using miemss_xamarin.SQLiteTables;
 using miemss_xamarin.ViewModel;
 using System;
 using System.Collections.Generic;
