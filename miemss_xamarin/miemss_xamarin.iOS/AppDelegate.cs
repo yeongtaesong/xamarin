@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using SQLite.Net.Platform.XamarinIOS;
 using Foundation;
 using UIKit;
 using Firebase.Analytics;
 using Firebase.CloudMessaging;
+using System.IO;
+
 
 namespace miemss_xamarin.iOS
 {
@@ -25,6 +27,7 @@ namespace miemss_xamarin.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
   
         {
+            string dbPath = FileAccessHelper.GetLocalFilePath("miemss.db");
 
             global::Xamarin.Forms.Forms.Init();
             Firebase.Core.App.Configure();
@@ -35,7 +38,7 @@ namespace miemss_xamarin.iOS
 
             NSThread.SleepFor(2);
 
-            LoadApplication(new App());
+            LoadApplication(new App(dbPath, new SQLitePlatformIOS()));
 
 
             if (UIDevice.CurrentDevice.CheckSystemVersion(8, 0))
@@ -117,17 +120,40 @@ namespace miemss_xamarin.iOS
         //}
 
 
+    }
 
+    public class FileAccessHelper
+    {
+        public static string GetLocalFilePath(string filename)
+        {
+            string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            string libFolder = Path.Combine(docFolder, "..", "Library", "Databases");
 
+            if (!Directory.Exists(libFolder))
+            {
+                Directory.CreateDirectory(libFolder);
+            }
 
+            string dbPath = Path.Combine(libFolder, filename);
 
+            CopyDatabaseIfNotExists(dbPath);
+
+            return dbPath;
+        }
+
+        private static void CopyDatabaseIfNotExists(string dbPath)
+        {
+            if (!File.Exists(dbPath))
+            {
+                var existingDb = NSBundle.MainBundle.PathForResource("miemss", "db");
+                File.Copy(existingDb, dbPath);
+            }
+        }
     }
 
 
 
 
-
-    
 }
 
 

@@ -30,7 +30,7 @@ namespace miemss_xamarin
         private async void BLSList_Clicked(object sender, EventArgs e)
         {
             var page = new DrugPage();
-            page.BindingContext = await App.Database.GetItemsByCategory("BLS");
+            page.BindingContext = await App.LocalDatabase.GetDrugsByCategory("BLS");
             await Navigation.PushAsync(page);
 
         }

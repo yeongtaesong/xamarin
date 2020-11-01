@@ -41,8 +41,8 @@ namespace miemss_xamarin
             page.Title = "Adult Dosage";
             if (drug != null)
             {
-                DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);
-                page.BindingContext = DrugCalculatorViewModel.Shared;
+                // DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);
+                page.BindingContext = drug;
             }
             await Navigation.PushAsync(page);
         }
@@ -55,8 +55,8 @@ namespace miemss_xamarin
             page.Title ="Pediatric Dosage";
             if (drug != null)
             {
-                DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);
-                page.BindingContext = DrugCalculatorViewModel.Shared;
+                // DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);
+                page.BindingContext = drug;
             }
             await Navigation.PushAsync(page);
         }
