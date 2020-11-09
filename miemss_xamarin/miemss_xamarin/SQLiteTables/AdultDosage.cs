@@ -18,7 +18,7 @@ namespace miemss_xamarin.SQLiteTables
         public string DosageDescription { get; set; }
 
         [Column("Dosage")]
-        public string Dosage { get; set; }
+        public double Dosage { get; set; }
 
         [Column("Unit")]
         public string Unit { get; set; }
@@ -33,6 +33,6 @@ namespace miemss_xamarin.SQLiteTables
         public bool HasMaxDose { get; set; }
 
         [Column("MaxDose")]
-        public int MaxDose { get; set; }
+        public double MaxDose { get; set; }
     }
 }

@@ -53,8 +53,6 @@ namespace miemss_xamarin
                 double dosage = Convert.ToDouble(Dosage.Text);
                 double weight = Convert.ToDouble(Weight.Text);
 
-
-
                 Calculate(dosage, weight);
             }
         }

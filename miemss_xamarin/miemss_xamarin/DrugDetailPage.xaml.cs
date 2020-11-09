@@ -43,13 +43,13 @@ namespace miemss_xamarin
         /// <param name="e"></param>
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            var drug = (Drug)DrugDetails.BindingContext;
+            var drug = (PrimaryDrug)DrugDetails.BindingContext;
             var page = new DrugCalculator(drug);
             page.Title = "Adult Dosage";
             if (drug != null)
             {
                 // DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);
-                page.BindingContext = drug;
+               // page.BindingContext = drug;
             }
             await Navigation.PushAsync(page);
         }
