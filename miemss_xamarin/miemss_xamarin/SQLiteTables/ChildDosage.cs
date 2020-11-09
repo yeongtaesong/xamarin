@@ -36,10 +36,5 @@ namespace miemss_xamarin.SQLiteTables
         [Column("MaxDose")]
         public int MaxDose { get; set; }
 
-
-
-
-
-
     }
 }

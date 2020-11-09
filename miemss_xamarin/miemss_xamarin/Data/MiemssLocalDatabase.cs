@@ -22,6 +22,7 @@ namespace miemss_xamarin.Data
 
                 _database.CreateTableAsync<PrimaryDrug>().Wait();
                 _database.CreateTableAsync<ChildDosage>().Wait();
+                _database.CreateTableAsync<AdultDosage>().Wait();
 
             }
             catch (Exception ex)
@@ -35,15 +36,29 @@ namespace miemss_xamarin.Data
             return _database.Table<PrimaryDrug>().ToListAsync();
         }
 
-
         public Task<List<ChildDosage>> GetChildDosages()
         {
             return _database.Table<ChildDosage>().ToListAsync();
         }
 
+        /// <summary>
+        /// Return corresponding dosages from ChildDosage table.
+        /// </summary>
+        /// <param name="drug"></param>
+        /// <returns></returns>
         public Task<List<ChildDosage>> GetChildDosages(PrimaryDrug drug)
         {
             return _database.Table<ChildDosage>().Where(d => d.PrimaryDrugID == drug.ID).ToListAsync();
+        }
+
+        /// <summary>
+        /// Return corresponding dosages from AdultDosage table.
+        /// </summary>
+        /// <param name="drug"></param>
+        /// <returns></returns>
+        public Task<List<AdultDosage>> GetAdultDosages(PrimaryDrug drug)
+        {
+            return _database.Table<AdultDosage>().Where(d => d.PrimaryDrugID == drug.ID).ToListAsync();
         }
 
         public Task<List<PrimaryDrug>> GetDrugsByCategory(string category)
