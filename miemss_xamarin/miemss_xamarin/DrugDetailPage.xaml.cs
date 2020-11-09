@@ -2,6 +2,7 @@
 using miemss_xamarin.SQLiteTables;
 using miemss_xamarin.ViewModel;
 using System;
+using miemss_xamarin.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,7 @@ namespace miemss_xamarin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DrugDetailPage : ContentPage
     {
-
+        
 
         public DrugDetailPage()
         {
@@ -35,6 +36,11 @@ namespace miemss_xamarin
             }
         }
 
+        /// <summary>
+        /// Navigate to Adult Dosage calculator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void Button_Clicked(object sender, EventArgs e)
         {
             var drug = (Drug)DrugDetails.BindingContext;
@@ -48,10 +54,16 @@ namespace miemss_xamarin
             await Navigation.PushAsync(page);
         }
 
+        /// <summary>
+        /// navigate to Pediatric Dosage Calculator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
             
             var drug = (PrimaryDrug)DrugDetails.BindingContext;
+
             var page = new ChildDosagePage(drug);
             page.Title ="Pediatric Dosage";
             if (drug != null)

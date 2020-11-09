@@ -21,7 +21,7 @@
                     <Label Text="Dosage Calculator" FontSize="Medium" FontAttributes="Bold"/>
                     <StackLayout Orientation="Horizontal" >
                         <Label Text="Dosage" FontSize="Medium" Padding="10" />
-                        <Entry x:Name="Dosage" Text="{Binding PediatricDosage}"  Keyboard="Numeric" WidthRequest="100" />
+                        <Entry x:Name="Dosage" Text="{Binding Dosage}"  Keyboard="Numeric" WidthRequest="100" />
                         <Label Text="{Binding DoseUnit}" FontSize="Medium" Padding="10"/>
                         <Picker IsVisible="false" x:Name="CalculatorPicker" Title="Type" SelectedIndex="{Binding DosageType}"  WidthRequest="100">
                             <Picker.Items>
