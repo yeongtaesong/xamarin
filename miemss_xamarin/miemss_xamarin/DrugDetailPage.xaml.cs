@@ -44,14 +44,28 @@ namespace miemss_xamarin
         private async void Button_Clicked(object sender, EventArgs e)
         {
             var drug = (PrimaryDrug)DrugDetails.BindingContext;
-            var page = new DrugCalculator(drug);
-            page.Title = "Adult Dosage";
-            if (drug != null)
+
+            Task<List<AdultDosage>> task = App.LocalDatabase.GetAdultDosages(drug);
+            var drugCount = task.Result.Count();
+
+            if (drugCount == 1 )
             {
-                // DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);
-               // page.BindingContext = drug;
+                var page = new DrugCalculator(drug);
+                page.Title = "Adult Dosage";
+                if (drug != null)
+                {
+                    // DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);
+                    // page.BindingContext = drug;
+                }
+                await Navigation.PushAsync(page);
             }
-            await Navigation.PushAsync(page);
+            else
+            {
+                var page = new DrugSubCategoryPage(task.Result);
+                page.BindingContext = task.Result;
+
+                await Navigation.PushAsync(page);
+            }
         }
 
         /// <summary>
