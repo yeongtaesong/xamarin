@@ -22,14 +22,14 @@ namespace miemss_xamarin
         List<AdultDosage> dosages;
         AdultDosage dosage;
 
-        public DrugCalculator(PrimaryDrug drug)
+        public DrugCalculator(AdultDosage dosage)
         {
             InitializeComponent();
 
-            Task<List<AdultDosage>> task = App.LocalDatabase.GetAdultDosages(drug);
+            //Task<List<AdultDosage>> task = App.LocalDatabase.GetAdultDosages(drug);
 
-            dosages = task.Result;
-            dosage = dosages.FirstOrDefault();
+            //dosages = task.Result;
+            this.dosage = dosage;
 
             BindingContext = dosage;
             if (dosage.HasMaxDose)

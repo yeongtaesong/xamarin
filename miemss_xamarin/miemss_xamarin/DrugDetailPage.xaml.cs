@@ -50,7 +50,8 @@ namespace miemss_xamarin
 
             if (drugCount == 1 )
             {
-                var page = new DrugCalculator(drug);
+                AdultDosage dosage = task.Result.FirstOrDefault();
+                var page = new DrugCalculator(dosage);
                 page.Title = "Adult Dosage";
                 if (drug != null)
                 {
@@ -75,17 +76,31 @@ namespace miemss_xamarin
         /// <param name="e"></param>
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-            
+
             var drug = (PrimaryDrug)DrugDetails.BindingContext;
 
-            var page = new ChildDosagePage(drug);
-            page.Title ="Pediatric Dosage";
-            if (drug != null)
+            Task<List<ChildDosage>> task = App.LocalDatabase.GetChildDosages(drug);
+            var drugCount = task.Result.Count();
+
+            if (drugCount == 1)
             {
-                // DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);
-               // page.BindingContext = drug;
+                ChildDosage dosage = task.Result.FirstOrDefault();
+                var page = new ChildDosagePage(dosage);
+                page.Title = "Adult Dosage";
+                if (drug != null)
+                {
+                    // DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);
+                    // page.BindingContext = drug;
+                }
+                await Navigation.PushAsync(page);
             }
-            await Navigation.PushAsync(page);
+            else
+            {
+                var page = new ChildDoseSubCategoryPage(task.Result);
+                page.BindingContext = task.Result;
+
+                await Navigation.PushAsync(page);
+            }
         }
     }
 }

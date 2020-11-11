@@ -19,13 +19,13 @@ namespace miemss_xamarin
         List<ChildDosage> dosages;
         ChildDosage dosage;
 
-        public ChildDosagePage(PrimaryDrug drug)
+        public ChildDosagePage(ChildDosage drug)
         {
             InitializeComponent();        
-            Task<List<ChildDosage>> task = App.LocalDatabase.GetChildDosages(drug);
+            //Task<List<ChildDosage>> task = App.LocalDatabase.GetChildDosages(drug);
 
-            dosages = task.Result;
-            dosage = dosages.FirstOrDefault();
+            //dosages = task.Result;
+            this.dosage = drug;
 
             BindingContext = dosage;
             if (dosage.HasMaxDose)

@@ -11,11 +11,11 @@ using Xamarin.Forms.Xaml;
 namespace miemss_xamarin
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DrugSubCategoryPage : ContentPage
+    public partial class ChildDoseSubCategoryPage : ContentPage
     {
         public ObservableCollection<string> Items { get; set; }
 
-        public DrugSubCategoryPage(List<AdultDosage> dosages)
+        public ChildDoseSubCategoryPage(List<ChildDosage> dosages)
         {
             InitializeComponent();
 
@@ -36,11 +36,11 @@ namespace miemss_xamarin
             if (e.Item == null)
                 return;
 
-            AdultDosage dosage = e.Item as AdultDosage;
-            var page = new DrugCalculator(dosage);
+            ChildDosage dosage = e.Item as ChildDosage;
+            var page = new ChildDosagePage(dosage);
             page.Title = "Adult Dosage";
 
-      
+
             await Navigation.PushAsync(page);
 
 
