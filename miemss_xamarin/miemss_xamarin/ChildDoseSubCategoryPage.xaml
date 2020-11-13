@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="miemss_xamarin.ChildDoseSubCategoryPage">
-    <ListView x:Name="MyListView" ItemsSource="{Binding Items}" ItemTapped="Handle_ItemTapped" CachingStrategy="RecycleElement">
+    <ListView x:Name="MyListView" ItemTapped="Handle_ItemTapped" CachingStrategy="RecycleElement">
         <!--Built in Cells-->
         <ListView.ItemTemplate>
             <DataTemplate>
@@ -13,10 +13,10 @@
                                 <ColumnDefinition Width="15"/>
                                 <ColumnDefinition Width="auto"/>
                                 <ColumnDefinition Width="auto"/>
-                            </Grid.ColumnDefinitions>
+                        </Grid.ColumnDefinitions>
                                 <!--Drug Item Display-->
-                            <Image Source ="bullet.png" Grid.Column="0" Grid.Row="0"/>
-                            <Label  Grid.Column="1" Grid.Row="0" Text="{Binding CategoryName}" FontSize ="Medium" StyleClass="mainPageTitle" />
+                        <Image Source ="bullet.png" Grid.Column="0" Grid.Row="0"/>
+                        <Label  Grid.Column="1" Grid.Row="0" Text="{Binding CategoryName}" FontSize ="Medium" StyleClass="mainPageTitle" />
                     </Grid>
                 </ViewCell>
             </DataTemplate>

@@ -13,21 +13,10 @@ namespace miemss_xamarin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ChildDoseSubCategoryPage : ContentPage
     {
-        public ObservableCollection<string> Items { get; set; }
 
         public ChildDoseSubCategoryPage(List<ChildDosage> dosages)
         {
             InitializeComponent();
-
-            Items = new ObservableCollection<string>
-            {
-                "Item 1",
-                "Item 2",
-                "Item 3",
-                "Item 4",
-                "Item 5"
-            };
-
             MyListView.ItemsSource = dosages;
         }
 
