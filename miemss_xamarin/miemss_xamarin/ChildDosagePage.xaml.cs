@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using miemss_xamarin.Models;
+using miemss_xamarin.SQLiteTables;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -14,20 +15,22 @@ namespace miemss_xamarin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ChildDosagePage : ContentPage
     {
+        PrimaryDrug Drug;
+        List<ChildDosage> dosages;
+        ChildDosage dosage;
 
-        Drug Drug;
-        public ChildDosagePage(Drug drug)
+        public ChildDosagePage(ChildDosage drug)
         {
-            InitializeComponent();
+            InitializeComponent();        
+            //Task<List<ChildDosage>> task = App.LocalDatabase.GetChildDosages(drug);
 
-            this.Drug = drug;
+            //dosages = task.Result;
+            this.dosage = drug;
 
-            var list = Drug.CategoryList.Split(',');
-            CalculatorPicker.ItemsSource = list;
-
-            if (drug.HasMinMaxChildDose && drug.ChildMinDose != null && drug.ChildMaxDose != null)
+            BindingContext = dosage;
+            if (dosage.HasMaxDose)
             {
-                max.Text = "Maximum Dose: " + drug.ChildMaxDose + " " + drug.Unit;
+                max.Text = "Maximum Dose: " + dosage.MaxDose + " " + dosage.DoseUnit;
             }
         }
         //Button for dosage calculation
@@ -49,8 +52,6 @@ namespace miemss_xamarin
                 }
                 double dosage = Convert.ToDouble(Dosage.Text);
                 double weight = Convert.ToDouble(Weight.Text);
-
-
 
                 Calculate(dosage, weight);
             }
@@ -78,16 +79,15 @@ namespace miemss_xamarin
             {
                 DisplayAlert("Message", "Please select a unit.", "ok");
             }
-            if (Drug.HasMinMaxChildDose)
+            if (this.dosage.HasMaxDose)
             {
-                if (calculation > Drug.ChildMaxDose)
+                if (calculation > this.dosage.MaxDose)
                 {
                     text = "Calculated dosage: " + "NA" + (string)CalculationLabel.BindingContext;
-                    string alertMessage = "Dosage is too high. Maximum dosage is " + Drug.ChildMaxDose;
+                    string alertMessage = "Dosage is too high. Maximum dosage is " + this.dosage.MaxDose;
                     DisplayAlert("Message", alertMessage, "ok");
                     return;
-                }
-                
+                }             
             }
             CalculationLabel.Text = text;
         }

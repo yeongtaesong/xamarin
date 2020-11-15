@@ -1,4 +1,5 @@
 ﻿using miemss_xamarin.Models;
+using miemss_xamarin.SQLiteTables;
 using miemss_xamarin.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -17,19 +18,25 @@ namespace miemss_xamarin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DrugCalculator : ContentPage
     {
-        bool hasMinMaxDose = false;
-        Drug Drug;
-        DrugCalculatorViewModel viewModel = DrugCalculatorViewModel.Shared;
+        PrimaryDrug Drug;
+        List<AdultDosage> dosages;
+        AdultDosage dosage;
 
-        public DrugCalculator(Drug drug)
+        public DrugCalculator(AdultDosage dosage)
         {
             InitializeComponent();
-            this.Drug = drug;
-            
-            if (hasMinMaxDose)
+
+            //Task<List<AdultDosage>> task = App.LocalDatabase.GetAdultDosages(drug);
+
+            //dosages = task.Result;
+            this.dosage = dosage;
+
+            BindingContext = dosage;
+            if (dosage.HasMaxDose)
             {
-                max.Text = "Maximum Dose: " + drug.AdultMaxDose;
+                max.Text = "Maximum Dose: " + dosage.MaxDose + " " + dosage.DoseUnit;
             }
+
 
 
         }
@@ -51,10 +58,6 @@ namespace miemss_xamarin
                     return;
                 }
 
-                if (hasMinMaxDose)
-                {
-                    return;
-                }
                 double dosage = Convert.ToDouble(Dosage.Text);
                 double weight = Convert.ToDouble(Weight.Text);
                 Calculate(dosage, weight);
@@ -87,12 +90,12 @@ namespace miemss_xamarin
             {
                 DisplayAlert("Message", "Please select a unit.", "ok");
             }
-            if (Drug.HasMinMaxAdultDose)
+            if (this.dosage.HasMaxDose)
             {
-                if (calculation > Drug.AdultMaxDose)
+                if (calculation > this.dosage.MaxDose)
                 {
                     CalculationLabel.Text = "Calculated dosage: " + " NA " + (string)CalculationLabel.BindingContext;
-                    string alertMessage = "Dosage is too high. Maximum dosage is " + Drug.AdultMaxDose;
+                    string alertMessage = "Dosage is too high. Maximum dosage is " + this.dosage.MaxDose;
                     DisplayAlert("Message", alertMessage, "ok");
                     return;
                 }

@@ -10,6 +10,7 @@ using Xamarin.Forms.PlatformConfiguration.WindowsSpecific;
 using Xamarin.Forms.Xaml;
 using miemss_xamarin.Models;
 using ListView = Xamarin.Forms.ListView;
+using miemss_xamarin.SQLiteTables;
 
 /*In order to edit items from list of Drugs, go to DrugData*/
 namespace miemss_xamarin
@@ -26,8 +27,8 @@ namespace miemss_xamarin
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-           listView.ItemsSource = ((List<Drug>)this.BindingContext);
-            List<Drug> list = (List<Drug>)this.BindingContext;
+           listView.ItemsSource = ((List<PrimaryDrug>)this.BindingContext);
+            List<PrimaryDrug> list = (List<PrimaryDrug>)this.BindingContext;
             string category = list[0].Category;
             DrugContentPage.Title = category + " Medications";
         }
@@ -41,7 +42,7 @@ namespace miemss_xamarin
         //As user adds input to search, druglist updates based on text input
         async void OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            List<Drug> list = (List<Drug>)this.BindingContext;
+            List<PrimaryDrug> list = (List<PrimaryDrug>)this.BindingContext;
             string category = list[0].Category;
 
             listView.ItemsSource = await App.Database.GetItemByCategory(e.NewTextValue, category);
@@ -51,7 +52,7 @@ namespace miemss_xamarin
         //On item selected, user will be redirected to DrugDetailedPage of item selected
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var drug = ((ListView)sender).SelectedItem as Drug;
+            var drug = ((ListView)sender).SelectedItem as PrimaryDrug;
             if (drug != null)
             {
                 var page = new DrugDetailPage();

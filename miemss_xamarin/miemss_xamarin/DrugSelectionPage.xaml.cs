@@ -24,13 +24,13 @@ namespace miemss_xamarin
         private async void ALSList_Clicked(object sender, EventArgs e)
         {
             var page = new DrugPage();
-            page.BindingContext = await App.Database.GetItemsByCategory("ALS");
+            page.BindingContext = await App.LocalDatabase.GetDrugsByCategory("ALS");
             await Navigation.PushAsync(page);
         }
         private async void BLSList_Clicked(object sender, EventArgs e)
         {
             var page = new DrugPage();
-            page.BindingContext = await App.Database.GetItemsByCategory("BLS");
+            page.BindingContext = await App.LocalDatabase.GetDrugsByCategory("BLS");
             await Navigation.PushAsync(page);
 
         }

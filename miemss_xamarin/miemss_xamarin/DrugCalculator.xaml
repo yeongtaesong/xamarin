@@ -6,22 +6,23 @@
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              mc:Ignorable="d"
              x:Class="miemss_xamarin.DrugCalculator"
-             x:Name="DrugCalculatorContent">
+             x:Name="DrugCalculatorContent"
+             BindingContext="{Binding .}">
     
     <ContentPage.Content>
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
 
             <StackLayout  Orientation="Vertical" Padding="15,15,0,0">
                 <Label  Text="Dosage Description:" FontSize="Medium" FontAttributes="Bold"/>
-                <Label  Text="{Binding AdultDosageDescription}"/>
+                <Label  Text="{Binding DosageDescription}"/>
                 <Label x:Name="max"/>
                       
                 <!--DRUG CALCULATOR-->
-                <StackLayout x:Name="Calculator" Orientation="Vertical" IsVisible="{Binding HasAdultCalculator}">
+                <StackLayout x:Name="Calculator" Orientation="Vertical" IsVisible="{Binding HasCalculator}">
                 <Label Text="Dosage Calculator" FontSize="Medium" FontAttributes="Bold"/>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Dosage" FontSize="Medium" Padding="10" />
-                    <Entry x:Name="Dosage" Text="{Binding AdultDosage}" Keyboard="Numeric" WidthRequest="100" />
+                    <Entry x:Name="Dosage" Text="{Binding Dosage}" Keyboard="Numeric" WidthRequest="100" />
                     <Label Text="{Binding DoseUnit}" FontSize="Medium" Padding="10"/>
                     </StackLayout>
                 <StackLayout Orientation="Horizontal">

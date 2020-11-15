@@ -60,13 +60,12 @@
     <DocumentationFile>
     </DocumentationFile>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
+    <CodesignKey>Apple Development: Analilia Fierro (C3FWNM8Z3N)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
-    <CodesignProvision>APN: com.miemss.miemss Development</CodesignProvision>
     <OnDemandResourcesPrefetchOrder>
     </OnDemandResourcesPrefetchOrder>
     <NoWarn>
@@ -118,6 +117,8 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NewViewRenderer.cs" />
+    <Compile Include="DatabaseConnection_iOS.cs" />
+    <BundleResource Include="Resources\miemss.db" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\alert.imageset\notification.png">
@@ -479,6 +480,12 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Firebase.iOS.Analytics">
       <Version>6.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="PCLStorage">
+      <Version>1.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.7.335</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

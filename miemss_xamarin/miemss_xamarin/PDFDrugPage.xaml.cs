@@ -1,4 +1,5 @@
 ﻿using miemss_xamarin.Models;
+using miemss_xamarin.SQLiteTables;
 using Syncfusion.SfPdfViewer.XForms;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,7 @@ namespace miemss_xamarin
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            var resource = ((Drug)this.BindingContext);
+            var resource = ((PrimaryDrug)this.BindingContext);
             fileStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream(resource.Path);
             //Load the PDF
             pdfViewerControl.LoadDocument(fileStream);

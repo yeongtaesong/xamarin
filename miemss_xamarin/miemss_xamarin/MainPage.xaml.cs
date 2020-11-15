@@ -1,8 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using miemss_xamarin.Data;
+using miemss_xamarin.Interfaces;
+using miemss_xamarin.SQLiteTables;
+using SQLite;
 using Xamarin.Forms;
 
 namespace miemss_xamarin
@@ -12,9 +18,17 @@ namespace miemss_xamarin
 
     public partial class MainPage : ContentPage
     {
+        
         public MainPage()
         {
             InitializeComponent();
+            TestDatabase();
+        }
+
+        public async void TestDatabase()
+        {
+            Task<List<ChildDosage>> task = App.LocalDatabase.GetChildDosages();
+            Debug.WriteLine(task.Result);
         }
 
         protected override void OnAppearing()
