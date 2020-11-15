@@ -24,7 +24,7 @@ namespace miemss_xamarin.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
-			string dbPath = FileAccessHelper.GetLocalFilePath("people.db3");
+			string dbPath = FileAccessHelper.GetLocalFilePath("miemss.db");
 			LoadApplication(new App(dbPath, new SQLitePlatformAndroid()));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
@@ -51,7 +51,7 @@ namespace miemss_xamarin.Droid
 		{
 			if (!File.Exists(dbPath))
 			{
-				using (var br = new BinaryReader(Application.Context.Assets.Open("people.db3")))
+				using (var br = new BinaryReader(Application.Context.Assets.Open("miemss.db")))
 				{
 					using (var bw = new BinaryWriter(new FileStream(dbPath, FileMode.Create)))
 					{

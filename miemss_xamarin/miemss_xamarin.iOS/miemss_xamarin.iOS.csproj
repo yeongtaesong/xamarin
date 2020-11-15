@@ -117,7 +117,6 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NewViewRenderer.cs" />
-    <BundleResource Include="Resources\miemss.db" />
     <Compile Include="DatabaseConnection_iOS.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -505,6 +504,9 @@
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\miemss.db" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
