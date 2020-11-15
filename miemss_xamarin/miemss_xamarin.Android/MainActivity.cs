@@ -1,11 +1,13 @@
 ﻿using System;
-
+using Xamarin.Android;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using SQLite.Net.Platform.XamarinAndroid;
+using System.IO;
 
 namespace miemss_xamarin.Droid
 {
@@ -21,7 +23,9 @@ namespace miemss_xamarin.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
+
+			string dbPath = FileAccessHelper.GetLocalFilePath("people.db3");
+			LoadApplication(new App(dbPath, new SQLitePlatformAndroid()));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
@@ -30,4 +34,36 @@ namespace miemss_xamarin.Droid
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
+
+	public class FileAccessHelper
+	{
+		public static string GetLocalFilePath(string filename)
+		{
+			string path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+			string dbPath = Path.Combine(path, filename);
+
+			CopyDatabaseIfNotExists(dbPath);
+
+			return dbPath;
+		}
+
+		private static void CopyDatabaseIfNotExists(string dbPath)
+		{
+			if (!File.Exists(dbPath))
+			{
+				using (var br = new BinaryReader(Application.Context.Assets.Open("people.db3")))
+				{
+					using (var bw = new BinaryWriter(new FileStream(dbPath, FileMode.Create)))
+					{
+						byte[] buffer = new byte[2048];
+						int length = 0;
+						while ((length = br.Read(buffer, 0, buffer.Length)) > 0)
+						{
+							bw.Write(buffer, 0, length);
+						}
+					}
+				}
+			}
+		}
+	}
 }
