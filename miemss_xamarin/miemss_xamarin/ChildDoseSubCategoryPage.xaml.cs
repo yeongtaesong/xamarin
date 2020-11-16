@@ -27,7 +27,7 @@ namespace miemss_xamarin
 
             ChildDosage dosage = e.Item as ChildDosage;
             var page = new ChildDosagePage(dosage);
-            page.Title = "Adult Dosage";
+            page.Title = "Child Dosage";
 
 
             await Navigation.PushAsync(page);

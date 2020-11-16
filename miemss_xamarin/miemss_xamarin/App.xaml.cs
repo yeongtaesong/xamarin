@@ -32,7 +32,7 @@ namespace miemss_xamarin
 
         public App(string dbPath, ISQLitePlatform sqlitePlatform)
         {
-            LocalDatabase = new MiemssLocalDatabase(dbPath);
+            LocalDatabase = new MiemssLocalDatabase(dbPath);         
             InitializeComponent();
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjQzODcxQDMxMzgyZTMxMmUzMFlDZEhoQjdVc2dCQVphRUkvYk15Q2hXS3VpQkdQMFVMa2kvbmdZZGp2UDQ9");
 

@@ -7,6 +7,7 @@ using UIKit;
 using Firebase.Analytics;
 using Firebase.CloudMessaging;
 using System.IO;
+using Xamarin.Essentials;
 
 
 namespace miemss_xamarin.iOS
@@ -143,11 +144,10 @@ namespace miemss_xamarin.iOS
 
         private static void CopyDatabaseIfNotExists(string dbPath)
         {
-            if (!File.Exists(dbPath)) 
-            {
-                var existingDb = NSBundle.MainBundle.PathForResource("miemss", "db");
-                File.Copy(existingDb, dbPath);
-            }
+            File.Delete(dbPath);
+            var existingDb = NSBundle.MainBundle.PathForResource("miemss", "db");
+            File.Copy(existingDb, dbPath);
+      
         }
     }
 
