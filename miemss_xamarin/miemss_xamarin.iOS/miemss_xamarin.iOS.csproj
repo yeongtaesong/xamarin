@@ -118,7 +118,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NewViewRenderer.cs" />
     <Compile Include="DatabaseConnection_iOS.cs" />
-    <BundleResource Include="Resources\miemss.db" />
+    <AndroidAsset Include="Resources\miemss.db" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\alert.imageset\notification.png">
@@ -449,17 +449,36 @@
     <ImageAsset Include="Assets.xcassets\splashscreen.imageset\splash %283%29-2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\arrow_right_circle.png" />
-    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\arrow_right_circle-1.png" />
-    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\arrow_right_circle-2.png" />
-    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle.png" />
-    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle-1.png" />
-    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle-2.png" />
-
-    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow-1.png" />
-    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow-2.png" />
+    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\arrow_right_circle.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\arrow_right_circle-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\arrow_right_circle.imageset\arrow_right_circle-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\arrow_down_circle.imageset\arrow_down_circle-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -496,11 +515,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets.xcassets\arrow_down_circle.imageset\" />
+    <Folder Include="Assets.xcassets\arrow_right_circle.imageset\" />
     <Folder Include="Assets.xcassets\Calendar.imageset\" />
     <Folder Include="Assets.xcassets\Calendar1.imageset\" />
     <Folder Include="Assets.xcassets\ems1.imageset\" />
-    <Folder Include="Assets.xcassets\arrow_right_circle.imageset\" />
-    <Folder Include="Assets.xcassets\arrow_down_circle.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

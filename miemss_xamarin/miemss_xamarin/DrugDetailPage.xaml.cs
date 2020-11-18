@@ -16,8 +16,6 @@ namespace miemss_xamarin
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DrugDetailPage : ContentPage
     {
-        
-
         public DrugDetailPage()
         {
             InitializeComponent();
@@ -86,7 +84,7 @@ namespace miemss_xamarin
             {
                 ChildDosage dosage = task.Result.FirstOrDefault();
                 var page = new ChildDosagePage(dosage);
-                page.Title = "Child Dosage";
+                page.Title = "Pediatric Dosage";
                 if (drug != null)
                 {
                     // DrugCalculatorViewModel.Shared = new DrugCalculatorViewModel(drug);

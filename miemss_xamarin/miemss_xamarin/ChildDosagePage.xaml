@@ -12,7 +12,6 @@
     <ContentPage.Content>
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
             <StackLayout  Orientation="Vertical" Padding="15,15,0,0">
-                <Label  Text="{Binding Name}" FontSize="Large" TextDecorations="Underline"/>
                 <Label  Text="Dosage Description:" FontSize="Medium" FontAttributes="Bold"/>
                 <Label  Text="{Binding DosageDescription}"/>
                 <Label x:Name="max" IsVisible="{Binding HasMaxDose}"/>
