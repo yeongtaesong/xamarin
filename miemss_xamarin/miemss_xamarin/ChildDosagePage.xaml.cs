@@ -30,7 +30,7 @@ namespace miemss_xamarin
             BindingContext = dosage;
             if (dosage.HasMaxDose)
             {
-                max.Text = "Maximum Dose: " + dosage.MaxDose + " " + dosage.DoseUnit;
+                max.Text = "Maximum Dose: " + dosage.MaxDose + " " + dosage.Unit;
             }
         }
         //Button for dosage calculation
@@ -84,7 +84,7 @@ namespace miemss_xamarin
                 if (calculation > this.dosage.MaxDose)
                 {
                     text = "Calculated dosage: " + "NA" + (string)CalculationLabel.BindingContext;
-                    string alertMessage = "Dosage is too high. Maximum dosage is " + this.dosage.MaxDose;
+                    string alertMessage = "Dosage is too high. Maximum dosage is " + this.dosage.MaxDose + " " + this.dosage.Unit;
                     DisplayAlert("Message", alertMessage, "ok");
                     return;
                 }             

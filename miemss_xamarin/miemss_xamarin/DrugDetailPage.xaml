@@ -9,41 +9,40 @@
              x:Name="DrugDetails">
     <ContentPage.Content>
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent">
-             <ScrollView VerticalOptions="FillAndExpand" Padding="5,5,5,5">
-            <StackLayout Padding="24,24,24,24" >
-                <!--Details -->
-                <Label Text="{Binding Name}" FontSize="Large"/>
-                <StackLayout Orientation="Horizontal" Padding="0,10,0,0">
-                    <Button Text="Tap For More Information"  
-                        HorizontalOptions="Start" Clicked="Information_OnClicked" 
-                        TextColor="Blue"
-                        BackgroundColor="LightGray"
-                        BorderWidth="1"
-                        CornerRadius="5"
-                        WidthRequest="250"
-                        HeightRequest="45"/>
-                </StackLayout>
-                <Label Text="Description:" FontSize="Medium" FontAttributes="Bold"/>
-                <Label Text="{Binding Details}" />
-                <StackLayout Orientation="Horizontal" Padding="0,10,0,0">
-                    <Button Text="Adult Dosage" Clicked="Button_Clicked"
+            <ScrollView VerticalOptions="FillAndExpand" Padding="5,5,5,5">
+                <StackLayout Padding="24,24,24,24" >
+                    <!--Details -->
+                    <Label Text="{Binding Name}" FontSize="Large"/>
+                    <StackLayout Orientation="Horizontal" Padding="0,10,0,0">
+                        <Button Text="Tap For More Information"  
+                            HorizontalOptions="Start" Clicked="Information_OnClicked" 
+                            TextColor="Blue"
+                            BackgroundColor="LightGray"
+                            BorderWidth="1"
+                            CornerRadius="5"
+                            WidthRequest="250"
+                            HeightRequest="45"/>
+                    </StackLayout>
+                    <Label Text="Indication:" FontSize="Medium" FontAttributes="Bold"/>
+                    <Label Text="{Binding Details}" />
+                    <StackLayout Orientation="Horizontal" Padding="0,10,0,0">
+                        <Button Text="Adult Dosage" Clicked="Button_Clicked"
                             TextColor="Blue"
                             BackgroundColor="LightGray"
                             BorderWidth="1"
                             CornerRadius="5"
                             WidthRequest="150"
                             HeightRequest="45"/>
-                    <Button Text="Pediatric Dosage" Clicked="Button_Clicked_1"
+                        <Button Text="Pediatric Dosage" Clicked="Button_Clicked_1"
                             TextColor="Blue"
                             BackgroundColor="LightGray"
                             BorderWidth="1"
                             CornerRadius="5"
                             WidthRequest="170"
                             HeightRequest="45"/>
+                    </StackLayout>
                 </StackLayout>
-            </StackLayout>
-
-                 </ScrollView>
+            </ScrollView>
         </pancake:PancakeView>
     </ContentPage.Content>
 </ContentPage>
