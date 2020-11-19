@@ -11,7 +11,9 @@
 
     <ContentPage.Content>
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent" >
-            <StackLayout  Orientation="Vertical" Padding="15,15,0,0">
+                        <ScrollView VerticalOptions="FillAndExpand" Padding="5,5,5,5">
+
+            <StackLayout  Orientation="Vertical" Padding="15,15,15,15">
                 <Label  Text="Dosage Description:" FontSize="Medium" FontAttributes="Bold"/>
                 <Label  Text="{Binding DosageDescription}"/>
                 <Label x:Name="max" IsVisible="{Binding HasMaxDose}"/>
@@ -48,6 +50,8 @@
                     <Label BindingContext="{Binding Unit}" x:Name="CalculationLabel" Text="" Padding="80,10,0,0"/>
                 </StackLayout>
             </StackLayout>
+                                     </ScrollView>
+
         </pancake:PancakeView>
     </ContentPage.Content>
 </ContentPage>

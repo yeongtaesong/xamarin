@@ -9,6 +9,7 @@
              x:Name="DrugDetails">
     <ContentPage.Content>
         <pancake:PancakeView BackgroundGradientStartColor="#3498db" BackgroundGradientEndColor="Transparent">
+             <ScrollView VerticalOptions="FillAndExpand" Padding="5,5,5,5">
             <StackLayout Padding="24,24,24,24" >
                 <!--Details -->
                 <Label Text="{Binding Name}" FontSize="Large"/>
@@ -42,7 +43,7 @@
                 </StackLayout>
             </StackLayout>
 
-
+                 </ScrollView>
         </pancake:PancakeView>
     </ContentPage.Content>
 </ContentPage>
