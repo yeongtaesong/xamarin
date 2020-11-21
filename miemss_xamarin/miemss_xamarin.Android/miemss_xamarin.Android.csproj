@@ -284,6 +284,9 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\miemss.db" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\drawable\new_miemss.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

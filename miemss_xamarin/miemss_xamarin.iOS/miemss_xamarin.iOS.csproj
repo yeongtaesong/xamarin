@@ -479,6 +479,11 @@
     <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow-2.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss.png" />
+    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss-1.png" />
+    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss-2.png" />
+    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss-3.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -520,6 +525,7 @@
     <Folder Include="Assets.xcassets\Calendar.imageset\" />
     <Folder Include="Assets.xcassets\Calendar1.imageset\" />
     <Folder Include="Assets.xcassets\ems1.imageset\" />
+    <Folder Include="Assets.xcassets\new_miemss.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

@@ -138,14 +138,14 @@
                         <TapGestureRecognizer Tapped="ChatsPage_Tapped"/>
                     </Image.GestureRecognizers>
                 </Image>
-                <Label Text="CHATS" HorizontalTextAlignment="Center" />
+                <Label Text="@HA" HorizontalTextAlignment="Center" />
             </StackLayout>
             <!--End CHATS Button-->
 
             <!--Important Numbers Button-->
             <StackLayout Grid.Row="3" Grid.Column="1" Orientation="Vertical">
                 <!--Image Source-->
-                <Image Source="miemss.png"  
+                <Image Source="new_miemss.png"  
                    Grid.Row="1"  
                    Grid.Column="1"  
                    BackgroundColor="White" 
