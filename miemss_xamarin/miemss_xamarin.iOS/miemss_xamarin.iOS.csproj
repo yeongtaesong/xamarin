@@ -42,8 +42,8 @@
     <WarningLevel>4</WarningLevel>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
-    <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
-    <CodesignProvision>VS: com.miemss.miemss Development</CodesignProvision>
+    <CodesignKey>Apple Distribution: Viasoftech, Inc (RR3F4B68DG)</CodesignKey>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <OnDemandResourcesInitialInstallTags>
     </OnDemandResourcesInitialInstallTags>
@@ -60,7 +60,7 @@
     <DocumentationFile>
     </DocumentationFile>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>Apple Development: Analilia Fierro (C3FWNM8Z3N)</CodesignKey>
+    <CodesignKey>Apple Distribution: Viasoftech, Inc (RR3F4B68DG)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
@@ -83,6 +83,7 @@
     </OnDemandResourcesPrefetchOrder>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
+    <CodesignProvision>MIEMSS Provision Profile Distribution With Push No</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -93,7 +94,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchArch>ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>APN: com.miemss.miemss Development</CodesignProvision>
+    <CodesignProvision>MIEMSS Provision Profile Distribution With Push No</CodesignProvision>
     <MtouchVerbosity>
     </MtouchVerbosity>
     <MtouchUseLlvm>
@@ -102,8 +103,9 @@
     </MtouchEnableSGenConc>
     <NoWarn>
     </NoWarn>
-    <CodesignKey>Apple Development: Jinie Pak (9ZMY4SH685)</CodesignKey>
+    <CodesignKey>Apple Distribution: Viasoftech, Inc (RR3F4B68DG)</CodesignKey>
     <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
