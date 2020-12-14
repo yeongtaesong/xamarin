@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="miemss_xamarin.ChildDoseSubCategoryPage">
-    <ListView x:Name="MyListView" ItemTapped="Handle_ItemTapped" CachingStrategy="RecycleElement">
+    <ListView x:Name="MyListView"
+              ItemTapped="Handle_ItemTapped"
+              CachingStrategy="RecycleElement"
+              HasUnevenRows="True">
         <!--Built in Cells-->
         <ListView.ItemTemplate>
             <DataTemplate>
@@ -9,10 +12,10 @@
                         <Grid.RowDefinitions>
                         <RowDefinition Height="auto" />
                         </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="15"/>
-                                <ColumnDefinition Width="auto"/>
-                                <ColumnDefinition Width="auto"/>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="15"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
                         </Grid.ColumnDefinitions>
                                 <!--Drug Item Display-->
                         <Image Source ="bullet.png" Grid.Column="0" Grid.Row="0"/>
