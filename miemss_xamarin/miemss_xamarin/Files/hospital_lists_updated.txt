@@ -30,7 +30,7 @@ Region IV;Chestertown Medical Center (UMSRH)  ;100 Brown St, Chestertown, MD 216
 Region IV;Dorchester General Hospital (UMSRH) ;300 Byrn St, Cambridge, MD 21613;(410) 228-5511;https://www.umms.org/shore/locations ;MCASA- Pediatric and Adult;N/A;  ;  
 Region IV;Easton Medical Center (UMSRH) ;219 S Washington St, Easton, MD 21601;(410) 822-1000;https://www.umms.org/shore/locations/ ;Primary Stroke;MCASA- Pediatric and Adult;N/A;
 Region IV;Edward McCready Memorial Hospital;201 Hall Hwy, Crisfield, MD 21817;(410) 968-1200;http://www.mccreadyhealth.org/about-us/history/;;;;
-Region IV;Peninsula Regional Medical Center;100 E Carroll St, Salisbury, MD 21801;(410) 546-6400;https://www.peninsula.org/;Level III Trauma Centers;Cardiac Interventional;Primary Stroke;
+Region IV;TidalHealth Peninsula;100 E Carroll St, Salisbury, MD 21801;(410) 546-6400;https://www.peninsula.org/;Level III Trauma Centers;Cardiac Interventional;Primary Stroke;
 Region IV;Queenstown Emergency Center (UMSRH);125 Shoreway Drive, Queenstown, MD 21658;(410) 827-3900;https://www.umms.org/shore/locations/emergency-center-queenstown?utm_source=local-listing&utm_medium=organic&utm_campaign=website-link;;;;
 Region IV;Union Hospital of Cecil County;106 Bow St, Elkton, MD 21921;(410) 398-4000;http://www.uhcc.com/;Primary Stroke;MCASA- Pediatric and Adult;  ;  
 Region V;Bowie Hospital Center;15001 Health Center Dr, Bowie, MD 20716;(301) 262-5511;https://www.umms.org/capital/locations/um-bowie-health-center?utm_source=local-listing&utm_medium=organic&utm_campaign=website-link;;;;
