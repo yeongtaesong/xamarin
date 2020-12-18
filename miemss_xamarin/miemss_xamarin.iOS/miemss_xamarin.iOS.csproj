@@ -481,11 +481,21 @@
     <ImageAsset Include="Assets.xcassets\expand.imageset\expand-arrow-2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss.png" />
-    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss-1.png" />
-    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss-2.png" />
-    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss-3.png" />
+    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\new_miemss.imageset\new_miemss-3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
